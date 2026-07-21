@@ -8,7 +8,7 @@ export function HeroVisual() {
       className="
         pointer-events-none
         absolute
-        right-[4rem]
+        right-[-5rem]
         top-1/2
         hidden
         -translate-y-1/2
@@ -43,14 +43,14 @@ export function HeroVisual() {
         "
       >
         <Image
-  src="/images/screens/OctowareNET_Dashboard.png"
-  alt="Dashboard von OctoWare®NET"
-  width={1600}
-  height={1000}
-  priority
-  draggable={false}
-  className="h-full w-full object-cover object-top"
-/>
+          src="/images/screens/OctowareNET_Dashboard.png"
+          alt="Dashboard von OctoWare®NET"
+          width={1600}
+          height={1000}
+          priority
+          draggable={false}
+          className="h-full w-full object-cover object-top"
+        />
       </DeviceFrame>
     </div>
   );
