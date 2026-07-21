@@ -6,7 +6,7 @@ import { Navigation } from "./Navigation";
 export function Header() {
   return (
     <header className="fixed inset-x-0 top-6 z-50">
-      <div className="mx-auto flex h-20 max-w-[1440px] items-center justify-between rounded-xl border border-white/30 bg-white/10 px-8 backdrop-blur-xl shadow-[0_8px_30px_rgba(20,106,177,0.08)]">
+      <div className="mx-auto flex h-20 max-w-[1440px] items-center justify-between rounded-xl border border-white/30 bg-white/10 px-8 backdrop-blur-2xl shadow-[0_8px_30px_rgba(20,106,177,0.08)]">
 
         <Link
           href="/"
