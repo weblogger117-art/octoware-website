@@ -3,7 +3,7 @@ import { Heading } from "@/components/typography";
 
 export function HeroContent() {
   return (
-    <div className="flex max-w-xl flex-col items-start">
+    <div className="flex max-w-lg flex-col items-start">
       <Badge>NEXT GENERATION</Badge>
 
       <Heading
