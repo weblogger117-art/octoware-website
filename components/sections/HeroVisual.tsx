@@ -4,35 +4,43 @@ import { DeviceFrame } from "@/components/ui";
 
 export function HeroVisual() {
   return (
-    <div className="relative flex justify-center lg:justify-end">
-
-      {/* Lichtschein */}
+    <div
+      className="
+        pointer-events-none
+        absolute
+        right-[-4rem]
+        top-1/2
+        hidden
+        -translate-y-1/2
+        lg:block
+      "
+    >
+      {/* Licht */}
       <div
         aria-hidden
         className="
           absolute
           left-1/2
           top-1/2
-          h-[520px]
-          w-[520px]
+          h-[900px]
+          w-[900px]
           -translate-x-1/2
           -translate-y-1/2
           rounded-full
           bg-[#c5d7ed]
           opacity-35
-          blur-[140px]
+          blur-[180px]
         "
       />
 
-     <DeviceFrame
-  className="
-    relative
-    z-10
-    max-w-[1100px]
-    translate-y-10
-  "
->
-
+      <DeviceFrame
+        className="
+          relative
+          z-10
+          w-[900px]
+          xl:w-[1050px]
+        "
+      >
         <Image
           src="/images/screens/OctowareNET_Dashboard.png"
           alt="Dashboard von OctoWare®NET"
@@ -40,16 +48,9 @@ export function HeroVisual() {
           height={1000}
           priority
           draggable={false}
-          className="
-            h-auto
-            w-full
-            contrast-105
-            brightness-[0.98]
-          "
+          className="h-auto w-full contrast-105 brightness-[0.98]"
         />
-
       </DeviceFrame>
-
     </div>
   );
 }
