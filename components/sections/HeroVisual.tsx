@@ -37,7 +37,7 @@ export function HeroVisual() {
   className="
     relative
     z-10
-    translate-y-6
+    translate-y-10
     w-[820px]
     xl:w-[960px]
   "
