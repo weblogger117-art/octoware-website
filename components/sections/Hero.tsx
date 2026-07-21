@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <Section
       className="overflow-hidden"
-      containerClassName="grid items-center gap-16 lg:grid-cols-2"
+      containerClassName="grid items-center gap-20 lg:grid-cols-2"
     >
       <HeroContent />
       <HeroVisual />
