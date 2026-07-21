@@ -8,7 +8,7 @@ export function HeroVisual() {
       <DeviceFrame>
 
         <Image
-          src="/images/screens/OctowareNET_Dashboard.png"
+          src="/public/images/screens/OctowareNET_Dashboard.png"
           alt="Dashboard von OctoWare®NET"
           width={1600}
           height={1000}
