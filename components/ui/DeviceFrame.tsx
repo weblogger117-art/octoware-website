@@ -14,22 +14,19 @@ export function DeviceFrame({
 }: DeviceFrameProps) {
   return (
     <div
-      className={cn(
-        "relative mx-auto w-full max-w-[760px]",
-        className
-      )}
-    >
+  className={cn(
+    "absolute overflow-hidden",
+    "left-[4.9%] top-[5.3%] w-[90.2%]",
+    screenClassName
+  )}
+>
       {/* Bildschirm */}
       <div
-        className="
-          absolute
-          left-[4.9%]
-          top-[5.3%]
-          w-[90.2%]
-          overflow-hidden
-          rounded-[8px]
-        "
-      >
+        type DeviceFrameProps = {
+  children: ReactNode;
+  className?: string;
+  screenClassName?: string;
+};
         {children}
       </div>
 
