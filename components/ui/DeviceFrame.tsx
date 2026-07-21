@@ -25,10 +25,10 @@ export function DeviceFrame({
       <div
   className={cn(
     "absolute overflow-hidden",
-    "left-[3.7%]",
-    "right-[2.6%]",
-    "top-[5.5%]",
-    "bottom-[9.5%]",
+    "left-[3.4%]",
+    "right-[2.3%]",
+    "top-[5.3%]",
+    "bottom-[9.1%]",
     screenClassName
   )}
 >
