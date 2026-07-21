@@ -25,13 +25,15 @@ export function DeviceFrame({
       <div
   className={cn(
     "absolute overflow-hidden",
-    "left-[4.9%]",
-    "right-[5.0%]",
-    "top-[5.1%]",
-    "bottom-[11.2%]",
+    "left-[6.0%]",
+    "right-[6.0%]",
+    "top-[5.9%]",
+    "bottom-[12.3%]",
     screenClassName
   )}
 >
+  {children}
+</div>
         {children}
       </div>
 
