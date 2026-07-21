@@ -48,7 +48,7 @@ export function HeroVisual() {
   fill
   priority
   draggable={false}
-  className="object-fill"
+  className="object-cover object-left-top"
 />
       </DeviceFrame>
     </div>
