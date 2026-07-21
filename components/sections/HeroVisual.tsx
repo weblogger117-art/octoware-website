@@ -49,7 +49,7 @@ export function HeroVisual() {
   height={1199}
   priority
   draggable={false}
-  className="block w-[70%] h-auto max-w-none"
+  className="block w-[85%] h-auto max-w-none"
 />
       </DeviceFrame>
     </div>
