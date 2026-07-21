@@ -6,8 +6,21 @@ import { HeroVisual } from "./HeroVisual";
 export function Hero() {
   return (
     <Section
-      className="overflow-hidden py-24 lg:py-32"
-      containerClassName="grid items-center gap-20 lg:grid-cols-[0.9fr_1.1fr]"
+      className="
+        overflow-hidden
+        bg-gradient-to-br
+        from-white
+        via-white
+        to-[#eef6fc]
+        py-24
+        lg:py-32
+      "
+      containerClassName="
+        grid
+        items-center
+        gap-20
+        lg:grid-cols-[0.9fr_1.1fr]
+      "
     >
       <HeroContent />
       <HeroVisual />
