@@ -8,7 +8,7 @@ export function HeroVisual() {
       className="
         pointer-events-none
         absolute
-        right-[-4rem]
+        right-[-8rem]
         top-1/2
         hidden
         -translate-y-1/2
@@ -37,6 +37,7 @@ export function HeroVisual() {
   className="
     relative
     z-10
+    translate-y-6
     w-[820px]
     xl:w-[960px]
   "
