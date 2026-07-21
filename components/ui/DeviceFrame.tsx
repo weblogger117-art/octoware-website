@@ -23,12 +23,15 @@ export function DeviceFrame({
 >
       {/* Bildschirm */}
       <div
-        className={cn(
-          "absolute overflow-hidden rounded-[8px]",
-          "left-[4.85%] top-[5.15%] w-[90.35%]",
-          screenClassName
-        )}
-      >
+  className={cn(
+    "absolute overflow-hidden",
+    "left-[4.9%]",
+    "right-[5.0%]",
+    "top-[5.1%]",
+    "bottom-[11.2%]",
+    screenClassName
+  )}
+>
         {children}
       </div>
 
