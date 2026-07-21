@@ -1,29 +1,22 @@
-import { Laptop } from "@/components/ui";
+import Image from "next/image";
+
+import { DeviceFrame } from "@/components/ui";
 
 export function HeroVisual() {
   return (
     <div className="flex justify-center lg:justify-end">
-      <Laptop>
+      <DeviceFrame>
 
-        <div className="aspect-[16/10] bg-gradient-to-br from-slate-50 to-slate-100 p-8">
+        <Image
+          src="/images/screens/OctowareNET_Dashboard.png"
+          alt="Dashboard von OctoWare®NET"
+          width={1600}
+          height={1000}
+          priority
+          className="h-auto w-full"
+        />
 
-          <div className="space-y-6">
-
-            <div className="h-8 w-48 rounded-lg bg-slate-200" />
-
-            <div className="grid grid-cols-3 gap-4">
-              <div className="h-24 rounded-xl bg-white shadow-sm" />
-              <div className="h-24 rounded-xl bg-white shadow-sm" />
-              <div className="h-24 rounded-xl bg-white shadow-sm" />
-            </div>
-
-            <div className="h-56 rounded-2xl bg-white shadow-sm" />
-
-          </div>
-
-        </div>
-
-      </Laptop>
+      </DeviceFrame>
     </div>
   );
 }
