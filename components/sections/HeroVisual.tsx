@@ -49,7 +49,15 @@ export function HeroVisual() {
           height={1000}
           priority
           draggable={false}
-          className="h-auto w-full contrast-105 brightness-[0.98]"
+          <Image
+  src="/images/screens/OctowareNET_Dashboard.png"
+  alt="Dashboard von OctoWare®NET"
+  width={1600}
+  height={1000}
+  priority
+  draggable={false}
+  className="h-full w-full object-cover object-top"
+/>
         />
       </DeviceFrame>
     </div>
