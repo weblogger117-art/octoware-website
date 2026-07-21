@@ -34,13 +34,13 @@ export function HeroVisual() {
       />
 
       <DeviceFrame
-        className="
-          relative
-          z-10
-          w-[900px]
-          xl:w-[1050px]
-        "
-      >
+  className="
+    relative
+    z-10
+    w-[820px]
+    xl:w-[960px]
+  "
+>
         <Image
           src="/images/screens/OctowareNET_Dashboard.png"
           alt="Dashboard von OctoWare®NET"
