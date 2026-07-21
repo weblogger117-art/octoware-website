@@ -6,37 +6,40 @@ import { cn } from "@/lib/utils";
 type DeviceFrameProps = {
   children: ReactNode;
   className?: string;
+  screenClassName?: string;
 };
 
 export function DeviceFrame({
   children,
   className,
+  screenClassName,
 }: DeviceFrameProps) {
   return (
     <div
-  className={cn(
-    "absolute overflow-hidden",
-    "left-[4.9%] top-[5.3%] w-[90.2%]",
-    screenClassName
-  )}
->
+      className={cn(
+        "relative mx-auto w-full max-w-[820px]",
+        className
+      )}
+    >
       {/* Bildschirm */}
       <div
-        type DeviceFrameProps = {
-  children: ReactNode;
-  className?: string;
-  screenClassName?: string;
-};
+        className={cn(
+          "absolute overflow-hidden rounded-[8px]",
+          "left-[4.85%] top-[5.15%] w-[90.35%]",
+          screenClassName
+        )}
+      >
         {children}
       </div>
 
-      {/* Laptop */}
+      {/* Laptop-Rahmen */}
       <Image
-        src="/images/devices/Laptop_Frame.png"
+        src="/images/devices/Laptop_frame.png"
         alt=""
         width={1800}
         height={1120}
         priority
+        draggable={false}
         className="relative z-10 h-auto w-full select-none"
       />
     </div>
