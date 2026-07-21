@@ -6,7 +6,7 @@ import { HeroVisual } from "./HeroVisual";
 export function Hero() {
   return (
     <Section
-      className="overflow-hidden"
+      className="overflow-hidden py-24 lg:py-32"
       containerClassName="grid items-center gap-20 lg:grid-cols-2"
     >
       <HeroContent />
