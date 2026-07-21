@@ -5,25 +5,11 @@ import { HeroVisual } from "./HeroVisual";
 
 export function Hero() {
   return (
-    <Section
-      className="
-        relative
-        overflow-hidden
-        bg-gradient-to-br
-        from-white
-        via-white
-        to-[#eef6fc]
-        py-24
-        lg:py-36
-      "
-    >
-      {/* Linke Seite */}
-      <div className="relative z-20 max-w-[620px]">
+    <Section ...>
+    <div className="relative min-h-[760px]">
         <HeroContent />
-      </div>
-
-      {/* Rechte Seite */}
-      <HeroVisual />
-    </Section>
+        <HeroVisual />
+    </div>
+</Section>
   );
 }
