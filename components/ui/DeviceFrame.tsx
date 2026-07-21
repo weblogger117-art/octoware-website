@@ -23,17 +23,17 @@ export function DeviceFrame({
     >
       {/* Bildschirm */}
       <div
-        className={cn(
-          "absolute overflow-hidden",
-          "left-[6.0%]",
-          "right-[6.0%]",
-          "top-[5.9%]",
-          "bottom-[12.3%]",
-          screenClassName
-        )}
-      >
-        {children}
-      </div>
+  className={cn(
+    "absolute overflow-hidden",
+    "left-[3.7%]",
+    "right-[2.6%]",
+    "top-[5.5%]",
+    "bottom-[9.5%]",
+    screenClassName
+  )}
+>
+  {children}
+</div>
 
       {/* Laptop-Rahmen */}
       <Image
