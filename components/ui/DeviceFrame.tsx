@@ -35,7 +35,7 @@ export function DeviceFrame({
 
       {/* Laptop */}
       <Image
-        src="/images/devices/Laptop_Frame.png"
+        src="/public/images/devices/Laptop_Frame.png"
         alt=""
         width={1800}
         height={1120}
