@@ -7,22 +7,22 @@ export function Hero() {
   return (
     <Section
       className="
-overflow-visible
-bg-gradient-to-br
-from-white
-via-white
-to-[#eef6fc]
-py-24
-lg:py-32
-"
-      containerClassName="
-grid
-items-center
-gap-16
-lg:grid-cols-[0.82fr_1.18fr]
-"
+        relative
+        overflow-hidden
+        bg-gradient-to-br
+        from-white
+        via-white
+        to-[#eef6fc]
+        py-24
+        lg:py-36
+      "
     >
-      <HeroContent />
+      {/* Linke Seite */}
+      <div className="relative z-20 max-w-[620px]">
+        <HeroContent />
+      </div>
+
+      {/* Rechte Seite */}
       <HeroVisual />
     </Section>
   );
