@@ -1,5 +1,4 @@
-import { NavItem } from "./NavItem";
-
+import { NavItem } from "@/components/layout/NavItem";
 export function Navigation() {
   return (
     <nav className="hidden items-center gap-10 lg:flex">
