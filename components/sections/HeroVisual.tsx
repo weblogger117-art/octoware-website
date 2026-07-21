@@ -24,7 +24,7 @@ export function HeroVisual() {
         "
       />
 
-      <DeviceFrame className="relative z-10 max-w-[1040px]
+      <DeviceFrame className="relative z-10 max-w-[1080px]
     translate-y-16">
 
         <Image
