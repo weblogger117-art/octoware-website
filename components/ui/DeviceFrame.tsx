@@ -24,7 +24,7 @@ export function DeviceFrame({
       {/* Bildschirm */}
       <div
   className={cn(
-    "absolute overflow-hidden",
+    "absolute overflow-hidden flex justify-center items-start",
     "left-[3.8%]",
     "right-[3.1%]",
     "top-[5.6%]",
