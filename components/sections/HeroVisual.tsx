@@ -2,7 +2,7 @@ import { Laptop } from "@/components/ui";
 
 export function HeroVisual() {
   return (
-    <div className="flex justify-center lg:justify-end">
+    <div className="flex justify-center lg:justify-end lg:rotate-[-2deg]">
       <Laptop>
 
         <div className="aspect-[16/10] bg-gradient-to-br from-slate-50 to-slate-100 p-8">
