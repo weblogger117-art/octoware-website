@@ -34,14 +34,14 @@ export function HeroVisual() {
       />
 
       <DeviceFrame
-  className="
-    relative
-    z-10
-    translate-y-10
-    w-[820px]
-    xl:w-[960px]
-  "
->
+        className="
+          relative
+          z-10
+          translate-y-10
+          w-[820px]
+          xl:w-[960px]
+        "
+      >
         <Image
           src="/images/screens/OctowareNET_Dashboard.png"
           alt="Dashboard von OctoWare®NET"
@@ -49,15 +49,7 @@ export function HeroVisual() {
           height={1000}
           priority
           draggable={false}
-          <Image
-  src="/images/screens/OctowareNET_Dashboard.png"
-  alt="Dashboard von OctoWare®NET"
-  width={1600}
-  height={1000}
-  priority
-  draggable={false}
-  className="h-full w-full object-cover object-top"
-/>
+          className="h-full w-full object-cover object-top"
         />
       </DeviceFrame>
     </div>
