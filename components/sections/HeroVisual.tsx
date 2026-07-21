@@ -43,7 +43,7 @@ export function HeroVisual() {
         "
       >
         <Image
-  src="/images/screens/OctoWareNET_Dashboard.png"
+  src="/images/screens/OctowareNET_Dashboard.png"
   alt="Dashboard von OctoWare®NET"
   fill
   priority
