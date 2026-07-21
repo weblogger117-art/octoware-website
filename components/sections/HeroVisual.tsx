@@ -1,16 +1,10 @@
+import { Laptop } from "@/components/ui";
+
 export function HeroVisual() {
   return (
     <div className="flex justify-center lg:justify-end">
-      <div className="w-full max-w-3xl overflow-hidden rounded-3xl bg-white shadow-2xl ring-1 ring-black/5">
+      <Laptop>
 
-        {/* Browserleiste */}
-        <div className="flex items-center gap-2 border-b border-slate-200 bg-slate-50 px-5 py-4">
-          <div className="h-3 w-3 rounded-full bg-red-400" />
-          <div className="h-3 w-3 rounded-full bg-yellow-400" />
-          <div className="h-3 w-3 rounded-full bg-green-400" />
-        </div>
-
-        {/* Dashboard */}
         <div className="aspect-[16/10] bg-gradient-to-br from-slate-50 to-slate-100 p-8">
 
           <div className="space-y-6">
@@ -29,7 +23,7 @@ export function HeroVisual() {
 
         </div>
 
-      </div>
+      </Laptop>
     </div>
   );
 }
