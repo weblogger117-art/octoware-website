@@ -24,12 +24,12 @@ export function HeroVisual() {
         "
       />
 
-      <DeviceFrame
+     <DeviceFrame
   className="
     relative
     z-10
-    max-w-[1080px]
-    translate-y-12
+    max-w-[1100px]
+    translate-y-10
   "
 >
 
