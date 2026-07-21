@@ -43,15 +43,17 @@ export function HeroVisual() {
         "
       >
         <Image
-  src="/images/screens/OctowareNET_Dashboard.png"
+  src="/images/screens/OctoWareNET_Dashboard.png"
   alt="Dashboard von OctoWare®NET"
-  fill
+  width={1919}
+  height={1199}
   priority
   draggable={false}
   className="
-    object-cover
-    object-left-top
-    translate-y-[-8px]
+    h-auto
+    w-full
+    max-w-none
+    translate-y-0
   "
 />
       </DeviceFrame>
