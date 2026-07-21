@@ -2,36 +2,44 @@ import { Container } from "@/components/ui/Container";
 import Link from "next/link";
 import Image from "next/image";
 
-import { Navigation } from "./Navigation";
+import { Navigation } from "@/components/layout/Navigation";
 
 export function Header() {
   return (
     <header className="fixed inset-x-0 top-6 z-50">
-    <Container>
-
+      <Container>
         <div
-            className="
-                flex
-                h-20
-                items-center
-                justify-between
-                rounded-xl
-                border
-                border-white/20
-                bg-white/10
-                backdrop-blur-2xl
-                shadow-[0_8px_24px_rgba(15,23,42,0.08)]
-                px-8
-            "
+          className="
+            flex
+            h-20
+            items-center
+            justify-between
+            rounded-xl
+            border
+            border-white/20
+            bg-white/10
+            backdrop-blur-2xl
+            shadow-[0_8px_24px_rgba(15,23,42,0.08)]
+            px-8
+          "
         >
+          <Link
+            href="/"
+            className="flex items-center transition-opacity duration-200 hover:opacity-90"
+          >
+            <Image
+              src="/images/branding/easy-soft-logo.png"
+              alt="easy-soft GmbH"
+              width={220}
+              height={52}
+              priority
+              className="h-11 w-auto"
+            />
+          </Link>
 
-            Logo
-
-            Navigation
-
+          <Navigation />
         </div>
-
-    </Container>
-</header>
+      </Container>
+    </header>
   );
 }
