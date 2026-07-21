@@ -16,11 +16,11 @@ export function DeviceFrame({
 }: DeviceFrameProps) {
   return (
     <div
-      className={cn(
-        "relative mx-auto w-full max-w-[820px]",
-        className
-      )}
-    >
+  className={cn(
+    "relative mx-auto w-full",
+    className
+  )}
+>
       {/* Bildschirm */}
       <div
         className={cn(
