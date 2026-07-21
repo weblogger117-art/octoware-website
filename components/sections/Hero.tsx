@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <Section
       className="
-        overflow-visible
+        overflow-x-hidden overflow-y-visible
         bg-gradient-to-br
         from-white
         via-white
