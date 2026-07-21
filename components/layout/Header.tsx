@@ -11,7 +11,7 @@ export function Header() {
         <div
           className="
             flex
-            h-20
+            h-[72px]
             items-center
             justify-between
             rounded-xl
@@ -20,7 +20,7 @@ export function Header() {
             bg-white/10
             backdrop-blur-2xl
             shadow-[0_8px_24px_rgba(15,23,42,0.08)]
-            px-8
+            px-10
           "
         >
           <Link
@@ -33,7 +33,7 @@ export function Header() {
               width={220}
               height={52}
               priority
-              className="h-11 w-auto"
+              className="h-12 w-auto"
             />
           </Link>
 
