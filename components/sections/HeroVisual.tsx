@@ -24,7 +24,8 @@ export function HeroVisual() {
         "
       />
 
-      <DeviceFrame className="relative z-10 max-w-[900px]">
+      <DeviceFrame className="relative z-10 max-w-[1040px]
+    translate-y-16">
 
         <Image
           src="/images/screens/OctowareNET_Dashboard.png"
