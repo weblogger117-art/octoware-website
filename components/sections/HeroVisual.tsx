@@ -8,7 +8,7 @@ export function HeroVisual() {
       className="
         pointer-events-none
         absolute
-        right-[-3rem]
+        right-[-1rem]
         top-1/2
         hidden
         -translate-y-1/2
