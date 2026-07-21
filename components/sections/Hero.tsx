@@ -19,7 +19,7 @@ export function Hero() {
         grid
         items-center
         gap-20
-        lg:grid-cols-[0.9fr_1.1fr]
+        lg:grid-cols-[0.85fr_1.15fr]
       "
     >
       <HeroContent />
