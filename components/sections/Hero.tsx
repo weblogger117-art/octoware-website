@@ -7,14 +7,15 @@ export function Hero() {
   return (
     <Section
       className="
-        overflow-x-hidden overflow-y-visible
-        bg-gradient-to-br
-        from-white
-        via-white
-        to-[#eef6fc]
-        py-24
-        lg:py-32
-      "
+overflow-x-hidden
+overflow-y-visible
+bg-gradient-to-br
+from-white
+via-white
+to-[#eef6fc]
+py-24
+lg:py-32
+"
       containerClassName="
         grid
         items-center
