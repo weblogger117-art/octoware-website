@@ -42,19 +42,14 @@ export function HeroVisual() {
           xl:w-[960px]
         "
       >
-        <Image
-  src="/images/screens/OctoWareNET_Dashboard.png"
+       <Image
+  src="/images/screens/OctowareNET_Dashboard.png"
   alt="Dashboard von OctoWare®NET"
   width={1919}
   height={1199}
   priority
   draggable={false}
-  className="
-    h-auto
-    w-full
-    max-w-none
-    translate-y-0
-  "
+  className="block w-full h-auto max-w-none"
 />
       </DeviceFrame>
     </div>
