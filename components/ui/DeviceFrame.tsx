@@ -16,24 +16,22 @@ export function DeviceFrame({
 }: DeviceFrameProps) {
   return (
     <div
-  className={cn(
-    "relative mx-auto w-full",
-    className
-  )}
->
+      className={cn(
+        "relative mx-auto w-full",
+        className
+      )}
+    >
       {/* Bildschirm */}
       <div
-  className={cn(
-    "absolute overflow-hidden",
-    "left-[6.0%]",
-    "right-[6.0%]",
-    "top-[5.9%]",
-    "bottom-[12.3%]",
-    screenClassName
-  )}
->
-  {children}
-</div>
+        className={cn(
+          "absolute overflow-hidden",
+          "left-[6.0%]",
+          "right-[6.0%]",
+          "top-[5.9%]",
+          "bottom-[12.3%]",
+          screenClassName
+        )}
+      >
         {children}
       </div>
 
