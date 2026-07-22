@@ -26,6 +26,22 @@ export function NetworkBackground() {
         <line x1="520" y1="200" x2="480" y2="360" />
         <line x1="760" y1="180" x2="720" y2="300" />
       </g>
+      <g>
+  {/* Große Knoten */}
+  <circle cx="120" cy="120" r="7" fill="#146ab1" />
+  <circle cx="520" cy="200" r="7" fill="#146ab1" />
+  <circle cx="980" cy="380" r="7" fill="#146ab1" />
+
+  {/* Mittlere Knoten */}
+  <circle cx="320" cy="120" r="5" fill="#146ab1" />
+  <circle cx="760" cy="180" r="5" fill="#146ab1" />
+  <circle cx="220" cy="360" r="5" fill="#146ab1" />
+  <circle cx="480" cy="360" r="5" fill="#146ab1" />
+  <circle cx="720" cy="300" r="5" fill="#146ab1" />
+
+  {/* Akzentknoten */}
+  <circle cx="980" cy="260" r="5" fill="#adce00" />
+</g>
 
       {/* Knoten kommen im nächsten Schritt */}
     </svg>
