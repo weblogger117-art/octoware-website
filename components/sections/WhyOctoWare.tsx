@@ -2,7 +2,7 @@ import { Section } from "@/components/ui";
 
 export function WhyOctoWare() {
   return (
-    <Section className="pt-10 lg:pt-16">
+    <Section className="pt-2 lg:pt-8">
       <div className="mx-auto max-w-3xl text-center">
         <span
           className="
