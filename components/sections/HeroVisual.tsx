@@ -1,3 +1,4 @@
+import { NetworkBackground } from "@/components/graphics/NetworkBackground";
 import Image from "next/image";
 
 import { DeviceFrame } from "@/components/ui";
@@ -15,6 +16,21 @@ export function HeroVisual() {
         lg:block
       "
     >
+       {/* Netzwerkgrafik */}
+  <div
+    className="
+      absolute
+      left-1/2
+      top-1/2
+      -translate-x-1/2
+      -translate-y-1/2
+      w-[1100px]
+      opacity-40
+      -z-10
+    "
+  >
+    <NetworkBackground />
+  </div>
       {/* Licht */}
       <div
         aria-hidden
