@@ -16,7 +16,7 @@ export function Highlights() {
         className="
           flex
           justify-center
-          gap-8
+          gap-10
           flex-wrap
         "
       >
