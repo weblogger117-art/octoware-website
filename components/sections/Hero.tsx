@@ -8,10 +8,13 @@ export function Hero() {
     <Section
       className="
         relative
-        overflow-visible
+        overflow-hidden
         bg-white
-        py-24
-        lg:py-36
+        pt-24
+pb-32
+
+lg:pt-36
+lg:pb-44
       "
     >
       {/* Hero-Hintergrund */}
