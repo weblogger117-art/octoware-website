@@ -27,7 +27,7 @@ export function StatCard({
 shadow-md
         px-6
         py-5
-        w-[230px]
+        w-[270px]
         transition-all
         duration-300
         hover:-translate-y-1
