@@ -22,13 +22,28 @@ useEffect(() => {
   return () => window.removeEventListener("scroll", handleScroll);
 }, []);
   return (
-    <header className="fixed inset-x-0 top-6 z-50">
+    <header
+  className={cn(
+    `
+      fixed
+      inset-x-0
+      z-50
+
+      transition-all
+      duration-300
+      ease-out
+    `,
+    scrolled ? "top-4" : "top-6"
+  )}
+>
       <Container>
        <div
   className={cn(
     `
       flex
-      h-[72px]
+      transition-all
+duration-300
+ease-out
       items-center
       justify-between
 
@@ -44,12 +59,15 @@ useEffect(() => {
     `,
     scrolled
       ? `
+      h-[68px] scale-[0.985]
           border-slate-200/80
           bg-white/90
           backdrop-blur-md
           shadow-[0_16px_50px_rgba(15,23,42,0.10)]
         `
       : `
+      h-[72px]
+    scale-100
           border-white/30
           bg-white/65
           backdrop-blur-sm
