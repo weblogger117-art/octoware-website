@@ -1,16 +1,17 @@
+import { LucideIcon } from "lucide-react";
 import { ReactNode } from "react";
 
 import { cn } from "@/lib/utils";
 
 type StatCardProps = {
-  icon: ReactNode;
+  icon: LucideIcon;
   value: string;
   label: string;
   className?: string;
 };
 
 export function StatCard({
-  icon,
+  icon: Icon,
   value,
   label,
   className,
@@ -44,22 +45,25 @@ export function StatCard({
       )}
     >
       <div
-        className="
-          flex
-          h-14
-          w-14
-          shrink-0
-          items-center
-          justify-center
+  className="
+    flex
+    h-14
+    w-14
+    shrink-0
+    items-center
+    justify-center
 
-          rounded-2xl
+    rounded-2xl
 
-          bg-[#146ab1]/8
-          text-[#146ab1]
-        "
-      >
-        {icon}
-      </div>
+    bg-[#146ab1]/8
+    text-[#146ab1]
+  "
+>
+  <Icon
+    className="h-7 w-7"
+    strokeWidth={1.8}
+  />
+</div>
 
       <div>
         <h3 className="text-2xl font-semibold tracking-tight text-slate-900">
