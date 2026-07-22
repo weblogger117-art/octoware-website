@@ -7,7 +7,7 @@ export function Highlights() {
     <Section
       className="
         relative
-        -mt-20
+        -mt-28
         z-30
         pt-0
       "
