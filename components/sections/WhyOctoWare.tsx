@@ -1,4 +1,9 @@
-import { Building2 } from "lucide-react";
+import {
+  Blocks,
+  Building2,
+  Rocket,
+  Workflow,
+} from "lucide-react";
 import { FeatureCard } from "@/components/ui";
 import { Section } from "@/components/ui";
 
@@ -56,11 +61,39 @@ export function WhyOctoWare() {
           Fachverfahren, intelligenten Schnittstellen und einer - mit OctoWare®NET - 
           zukunftssicheren Webplattform.
         </p>
-        <div className="mx-auto mt-20 max-w-md">
+        <div
+  className="
+    mx-auto
+    mt-20
+    grid
+    max-w-6xl
+    grid-cols-1
+    gap-8
+    lg:grid-cols-2
+  "
+>
   <FeatureCard
     icon={Building2}
-    title="Für den Öffentlichen Gesundheitsdienst entwickelt"
-    description="Praxisnahe Fachverfahren, die speziell für Gesundheitsämter entwickelt wurden – modern, effizient und passgenau für den täglichen Einsatz."
+    title="Für den ÖGD entwickelt"
+    description="Praxisnahe Fachverfahren, die speziell für Gesundheitsämter und den Öffentlichen Gesundheitsdienst entwickelt wurden."
+  />
+
+  <FeatureCard
+    icon={Blocks}
+    title="Moderne Webplattform"
+    description="Browserbasiert, plattformunabhängig und flexibel im eigenen Rechenzentrum oder als Hosting-Lösung einsetzbar."
+  />
+
+  <FeatureCard
+    icon={Workflow}
+    title="Intelligente Schnittstellen"
+    description="Nahtlose Integration mit Fachverfahren, Registern und externen Systemen für effiziente digitale Prozesse."
+  />
+
+  <FeatureCard
+    icon={Rocket}
+    title="Zukunftssichere Architektur"
+    description="Modular aufgebaut und kontinuierlich weiterentwickelt – für die Anforderungen von heute und morgen."
   />
 </div>
       </div>
