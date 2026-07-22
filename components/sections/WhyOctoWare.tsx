@@ -1,3 +1,5 @@
+import { Building2 } from "lucide-react";
+import { FeatureCard } from "@/components/ui";
 import { Section } from "@/components/ui";
 
 export function WhyOctoWare() {
@@ -54,6 +56,13 @@ export function WhyOctoWare() {
           Fachverfahren, intelligenten Schnittstellen und einer
           zukunftssicheren Webplattform.
         </p>
+        <div className="mx-auto mt-20 max-w-md">
+  <FeatureCard
+    icon={Building2}
+    title="Für den Öffentlichen Gesundheitsdienst entwickelt"
+    description="Praxisnahe Fachverfahren, die speziell für Gesundheitsämter entwickelt wurden – modern, effizient und passgenau für den täglichen Einsatz."
+  />
+</div>
       </div>
     </Section>
   );
