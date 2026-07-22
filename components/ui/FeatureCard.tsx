@@ -22,12 +22,14 @@ export function FeatureCard({
         group
 
         rounded-3xl
+        w-full
         border
         border-slate-200
 
         bg-white
 
-        p-8
+        px-8
+py-7
 
         shadow-[0_12px_40px_rgba(15,23,42,0.05)]
 
@@ -41,52 +43,54 @@ export function FeatureCard({
         className
       )}
     >
-      <div
-        className="
-          mb-8
+      <div className="flex items-center gap-5">
+  <div
+    className="
+      flex
+      h-14
+      w-14
+      shrink-0
+      items-center
+      justify-center
 
-          flex
-          h-16
-          w-16
-          items-center
-          justify-center
+      rounded-xl
 
-          rounded-2xl
+      bg-[#146ab1]/8
 
-          bg-[#146ab1]/8
+      text-[#146ab1]
 
-          text-[#146ab1]
+      transition-all
+      duration-300
 
-          transition-colors
-          duration-300
+      group-hover:bg-[#146ab1]
+      group-hover:text-white
+    "
+  >
+    <Icon
+      className="h-7 w-7"
+      strokeWidth={1.8}
+    />
+  </div>
 
-          group-hover:bg-[#146ab1]
-          group-hover:text-white
-        "
-      >
-        <Icon
-          className="h-8 w-8"
-          strokeWidth={1.8}
-        />
-      </div>
+  <h3
+    className="
+      text-2xl
+      font-semibold
+      leading-tight
+      tracking-tight
 
-      <h3
-        className="
-          text-2xl
-          font-semibold
-          tracking-tight
-
-          text-slate-900
-        "
-      >
-        {title}
-      </h3>
+      text-slate-900
+    "
+  >
+    {title}
+  </h3>
+</div>
 
       <p
         className="
-          mt-4
+          mt-6
 
-          leading-8
+          leading-7
 
           text-slate-600
         "
@@ -94,25 +98,6 @@ export function FeatureCard({
         {description}
       </p>
 
-      <div
-        className="
-          mt-8
-
-          inline-flex
-
-          items-center
-
-          gap-2
-
-          text-sm
-          font-semibold
-
-          text-[#146ab1]
-        "
-      >
-        Mehr erfahren →
-
-      </div>
     </div>
   );
 }
