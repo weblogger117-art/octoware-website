@@ -22,9 +22,9 @@ export function StatCard({
         rounded-2xl
         border
         border-white/40
-        bg-white/70
-        backdrop-blur-xl
-        shadow-[0_20px_60px_rgba(20,106,177,0.15)]
+        bg-white
+        border-slate-200
+shadow-md
         px-6
         py-5
         w-[230px]
