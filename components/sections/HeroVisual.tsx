@@ -29,7 +29,7 @@ export function HeroVisual() {
     top-1/2
     w-[1550px]
     max-w-none
-    -translate-x-[70%]
+    -translate-x-[50%]
     -translate-y-1/2
     opacity-90
     -z-10
