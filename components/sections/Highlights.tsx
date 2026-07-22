@@ -6,7 +6,7 @@ export function Highlights() {
     <Section
       className="
         relative
-        -mt-20
+        -mt-32
         z-30
         pt-0
       "
@@ -17,7 +17,7 @@ export function Highlights() {
           border
           border-slate-200/70
           bg-white/95
-          p-8
+          py-5 px-8
           shadow-[0_25px_80px_rgba(15,23,42,0.08)]
           backdrop-blur-xl
         "
