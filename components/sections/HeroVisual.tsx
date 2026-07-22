@@ -12,7 +12,6 @@ export function HeroVisual() {
         top-1/2
         hidden
         -translate-y-1/2
-      pb-[220px]
         lg:block
       "
     >
