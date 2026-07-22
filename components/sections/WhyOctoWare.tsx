@@ -66,7 +66,7 @@ export function WhyOctoWare() {
     mx-auto
     mt-20
     grid
-    max-w-6xl
+    max-w-7xl
     grid-cols-1
     gap-8
     lg:grid-cols-2
