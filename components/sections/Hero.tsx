@@ -17,7 +17,14 @@ export function Hero() {
         lg:py-36
       "
     >
-      {/* Sanfter Übergang zur nächsten Section */}
+      {/* Linke Seite */}
+      <div className="relative z-20 max-w-[620px]">
+        <HeroContent />
+      </div>
+
+      {/* Rechte Seite */}
+      <HeroVisual />
+       {/* Sanfter Übergang zur nächsten Section */}
 <div
   aria-hidden
   className="
@@ -32,13 +39,6 @@ export function Hero() {
     z-10
   "
 />
-      {/* Linke Seite */}
-      <div className="relative z-20 max-w-[620px]">
-        <HeroContent />
-      </div>
-
-      {/* Rechte Seite */}
-      <HeroVisual />
     </Section>
   );
 }
