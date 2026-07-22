@@ -1,6 +1,7 @@
 import { Section } from "@/components/ui";
 import { StatCard } from "@/components/ui/StatCard";
 
+
 export function Highlights() {
   return (
     <Section
