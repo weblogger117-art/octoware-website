@@ -43,13 +43,13 @@ export function HeroVisual() {
           absolute
           left-1/2
           top-1/2
-          h-[760px]
-          w-[760px]
+          h-[860px]
+          w-[860px]
           -translate-x-1/2
           -translate-y-1/2
           rounded-full
           bg-[#c5d7ed]
-          opacity-30
+          opacity-35
           blur-[150px]
         "
       />
@@ -63,6 +63,28 @@ export function HeroVisual() {
           xl:w-[960px]
         "
       >
+        <Image
+  src="/images/devices/tablet.png"
+  alt="Mobile Nutzung von OctoWare®NET"
+  width={900}
+  height={600}
+  priority
+  draggable={false}
+  className="
+    absolute
+    bottom-0
+    right-[-40px]
+
+    z-20
+
+    w-[340px]
+    xl:w-[400px]
+
+    drop-shadow-[0_25px_45px_rgba(15,23,42,0.22)]
+
+    select-none
+  "
+/>
        <Image
   src="/images/screens/OctowareNET_Dashboard.png"
   alt="Dashboard von OctoWare®NET"
