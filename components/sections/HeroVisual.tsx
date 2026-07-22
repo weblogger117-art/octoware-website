@@ -12,6 +12,7 @@ export function HeroVisual() {
         top-1/2
         hidden
         -translate-y-1/2
+      pb-[220px]
         lg:block
       "
     >
@@ -72,15 +73,13 @@ export function HeroVisual() {
   draggable={false}
   className="
     absolute
-    bottom-[-40px]
+    bottom-[-35px]
     right-[40px]
 
     z-20
 
     w-[340px]
     xl:w-[400px]
-
-    drop-shadow-[0_35px_65px_rgba(15,23,42,0.28)]
 
     select-none
   "
