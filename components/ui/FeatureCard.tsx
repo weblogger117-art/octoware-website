@@ -28,8 +28,8 @@ export function FeatureCard({
 
         bg-white
 
-        px-8
-py-7
+        px-10
+py-10
 
         shadow-[0_12px_40px_rgba(15,23,42,0.05)]
 
@@ -38,12 +38,12 @@ py-7
 
         hover:-translate-y-1
         hover:border-[#146ab1]/20
-        hover:shadow-[0_22px_60px_rgba(20,106,177,0.12)]
+        hover:shadow-[0_30px_70px_rgba(20,106,177,0.18)]
         `,
         className
       )}
     >
-      <div className="flex items-center gap-5">
+      <div className="flex items-start gap-5">
   <div
     className="
       flex
@@ -73,15 +73,20 @@ py-7
   </div>
 
   <h3
-    className="
-      text-2xl
-      font-semibold
-      leading-tight
-      tracking-tight
+  className="
+    text-[28px]
+    font-semibold
+    leading-tight
+    tracking-tight
 
-      text-slate-900
-    "
-  >
+    text-slate-900
+
+    transition-colors
+    duration-300
+
+    group-hover:text-[#146ab1]
+  "
+>
     {title}
   </h3>
 </div>
@@ -89,6 +94,8 @@ py-7
       <p
         className="
           mt-6
+
+        text-left
 
           leading-7
 
