@@ -1,4 +1,3 @@
-import { NetworkBackground } from "@/components/graphics/NetworkBackground";
 import Image from "next/image";
 
 import { DeviceFrame } from "@/components/ui";
@@ -17,20 +16,26 @@ export function HeroVisual() {
       "
     >
        {/* Netzwerkgrafik */}
-  <div
-    className="
-absolute
-left-[42%]
-top-[52%]
--translate-x-1/2
--translate-y-1/2
-w-[1550px]
-opacity-35
--z-10
-"
-  >
-    <NetworkBackground />
-  </div>
+ <Image
+  src="/images/graphics/network-background.svg"
+  alt=""
+  aria-hidden="true"
+  width={1800}
+  height={1100}
+  draggable={false}
+  className="
+    absolute
+    left-1/2
+    top-1/2
+    w-[1550px]
+    max-w-none
+    -translate-x-[42%]
+    -translate-y-1/2
+    opacity-90
+    -z-10
+    select-none
+  "
+/>
       {/* Licht */}
       <div
         aria-hidden
@@ -38,14 +43,14 @@ opacity-35
           absolute
           left-1/2
           top-1/2
-          h-[900px]
-          w-[900px]
+          h-[760px]
+          w-[760px]
           -translate-x-1/2
           -translate-y-1/2
           rounded-full
           bg-[#c5d7ed]
-          opacity-35
-          blur-[180px]
+          opacity-30
+          blur-[150px]
         "
       />
 
