@@ -72,15 +72,13 @@ export function HeroVisual() {
   draggable={false}
   className="
     absolute
-    bottom-[-20px]
+    bottom-[-40px]
     right-[40px]
 
     z-20
 
     w-[340px]
     xl:w-[400px]
-
-           rotate-[-7deg]
 
     drop-shadow-[0_35px_65px_rgba(15,23,42,0.28)]
 
