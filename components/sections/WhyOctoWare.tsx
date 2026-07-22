@@ -21,7 +21,7 @@ export function WhyOctoWare() {
             text-[#146ab1]
           "
         >
-          Warum OctoWare®NET?
+          Warum OctoWare®Gesundheit?
         </span>
 
         <h2
