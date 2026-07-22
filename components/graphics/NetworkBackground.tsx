@@ -8,24 +8,14 @@ export function NetworkBackground() {
       className="w-full h-auto"
     >
       <g
-        stroke="#146ab1"
-        strokeOpacity="0.18"
-        strokeWidth="2"
-        strokeLinecap="round"
-      >
-        <line x1="120" y1="120" x2="320" y2="120" />
-        <line x1="320" y1="120" x2="520" y2="200" />
-        <line x1="520" y1="200" x2="760" y2="180" />
-        <line x1="760" y1="180" x2="980" y2="260" />
-
-        <line x1="220" y1="360" x2="480" y2="360" />
-        <line x1="480" y1="360" x2="720" y2="300" />
-        <line x1="720" y1="300" x2="980" y2="380" />
-
-        <line x1="320" y1="120" x2="220" y2="360" />
-        <line x1="520" y1="200" x2="480" y2="360" />
-        <line x1="760" y1="180" x2="720" y2="300" />
-      </g>
+  stroke="#146ab1"
+  strokeOpacity="0.12"
+  strokeWidth="2"
+  fill="none"
+  strokeLinecap="round"
+>
+  <path d="M120 260 C260 120 520 120 700 240" />
+</g>
       <g>
   {/* Große Knoten */}
   <circle cx="120" cy="120" r="7" fill="#146ab1" />
