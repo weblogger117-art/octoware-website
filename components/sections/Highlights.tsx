@@ -4,32 +4,21 @@ import { StatCard } from "@/components/ui/StatCard";
 export function Highlights() {
   return (
     <Section
-      className="
-        relative
-        -mt-25
-        z-30
-        pt-0
-      "
-    >
-      <div
-        className="
-          rounded-[32px]
-          border
-          border-slate-200/70
-          bg-white/95
-          py-6 px-8
-          shadow-[0_25px_80px_rgba(15,23,42,0.08)]
-          backdrop-blur-xl
-        "
-      >
-        <div
   className="
-    flex
-    flex-wrap
-    justify-center
-    gap-8
+    relative
+    -mt-20
+    z-30
+    pt-0
   "
 >
+  <div
+    className="
+      flex
+      justify-center
+      gap-8
+      flex-wrap
+    "
+  >
   <StatCard
     icon={
       <div className="h-8 w-8 rounded-xl bg-[#adce00]/15 ring-1 ring-[#adce00]/30" />
