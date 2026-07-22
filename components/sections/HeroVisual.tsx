@@ -5,16 +5,17 @@ import { DeviceFrame } from "@/components/ui";
 export function HeroVisual() {
   return (
     <div
-      className="
-        pointer-events-none
-        absolute
-        right-[4rem]
-        top-1/2
-        hidden
-        -translate-y-1/2
-        lg:block
-      "
-    >
+  className="
+    pointer-events-none
+    absolute
+    right-[4rem]
+    top-1/2
+    z-20
+    hidden
+    -translate-y-1/2
+    lg:block
+  "
+>
        {/* Netzwerkgrafik */}
  <Image
   src="/images/graphics/network-background.svg"
