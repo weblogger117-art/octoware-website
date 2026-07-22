@@ -9,7 +9,27 @@ import { Section } from "@/components/ui";
 
 export function WhyOctoWare() {
   return (
-    <Section className="pt-2 lg:pt-8">
+    <Section
+  className="
+    relative
+    overflow-hidden
+
+    pt-24
+    pb-28
+
+    bg-white
+  "
+>
+      <div
+  aria-hidden
+  className="
+    absolute
+    inset-0
+    -z-10
+
+    bg-[radial-gradient(circle_at_20%_25%,rgba(197,215,237,0.45)_0%,transparent_38%),radial-gradient(circle_at_85%_75%,rgba(20,106,177,0.08)_0%,transparent_40%),linear-gradient(to_bottom,#ffffff_0%,#f8fbfe_55%,#ffffff_100%)]
+  "
+/>
       <div className="mx-auto max-w-3xl text-center">
         <span
           className="
