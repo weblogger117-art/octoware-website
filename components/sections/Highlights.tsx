@@ -17,7 +17,7 @@ export function Highlights() {
           border
           border-slate-200/70
           bg-white/95
-          py-5 px-8
+          py-6 px-8
           shadow-[0_25px_80px_rgba(15,23,42,0.08)]
           backdrop-blur-xl
         "
