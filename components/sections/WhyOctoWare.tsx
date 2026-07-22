@@ -52,7 +52,7 @@ export function WhyOctoWare() {
           "
         >
           Von der Sachbearbeitung bis zur digitalen Zusammenarbeit –
-          OctoWare®NET unterstützt Gesundheitsämter mit modernen
+          OctoWare®Gesundheit unterstützt Gesundheitsämter mit modernen
           Fachverfahren, intelligenten Schnittstellen und einer - mit OctoWare®NET - 
           zukunftssicheren Webplattform.
         </p>
