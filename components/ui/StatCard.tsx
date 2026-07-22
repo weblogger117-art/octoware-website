@@ -66,7 +66,7 @@ export function StatCard({
           {value}
         </h3>
 
-        <p className="mt-2 text-[15px] leading-7 text-slate-600">
+        <p className="mt-1 text-[15px] leading-6 text-slate-600">
           {label}
         </p>
       </div>
