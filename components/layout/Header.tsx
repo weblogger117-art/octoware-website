@@ -14,12 +14,12 @@ export function Header() {
             h-[72px]
             items-center
             justify-between
-            rounded-xl
+            rounded-2xl
             border
-            border-white/20
-            bg-white/10
-            backdrop-blur-2xl
-            shadow-[0_8px_24px_rgba(15,23,42,0.08)]
+            border-slate-200/80
+            bg-white/75
+            backdrop-blur-md
+            shadow-[0_12px_40px_rgba(15,23,42,0.08)]
             px-10
           "
         >
