@@ -26,22 +26,25 @@ export function Highlights() {
         "
       >
         <StatCard
-          icon={Building2}
-          value="Seit 1990"
-          label="Entwicklung von Fachsoftware für den Öffentlichen Gesundheitsdienst."
-        />
+  icon={Building2}
+  iconClassName="bg-[#adce00]/10 text-[#7FA000] border-[#adce00]/20"
+  value="Seit 1990"
+  label="Entwicklung von Fachsoftware für den Öffentlichen Gesundheitsdienst."
+/>
 
         <StatCard
-          icon={Globe}
-          value="Webbasiert"
-          label="Moderne Lösung für den Betrieb im Rechenzentrum oder in der Cloud."
-        />
+  icon={Globe}
+  iconClassName="bg-[#146ab1]/8 text-[#146ab1] border-[#146ab1]/15"
+  value="Webbasiert"
+  label="Moderner Betrieb im eigenen Rechenzentrum oder als zentrale Hosting-Lösung."
+/>
 
         <StatCard
-          icon={Blocks}
-          value="Modular"
-          label="Flexible Fachverfahren für sämtliche Bereiche des Öffentlichen Gesundheitsdienstes."
-        />
+  icon={Blocks}
+  iconClassName="bg-[#adce00]/10 text-[#7FA000] border-[#adce00]/20"
+  value="Modular"
+  label="Flexible Fachverfahren für sämtliche Bereiche des Öffentlichen Gesundheitsdienstes."
+/>
       </div>
     </Section>
   );
