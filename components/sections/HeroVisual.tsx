@@ -19,15 +19,15 @@ export function HeroVisual() {
        {/* Netzwerkgrafik */}
   <div
     className="
-      absolute
-      left-1/2
-      top-1/2
-      -translate-x-1/2
-      -translate-y-1/2
-      w-[1100px]
-      opacity-40
-      -z-10
-    "
+absolute
+left-[42%]
+top-[52%]
+-translate-x-1/2
+-translate-y-1/2
+w-[1550px]
+opacity-35
+-z-10
+"
   >
     <NetworkBackground />
   </div>
