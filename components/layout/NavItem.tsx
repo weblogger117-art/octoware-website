@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import type { ReactNode } from "react";
 
@@ -7,9 +9,12 @@ type NavItemProps = {
 };
 
 export function NavItem({ href, children }: NavItemProps) {
+  const pathname = usePathname();
+  const isActive = pathname === href;
   return (
    <Link
   href={href}
+     data-active={isActive}
   className="
     group
     relative
@@ -21,6 +26,7 @@ export function NavItem({ href, children }: NavItemProps) {
     transition-colors
     duration-300
     hover:text-[#146ab1]
+     data-[active=true]:text-[#146ab1]
   "
 >
   <span>{children}</span>
@@ -38,6 +44,7 @@ export function NavItem({ href, children }: NavItemProps) {
       transition-all
       duration-300
       group-hover:w-full
+    group-data-[active=true]:w-full
     "
   />
 </Link>
