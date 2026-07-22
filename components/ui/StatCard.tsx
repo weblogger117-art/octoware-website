@@ -73,7 +73,7 @@ export function StatCard({
 </div>
 
       <div>
-        <h3 className="text-2xl font-semibold tracking-tight text-[#146ab1]">
+        <h3 className="text-2xl font-semibold tracking-tight text-[#0f5f9d]">
           {value}
         </h3>
 
