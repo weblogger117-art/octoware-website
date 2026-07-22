@@ -1,5 +1,10 @@
-import { Hero } from "@/components/sections";
+import { Hero, Highlights } from "@/components/sections";
 
 export default function HomePage() {
-  return <Hero />;
+  return (
+    <>
+      <Hero />
+      <Highlights />
+    </>
+  );
 }
