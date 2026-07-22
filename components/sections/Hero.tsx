@@ -6,17 +6,14 @@ import { HeroVisual } from "./HeroVisual";
 export function Hero() {
   return (
     <Section
-      className="
-        relative
-        overflow-hidden
-        bg-gradient-to-br
-        from-white
-        via-white
-        to-[#eef6fc]
-        py-24
-        lg:py-36
-      "
-    >
+  className="
+    relative
+    overflow-hidden
+    bg-[linear-gradient(135deg,#ffffff_0%,#ffffff_45%,#eef6fc_78%,#ffffff_100%)]
+    py-24
+    lg:py-36
+  "
+>
       {/* Linke Seite */}
       <div className="relative z-20 max-w-[620px]">
         <HeroContent />
@@ -24,21 +21,7 @@ export function Hero() {
 
       {/* Rechte Seite */}
       <HeroVisual />
-       {/* Sanfter Übergang zur nächsten Section */}
-<div
-  aria-hidden
-  className="
-    pointer-events-none
-    absolute
-    inset-x-0
-    bottom-0
-    h-40
-    bg-gradient-to-b
-    from-transparent
-    to-white
-    z-10
-  "
-/>
+       
     </Section>
   );
 }
