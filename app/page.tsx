@@ -1,4 +1,4 @@
-import { Hero, Highlights } from "@/components/sections";
+import { Hero, Highlights, WhyOctoWare } from "@/components/sections";
 
 export default function HomePage() {
   return (
