@@ -20,7 +20,7 @@ export function StatCard({
       className={cn(
         `
         flex
-        items-start
+        items-center
         gap-5
 
         w-[360px]
@@ -30,7 +30,7 @@ export function StatCard({
         border-slate-200
         bg-white
 
-        p-6
+        px-6 py-5
 
         shadow-[0_10px_35px_rgba(15,23,42,0.06)]
 
