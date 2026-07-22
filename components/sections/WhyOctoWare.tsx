@@ -53,7 +53,7 @@ export function WhyOctoWare() {
         >
           Von der Sachbearbeitung bis zur digitalen Zusammenarbeit –
           OctoWare®NET unterstützt Gesundheitsämter mit modernen
-          Fachverfahren, intelligenten Schnittstellen und einer
+          Fachverfahren, intelligenten Schnittstellen und einer - mit OctoWare®NET - 
           zukunftssicheren Webplattform.
         </p>
         <div className="mx-auto mt-20 max-w-md">
