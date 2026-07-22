@@ -1,6 +1,11 @@
+import {
+  Blocks,
+  Building2,
+  Globe,
+} from "lucide-react";
+
 import { Section } from "@/components/ui";
 import { StatCard } from "@/components/ui/StatCard";
-
 
 export function Highlights() {
   return (
@@ -15,31 +20,25 @@ export function Highlights() {
       <div
         className="
           flex
+          flex-wrap
           justify-center
           gap-10
-          flex-wrap
         "
       >
         <StatCard
-          icon={
-            <div className="h-8 w-8 rounded-xl bg-[#adce00]/15 ring-1 ring-[#adce00]/30" />
-          }
+          icon={Building2}
           value="Seit 1990"
           label="Entwicklung von Fachsoftware für den Öffentlichen Gesundheitsdienst."
         />
 
         <StatCard
-          icon={
-            <div className="h-8 w-8 rounded-xl bg-[#146ab1]/15 ring-1 ring-[#146ab1]/30" />
-          }
+          icon={Globe}
           value="Webbasiert"
           label="Moderne Lösung für den Betrieb im Rechenzentrum oder in der Cloud."
         />
 
         <StatCard
-          icon={
-            <div className="h-8 w-8 rounded-xl bg-[#adce00]/15 ring-1 ring-[#adce00]/30" />
-          }
+          icon={Blocks}
           value="Modular"
           label="Flexible Fachverfahren für sämtliche Bereiche des Öffentlichen Gesundheitsdienstes."
         />
