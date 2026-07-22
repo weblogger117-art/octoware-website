@@ -11,11 +11,11 @@ export function HeroContent() {
   width={320}
   height={76}
   priority
-  className="h-12 w-auto select-none"
+  className="h-14 w-auto select-none"
 />
 
       <Heading
-        className="mt-6"
+        className="mt-4"
         as="h1"
         title="Die Softwareplattform für den öffentlichen Gesundheitsdienst."
         description="OctoWare®NET vereint moderne Fachverfahren, digitale Bürgerdienste und effiziente Prozesse auf einer zentralen Plattform."
