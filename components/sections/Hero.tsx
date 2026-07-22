@@ -8,7 +8,7 @@ export function Hero() {
     <Section
       className="
         relative
-        overflow-hidden
+        overflow-visible
         bg-white
         pt-24
 pb-32
