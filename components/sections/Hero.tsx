@@ -8,33 +8,40 @@ export function Hero() {
     <Section
       className="
         relative
-        overflow-visible
+        overflow-hidden
         bg-white
         pt-24
-pb-32
-
-lg:pt-36
-lg:pb-44
+        pb-32
+        lg:pt-36
+        lg:pb-44
       "
     >
-      {/* Hero-Hintergrund */}
+      {/* Hintergrund */}
       <div
-  aria-hidden
-  className="
-    absolute
-    inset-0
-    z-0
-    bg-[linear-gradient(to_bottom,#ffffff_0%,#ffffff_72%,#f6faff_88%,#ffffff_100%)]
-  "
-/>
+        aria-hidden
+        className="
+          absolute
+          inset-0
+          bg-[linear-gradient(to_bottom,#ffffff_0%,#ffffff_72%,#f6faff_88%,#ffffff_100%)]
+        "
+      />
 
-      {/* Linke Seite */}
-      <div className="relative z-20 max-w-[620px]">
+      <div
+        className="
+          relative
+          z-10
+
+          grid
+          items-center
+          gap-16
+
+          lg:grid-cols-[minmax(540px,620px)_1fr]
+        "
+      >
         <HeroContent />
-      </div>
 
-      {/* Rechte Seite */}
-      <HeroVisual />
+        <HeroVisual />
+      </div>
     </Section>
   );
 }
