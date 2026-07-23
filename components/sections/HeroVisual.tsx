@@ -60,8 +60,8 @@ export function HeroVisual() {
   className="
     relative
 
-    w-[980px]
-    xl:w-[1120px]
+    w-[900px]
+    xl:w-[1020px]
 
     -translate-x-50
     translate-y-4
@@ -96,8 +96,8 @@ export function HeroVisual() {
         <Image
           src="/images/devices/tablet.png"
           alt="Mobile Nutzung von OctoWare®NET"
-          width={900}
-          height={600}
+          width={1200}
+          height={900}
           priority
           draggable={false}
           className="
