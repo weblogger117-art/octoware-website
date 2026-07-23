@@ -60,8 +60,8 @@ export function HeroVisual() {
   className="
     relative
 
-    w-[860px]
-    xl:w-[980px]
+    w-[820px]
+    xl:w-[920px]
 
     -translate-x-40
     translate-y-4
@@ -72,9 +72,7 @@ export function HeroVisual() {
   className="
     relative
     z-10
-
-    w-[900px]
-    xl:w-[1040px]
+    w-full
   "
 >
           <Image
@@ -108,9 +106,9 @@ export function HeroVisual() {
 
             z-20
 
-            w-[42%]
+            w-[60%]
             min-w-[260px]
-            max-w-[600px]
+            max-w-[520px]
 
             drop-shadow-2xl
             select-none
