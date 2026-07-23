@@ -8,34 +8,38 @@ export function HeroVisual() {
       className="
         pointer-events-none
         absolute
-        right-[4rem]
-        top-1/2
+        inset-y-0
+        right-0
         hidden
-        -translate-y-1/2
-        lg:block
+        lg:flex
+        items-center
+        justify-end
+        w-[58%]
+        max-w-[1150px]
       "
     >
-       {/* Netzwerkgrafik */}
- <Image
-  src="/images/graphics/network-background.svg"
-  alt=""
-  aria-hidden="true"
-  width={1800}
-  height={1100}
-  draggable={false}
-  className="
-    absolute
-    left-1/2
-    top-1/2
-    w-[1550px]
-    max-w-none
-    -translate-x-[50%]
-    -translate-y-1/2
-    opacity-90
-    -z-10
-    select-none
-  "
-/>
+      {/* Netzwerkgrafik */}
+      <Image
+        src="/images/graphics/network-background.svg"
+        alt=""
+        aria-hidden="true"
+        width={1800}
+        height={1100}
+        draggable={false}
+        className="
+          absolute
+          left-1/2
+          top-1/2
+          w-[1550px]
+          max-w-none
+          -translate-x-1/2
+          -translate-y-1/2
+          opacity-90
+          -z-20
+          select-none
+        "
+      />
+
       {/* Licht */}
       <div
         aria-hidden
@@ -51,48 +55,68 @@ export function HeroVisual() {
           bg-[#c5d7ed]
           opacity-35
           blur-[150px]
+          -z-10
         "
       />
 
-      <DeviceFrame
+      {/* Gerätegruppe */}
+      <div
         className="
           relative
-          z-10
-          translate-y-16
-          w-[820px]
-          xl:w-[960px]
+          w-full
+          max-w-[980px]
+          translate-y-10
         "
       >
+        {/* Laptop */}
+        <DeviceFrame
+          className="
+            relative
+            z-10
+            w-full
+          "
+        >
+          <Image
+            src="/images/screens/OctowareNET_Dashboard.png"
+            alt="Dashboard von OctoWare®NET"
+            width={1919}
+            height={1199}
+            priority
+            draggable={false}
+            className="
+              block
+              h-auto
+              w-[80%]
+              max-w-none
+            "
+          />
+        </DeviceFrame>
+
+        {/* Tablet */}
         <Image
-  src="/images/devices/tablet.png"
-  alt="Mobile Nutzung von OctoWare®NET"
-  width={900}
-  height={600}
-  priority
-  draggable={false}
-  className="
-    absolute
-    bottom-[-35px]
-    right-[40px]
+          src="/images/devices/tablet.png"
+          alt="Mobile Nutzung von OctoWare®NET"
+          width={900}
+          height={600}
+          priority
+          draggable={false}
+          className="
+            absolute
 
-    z-20
+            bottom-[2%]
+            right-[6%]
 
-    w-[340px]
-    xl:w-[400px]
+            z-20
 
-    select-none
-  "
-/>
-       <Image
-  src="/images/screens/OctowareNET_Dashboard.png"
-  alt="Dashboard von OctoWare®NET"
-  width={1919}
-  height={1199}
-  priority
-  draggable={false}
-  className="block w-[80%] h-auto max-w-none"
-/>
-      </DeviceFrame>
+            w-[38%]
+            min-w-[260px]
+            max-w-[400px]
+
+            drop-shadow-2xl
+            select-none
+          "
+        />
+      </div>
     </div>
   );
 }
