@@ -60,10 +60,10 @@ export function HeroVisual() {
   className="
     relative
 
-    w-[900px]
-    xl:w-[1020px]
+    w-[860px]
+    xl:w-[980px]
 
-    -translate-x-50
+    -translate-x-40
     translate-y-4
   "
 >
@@ -103,14 +103,14 @@ export function HeroVisual() {
           className="
             absolute
 
-            bottom-[2%]
+            bottom-10
             right-[6%]
 
             z-20
 
-            w-[50%]
+            w-[42%]
             min-w-[260px]
-            max-w-[400px]
+            max-w-[600px]
 
             drop-shadow-2xl
             select-none
