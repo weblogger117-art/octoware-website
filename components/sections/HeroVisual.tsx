@@ -59,21 +59,24 @@ export function HeroVisual() {
      <div
   className="
     relative
-    w-full
-    max-w-[980px]
 
-    -translate-x-12
-    translate-y-10
+    w-[980px]
+    xl:w-[1120px]
+
+    -translate-x-20
+    translate-y-4
   "
 >
         {/* Laptop */}
         <DeviceFrame
-          className="
-            relative
-            z-10
-            w-full
-          "
-        >
+  className="
+    relative
+    z-10
+
+    w-[900px]
+    xl:w-[1040px]
+  "
+>
           <Image
             src="/images/screens/OctowareNET_Dashboard.png"
             alt="Dashboard von OctoWare®NET"
