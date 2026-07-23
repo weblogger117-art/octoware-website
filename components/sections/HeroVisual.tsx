@@ -63,7 +63,7 @@ export function HeroVisual() {
     w-[980px]
     xl:w-[1120px]
 
-    -translate-x-30
+    -translate-x-50
     translate-y-4
   "
 >
@@ -108,7 +108,7 @@ export function HeroVisual() {
 
             z-20
 
-            w-[38%]
+            w-[50%]
             min-w-[260px]
             max-w-[400px]
 
