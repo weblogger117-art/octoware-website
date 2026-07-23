@@ -63,7 +63,7 @@ export function HeroVisual() {
     w-[980px]
     xl:w-[1120px]
 
-    -translate-x-20
+    -translate-x-30
     translate-y-4
   "
 >
@@ -86,7 +86,7 @@ export function HeroVisual() {
             draggable={false}
             className="
   h-auto
-  w-full
+  w-[80%]
   object-cover
 "
           />
