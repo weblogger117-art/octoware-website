@@ -4,20 +4,16 @@ import { DeviceFrame } from "@/components/ui";
 
 export function HeroVisual() {
   return (
-    <div
-      className="
-        pointer-events-none
-        absolute
-        inset-y-0
-        right-0
-        hidden
-        lg:flex
-        items-center
-        justify-end
-        w-[58%]
-        max-w-[1150px]
-      "
-    >
+   <div
+  className="
+    pointer-events-none
+    relative
+    hidden
+    lg:flex
+    justify-end
+    lg:min-h-[640px]
+  "
+>
       {/* Netzwerkgrafik */}
       <Image
         src="/images/graphics/network-background.svg"
@@ -60,14 +56,16 @@ export function HeroVisual() {
       />
 
       {/* Gerätegruppe */}
-      <div
-        className="
-          relative
-          w-full
-          max-w-[980px]
-          translate-y-10
-        "
-      >
+     <div
+  className="
+    relative
+    w-full
+    max-w-[980px]
+
+    -translate-x-12
+    translate-y-10
+  "
+>
         {/* Laptop */}
         <DeviceFrame
           className="
@@ -84,11 +82,10 @@ export function HeroVisual() {
             priority
             draggable={false}
             className="
-              block
-              h-auto
-              w-[80%]
-              max-w-none
-            "
+  h-auto
+  w-full
+  object-cover
+"
           />
         </DeviceFrame>
 
