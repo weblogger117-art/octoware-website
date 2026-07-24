@@ -44,7 +44,7 @@ export function WhyOctoWare() {
     absolute
 
     left-[1%]
-    top-[65%]
+    top-[50%]
 
     w-[2800px]
     max-w-none
