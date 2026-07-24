@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
 import {
   Inbox,
   Workflow as WorkflowIcon,
@@ -35,8 +38,33 @@ const steps = [
 ];
 
 export default function Workflow() {
+  const sectionRef = useRef<HTMLElement>(null);
+const [isVisible, setIsVisible] = useState(false);
+
+useEffect(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+        observer.disconnect();
+      }
+    },
+    {
+      threshold: 0.3,
+    }
+  );
+
+  if (sectionRef.current) {
+    observer.observe(sectionRef.current);
+  }
+
+  return () => observer.disconnect();
+}, []);
   return (
-    <section className="relative overflow-hidden py-32">
+    <section
+  ref={sectionRef}
+  className="relative overflow-hidden py-32"
+>
       <div className="mx-auto max-w-7xl px-6">
 
         {/* Überschrift */}
@@ -88,7 +116,7 @@ export default function Workflow() {
         bg-gradient-to-r
         from-[#146ab1]
         to-[#adce00]
-        animate-[growLine_1.2s_ease-out_forwards]
+        ${isVisible ? "animate-[growLine_1.2s_ease-out_forwards]" : "scale-x-0"}
       "
     />
 
@@ -104,7 +132,12 @@ export default function Workflow() {
       return (
         <div
   key={step.title}
-  className="group relative text-center opacity-0 animate-[fadeUp_.5s_ease-out_forwards]"
+  className={`
+  group
+  relative
+  text-center
+  ${isVisible ? "opacity-0 animate-[fadeUp_.5s_ease-out_forwards]" : "opacity-0"}
+`}
   style={{
     animationDelay: `${1 + index * 0.2}s`,
   }}
