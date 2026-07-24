@@ -128,6 +128,7 @@ export default function Workflow() {
               duration-300
               group-hover:-translate-y-2
               group-hover:bg-[#146ab1]
+            animate-[pulseIn_.45s_ease-out_forwards]
             "
           >
             <Icon
