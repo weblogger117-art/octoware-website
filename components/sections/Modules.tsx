@@ -94,6 +94,42 @@ const modules = [
 export default function Modules() {
   return (
     <section className="relative overflow-hidden py-28">
+      <div
+  className="
+    absolute
+    inset-0
+    overflow-hidden
+    pointer-events-none
+    -z-10
+  "
+>
+  <div
+    className="
+      absolute
+      left-1/2
+      top-24
+      h-[650px]
+      w-[650px]
+      -translate-x-1/2
+      rounded-full
+      bg-[#146ab1]/5
+      blur-[140px]
+    "
+  />
+
+  <div
+    className="
+      absolute
+      right-0
+      top-52
+      h-[420px]
+      w-[420px]
+      rounded-full
+      bg-[#adce00]/5
+      blur-[120px]
+    "
+  />
+</div>
       <div className="mx-auto max-w-7xl px-6">
 
         <div className="mx-auto mb-16 max-w-3xl text-center">
@@ -128,20 +164,41 @@ export default function Modules() {
                   rounded-3xl
                   border
                   border-slate-200
-                  bg-white
+                  bg-white/80
+backdrop-blur-sm
                   p-8
                   transition-all
                   duration-300
-                  hover:-translate-y-1
-                  hover:border-[#146ab1]/40
-                  hover:shadow-xl
+                  hover:-translate-y-2
+hover:border-[#146ab1]/50
+hover:shadow-2xl
+hover:shadow-[#146ab1]/10
                 "
               >
-                <div className="mb-6 inline-flex rounded-2xl bg-[#146ab1]/10 p-3 text-[#146ab1]">
+                <div className="
+  mb-6
+  inline-flex
+  rounded-2xl
+  bg-[#146ab1]/10
+  p-3
+  text-[#146ab1]
+  transition-all
+  duration-300
+  group-hover:scale-110
+  group-hover:bg-[#146ab1]
+  group-hover:text-white
+">
                   <Icon size={30} />
                 </div>
 
-                <h3 className="text-lg font-semibold text-slate-900">
+                <h3 className="
+  text-lg
+  font-semibold
+  text-slate-900
+  transition-colors
+  duration-300
+  group-hover:text-[#146ab1]
+">
                   {module.title}
                 </h3>
 
