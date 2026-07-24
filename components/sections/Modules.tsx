@@ -14,6 +14,7 @@ const modules = [
   {
     icon: ShieldPlus,
     title: "Infektionsschutz",
+    featured: true,
     features: [
       "DEMIS",
       "Kontaktpersonen",
@@ -24,6 +25,7 @@ const modules = [
   {
     icon: Baby,
     title: "Kinder- & Jugendgesundheit",
+    featured: true,
     features: [
       "Schuluntersuchungen",
       "Vorsorgen",
@@ -34,6 +36,7 @@ const modules = [
   {
     icon: Smile,
     title: "Zahnärztlicher Dienst",
+    featured: false,
     features: [
       "Befunde",
       "Reihenuntersuchungen",
@@ -44,6 +47,7 @@ const modules = [
   {
     icon: Stethoscope,
     title: "Medizinalaufsicht",
+    featured: true,
     features: [
       "Einrichtungen",
       "Kontrollen",
@@ -54,6 +58,7 @@ const modules = [
   {
     icon: FlaskConical,
     title: "Kommunalhygiene",
+    featured: false,
     features: [
       "Trinkwasser",
       "Badewasser",
@@ -64,6 +69,7 @@ const modules = [
   {
     icon: HeartPulse,
     title: "Schutzimpfungen",
+    featured: false,
     features: [
       "Impfkampagnen",
       "Dokumentation",
@@ -74,6 +80,7 @@ const modules = [
   {
     icon: Users,
     title: "Beratung & Betreuung",
+    featured: false,
     features: [
       "Psychiatrie",
       "Sucht",
@@ -84,6 +91,7 @@ const modules = [
   {
     icon: Building2,
     title: "Weitere Fachverfahren",
+    featured: false,
     features: [
       "Modular",
       "Erweiterbar",
@@ -182,21 +190,23 @@ export default function Modules() {
             return (
               <div
                 key={module.title}
-                className="
-                  group
-                  rounded-3xl
-                  border
-                  border-slate-200
-                  bg-white/80
-backdrop-blur-sm
-                  p-8
-                  transition-all
-                  duration-300
-                  hover:-translate-y-2
-hover:border-[#146ab1]/50
-hover:shadow-2xl
-hover:shadow-[#146ab1]/10
-                "
+                className={`
+  group
+  rounded-3xl
+  border
+  border-slate-200
+  bg-white/80
+  backdrop-blur-sm
+  p-8
+  transition-all
+  duration-300
+  hover:-translate-y-2
+  hover:border-[#146ab1]/50
+  hover:shadow-2xl
+  hover:shadow-[#146ab1]/10
+
+  ${module.featured ? "lg:col-span-2" : ""}
+`}
               >
                 <div className="
   mb-6
