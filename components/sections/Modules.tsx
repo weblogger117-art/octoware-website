@@ -83,6 +83,7 @@ const modules = [
     icon: Users,
     title: "Beratung & Betreuung",
     featured: true,
+    mascot: "/images/mascot/beratung.png",
     features: [
       "Psychiatrie",
       "Sucht",
