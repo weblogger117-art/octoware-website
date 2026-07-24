@@ -74,7 +74,27 @@ export default function Workflow() {
         <div className="relative">
 
   {/* Verbindungslinie */}
-  <div className="absolute left-0 right-0 top-10 hidden h-1 rounded-full bg-gradient-to-r from-[#146ab1] to-[#adce00] lg:block" />
+  <div className="absolute left-0 right-0 top-10 hidden lg:block">
+
+  <div className="h-1 overflow-hidden rounded-full bg-slate-200">
+
+    <div
+      className="
+        h-full
+        w-full
+        origin-left
+        scale-x-0
+        rounded-full
+        bg-gradient-to-r
+        from-[#146ab1]
+        to-[#adce00]
+        animate-[growLine_1.2s_ease-out_forwards]
+      "
+    />
+
+  </div>
+
+</div>
 
   <div className="grid gap-10 lg:grid-cols-5">
 
