@@ -208,6 +208,7 @@ export default function Modules() {
     key={module.title}
     className={`
       group
+      overflow-hidden
       rounded-3xl
       border
       border-slate-200
@@ -299,7 +300,7 @@ export default function Modules() {
         h-60
         w-60
         rounded-full
-        bg-[#146ab1]/20
+        bg-[#146ab1]/30
         blur-3xl
       "
     />
@@ -310,10 +311,10 @@ export default function Modules() {
         absolute
         right-4
         bottom-0
-        h-28
-        w-28
+        h-45
+        w-45
         rounded-full
-        bg-[#adce00]/10
+        bg-[#adce00]/38
         blur-3xl
       "
     />
