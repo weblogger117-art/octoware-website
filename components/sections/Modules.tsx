@@ -82,7 +82,7 @@ const modules = [
   {
     icon: Users,
     title: "Beratung & Betreuung",
-    featured: false,
+    featured: true,
     features: [
       "Psychiatrie",
       "Sucht",
@@ -93,7 +93,7 @@ const modules = [
   {
     icon: Building2,
     title: "Weitere Fachverfahren",
-    featured: false,
+    featured: true,
     features: [
       "Modular",
       "Erweiterbar",
