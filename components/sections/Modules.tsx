@@ -13,45 +13,84 @@ const modules = [
   {
     icon: ShieldPlus,
     title: "Infektionsschutz",
-    description: "DEMIS, Kontaktpersonen und Meldewesen",
+    features: [
+      "DEMIS",
+      "Kontaktpersonen",
+      "Labormeldungen",
+      "Auswertungen",
+    ],
   },
   {
     icon: Baby,
     title: "Kinder- & Jugendgesundheit",
-    description: "Schuluntersuchungen und Vorsorgen",
+    features: [
+      "Schuluntersuchungen",
+      "Vorsorgen",
+      "Dokumentation",
+      "Statistiken",
+    ],
   },
   {
     icon: Smile,
     title: "Zahnärztlicher Dienst",
-    description: "Befunde, Reihenuntersuchungen und Statistiken",
+    features: [
+      "Befunde",
+      "Reihenuntersuchungen",
+      "LAGZ",
+      "Berichte",
+    ],
   },
   {
     icon: Stethoscope,
     title: "Medizinalaufsicht",
-    description: "Einrichtungen und Überwachung",
+    features: [
+      "Einrichtungen",
+      "Kontrollen",
+      "Bescheide",
+      "Auswertungen",
+    ],
   },
   {
     icon: FlaskConical,
-    title: "Umwelthygiene",
-    description: "Proben, Trinkwasser und Hygiene",
+    title: "Kommunalhygiene",
+    features: [
+      "Trinkwasser",
+      "Badewasser",
+      "Proben",
+      "Labor",
+    ],
   },
   {
     icon: HeartPulse,
-    title: "Impfmanagement",
-    description: "Impfkampagnen und Dokumentation",
+    title: "Schutzimpfungen",
+    features: [
+      "Impfkampagnen",
+      "Dokumentation",
+      "Serien",
+      "Statistik",
+    ],
   },
   {
     icon: Users,
-    title: "Beratungsstellen",
-    description: "Vielfältige Fachbereiche zentral verwalten",
+    title: "Beratung & Betreuung",
+    features: [
+      "Psychiatrie",
+      "Sucht",
+      "Tumorberatung",
+      "Schwangerenberatung",
+    ],
   },
   {
     icon: Building2,
     title: "Weitere Fachverfahren",
-    description: "Flexibel erweiterbar für alle Aufgaben",
+    features: [
+      "Modular",
+      "Erweiterbar",
+      "Schnittstellen",
+      "Cloudfähig",
+    ],
   },
 ];
-
 export default function Modules() {
   return (
     <section className="relative overflow-hidden py-28">
@@ -70,7 +109,7 @@ export default function Modules() {
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-slate-600">
-            OctoWare®NET unterstützt sämtliche Aufgaben des Öffentlichen
+            OctoWare®Gesundheit unterstützt sämtliche Aufgaben des Öffentlichen
             Gesundheitsdienstes – modular, integriert und zukunftssicher.
           </p>
 
@@ -106,9 +145,48 @@ export default function Modules() {
                   {module.title}
                 </h3>
 
-                <p className="mt-3 text-sm leading-6 text-slate-600">
-                  {module.description}
-                </p>
+                <div className="mt-6 space-y-3">
+
+  {module.features.map((feature) => (
+
+    <div
+      key={feature}
+      className="
+        flex
+        items-center
+        gap-2
+        text-sm
+        text-slate-600
+      "
+    >
+      <div className="h-2 w-2 rounded-full bg-[#adce00]" />
+
+      {feature}
+
+    </div>
+
+  ))}
+
+</div>
+
+<div
+  className="
+    mt-8
+    flex
+    items-center
+    text-sm
+    font-medium
+    text-[#146ab1]
+    opacity-0
+    transition-all
+    duration-300
+    group-hover:opacity-100
+"
+>
+
+  Mehr erfahren →
+
+</div>
               </div>
             );
           })}
