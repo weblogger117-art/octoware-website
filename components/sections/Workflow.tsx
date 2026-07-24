@@ -43,7 +43,19 @@ export default function Workflow() {
 
         <div className="mx-auto mb-20 max-w-3xl text-center">
 
-          <span className="inline-flex rounded-full bg-[#146ab1]/10 px-4 py-2 text-sm font-semibold text-[#146ab1]">
+          <span className="inline-flex
+            items-center
+            rounded-full
+            border
+            border-[#146ab1]/20
+            bg-[#146ab1]/5
+            px-4
+            py-2
+            text-xs
+            font-semibold
+            uppercase
+            tracking-[0.25em]
+            text-[#146ab1]">
             Digitaler Workflow
           </span>
 
