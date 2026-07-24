@@ -33,33 +33,13 @@ export function WhyOctoWare() {
       />
 
       {/* Netzwerkgrafik */}
-      <Image
-        src="/images/graphics/network-background.svg"
-        alt=""
-        aria-hidden="true"
-        width={1800}
-        height={1100}
-        draggable={false}
-        className="
-          absolute
-
-          left-[58%]
-          top-[45%]
-
-          w-[1900px]
-          max-w-none
-
-          -translate-x-1/2
-          -translate-y-1/2
-
-          opacity-[0.80]
-
-          pointer-events-none
-          select-none
-
-          -z-10
-        "
-      />
+     <Image
+  src="/images/graphics/network-background.svg"
+  alt=""
+  width={500}
+  height={500}
+  className="border-4 border-red-500"
+/>
 
       {/* Überschrift */}
       <div
