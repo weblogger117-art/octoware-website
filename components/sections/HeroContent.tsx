@@ -18,13 +18,13 @@ export function HeroContent() {
         <Image
           src="/images/branding/octoware-logo.png"
           alt="OctoWare®"
-          width={520}
-          height={124}
+          width={620}
+          height={148}
           priority
           draggable={false}
           className="
-            h-28
-            xl:h-32
+            h-32
+            xl:h-36
             w-auto
             select-none
           "
