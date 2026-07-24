@@ -5,23 +5,34 @@ import { Heading } from "@/components/typography";
 export function HeroContent() {
   return (
     <div className="flex max-w-lg flex-col items-start">
-     <Image
-  src="/images/branding/octoware-logo.png"
-  alt="OctoWare®"
-  width={260}
-  height={62}
-  priority
-  draggable={false}
-  className="
-    h-20
-  w-auto
-  mx-auto
-  select-none
-  "
-/>
+
+      {/* Produktlogo */}
+      <div
+        className="
+          -ml-12
+          -mt-4
+          mb-8
+          xl:-ml-14
+        "
+      >
+        <Image
+          src="/images/branding/octoware-logo.png"
+          alt="OctoWare®"
+          width={520}
+          height={124}
+          priority
+          draggable={false}
+          className="
+            h-28
+            xl:h-32
+            w-auto
+            select-none
+          "
+        />
+      </div>
 
       <Heading
-        className="mt-4"
+        className="mt-0"
         as="h1"
         title="Die Softwareplattform für den öffentlichen Gesundheitsdienst."
         description="OctoWare®NET vereint moderne Fachverfahren, digitale Bürgerdienste und effiziente Prozesse auf einer zentralen Plattform."
