@@ -221,7 +221,7 @@ export default function Modules() {
     `}
   >
     {module.featured ? (
-      <div className="grid lg:grid-cols-[1fr_280px] gap-4 items-center h-full">
+      <div className="grid lg:grid-cols-[1fr_180px] gap-6 items-center h-full">
         <div>
           <div
             className="
@@ -285,13 +285,13 @@ export default function Modules() {
         </div>
 
         {module.mascot && (
-          <div className="hidden lg:flex justify-center items-end">
+          <div className="hidden lg:flex justify-center items-end pb-2">
             <Image
               src={module.mascot}
               alt={module.title}
-              width={200}
-              height={200}
-              className="object-contain transition-transform duration-500 group-hover:scale-105"
+              width={180}
+              height={180}
+              className="object-contain transition-transform duration-500 group-hover:scale-103"
             />
           </div>
         )}
