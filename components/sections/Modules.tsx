@@ -15,6 +15,7 @@ const modules = [
     icon: ShieldPlus,
     title: "Infektionsschutz",
     featured: true,
+    mascot: "/images/mascot/infektionsschutz.png",
     features: [
       "DEMIS",
       "Kontaktpersonen",
@@ -220,6 +221,14 @@ export default function Modules() {
   ${module.featured ? "lg:col-span-2" : ""}
 `}
               >
+                <div
+  className={
+    module.featured
+      ? "grid lg:grid-cols-[1fr_220px] gap-8 items-center"
+      : ""
+  }
+>
+                  <div>
                 <div className="
   mb-6
   inline-flex
@@ -287,8 +296,21 @@ export default function Modules() {
 >
 
   Mehr erfahren →
-
+  
 </div>
+            {module.featured && module.mascot && (
+  <div className="hidden lg:flex items-end justify-end">
+    <Image
+      src={module.mascot}
+      alt={module.title}
+      width={220}
+      height={220}
+      className="object-contain transition-transform duration-500 group-hover:scale-105"
+    />
+  </div>
+)}        
+</div>
+                  </div>
               </div>
             );
           })}
