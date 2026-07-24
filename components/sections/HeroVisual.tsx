@@ -104,7 +104,7 @@ export function HeroVisual() {
             bottom-15
             right-[6%]
 
-            z-20
+            z-25
 
             w-[60%]
             min-w-[260px]
