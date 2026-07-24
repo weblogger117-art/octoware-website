@@ -287,17 +287,34 @@ export default function Modules() {
           </div>
         </div>
 
-       {module.mascot && (
+      {module.mascot && (
   <div className="relative hidden lg:flex justify-center items-end pb-2">
 
+    {/* Blauer Glow */}
     <div
       className="
         absolute
+        left-8
+        bottom-6
         h-40
         w-40
         rounded-full
-        bg-[#146ab1]/5
-        blur-2xl
+        bg-[#146ab1]/8
+        blur-3xl
+      "
+    />
+
+    {/* Grüner Glow */}
+    <div
+      className="
+        absolute
+        right-4
+        bottom-0
+        h-28
+        w-28
+        rounded-full
+        bg-[#adce00]/10
+        blur-3xl
       "
     />
 
