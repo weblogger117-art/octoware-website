@@ -1,4 +1,4 @@
-import { Hero, Highlights, WhyOctoWare } from "@/components/sections";
+import { Hero, Highlights, WhyOctoWare, Modules } from "@/components/sections";
 
 export default function HomePage() {
   return (
@@ -6,6 +6,7 @@ export default function HomePage() {
       <Hero />
       <Highlights />
       <WhyOctoWare />
+      <Modules />
     </>
   );
 }
