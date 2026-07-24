@@ -33,12 +33,12 @@ export function WhyOctoWare() {
       />
 
       {/* Netzwerkgrafik */}
-     <Image
+    <Image
   src="/images/graphics/network-background.svg"
   alt=""
   aria-hidden="true"
-  width={1800}
-  height={1100}
+  width={3000}
+  height={1800}
   draggable={false}
   className="
     absolute
@@ -46,18 +46,18 @@ export function WhyOctoWare() {
     left-1/2
     top-[65%]
 
-    w-[1800px]
+    w-[3200px]
     max-w-none
 
     -translate-x-1/2
     -translate-y-1/2
 
-    opacity-10
+    opacity-100
+
+    z-0
 
     pointer-events-none
     select-none
-
-    -z-10
   "
 />
 
