@@ -12,16 +12,14 @@ export function Highlights() {
     <Section
       className="
         relative
-        -mt-36
+        -mt-45
         z-30
         pt-0
       "
     >
       <div
   className="
-    mx-auto
     flex
-    max-w-6xl
     flex-wrap
     justify-center
     gap-10
