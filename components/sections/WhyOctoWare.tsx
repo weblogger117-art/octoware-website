@@ -52,7 +52,7 @@ export function WhyOctoWare() {
     -translate-x-1/2
     -translate-y-1/2
 
-    opacity-35
+    opacity-10
 
     z-0
 
