@@ -165,7 +165,19 @@ export default function Modules() {
 
         <div className="mx-auto mb-16 max-w-3xl text-center">
 
-          <span className="inline-flex rounded-full border border-[#146ab1]/15 bg-[#146ab1]/5 px-4 py-1 text-sm font-medium text-[#146ab1]">
+          <span className=" inline-flex
+            items-center
+            rounded-full
+            border
+            border-[#146ab1]/20
+            bg-[#146ab1]/5
+            px-4
+            py-2
+            text-xs
+            font-semibold
+            uppercase
+            tracking-[0.25em]
+            text-[#146ab1]">
             Fachverfahren
           </span>
 
