@@ -27,6 +27,7 @@ const modules = [
     icon: Baby,
     title: "Kinder- & Jugendgesundheit",
     featured: true,
+    mascot: "/images/mascot/kinderjugenddienst.png",
     features: [
       "Schuluntersuchungen",
       "Vorsorgen",
