@@ -31,3 +31,19 @@ body {
     transform: translateY(0);
   }
 }
+
+@keyframes pulseIn {
+
+  0% {
+    transform: scale(.7);
+  }
+
+  60% {
+    transform: scale(1.12);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+
+}
