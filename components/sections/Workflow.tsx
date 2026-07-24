@@ -107,17 +107,20 @@ useEffect(() => {
   <div className="h-1 overflow-hidden rounded-full bg-slate-200">
 
     <div
-      className="
-        h-full
-        w-full
-        origin-left
-        scale-x-0
-        rounded-full
-        bg-gradient-to-r
-        from-[#146ab1]
-        to-[#adce00]
-        ${isVisible ? "animate-[growLine_1.2s_ease-out_forwards]" : "scale-x-0"}
-      "
+      className={`
+  h-full
+  w-full
+  origin-left
+  rounded-full
+  bg-gradient-to-r
+  from-[#146ab1]
+  to-[#adce00]
+  ${
+    isVisible
+      ? "animate-[growLine_1.2s_ease-out_forwards]"
+      : "scale-x-0"
+  }
+`}
     />
 
   </div>
@@ -136,7 +139,11 @@ useEffect(() => {
   group
   relative
   text-center
-  ${isVisible ? "opacity-0 animate-[fadeUp_.5s_ease-out_forwards]" : "opacity-0"}
+  ${
+    isVisible
+      ? "opacity-0 animate-[fadeUp_.5s_ease-out_forwards]"
+      : "opacity-0"
+  }
 `}
   style={{
     animationDelay: `${1 + index * 0.2}s`,
