@@ -11,9 +11,9 @@ export function Hero() {
         overflow-hidden
         bg-white
         pt-24
-        pb-32
+        pb-28
         lg:pt-36
-        lg:pb-44
+        lg:pb-36
       "
     >
       {/* Hintergrund */}
