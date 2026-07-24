@@ -43,10 +43,10 @@ export function WhyOctoWare() {
   className="
     absolute
 
-    left-[5%]
+    left-[1%]
     top-[65%]
 
-    w-[2500px]
+    w-[2800px]
     max-w-none
 
     -translate-x-1/2
