@@ -201,133 +201,166 @@ export default function Modules() {
             const Icon = module.icon;
 
             return (
+  <div
+    key={module.title}
+    className={`
+      group
+      rounded-3xl
+      border
+      border-slate-200
+      bg-white/80
+      backdrop-blur-sm
+      p-8
+      transition-all
+      duration-300
+      hover:-translate-y-2
+      hover:border-[#146ab1]/50
+      hover:shadow-2xl
+      hover:shadow-[#146ab1]/10
+      ${module.featured ? "lg:col-span-2" : ""}
+    `}
+  >
+    {module.featured ? (
+      <div className="grid lg:grid-cols-[1fr_280px] gap-4 items-center h-full">
+        <div>
+          <div
+            className="
+              mb-6
+              inline-flex
+              rounded-2xl
+              bg-[#146ab1]/10
+              p-3
+              text-[#146ab1]
+              transition-all
+              duration-300
+              group-hover:scale-110
+              group-hover:bg-[#146ab1]
+              group-hover:text-white
+            "
+          >
+            <Icon size={30} />
+          </div>
+
+          <h3
+            className="
+              text-lg
+              font-semibold
+              text-slate-900
+              transition-colors
+              duration-300
+              group-hover:text-[#146ab1]
+            "
+          >
+            {module.title}
+          </h3>
+
+          <div className="mt-6 space-y-3">
+            {module.features.map((feature) => (
               <div
-                key={module.title}
-                className={`
-  group
-  rounded-3xl
-  border
-  border-slate-200
-  bg-white/80
-  backdrop-blur-sm
-  p-8
-  transition-all
-  duration-300
-  hover:-translate-y-2
-  hover:border-[#146ab1]/50
-  hover:shadow-2xl
-  hover:shadow-[#146ab1]/10
-
-  ${module.featured ? "lg:col-span-2" : ""}
-`}
+                key={feature}
+                className="flex items-center gap-2 text-sm text-slate-600"
               >
-                <div
-  className={
-    module.featured
-      ? "grid lg:grid-cols-[1fr_220px] gap-8 items-center h-full"
-      : ""
-  }
->
-  <div>
-    <div
-      className="
-        mb-6
-        inline-flex
-        rounded-2xl
-        bg-[#146ab1]/10
-        p-3
-        text-[#146ab1]
-        transition-all
-        duration-300
-        group-hover:scale-110
-        group-hover:bg-[#146ab1]
-        group-hover:text-white
-      "
-    >
-      <Icon size={30} />
-    </div>
+                <div className="h-2 w-2 rounded-full bg-[#adce00]" />
+                {feature}
+              </div>
+            ))}
+          </div>
 
-    <h3
-      className="
-        text-lg
-        font-semibold
-        text-slate-900
-        transition-colors
-        duration-300
-        group-hover:text-[#146ab1]
-      "
-    >
-      {module.title}
-    </h3>
+          <div
+            className="
+              mt-8
+              flex
+              items-center
+              text-sm
+              font-medium
+              text-[#146ab1]
+              opacity-0
+              transition-all
+              duration-300
+              group-hover:opacity-100
+            "
+          >
+            Mehr erfahren →
+          </div>
+        </div>
 
-    <div className="mt-6 space-y-3">
-      {module.features.map((feature) => (
+        {module.mascot && (
+          <div className="hidden lg:flex justify-end items-end -mr-6 -mb-6">
+            <Image
+              src={module.mascot}
+              alt={module.title}
+              width={280}
+              height={280}
+              className="object-contain transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+        )}
+      </div>
+    ) : (
+      <>
         <div
-          key={feature}
           className="
-            flex
-            items-center
-            gap-2
-            text-sm
-            text-slate-600
+            mb-6
+            inline-flex
+            rounded-2xl
+            bg-[#146ab1]/10
+            p-3
+            text-[#146ab1]
+            transition-all
+            duration-300
+            group-hover:scale-110
+            group-hover:bg-[#146ab1]
+            group-hover:text-white
           "
         >
-          <div className="h-2 w-2 rounded-full bg-[#adce00]" />
-          {feature}
+          <Icon size={30} />
         </div>
-      ))}
-    </div>
 
-    <div
-      className="
-        mt-8
-        flex
-        items-center
-        text-sm
-        font-medium
-        text-[#146ab1]
-        opacity-0
-        transition-all
-        duration-300
-        group-hover:opacity-100
-      "
-    >
-      Mehr erfahren →
-    </div>
-  </div>
+        <h3
+          className="
+            text-lg
+            font-semibold
+            text-slate-900
+            transition-colors
+            duration-300
+            group-hover:text-[#146ab1]
+          "
+        >
+          {module.title}
+        </h3>
 
-  {module.featured && module.mascot && (
-    <div className="hidden lg:flex items-end justify-end self-end">
-      <Image
-        src={module.mascot}
-        alt={module.title}
-        width={220}
-        height={220}
-        className="
-          object-contain
-          transition-transform
-          duration-500
-          group-hover:scale-105
-        "
-      />
-    </div>
-  )}
-</div>
-            {module.featured && module.mascot && (
-  <div className="hidden lg:flex items-end justify-end">
-    <Image
-      src={module.mascot}
-      alt={module.title}
-      width={220}
-      height={220}
-      className="object-contain transition-transform duration-500 group-hover:scale-105"
-    />
+        <div className="mt-6 space-y-3">
+          {module.features.map((feature) => (
+            <div
+              key={feature}
+              className="flex items-center gap-2 text-sm text-slate-600"
+            >
+              <div className="h-2 w-2 rounded-full bg-[#adce00]" />
+              {feature}
+            </div>
+          ))}
+        </div>
+
+        <div
+          className="
+            mt-8
+            flex
+            items-center
+            text-sm
+            font-medium
+            text-[#146ab1]
+            opacity-0
+            transition-all
+            duration-300
+            group-hover:opacity-100
+          "
+        >
+          Mehr erfahren →
+        </div>
+      </>
+    )}
   </div>
-)}        
-</div>
-                  </div>
-              </div>
-            );
+);
           })}
 
         </div>
