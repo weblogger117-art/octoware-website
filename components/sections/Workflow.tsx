@@ -71,7 +71,67 @@ export default function Workflow() {
 
         </div>
 
-        {/* Inhalt kommt im nächsten Schritt */}
+        <div className="relative">
+
+  {/* Verbindungslinie */}
+  <div className="absolute left-0 right-0 top-10 hidden h-1 rounded-full bg-gradient-to-r from-[#146ab1] to-[#adce00] lg:block" />
+
+  <div className="grid gap-10 lg:grid-cols-5">
+
+    {steps.map((step) => {
+      const Icon = step.icon;
+
+      return (
+        <div
+          key={step.title}
+          className="group relative text-center"
+        >
+          <div
+            className="
+              relative
+              mx-auto
+              flex
+              h-20
+              w-20
+              items-center
+              justify-center
+              rounded-full
+              border
+              border-[#146ab1]/15
+              bg-white/80
+              shadow-lg
+              backdrop-blur
+              transition-all
+              duration-300
+              group-hover:-translate-y-2
+              group-hover:bg-[#146ab1]
+            "
+          >
+            <Icon
+              className="
+                h-9
+                w-9
+                text-[#146ab1]
+                transition-colors
+                duration-300
+                group-hover:text-white
+              "
+            />
+          </div>
+
+          <h3 className="mt-8 text-xl font-semibold text-slate-900">
+            {step.title}
+          </h3>
+
+          <p className="mt-4 text-sm leading-7 text-slate-600">
+            {step.text}
+          </p>
+        </div>
+      );
+    })}
+
+  </div>
+</div>
 
       </div>
     </section>
