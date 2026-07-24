@@ -47,7 +47,7 @@ const modules = [
   {
     icon: Stethoscope,
     title: "Medizinalaufsicht",
-    featured: true,
+    featured: false,
     features: [
       "Einrichtungen",
       "Kontrollen",
