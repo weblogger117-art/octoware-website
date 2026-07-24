@@ -1,36 +1,77 @@
+import Image from "next/image";
 import {
   Blocks,
   Building2,
   Rocket,
   Workflow,
 } from "lucide-react";
+
 import { FeatureCard } from "@/components/ui";
 import { Section } from "@/components/ui";
 
 export function WhyOctoWare() {
   return (
     <Section
-  className="
-    relative
-    overflow-hidden
-
-    pt-24
-    pb-28
-
-    bg-white
-  "
->
+      className="
+        relative
+        overflow-hidden
+        bg-white
+        pt-24
+        pb-28
+      "
+    >
+      {/* Hintergrund */}
       <div
-  aria-hidden
-  className="
-    absolute
-    inset-0
-    -z-10
+        aria-hidden
+        className="
+          absolute
+          inset-0
+          -z-20
 
-    bg-[radial-gradient(circle_at_20%_25%,rgba(197,215,237,0.45)_0%,transparent_38%),radial-gradient(circle_at_85%_75%,rgba(20,106,177,0.08)_0%,transparent_40%),linear-gradient(to_bottom,#ffffff_0%,#f8fbfe_55%,#ffffff_100%)]
-  "
-/>
-      <div className="mx-auto max-w-3xl text-center">
+          bg-[radial-gradient(circle_at_20%_25%,rgba(197,215,237,0.45)_0%,transparent_38%),radial-gradient(circle_at_85%_75%,rgba(20,106,177,0.08)_0%,transparent_40%),linear-gradient(to_bottom,#ffffff_0%,#f8fbfe_55%,#ffffff_100%)]
+        "
+      />
+
+      {/* Netzwerkgrafik */}
+      <Image
+        src="/images/graphics/network-background.svg"
+        alt=""
+        aria-hidden="true"
+        width={1800}
+        height={1100}
+        draggable={false}
+        className="
+          absolute
+
+          left-[58%]
+          top-[45%]
+
+          w-[1900px]
+          max-w-none
+
+          -translate-x-1/2
+          -translate-y-1/2
+
+          opacity-[0.07]
+
+          pointer-events-none
+          select-none
+
+          -z-10
+        "
+      />
+
+      {/* Überschrift */}
+      <div
+        className="
+          relative
+          z-10
+
+          mx-auto
+          max-w-3xl
+          text-center
+        "
+      >
         <span
           className="
             inline-flex
@@ -78,44 +119,51 @@ export function WhyOctoWare() {
         >
           Von der Sachbearbeitung bis zur digitalen Zusammenarbeit –
           OctoWare®Gesundheit unterstützt Gesundheitsämter mit modernen
-          Fachverfahren, intelligenten Schnittstellen und einer - mit OctoWare®NET - 
-          zukunftssicheren Webplattform.
+          Fachverfahren, intelligenten Schnittstellen und einer – mit
+          OctoWare®NET – zukunftssicheren Webplattform.
         </p>
-        <div
-  className="
-    mx-auto
-    mt-20
-    grid
-    max-w-7xl
-    grid-cols-1
-    gap-8
-    lg:grid-cols-2
-  "
->
-  <FeatureCard
-    icon={Building2}
-    title="Für den ÖGD entwickelt"
-    description="Praxisnahe Fachverfahren, die speziell für Gesundheitsämter und den Öffentlichen Gesundheitsdienst entwickelt wurden."
-  />
+      </div>
 
-  <FeatureCard
-    icon={Blocks}
-    title="Moderne Webplattform"
-    description="Browserbasiert, plattformunabhängig und flexibel im eigenen Rechenzentrum oder als Hosting-Lösung einsetzbar."
-  />
+      {/* Feature Cards */}
+      <div
+        className="
+          relative
+          z-10
 
-  <FeatureCard
-    icon={Workflow}
-    title="Intelligente Schnittstellen"
-    description="Nahtlose Integration mit Fachverfahren, Registern und externen Systemen für effiziente digitale Prozesse."
-  />
+          mx-auto
+          mt-16
 
-  <FeatureCard
-    icon={Rocket}
-    title="Zukunftssichere Architektur"
-    description="Modular aufgebaut und kontinuierlich weiterentwickelt – für die Anforderungen von heute und morgen."
-  />
-</div>
+          grid
+          max-w-5xl
+          grid-cols-1
+          gap-8
+
+          lg:grid-cols-2
+        "
+      >
+        <FeatureCard
+          icon={Building2}
+          title="Für den ÖGD entwickelt"
+          description="Praxisnahe Fachverfahren, die speziell für Gesundheitsämter und den Öffentlichen Gesundheitsdienst entwickelt wurden."
+        />
+
+        <FeatureCard
+          icon={Blocks}
+          title="Moderne Webplattform"
+          description="Browserbasiert, plattformunabhängig und flexibel im eigenen Rechenzentrum oder als Hosting-Lösung einsetzbar."
+        />
+
+        <FeatureCard
+          icon={Workflow}
+          title="Intelligente Schnittstellen"
+          description="Nahtlose Integration mit Fachverfahren, Registern und externen Systemen für effiziente digitale Prozesse."
+        />
+
+        <FeatureCard
+          icon={Rocket}
+          title="Zukunftssichere Architektur"
+          description="Modular aufgebaut und kontinuierlich weiterentwickelt – für die Anforderungen von heute und morgen."
+        />
       </div>
     </Section>
   );
