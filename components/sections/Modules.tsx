@@ -94,6 +94,7 @@ const modules = [
     icon: Building2,
     title: "Weitere Fachverfahren",
     featured: true,
+    mascot: "/images/mascot/verwaltung.png",
     features: [
       "Modular",
       "Erweiterbar",
