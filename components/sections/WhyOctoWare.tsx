@@ -44,14 +44,24 @@ export function WhyOctoWare() {
       {/* Überschrift */}
       <div
         className="
-          relative
-          z-10
+    absolute
 
-          mx-auto
-          max-w-3xl
-          text-center
-        "
-      >
+    left-1/2
+    top-[58%]
+
+    w-[1600px]
+    max-w-none
+
+    -translate-x-1/2
+    -translate-y-1/2
+
+    opacity-20
+
+    pointer-events-none
+    select-none
+
+    -z-10
+"
         <span
           className="
             inline-flex
