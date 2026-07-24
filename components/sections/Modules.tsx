@@ -102,7 +102,7 @@ export default function Modules() {
             Fachverfahren
           </span>
 
-          <h2 className="mt-6 text-4xl font-bold tracking-tight text-slate-900">
+          <h2 className="mt-6 text-5xl font-bold tracking-tight text-slate-900">
             Alle Fachverfahren.
             <br />
             Eine Plattform.
