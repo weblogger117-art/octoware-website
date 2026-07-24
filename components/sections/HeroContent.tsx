@@ -4,15 +4,15 @@ import { Heading } from "@/components/typography";
 
 export function HeroContent() {
   return (
-    <div className="flex max-w-lg flex-col items-start">
+    <div className="flex max-w-xl flex-col items-start">
 
       {/* Produktlogo */}
       <div
         className="
           -ml-12
-          -mt-4
+          -mt-2
           mb-8
-          xl:-ml-14
+          xl:-ml-18
         "
       >
         <Image
