@@ -52,7 +52,7 @@ export function WhyOctoWare() {
           -translate-x-1/2
           -translate-y-1/2
 
-          opacity-[0.07]
+          opacity-[0.12]
 
           pointer-events-none
           select-none
@@ -68,7 +68,7 @@ export function WhyOctoWare() {
           z-10
 
           mx-auto
-          max-w-3xl
+          max-w-2xl
           text-center
         "
       >
@@ -131,10 +131,10 @@ export function WhyOctoWare() {
           z-10
 
           mx-auto
-          mt-16
+          mt-20
 
           grid
-          max-w-5xl
+          max-w-6xl
           grid-cols-1
           gap-8
 
