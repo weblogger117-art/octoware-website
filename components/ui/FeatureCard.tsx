@@ -21,6 +21,9 @@ export function FeatureCard({
         `
         group
 
+relative
+overflow-hidden
+
         rounded-3xl
         w-full
         border
@@ -37,8 +40,8 @@ py-10
         duration-300
 
         hover:-translate-y-1
-        hover:border-[#146ab1]/20
-        hover:shadow-[0_30px_70px_rgba(20,106,177,0.18)]
+        hover:border-[#146ab1]/30
+        hover:shadow-[0_30px_70px_rgba(20,106,177,0.14)]
         `,
         className
       )}
@@ -62,8 +65,10 @@ py-10
       transition-all
       duration-300
 
+    group-hover:scale-105
       group-hover:bg-[#146ab1]
       group-hover:text-white
+    
     "
   >
     <Icon
@@ -74,7 +79,8 @@ py-10
 
   <h3
   className="
-    text-[28px]
+    text-[24px]
+lg:text-[26px]
     font-semibold
     leading-tight
     tracking-tight
