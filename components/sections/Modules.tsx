@@ -296,10 +296,10 @@ export default function Modules() {
         absolute
         left-8
         bottom-6
-        h-40
-        w-40
+        h-60
+        w-60
         rounded-full
-        bg-[#146ab1]/8
+        bg-[#146ab1]/20
         blur-3xl
       "
     />
