@@ -98,14 +98,17 @@ export default function Workflow() {
 
   <div className="grid gap-10 lg:grid-cols-5">
 
-    {steps.map((step) => {
+    {steps.map((step, index) => {
       const Icon = step.icon;
 
       return (
         <div
-          key={step.title}
-          className="group relative text-center"
-        >
+  key={step.title}
+  className="group relative text-center opacity-0 animate-[fadeUp_.5s_ease-out_forwards]"
+  style={{
+    animationDelay: `${1 + index * 0.2}s`,
+  }}
+>
           <div
             className="
               relative
