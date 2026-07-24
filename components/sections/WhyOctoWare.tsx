@@ -36,9 +36,29 @@ export function WhyOctoWare() {
      <Image
   src="/images/graphics/network-background.svg"
   alt=""
-  width={500}
-  height={500}
-  className="border-4 border-red-500"
+  aria-hidden="true"
+  width={1800}
+  height={1100}
+  draggable={false}
+  className="
+    absolute
+
+    left-1/2
+    top-[65%]
+
+    w-[1800px]
+    max-w-none
+
+    -translate-x-1/2
+    -translate-y-1/2
+
+    opacity-10
+
+    pointer-events-none
+    select-none
+
+    -z-10
+  "
 />
 
      {/* Überschrift */} 
