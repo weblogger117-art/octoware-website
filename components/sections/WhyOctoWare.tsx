@@ -68,7 +68,7 @@ export function WhyOctoWare() {
           z-10
 
           mx-auto
-          max-w-2xl
+          max-w-3xl
           text-center
         "
       >
