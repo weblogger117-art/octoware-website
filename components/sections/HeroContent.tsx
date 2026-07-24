@@ -5,14 +5,40 @@ import { Heading } from "@/components/typography";
 export function HeroContent() {
   return (
     <div className="flex max-w-lg flex-col items-start">
-      <Image
-  src="/images/branding/octoware-logo.png"
-  alt="OctoWare®"
-  width={320}
-  height={76}
-  priority
-  className="h-14 w-auto select-none"
-/>
+      <div
+  className="
+    inline-flex
+    items-center
+
+    rounded-2x1
+
+    border
+    border-[#c5d7ed]
+
+    bg-white/75
+
+    px-5
+    py-2
+
+    backdrop-blur-md
+
+    shadow-sm
+  "
+>
+  <Image
+    src="/images/branding/octoware-logo.png"
+    alt="OctoWare®"
+    width={260}
+    height={62}
+    priority
+    draggable={false}
+    className="
+      h-9
+      w-auto
+      select-none
+    "
+  />
+</div>
 
       <Heading
         className="mt-4"
