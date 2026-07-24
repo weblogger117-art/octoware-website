@@ -101,7 +101,7 @@ export function HeroVisual() {
           className="
             absolute
 
-            bottom-25
+            bottom-20
             right-[6%]
 
             z-25
