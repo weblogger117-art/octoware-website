@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   Baby,
   ShieldPlus,
@@ -129,6 +130,28 @@ export default function Modules() {
       blur-[120px]
     "
   />
+        <div
+  className="
+    absolute
+    inset-0
+    flex
+    items-center
+    justify-center
+  "
+>
+  <Image
+    src="/images/graphics/network-background.svg"
+    alt=""
+    aria-hidden
+    width={2200}
+    height={1400}
+    className="
+      opacity-45
+      max-w-none
+      -translate-y-10
+    "
+  />
+</div>
 </div>
       <div className="mx-auto max-w-7xl px-6">
 
