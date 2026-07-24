@@ -1,6 +1,6 @@
 import {
   Inbox,
-  Workflow,
+  Workflow as WorkflowIcon,
   FileText,
   Waypoints,
   ChartColumn,
@@ -13,7 +13,7 @@ const steps = [
     text: "Bürgeranliegen, Meldungen und Anträge digital aufnehmen.",
   },
   {
-    icon: Workflow,
+    icon: WorkflowIcon,
     title: "Bearbeitung",
     text: "Vorgänge strukturiert und regelbasiert verwalten.",
   },
