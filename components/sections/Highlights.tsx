@@ -12,19 +12,21 @@ export function Highlights() {
     <Section
       className="
         relative
-        -mt-28
+        -mt-36
         z-30
         pt-0
       "
     >
       <div
-        className="
-          flex
-          flex-wrap
-          justify-center
-          gap-10
-        "
-      >
+  className="
+    mx-auto
+    flex
+    max-w-6xl
+    flex-wrap
+    justify-center
+    gap-10
+  "
+>
         <StatCard
   icon={Building2}
   iconClassName="bg-[#adce00]/10 text-[#7FA000] border-[#adce00]/20"
