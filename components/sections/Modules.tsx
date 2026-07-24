@@ -289,8 +289,8 @@ export default function Modules() {
             <Image
               src={module.mascot}
               alt={module.title}
-              width={280}
-              height={280}
+              width={220}
+              height={220}
               className="object-contain transition-transform duration-500 group-hover:scale-105"
             />
           </div>
