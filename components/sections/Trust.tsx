@@ -38,7 +38,9 @@ export default function Trust() {
             praxisnah, zuverlässig und gemeinsam mit unseren Kunden.
           </p>
 
-          <div className="mt-20 grid gap-8 md:grid-cols-2">
+          <div className="mt-20 grid items-center gap-16 lg:grid-cols-[1fr_420px]">
+            
+            <div className="grid gap-8 md:grid-cols-2">
 
   <div className="rounded-3xl border border-slate-200 bg-white p-12 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#146ab1]/30 hover:bg-white hover:shadow-xl hover:shadow-[#146ab1]/15">
     <div className="text-6xl font-bold text-[#146ab1]">
@@ -94,6 +96,29 @@ export default function Trust() {
       Gesetzliche Änderungen, neue Funktionen und moderne Schnittstellen werden kontinuierlich umgesetzt.
     </p>
   </div>
+              <div className="
+hidden
+lg:flex
+items-center
+justify-center
+">
+
+  <Image
+    src="/images/mascot/trust.png"
+    alt="easy-soft Maskottchen"
+    width={430}
+    height={430}
+    className="
+      object-contain
+      drop-shadow-2xl
+      transition-transform
+      duration-500
+      group-hover:scale-105
+    "
+  />
+
+</div>
+            </div> 
 
 </div>
 
