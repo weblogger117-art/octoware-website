@@ -1,5 +1,5 @@
+import { CSSProperties } from "react";
 import { LucideIcon } from "lucide-react";
-
 import { cn } from "@/lib/utils";
 
 type FeatureCardProps = {
@@ -7,6 +7,7 @@ type FeatureCardProps = {
   title: string;
   description: string;
   className?: string;
+  style?: CSSProperties;
 };
 
 export function FeatureCard({
@@ -14,10 +15,12 @@ export function FeatureCard({
   title,
   description,
   className,
+  style,
 }: FeatureCardProps) {
   return (
     <div
-      className={cn(
+  style={style}
+  className={cn(
         `
         group
 
