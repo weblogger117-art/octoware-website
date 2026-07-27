@@ -149,7 +149,7 @@ const [isVisible, setIsVisible] = useState(false);
 </div>
 
       {/* Feature Cards */}
-     <div
+<div
   className="
     relative
     z-10
@@ -160,101 +160,73 @@ const [isVisible, setIsVisible] = useState(false);
     grid-cols-1
     gap-8
     lg:grid-cols-2
-"
+  "
 >
-        <div
-  className={cn(
-    "transition-all duration-700",
-    isVisible
-      ? "translate-y-0 opacity-100 scale-100"
-      : "translate-y-10 opacity-0 scale-95"
-  )}
->
+
   <div
-  style={{
-    transitionDelay: "120ms",
-  }}
-  className={cn(
-    "transition-all duration-700",
-    isVisible
-      ? "translate-y-0 opacity-100 scale-100"
-      : "translate-y-10 opacity-0 scale-95"
-  )}
->
+    className={cn(
+      "transition-all duration-700",
+      isVisible
+        ? "translate-y-0 opacity-100 scale-100"
+        : "translate-y-10 opacity-0 scale-95"
+    )}
+  >
+    <FeatureCard
+      icon={Building2}
+      title="Für den ÖGD entwickelt"
+      description="Praxisnahe Fachverfahren, die speziell für Gesundheitsämter und den Öffentlichen Gesundheitsdienst entwickelt wurden."
+    />
+  </div>
+
   <div
-  style={{
-    transitionDelay: "240ms",
-  }}
-  className={cn(
-    "transition-all duration-700",
-    isVisible
-      ? "translate-y-0 opacity-100 scale-100"
-      : "translate-y-10 opacity-0 scale-95"
-  )}
->
+    style={{ transitionDelay: "120ms" }}
+    className={cn(
+      "transition-all duration-700",
+      isVisible
+        ? "translate-y-0 opacity-100 scale-100"
+        : "translate-y-10 opacity-0 scale-95"
+    )}
+  >
+    <FeatureCard
+      icon={Blocks}
+      title="Moderne Webplattform"
+      description="Browserbasiert, plattformunabhängig und flexibel im eigenen Rechenzentrum oder als Hosting-Lösung einsetzbar."
+    />
+  </div>
+
   <div
-  style={{
-    transitionDelay: "360ms",
-  }}
-  className={cn(
-    "transition-all duration-700",
-    isVisible
-      ? "translate-y-0 opacity-100 scale-100"
-      : "translate-y-10 opacity-0 scale-95"
-  )}
->
-  <FeatureCard
-    icon={Blocks}
-    title="Moderne Webplattform"
-    description="Browserbasiert, plattformunabhängig und flexibel im eigenen Rechenzentrum oder als Hosting-Lösung einsetzbar."
-  />
+    style={{ transitionDelay: "240ms" }}
+    className={cn(
+      "transition-all duration-700",
+      isVisible
+        ? "translate-y-0 opacity-100 scale-100"
+        : "translate-y-10 opacity-0 scale-95"
+    )}
+  >
+    <FeatureCard
+      icon={Workflow}
+      title="Intelligente Schnittstellen"
+      description="Nahtlose Integration mit Fachverfahren, Registern und externen Systemen für effiziente digitale Prozesse."
+    />
+  </div>
+
+  <div
+    style={{ transitionDelay: "360ms" }}
+    className={cn(
+      "transition-all duration-700",
+      isVisible
+        ? "translate-y-0 opacity-100 scale-100"
+        : "translate-y-10 opacity-0 scale-95"
+    )}
+  >
+    <FeatureCard
+      icon={Rocket}
+      title="Zukunftssichere Architektur"
+      description="Modular aufgebaut und kontinuierlich weiterentwickelt – für die Anforderungen von heute und morgen."
+    />
+  </div>
+
 </div>
-
-        <FeatureCard
-  style={{
-    transitionDelay: "120ms",
-  }}
-  className={cn(
-    "transition-all duration-700",
-    isVisible
-      ? "translate-y-0 opacity-100 scale-100"
-      : "translate-y-10 opacity-0 scale-95"
-  )}
-          icon={Blocks}
-          title="Moderne Webplattform"
-          description="Browserbasiert, plattformunabhängig und flexibel im eigenen Rechenzentrum oder als Hosting-Lösung einsetzbar."
-        />
-
-        <FeatureCard
-  style={{
-    transitionDelay: "240ms",
-  }}
-  className={cn(
-    "transition-all duration-700",
-    isVisible
-      ? "translate-y-0 opacity-100 scale-100"
-      : "translate-y-10 opacity-0 scale-95"
-  )}
-          icon={Workflow}
-          title="Intelligente Schnittstellen"
-          description="Nahtlose Integration mit Fachverfahren, Registern und externen Systemen für effiziente digitale Prozesse."
-        />
-
-        <FeatureCard
-  style={{
-    transitionDelay: "360ms",
-  }}
-  className={cn(
-    "transition-all duration-700",
-    isVisible
-      ? "translate-y-0 opacity-100 scale-100"
-      : "translate-y-10 opacity-0 scale-95"
-  )}
-          icon={Rocket}
-          title="Zukunftssichere Architektur"
-          description="Modular aufgebaut und kontinuierlich weiterentwickelt – für die Anforderungen von heute und morgen."
-        />
-      </div>
     </Section>
   );
 }
