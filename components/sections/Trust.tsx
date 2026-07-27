@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { RefreshCw, Check } from "lucide-react";
+import { RefreshCw, Check, Monitor, Globe } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 export default function Trust() {
@@ -15,7 +15,9 @@ const [switchingOffices, setSwitchingOffices] = useState(false);
   const [showRefresh, setShowRefresh] = useState(true);
 const [switchingUpdate, setSwitchingUpdate] = useState(false);
 const [updateAnimated, setUpdateAnimated] = useState(false);
-  
+  const [browserStep, setBrowserStep] = useState(0);
+const [browserAnimated, setBrowserAnimated] = useState(false);
+  const [browserSwitching, setBrowserSwitching] = useState(false);
   const [yearAnimated, setYearAnimated] = useState(false);
 const [officeAnimated, setOfficeAnimated] = useState(false);
   useEffect(() => {
@@ -161,6 +163,44 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
     clearTimeout(timeout2);
   };
 }, [isVisible, updateAnimated]);
+
+  useEffect(() => {
+  if (!isVisible || browserAnimated) return;
+
+  let timer1: ReturnType<typeof setTimeout>;
+  let timer2: ReturnType<typeof setTimeout>;
+  let timer3: ReturnType<typeof setTimeout>;
+  let timer4: ReturnType<typeof setTimeout>;
+
+  timer1 = setTimeout(() => {
+    setBrowserSwitching(true);
+
+    timer2 = setTimeout(() => {
+      setBrowserStep(1);
+      setBrowserSwitching(false);
+    }, 250);
+
+  }, 700);
+
+  timer3 = setTimeout(() => {
+    setBrowserSwitching(true);
+
+    timer4 = setTimeout(() => {
+      setBrowserStep(2);
+      setBrowserSwitching(false);
+      setBrowserAnimated(true);
+    }, 250);
+
+  }, 1500);
+
+  return () => {
+    clearTimeout(timer1);
+    clearTimeout(timer2);
+    clearTimeout(timer3);
+    clearTimeout(timer4);
+  };
+
+}, [isVisible, browserAnimated]);
   
   return (
     <section
@@ -440,8 +480,37 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
     hover:shadow-[#146ab1]/15
   "
 >
-  <div className="text-6xl font-bold text-[#146ab1]">
-  WEB
+<div
+  className={cn(
+    "flex justify-center transition-all duration-300",
+    browserSwitching
+      ? "scale-110 opacity-0"
+      : "scale-100 opacity-100"
+  )}
+>
+
+  {browserStep === 0 && (
+    <Monitor
+      size={58}
+      strokeWidth={2.5}
+      className="text-[#146ab1]"
+    />
+  )}
+
+  {browserStep === 1 && (
+    <Globe
+      size={58}
+      strokeWidth={2.5}
+      className="text-[#146ab1] animate-pulse"
+    />
+  )}
+
+  {browserStep === 2 && (
+    <span className="text-5xl font-bold text-[#adce00]">
+      ONLINE
+    </span>
+  )}
+
 </div>
 
 <p className="mt-6 text-base font-semibold text-slate-900">
