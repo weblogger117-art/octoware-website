@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import { cn } from "@/lib/utils";
 export default function Trust() {
   const sectionRef = useRef<HTMLElement>(null);
 const [isVisible, setIsVisible] = useState(false);
@@ -33,7 +34,7 @@ const [isVisible, setIsVisible] = useState(false);
     inset-0
     overflow-hidden
     pointer-events-none
-    -z-0
+    -z-10
   "
 >
   {/* Blauer Glow */}
@@ -97,7 +98,14 @@ const [isVisible, setIsVisible] = useState(false);
       <div className="relative z-10 mx-auto max-w-7xl px-6">
 
         {/* Überschrift */}
-        <div className="mx-auto max-w-3xl text-center">
+        <div
+  className={cn(
+    "mx-auto max-w-3xl text-center transition-all duration-700",
+    isVisible
+      ? "translate-y-0 opacity-100"
+      : "translate-y-10 opacity-0"
+  )}
+>
 
           <span
             className="
