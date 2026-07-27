@@ -11,7 +11,6 @@ const [showYears, setShowYears] = useState(true);
   const [offices, setOffices] = useState(0);
 const [showOffices, setShowOffices] = useState(true);
 const [switchingOffices, setSwitchingOffices] = useState(false);
-  const [startOfficeCounter, setStartOfficeCounter] = useState(false);
   const [hasAnimated, setHasAnimated] = useState(false);
   useEffect(() => {
   const observer = new IntersectionObserver(
@@ -69,10 +68,6 @@ const [switchingOffices, setSwitchingOffices] = useState(false);
   setShowYears(false);
   setSwitching(false);
 
-  setTimeout(() => {
-    setStartOfficeCounter(true);
-  }, 300);
-
   setHasAnimated(true);
 
 }, 250);
@@ -90,7 +85,7 @@ const [switchingOffices, setSwitchingOffices] = useState(false);
 }, [isVisible, hasAnimated]);
 
   useEffect(() => {
-  if (!startOfficeCounter) return;
+ if (!isVisible || hasAnimated) return;
 
   const target = 130;
   const duration = 1800;
@@ -135,7 +130,7 @@ const [switchingOffices, setSwitchingOffices] = useState(false);
   clearTimeout(timeout);
 };
 
-}, [startOfficeCounter]);
+}, [isVisible, hasAnimated]);
   
   return (
     <section
@@ -312,8 +307,8 @@ const [switchingOffices, setSwitchingOffices] = useState(false);
   className={cn(
     "text-6xl font-bold transition-all duration-300",
     showYears
-      ? "text-[#adce00]"
-      : "text-[#146ab1]",
+  ? "text-[#146ab1]"
+  : "text-[#adce00]"
     switching
       ? "scale-110 opacity-0"
       : "scale-100 opacity-100"
@@ -363,11 +358,14 @@ const [switchingOffices, setSwitchingOffices] = useState(false);
 >
     <div
   className={cn(
-    "text-6xl font-bold transition-all duration-300 text-[#146ab1]",
-    switchingOffices
-      ? "scale-110 opacity-0"
-      : "scale-100 opacity-100"
-  )}
+  "text-6xl font-bold transition-all duration-300",
+  showOffices
+    ? "text-[#146ab1]"
+    : "text-[#adce00]",
+  switchingOffices
+    ? "scale-110 opacity-0"
+    : "scale-100 opacity-100"
+)}
 >
   {showOffices ? offices : "130+"}
 </div>
