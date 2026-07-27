@@ -87,8 +87,15 @@ const [isVisible, setIsVisible] = useState(false);
   "
 />
 
-     {/* Überschrift */} 
-      <div className=" relative z-10 mx-auto max-w-3xl text-center " >
+    {/* Überschrift */}
+<div
+  className={cn(
+    "relative z-10 mx-auto max-w-3xl text-center transition-all duration-700",
+    isVisible
+      ? "translate-y-0 opacity-100"
+      : "translate-y-10 opacity-0"
+  )}
+>
         <span
           className="
             inline-flex
@@ -143,21 +150,29 @@ const [isVisible, setIsVisible] = useState(false);
 
       {/* Feature Cards */}
       <div
-        className="
-          relative
-          z-10
+  className={cn(
+    `
+      relative
+      z-10
 
-          mx-auto
-          mt-20
+      mx-auto
+      mt-20
 
-          grid
-          max-w-6xl
-          grid-cols-1
-          gap-8
+      grid
+      max-w-6xl
+      grid-cols-1
+      gap-8
 
-          lg:grid-cols-2
-        "
-      >
+      lg:grid-cols-2
+
+      transition-all
+      duration-700
+    `,
+    isVisible
+      ? "translate-y-0 opacity-100"
+      : "translate-y-12 opacity-0"
+  )}
+>
         <FeatureCard
           icon={Building2}
           title="Für den ÖGD entwickelt"
