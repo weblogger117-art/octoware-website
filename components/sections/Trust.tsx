@@ -172,7 +172,8 @@ const [isVisible, setIsVisible] = useState(false);
 >
     <div
   className="
-    rounded-3xl
+    h-full
+      rounded-3xl
     border
     border-slate-200
     bg-white
@@ -219,7 +220,8 @@ const [isVisible, setIsVisible] = useState(false);
 >
    <div
   className="
-    rounded-3xl
+    h-full
+     rounded-3xl
     border
     border-slate-200
     bg-white
@@ -262,7 +264,8 @@ const [isVisible, setIsVisible] = useState(false);
 >
     <div
   className="
-    rounded-3xl
+    h-full
+      rounded-3xl
     border
     border-slate-200
     bg-white
@@ -305,7 +308,8 @@ const [isVisible, setIsVisible] = useState(false);
 >
     <div
   className="
-    rounded-3xl
+    h-full
+      rounded-3xl
     border
     border-slate-200
     bg-white
