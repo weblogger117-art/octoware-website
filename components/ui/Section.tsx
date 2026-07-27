@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { forwardRef, ReactNode } from "react";
 
 import { Container } from "@/components/ui";
 import { cn } from "@/lib/utils";
@@ -9,16 +9,26 @@ type SectionProps = {
   containerClassName?: string;
 };
 
-export function Section({
-  children,
-  className,
-  containerClassName,
-}: SectionProps) {
-  return (
-    <section className={cn("py-16 lg:py-24", className)}>
-      <Container className={containerClassName}>
-        {children}
-      </Container>
-    </section>
-  );
-}
+export const Section = forwardRef<HTMLElement, SectionProps>(
+  (
+    {
+      children,
+      className,
+      containerClassName,
+    },
+    ref
+  ) => {
+    return (
+      <section
+        ref={ref}
+        className={cn("py-16 lg:py-24", className)}
+      >
+        <Container className={containerClassName}>
+          {children}
+        </Container>
+      </section>
+    );
+  }
+);
+
+Section.displayName = "Section";
