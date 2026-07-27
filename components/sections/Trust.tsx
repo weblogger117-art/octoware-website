@@ -201,13 +201,34 @@ const [isVisible, setIsVisible] = useState(false);
     </p>
       </div>
   </div>
-  <div
+ <div
   className={cn(
-    "rounded-3xl border border-slate-200 bg-white p-12 text-center shadow-sm transition-all duration-700 delay-150 hover:-translate-y-2 hover:border-[#146ab1]/30 hover:bg-white hover:shadow-xl hover:shadow-[#146ab1]/15",
+    "transition-all duration-700",
     isVisible
       ? "translate-y-0 opacity-100"
       : "translate-y-10 opacity-0"
   )}
+  style={{
+    transitionDelay: isVisible ? "120ms" : "0ms",
+  }}
+>
+   <div
+  className="
+    rounded-3xl
+    border
+    border-slate-200
+    bg-white
+    p-12
+    text-center
+    shadow-sm
+    transition-all
+    duration-300
+    hover:-translate-y-2
+    hover:border-[#146ab1]/30
+    hover:bg-white
+    hover:shadow-xl
+    hover:shadow-[#146ab1]/15
+  "
 >
     <div className="text-6xl font-bold text-[#146ab1]">
       130+
@@ -221,14 +242,36 @@ const [isVisible, setIsVisible] = useState(false);
       Vertrauen täglich auf Lösungen von easy-soft.
     </p>
   </div>
+     </div>
 
   <div
   className={cn(
-    "rounded-3xl border border-slate-200 bg-white p-12 text-center shadow-sm transition-all duration-700 delay-300 hover:-translate-y-2 hover:border-[#146ab1]/30 hover:bg-white hover:shadow-xl hover:shadow-[#146ab1]/15",
+    "transition-all duration-700",
     isVisible
       ? "translate-y-0 opacity-100"
       : "translate-y-10 opacity-0"
   )}
+  style={{
+  transitionDelay: isVisible ? "240ms" : "0ms",
+}}
+>
+    <div
+  className="
+    rounded-3xl
+    border
+    border-slate-200
+    bg-white
+    p-12
+    text-center
+    shadow-sm
+    transition-all
+    duration-300
+    hover:-translate-y-2
+    hover:border-[#146ab1]/30
+    hover:bg-white
+    hover:shadow-xl
+    hover:shadow-[#146ab1]/15
+  "
 >
   <div className="text-6xl font-bold text-[#146ab1]">
   WEB
@@ -242,14 +285,36 @@ const [isVisible, setIsVisible] = useState(false);
   Mit OctoWare®NET – flexibel, plattformunabhängig und ohne lokale Installation.
 </p>
   </div>
-
+ </div>
+              
   <div
   className={cn(
-    "rounded-3xl border border-slate-200 bg-white p-12 text-center shadow-sm transition-all duration-700 delay-500 hover:-translate-y-2 hover:border-[#146ab1]/30 hover:bg-white hover:shadow-xl hover:shadow-[#146ab1]/15",
+    "transition-all duration-700",
     isVisible
       ? "translate-y-0 opacity-100"
       : "translate-y-10 opacity-0"
   )}
+  style={{
+  transitionDelay: isVisible ? "360ms" : "0ms",
+}}
+>
+    <div
+  className="
+    rounded-3xl
+    border
+    border-slate-200
+    bg-white
+    p-12
+    text-center
+    shadow-sm
+    transition-all
+    duration-300
+    hover:-translate-y-2
+    hover:border-[#146ab1]/30
+    hover:bg-white
+    hover:shadow-xl
+    hover:shadow-[#146ab1]/15
+  "
 >
     <div className="text-6xl font-bold text-[#146ab1]">
       ∞
