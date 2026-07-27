@@ -42,7 +42,7 @@ export default function Trust() {
 
   <div className="rounded-3xl border border-slate-200 bg-white p-10 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#146ab1]/30 hover:shadow-xl">
     <div className="text-5xl font-bold text-[#146ab1]">
-      25+
+      35+
     </div>
 
     <p className="mt-4 text-base font-semibold text-slate-900">
@@ -56,7 +56,7 @@ export default function Trust() {
 
   <div className="rounded-3xl border border-slate-200 bg-white p-10 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#146ab1]/30 hover:shadow-xl">
     <div className="text-5xl font-bold text-[#146ab1]">
-      100+
+      130+
     </div>
 
     <p className="mt-4 text-base font-semibold text-slate-900">
@@ -69,17 +69,18 @@ export default function Trust() {
   </div>
 
   <div className="rounded-3xl border border-slate-200 bg-white p-10 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#146ab1]/30 hover:shadow-xl">
-    <div className="text-5xl font-bold text-[#146ab1]">
-      40+
-    </div>
+  <div className="text-5xl font-bold text-[#146ab1]">
+  WEB
+</div>
 
-    <p className="mt-4 text-base font-semibold text-slate-900">
-      Fachverfahren
-    </p>
+<p className="mt-4 text-base font-semibold text-slate-900">
+  Browserbasiert
+</p>
 
-    <p className="mt-2 text-sm leading-6 text-slate-600">
-      Modular entwickelt und perfekt aufeinander abgestimmt.
-    </p>
+<p className="mt-2 text-sm leading-6 text-slate-600">
+  Mit OctoWare®NET arbeiten Sie vollständig im Browser – ohne lokale Installation und unabhängig vom Betriebssystem.
+</p>
+</p>
   </div>
 
   <div className="rounded-3xl border border-slate-200 bg-white p-10 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#146ab1]/30 hover:shadow-xl">
