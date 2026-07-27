@@ -299,9 +299,6 @@ const [isVisible, setIsVisible] = useState(false);
       ? "translate-y-0 opacity-100"
       : "translate-y-10 opacity-0"
   )}
-  style={{
-  transitionDelay: isVisible ? "360ms" : "0ms",
-}}
 >
     <div
   className="
