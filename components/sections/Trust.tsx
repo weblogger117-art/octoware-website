@@ -33,10 +33,70 @@ export default function Trust() {
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-slate-600">
-            Seit vielen Jahren entwickeln wir Software ausschließlich
+            Seit vielen Jahren entwickeln wir Software
             für den Öffentlichen Gesundheitsdienst –
             praxisnah, zuverlässig und gemeinsam mit unseren Kunden.
           </p>
+
+          <div className="mt-20 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+
+  <div className="rounded-3xl border border-slate-200 bg-white p-10 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#146ab1]/30 hover:shadow-xl">
+    <div className="text-5xl font-bold text-[#146ab1]">
+      25+
+    </div>
+
+    <p className="mt-4 text-base font-semibold text-slate-900">
+      Jahre Erfahrung
+    </p>
+
+    <p className="mt-2 text-sm leading-6 text-slate-600">
+      Spezialisierte Softwareentwicklung für den Öffentlichen Gesundheitsdienst.
+    </p>
+  </div>
+
+  <div className="rounded-3xl border border-slate-200 bg-white p-10 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#146ab1]/30 hover:shadow-xl">
+    <div className="text-5xl font-bold text-[#146ab1]">
+      100+
+    </div>
+
+    <p className="mt-4 text-base font-semibold text-slate-900">
+      Gesundheitsämter
+    </p>
+
+    <p className="mt-2 text-sm leading-6 text-slate-600">
+      Vertrauen täglich auf Lösungen von easy-soft.
+    </p>
+  </div>
+
+  <div className="rounded-3xl border border-slate-200 bg-white p-10 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#146ab1]/30 hover:shadow-xl">
+    <div className="text-5xl font-bold text-[#146ab1]">
+      40+
+    </div>
+
+    <p className="mt-4 text-base font-semibold text-slate-900">
+      Fachverfahren
+    </p>
+
+    <p className="mt-2 text-sm leading-6 text-slate-600">
+      Modular entwickelt und perfekt aufeinander abgestimmt.
+    </p>
+  </div>
+
+  <div className="rounded-3xl border border-slate-200 bg-white p-10 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#146ab1]/30 hover:shadow-xl">
+    <div className="text-5xl font-bold text-[#146ab1]">
+      ∞
+    </div>
+
+    <p className="mt-4 text-base font-semibold text-slate-900">
+      Kontinuierliche Weiterentwicklung
+    </p>
+
+    <p className="mt-2 text-sm leading-6 text-slate-600">
+      Neue Funktionen, Schnittstellen und gesetzliche Anforderungen fließen fortlaufend ein.
+    </p>
+  </div>
+
+</div>
 
         </div>
 
