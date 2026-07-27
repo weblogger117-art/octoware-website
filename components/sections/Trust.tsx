@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { RefreshCw, Check } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 export default function Trust() {
@@ -11,6 +12,10 @@ const [showYears, setShowYears] = useState(true);
   const [offices, setOffices] = useState(0);
 const [showOffices, setShowOffices] = useState(true);
 const [switchingOffices, setSwitchingOffices] = useState(false);
+  const [showRefresh, setShowRefresh] = useState(true);
+const [switchingUpdate, setSwitchingUpdate] = useState(false);
+const [updateAnimated, setUpdateAnimated] = useState(false);
+  
   const [yearAnimated, setYearAnimated] = useState(false);
 const [officeAnimated, setOfficeAnimated] = useState(false);
   useEffect(() => {
@@ -133,6 +138,29 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
 };
 
 }, [isVisible, officeAnimated]);
+
+  useEffect(() => {
+  if (!isVisible || updateAnimated) return;
+
+  let timeout1: ReturnType<typeof setTimeout>;
+  let timeout2: ReturnType<typeof setTimeout>;
+
+  timeout1 = setTimeout(() => {
+    setSwitchingUpdate(true);
+
+    timeout2 = setTimeout(() => {
+      setShowRefresh(false);
+      setSwitchingUpdate(false);
+      setUpdateAnimated(true);
+    }, 250);
+
+  }, 1800);
+
+  return () => {
+    clearTimeout(timeout1);
+    clearTimeout(timeout2);
+  };
+}, [isVisible, updateAnimated]);
   
   return (
     <section
@@ -456,9 +484,31 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
     hover:shadow-[#146ab1]/15
   "
 >
-    <div className="text-6xl font-bold text-[#146ab1]">
-      ∞
-    </div>
+    <div
+  className={cn(
+    "flex justify-center transition-all duration-300",
+    switchingUpdate
+      ? "scale-110 opacity-0"
+      : "scale-100 opacity-100"
+  )}
+>
+  {showRefresh ? (
+    <RefreshCw
+      size={58}
+      strokeWidth={2.5}
+      className={cn(
+  "text-[#146ab1] transition-transform duration-300",
+  showRefresh && "animate-spin"
+)}
+    />
+  ) : (
+    <Check
+      size={58}
+      strokeWidth={3}
+      className="text-[#adce00]"
+    />
+  )}
+</div>
 
     <p className="mt-6 text-base font-semibold text-slate-900">
       Kontinuierliche Weiterentwicklung
