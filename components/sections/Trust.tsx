@@ -11,7 +11,8 @@ const [showYears, setShowYears] = useState(true);
   const [offices, setOffices] = useState(0);
 const [showOffices, setShowOffices] = useState(true);
 const [switchingOffices, setSwitchingOffices] = useState(false);
-  const [hasAnimated, setHasAnimated] = useState(false);
+  const [yearAnimated, setYearAnimated] = useState(false);
+const [officeAnimated, setOfficeAnimated] = useState(false);
   useEffect(() => {
   const observer = new IntersectionObserver(
     ([entry]) => {
@@ -31,7 +32,7 @@ const [switchingOffices, setSwitchingOffices] = useState(false);
   return () => observer.disconnect();
 }, []);
    useEffect(() => {
-  if (!isVisible || hasAnimated) return;
+ if (!isVisible || yearAnimated) return;
 
   const startYear = 1990;
   const endYear = 2026;
@@ -68,7 +69,7 @@ const [switchingOffices, setSwitchingOffices] = useState(false);
   setShowYears(false);
   setSwitching(false);
 
-  setHasAnimated(true);
+  setYearAnimated(true);
 
 }, 250);
 
@@ -82,10 +83,10 @@ const [switchingOffices, setSwitchingOffices] = useState(false);
   cancelAnimationFrame(animationFrame);
   clearTimeout(timeout);
 };
-}, [isVisible, hasAnimated]);
+}, [isVisible, yearAnimated]);
 
   useEffect(() => {
- if (!isVisible || hasAnimated) return;
+ if (!isVisible || officeAnimated) return;
 
   const target = 130;
   const duration = 1800;
@@ -117,6 +118,7 @@ const [switchingOffices, setSwitchingOffices] = useState(false);
         setTimeout(() => {
           setShowOffices(false);
           setSwitchingOffices(false);
+          setOfficeAnimated(true);
         }, 250);
 
       }, 300);
@@ -130,7 +132,7 @@ const [switchingOffices, setSwitchingOffices] = useState(false);
   clearTimeout(timeout);
 };
 
-}, [isVisible, hasAnimated]);
+}, [isVisible, officeAnimated]);
   
   return (
     <section
@@ -308,7 +310,7 @@ const [switchingOffices, setSwitchingOffices] = useState(false);
     "text-6xl font-bold transition-all duration-300",
     showYears
   ? "text-[#146ab1]"
-  : "text-[#adce00]"
+  : "text-[#adce00]",
     switching
       ? "scale-110 opacity-0"
       : "scale-100 opacity-100"
