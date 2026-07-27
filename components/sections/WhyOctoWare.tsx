@@ -89,30 +89,21 @@ const [isVisible, setIsVisible] = useState(false);
 
     {/* Überschrift */}
 <div
-  className={cn(
-    "relative z-10 mx-auto max-w-3xl text-center transition-all duration-700",
-    isVisible
-      ? "translate-y-0 opacity-100"
-      : "translate-y-10 opacity-0"
-  )}
+  className="
+    relative
+    z-10
+
+    mx-auto
+    mt-20
+
+    grid
+    max-w-6xl
+    grid-cols-1
+    gap-8
+
+    lg:grid-cols-2
+"
 >
-        <span
-          className="
-            inline-flex
-            items-center
-            rounded-full
-            border
-            border-[#146ab1]/20
-            bg-[#146ab1]/5
-            px-4
-            py-2
-            text-xs
-            font-semibold
-            uppercase
-            tracking-[0.25em]
-            text-[#146ab1]
-          "
-        >
           Warum OctoWare®Gesundheit?
         </span>
 
@@ -174,24 +165,57 @@ const [isVisible, setIsVisible] = useState(false);
   )}
 >
         <FeatureCard
-          icon={Building2}
-          title="Für den ÖGD entwickelt"
-          description="Praxisnahe Fachverfahren, die speziell für Gesundheitsämter und den Öffentlichen Gesundheitsdienst entwickelt wurden."
-        />
+  className={cn(
+    "transition-all duration-700",
+    isVisible
+      ? "translate-y-0 opacity-100 scale-100"
+      : "translate-y-10 opacity-0 scale-95"
+  )}
+  icon={Building2}
+  title="Für den ÖGD entwickelt"
+  description="Praxisnahe Fachverfahren, die speziell für Gesundheitsämter und den Öffentlichen Gesundheitsdienst entwickelt wurden."
+/>
 
         <FeatureCard
+  style={{
+    transitionDelay: "120ms",
+  }}
+  className={cn(
+    "transition-all duration-700",
+    isVisible
+      ? "translate-y-0 opacity-100 scale-100"
+      : "translate-y-10 opacity-0 scale-95"
+  )}
           icon={Blocks}
           title="Moderne Webplattform"
           description="Browserbasiert, plattformunabhängig und flexibel im eigenen Rechenzentrum oder als Hosting-Lösung einsetzbar."
         />
 
         <FeatureCard
+  style={{
+    transitionDelay: "240ms",
+  }}
+  className={cn(
+    "transition-all duration-700",
+    isVisible
+      ? "translate-y-0 opacity-100 scale-100"
+      : "translate-y-10 opacity-0 scale-95"
+  )}
           icon={Workflow}
           title="Intelligente Schnittstellen"
           description="Nahtlose Integration mit Fachverfahren, Registern und externen Systemen für effiziente digitale Prozesse."
         />
 
         <FeatureCard
+  style={{
+    transitionDelay: "360ms",
+  }}
+  className={cn(
+    "transition-all duration-700",
+    isVisible
+      ? "translate-y-0 opacity-100 scale-100"
+      : "translate-y-10 opacity-0 scale-95"
+  )}
           icon={Rocket}
           title="Zukunftssichere Architektur"
           description="Modular aufgebaut und kontinuierlich weiterentwickelt – für die Anforderungen von heute und morgen."
