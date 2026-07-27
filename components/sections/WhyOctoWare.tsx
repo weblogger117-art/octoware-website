@@ -164,6 +164,9 @@ const [isVisible, setIsVisible] = useState(false);
 >
 
   <div
+    style={{
+    transitionDelay: "350ms",
+  }}
     className={cn(
       "transition-all duration-700",
       isVisible
@@ -179,7 +182,7 @@ const [isVisible, setIsVisible] = useState(false);
   </div>
 
   <div
-    style={{ transitionDelay: "120ms" }}
+    style={{ transitionDelay: "500ms" }}
     className={cn(
       "transition-all duration-700",
       isVisible
@@ -195,7 +198,7 @@ const [isVisible, setIsVisible] = useState(false);
   </div>
 
   <div
-    style={{ transitionDelay: "240ms" }}
+    style={{ transitionDelay: "650ms" }}
     className={cn(
       "transition-all duration-700",
       isVisible
@@ -211,7 +214,7 @@ const [isVisible, setIsVisible] = useState(false);
   </div>
 
   <div
-    style={{ transitionDelay: "360ms" }}
+    style={{ transitionDelay: "800ms" }}
     className={cn(
       "transition-all duration-700",
       isVisible
