@@ -8,7 +8,7 @@ export default function Trust() {
     inset-0
     overflow-hidden
     pointer-events-none
-    -z-10
+    -z-0
   "
 >
   {/* Blauer Glow */}
@@ -65,7 +65,7 @@ export default function Trust() {
 />
   </div>
 </div>
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="relative z-10 mx-auto max-w-7xl px-6">
 
         {/* Überschrift */}
         <div className="mx-auto max-w-3xl text-center">
