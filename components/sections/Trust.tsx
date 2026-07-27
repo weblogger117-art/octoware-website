@@ -7,6 +7,7 @@ export default function Trust() {
 const [isVisible, setIsVisible] = useState(false);
   const [year, setYear] = useState(1990);
 const [showYears, setShowYears] = useState(true);
+  const [switching, setSwitching] = useState(false);
   const [hasAnimated, setHasAnimated] = useState(false);
   useEffect(() => {
   const observer = new IntersectionObserver(
@@ -58,8 +59,14 @@ const [showYears, setShowYears] = useState(true);
       animationFrame = requestAnimationFrame(animate);
     } else {
     timeout = setTimeout(() => {
-  setShowYears(false);
-  setHasAnimated(true);
+  setSwitching(true);
+
+  setTimeout(() => {
+    setShowYears(false);
+    setHasAnimated(true);
+    setSwitching(false);
+  }, 250);
+
 }, 500);
     }
   };
@@ -240,12 +247,15 @@ const [showYears, setShowYears] = useState(true);
     hover:shadow-[#146ab1]/15
   "
 >
-    <div
+   <div
   className={cn(
-    "text-6xl font-bold transition-all duration-500",
+    "text-6xl font-bold transition-all duration-300",
     showYears
       ? "text-[#adce00]"
-      : "text-[#146ab1]"
+      : "text-[#146ab1]",
+    switching
+      ? "scale-110 opacity-0"
+      : "scale-100 opacity-100"
   )}
 >
   {showYears ? year : "35+"}
