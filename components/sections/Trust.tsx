@@ -29,7 +29,7 @@ export default function Trust() {
           <h2 className="mt-6 text-5xl font-bold tracking-tight text-slate-900">
             Warum Gesundheitsämter
             <br />
-            auf OctoWare® vertrauen.
+            auf easy-soft vertrauen.
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-slate-600">
@@ -38,14 +38,14 @@ export default function Trust() {
             praxisnah, zuverlässig und gemeinsam mit unseren Kunden.
           </p>
 
-          <div className="mt-20 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-20 grid gap-8 md:grid-cols-2">
 
-  <div className="rounded-3xl border border-slate-200 bg-white p-10 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#146ab1]/30 hover:shadow-xl">
-    <div className="text-5xl font-bold text-[#146ab1]">
+  <div className="rounded-3xl border border-slate-200 bg-white p-12 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#146ab1]/30 hover:bg-white hover:shadow-xl hover:shadow-[#146ab1]/15">
+    <div className="text-6xl font-bold text-[#146ab1]">
       35+
     </div>
 
-    <p className="mt-4 text-base font-semibold text-slate-900">
+    <p className="mt-6 text-base font-semibold text-slate-900">
       Jahre Erfahrung
     </p>
 
@@ -53,13 +53,12 @@ export default function Trust() {
       Spezialisierte Softwareentwicklung für den Öffentlichen Gesundheitsdienst.
     </p>
   </div>
-
-  <div className="rounded-3xl border border-slate-200 bg-white p-10 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#146ab1]/30 hover:shadow-xl">
-    <div className="text-5xl font-bold text-[#146ab1]">
+  <div className="rounded-3xl border border-slate-200 bg-white p-12 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#146ab1]/30 hover:bg-white hover:shadow-xl hover:shadow-[#146ab1]/15">
+    <div className="text-6xl font-bold text-[#146ab1]">
       130+
     </div>
 
-    <p className="mt-4 text-base font-semibold text-slate-900">
+    <p className="mt-6 text-base font-semibold text-slate-900">
       Gesundheitsämter
     </p>
 
@@ -68,31 +67,31 @@ export default function Trust() {
     </p>
   </div>
 
-  <div className="rounded-3xl border border-slate-200 bg-white p-10 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#146ab1]/30 hover:shadow-xl">
-  <div className="text-5xl font-bold text-[#146ab1]">
+  <div className="rounded-3xl border border-slate-200 bg-white p-12 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#146ab1]/30 hover:bg-white hover:shadow-xl hover:shadow-[#146ab1]/15">
+  <div className="text-6xl font-bold text-[#146ab1]">
   WEB
 </div>
 
-<p className="mt-4 text-base font-semibold text-slate-900">
+<p className="mt-6 text-base font-semibold text-slate-900">
   Browserbasiert
 </p>
 
 <p className="mt-2 text-sm leading-6 text-slate-600">
-  Mit OctoWare®NET arbeiten Sie vollständig im Browser – flexibel, plattformunabhängig und ohne lokale Installation.
+  Mit OctoWare®NET – flexibel, plattformunabhängig und ohne lokale Installation.
 </p>
   </div>
 
-  <div className="rounded-3xl border border-slate-200 bg-white p-10 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#146ab1]/30 hover:shadow-xl">
-    <div className="text-5xl font-bold text-[#146ab1]">
+  <div className="rounded-3xl border border-slate-200 bg-white p-12 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#146ab1]/30 hover:bg-white hover:shadow-xl hover:shadow-[#146ab1]/15">
+    <div className="text-6xl font-bold text-[#146ab1]">
       ∞
     </div>
 
-    <p className="mt-4 text-base font-semibold text-slate-900">
+    <p className="mt-6 text-base font-semibold text-slate-900">
       Kontinuierliche Weiterentwicklung
     </p>
 
     <p className="mt-2 text-sm leading-6 text-slate-600">
-      Neue Funktionen, Schnittstellen und gesetzliche Anforderungen fließen fortlaufend ein.
+      Gesetzliche Änderungen, neue Funktionen und moderne Schnittstellen werden kontinuierlich umgesetzt.
     </p>
   </div>
 
