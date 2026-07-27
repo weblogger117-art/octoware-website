@@ -1,7 +1,31 @@
 import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 export default function Trust() {
+  const sectionRef = useRef<HTMLElement>(null);
+const [isVisible, setIsVisible] = useState(false);
+  useEffect(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+      }
+    },
+    {
+      threshold: 0.25,
+    }
+  );
+
+  if (sectionRef.current) {
+    observer.observe(sectionRef.current);
+  }
+
+  return () => observer.disconnect();
+}, []);
   return (
-    <section className="relative overflow-hidden bg-white py-32">
+    <section
+  ref={sectionRef}
+  className="relative overflow-hidden bg-white py-32"
+>
       <div
   className="
     absolute
