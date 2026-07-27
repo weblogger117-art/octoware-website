@@ -7,6 +7,7 @@ export default function Trust() {
 const [isVisible, setIsVisible] = useState(false);
   const [year, setYear] = useState(1990);
 const [showYears, setShowYears] = useState(true);
+  const [hasAnimated, setHasAnimated] = useState(false);
   useEffect(() => {
   const observer = new IntersectionObserver(
     ([entry]) => {
@@ -22,30 +23,52 @@ const [showYears, setShowYears] = useState(true);
   if (sectionRef.current) {
     observer.observe(sectionRef.current);
   }
-    useEffect(() => {
-  if (!isVisible) return;
-
-  let currentYear = 1990;
-
-  const timer = setInterval(() => {
-    currentYear++;
-
-    setYear(currentYear);
-
-    if (currentYear >= 2026) {
-      clearInterval(timer);
-
-      setTimeout(() => {
-        setShowYears(false);
-      }, 500);
-    }
-  }, 60);
-
-  return () => clearInterval(timer);
-}, [isVisible]);
 
   return () => observer.disconnect();
 }, []);
+   useEffect(() => {
+  if (!isVisible || hasAnimated) return;
+
+  const startYear = 1990;
+  const endYear = 2026;
+
+  const duration = 2000; // 2 Sekunden
+
+  let animationFrame: number;
+  let startTime: number | null = null;
+     let timeout: ReturnType<typeof setTimeout>;
+
+  const animate = (timestamp: number) => {
+    if (startTime === null) {
+      startTime = timestamp;
+    }
+
+    const progress = Math.min(
+      (timestamp - startTime) / duration,
+      1
+    );
+
+    const currentYear = Math.round(
+      startYear + (endYear - startYear) * progress
+    );
+
+    setYear(currentYear);
+
+    if (progress < 1) {
+      animationFrame = requestAnimationFrame(animate);
+    } else {
+    timeout = setTimeout(() => {
+  setShowYears(false);
+  setHasAnimated(true);
+}, 500);
+    }
+  };
+
+  animationFrame = requestAnimationFrame(animate);
+
+  return () => cancelAnimationFrame(animationFrame); clearTimeout(timeout);
+}, [isVisible, hasAnimated]);
+
   return (
     <section
   ref={sectionRef}
