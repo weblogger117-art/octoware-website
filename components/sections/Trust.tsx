@@ -58,9 +58,9 @@ export default function Trust() {
   height={1600}
   className="
     max-w-none
-    opacity-100
-    scale-150
-    border-4 border-red-500
+    opacity-80
+    scale-125
+    translate-x-10
   "
 />
   </div>
