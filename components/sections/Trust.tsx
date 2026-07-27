@@ -1,11 +1,10 @@
 export default function Trust() {
   return (
-    <section className="relative overflow-hidden py-32 bg-white">
-
+    <section className="relative overflow-hidden bg-white py-32">
       <div className="mx-auto max-w-7xl px-6">
 
-        <div className="text-center">
-          <div className="mx-auto max-w-3xl text-center">
+        {/* Überschrift */}
+        <div className="mx-auto max-w-3xl text-center">
 
           <span
             className="
@@ -39,7 +38,9 @@ export default function Trust() {
             praxisnah, zuverlässig und gemeinsam mit unseren Kunden.
           </p>
 
-          <div className="mt-20 grid items-center gap-16 lg:grid-cols-[1fr_420px]">
+        </div>
+
+          <div className="mt-20 grid items-center gap-16 lg:grid-cols-[1fr_480px]">
             
             <div className="grid gap-8 md:grid-cols-2">
 
@@ -98,36 +99,28 @@ export default function Trust() {
     </p>
   </div>
               </div>
-              <div className="
-hidden
-lg:flex
-items-center
-justify-center
-">
+            
+              <div className="hidden lg:flex items-center justify-center">
 
   <Image
-    src="/images/mascot/trust.png"
-    alt="easy-soft Maskottchen"
-    width={560}
-    height={560}
-    className="
-      object-contain
-      drop-shadow-2xl
-      transition-transform
-      duration-500
-      hover:scale-105
-    translate-x-10
-    "
-  />
+              src="/images/mascot/trust.png"
+              alt="easy-soft Maskottchen"
+              width={560}
+              height={560}
+              className="
+                object-contain
+                translate-x-10
+                transition-transform
+                duration-500
+                hover:scale-105
+              "
+            />
 
-</div>
-
-</div>
+          </div>
 
         </div>
 
       </div>
-
     </section>
   );
 }
