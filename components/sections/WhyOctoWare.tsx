@@ -13,9 +13,32 @@ import { FeatureCard } from "@/components/ui";
 import { Section } from "@/components/ui";
 
 export function WhyOctoWare() {
+  const sectionRef = useRef<HTMLElement>(null);
+const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+      }
+    },
+    {
+      threshold: 0.25,
+    }
+  );
+
+  if (sectionRef.current) {
+    observer.observe(sectionRef.current);
+  }
+
+  return () => observer.disconnect();
+}, []);
+  
   return (
     <Section
-      className="
+  ref={sectionRef}
+  className="
         relative
         overflow-hidden
         bg-white
