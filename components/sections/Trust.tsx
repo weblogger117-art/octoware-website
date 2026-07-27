@@ -8,6 +8,10 @@ const [isVisible, setIsVisible] = useState(false);
   const [year, setYear] = useState(1990);
 const [showYears, setShowYears] = useState(true);
   const [switching, setSwitching] = useState(false);
+  const [offices, setOffices] = useState(0);
+const [showOffices, setShowOffices] = useState(true);
+const [switchingOffices, setSwitchingOffices] = useState(false);
+  const [startOfficeCounter, setStartOfficeCounter] = useState(false);
   const [hasAnimated, setHasAnimated] = useState(false);
   useEffect(() => {
   const observer = new IntersectionObserver(
@@ -62,10 +66,16 @@ const [showYears, setShowYears] = useState(true);
   setSwitching(true);
 
   setTimeout(() => {
-    setShowYears(false);
-    setHasAnimated(true);
-    setSwitching(false);
-  }, 250);
+  setShowYears(false);
+  setSwitching(false);
+
+  setTimeout(() => {
+    setStartOfficeCounter(true);
+  }, 300);
+
+  setHasAnimated(true);
+
+}, 250);
 
 }, 500);
     }
@@ -73,9 +83,60 @@ const [showYears, setShowYears] = useState(true);
 
   animationFrame = requestAnimationFrame(animate);
 
-  return () => cancelAnimationFrame(animationFrame); clearTimeout(timeout);
+  return () => {
+  cancelAnimationFrame(animationFrame);
+  clearTimeout(timeout);
+};
 }, [isVisible, hasAnimated]);
 
+  useEffect(() => {
+  if (!startOfficeCounter) return;
+
+  const target = 130;
+  const duration = 1800;
+
+  let animationFrame: number;
+  let startTime: number | null = null;
+  let timeout: ReturnType<typeof setTimeout>;
+
+  const animate = (timestamp: number) => {
+    if (startTime === null) {
+      startTime = timestamp;
+    }
+
+    const progress = Math.min(
+      (timestamp - startTime) / duration,
+      1
+    );
+
+    setOffices(
+      Math.round(target * progress)
+    );
+
+    if (progress < 1) {
+      animationFrame = requestAnimationFrame(animate);
+    } else {
+      timeout = setTimeout(() => {
+        setSwitchingOffices(true);
+
+        setTimeout(() => {
+          setShowOffices(false);
+          setSwitchingOffices(false);
+        }, 250);
+
+      }, 300);
+    }
+  };
+
+  animationFrame = requestAnimationFrame(animate);
+
+  return () => {
+  cancelAnimationFrame(animationFrame);
+  clearTimeout(timeout);
+};
+
+}, [startOfficeCounter]);
+  
   return (
     <section
   ref={sectionRef}
@@ -300,9 +361,16 @@ const [showYears, setShowYears] = useState(true);
     hover:shadow-[#146ab1]/15
   "
 >
-    <div className="text-6xl font-bold text-[#146ab1]">
-      130+
-    </div>
+    <div
+  className={cn(
+    "text-6xl font-bold transition-all duration-300 text-[#146ab1]",
+    switchingOffices
+      ? "scale-110 opacity-0"
+      : "scale-100 opacity-100"
+  )}
+>
+  {showOffices ? offices : "130+"}
+</div>
 
     <p className="mt-6 text-base font-semibold text-slate-900">
       Gesundheitsämter
