@@ -13,7 +13,7 @@ export function FeatureCard({
   title,
   description,
   className,
-}: FeatureCardProps)
+}: FeatureCardProps) {
   return (
     <div
   className={cn(
