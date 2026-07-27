@@ -4,7 +4,8 @@ export default function Trust() {
 
       <div className="mx-auto max-w-7xl px-6">
 
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="text-center">
+          <div className="mx-auto max-w-3xl text-center">
 
           <span
             className="
@@ -96,6 +97,7 @@ export default function Trust() {
       Gesetzliche Änderungen, neue Funktionen und moderne Schnittstellen werden kontinuierlich umgesetzt.
     </p>
   </div>
+              </div>
               <div className="
 hidden
 lg:flex
@@ -106,19 +108,19 @@ justify-center
   <Image
     src="/images/mascot/trust.png"
     alt="easy-soft Maskottchen"
-    width={430}
-    height={430}
+    width={560}
+    height={560}
     className="
       object-contain
       drop-shadow-2xl
       transition-transform
       duration-500
-      group-hover:scale-105
+      hover:scale-105
+    translate-x-10
     "
   />
 
 </div>
-            </div> 
 
 </div>
 
