@@ -78,8 +78,7 @@ export default function Trust() {
 </p>
 
 <p className="mt-2 text-sm leading-6 text-slate-600">
-  Mit OctoWare®NET arbeiten Sie vollständig im Browser – ohne lokale Installation und unabhängig vom Betriebssystem.
-</p>
+  Mit OctoWare®NET arbeiten Sie vollständig im Browser – flexibel, plattformunabhängig und ohne lokale Installation.
 </p>
   </div>
 
