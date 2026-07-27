@@ -162,17 +162,53 @@ const [isVisible, setIsVisible] = useState(false);
     lg:grid-cols-2
 "
 >
-        <FeatureCard
+        <div
   className={cn(
     "transition-all duration-700",
     isVisible
       ? "translate-y-0 opacity-100 scale-100"
       : "translate-y-10 opacity-0 scale-95"
   )}
-  icon={Building2}
-  title="Für den ÖGD entwickelt"
-  description="Praxisnahe Fachverfahren, die speziell für Gesundheitsämter und den Öffentlichen Gesundheitsdienst entwickelt wurden."
-/>
+>
+  <div
+  style={{
+    transitionDelay: "120ms",
+  }}
+  className={cn(
+    "transition-all duration-700",
+    isVisible
+      ? "translate-y-0 opacity-100 scale-100"
+      : "translate-y-10 opacity-0 scale-95"
+  )}
+>
+  <div
+  style={{
+    transitionDelay: "240ms",
+  }}
+  className={cn(
+    "transition-all duration-700",
+    isVisible
+      ? "translate-y-0 opacity-100 scale-100"
+      : "translate-y-10 opacity-0 scale-95"
+  )}
+>
+  <div
+  style={{
+    transitionDelay: "360ms",
+  }}
+  className={cn(
+    "transition-all duration-700",
+    isVisible
+      ? "translate-y-0 opacity-100 scale-100"
+      : "translate-y-10 opacity-0 scale-95"
+  )}
+>
+  <FeatureCard
+    icon={Blocks}
+    title="Moderne Webplattform"
+    description="Browserbasiert, plattformunabhängig und flexibel im eigenen Rechenzentrum oder als Hosting-Lösung einsetzbar."
+  />
+</div>
 
         <FeatureCard
   style={{
