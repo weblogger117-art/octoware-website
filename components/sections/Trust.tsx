@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Trust() {
   return (
     <section className="relative overflow-hidden bg-white py-32">
