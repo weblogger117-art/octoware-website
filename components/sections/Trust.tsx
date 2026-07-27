@@ -155,9 +155,9 @@ const [isVisible, setIsVisible] = useState(false);
 
         </div>
 
-          <div className="mt-20 grid items-center gap-16 lg:grid-cols-[1fr_480px]">
+          <div className="mt-20 grid items-center gap-12 lg:grid-cols-[minmax(700px,1fr)_480px]">
             
-            <div className="relative z-10 grid gap-8 md:grid-cols-2">
+            <div className="relative z-10 grid gap-8 md:grid-cols-2 min-w-0">
 
   <div
   className={cn(
