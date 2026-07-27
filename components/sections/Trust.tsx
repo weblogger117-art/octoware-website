@@ -39,39 +39,44 @@ const [isVisible, setIsVisible] = useState(false);
 >
   {/* Blauer Glow */}
   <div
-  className="
-    absolute
-    right-24
-    top-1/2
-    -translate-y-1/2
-
-    h-[700px]
-    w-[700px]
-
-    rounded-full
-
-    bg-red-500
-
-    opacity-40
-
-    blur-[120px]
-
-    z-10
-  "
+  className={cn(
+    `
+      absolute
+      right-20
+      top-1/2
+      -translate-y-1/2
+      rounded-full
+      bg-[#146ab1]/12
+      blur-[140px]
+      z-10
+      transition-all
+      duration-1000
+    `,
+    isVisible
+      ? "h-[650px] w-[650px] opacity-100"
+      : "h-[250px] w-[250px] opacity-0"
+  )}
 />
   {/* Grüner Glow */}
   <div
-    className="
+  className={cn(
+    `
       absolute
-      right-0
+      right-4
       bottom-0
-      h-[420px]
-      w-[420px]
       rounded-full
-      bg-[#adce00]/5
-      blur-[120px]
-    "
-  />
+      bg-[#adce00]/12
+      blur-[110px]
+      z-10
+      transition-all
+      duration-1000
+      delay-500
+    `,
+    isVisible
+      ? "h-[350px] w-[350px] opacity-100"
+      : "h-[150px] w-[150px] opacity-0"
+  )}
+/>
 
   {/* Netzwerkgrafik */}
     <Image
