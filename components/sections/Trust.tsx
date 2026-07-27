@@ -161,7 +161,7 @@ const [isVisible, setIsVisible] = useState(false);
 
   <div
   className={cn(
-    "transition-all duration-700",
+    "h-full transition-all duration-700",
     isVisible
       ? "translate-y-0 opacity-100"
       : "translate-y-10 opacity-0"
@@ -208,7 +208,7 @@ const [isVisible, setIsVisible] = useState(false);
   </div>
  <div
   className={cn(
-    "transition-all duration-700",
+    "h-full transition-all duration-700",
     isVisible
       ? "translate-y-0 opacity-100"
       : "translate-y-10 opacity-0"
@@ -251,7 +251,7 @@ const [isVisible, setIsVisible] = useState(false);
 
   <div
   className={cn(
-    "transition-all duration-700",
+    "h-full transition-all duration-700",
     isVisible
       ? "translate-y-0 opacity-100"
       : "translate-y-10 opacity-0"
@@ -294,7 +294,7 @@ const [isVisible, setIsVisible] = useState(false);
               
   <div
   className={cn(
-    "transition-all duration-700",
+    "h-full transition-all duration-700",
     isVisible
       ? "translate-y-0 opacity-100"
       : "translate-y-10 opacity-0"
