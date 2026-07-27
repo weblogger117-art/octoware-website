@@ -39,24 +39,26 @@ const [isVisible, setIsVisible] = useState(false);
 >
   {/* Blauer Glow */}
   <div
-  className={cn(
-    `
-      absolute
-      right-20
-      top-1/2
-      -translate-y-1/2
-      rounded-full
-      bg-[#146ab1]/10
-      blur-[140px]
-      transition-all
-      duration-1000
-    `,
-    isVisible
-      ? "h-[650px] w-[650px] opacity-100"
-      : "h-[250px] w-[250px] opacity-0"
-  )}
-/>
+  className="
+    absolute
+    right-24
+    top-1/2
+    -translate-y-1/2
 
+    h-[700px]
+    w-[700px]
+
+    rounded-full
+
+    bg-red-500
+
+    opacity-40
+
+    blur-[120px]
+
+    z-10
+  "
+/>
   {/* Grüner Glow */}
   <div
     className="
