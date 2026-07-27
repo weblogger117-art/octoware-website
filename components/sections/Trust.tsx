@@ -128,7 +128,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
           setOfficeAnimated(true);
         }, 250);
 
-      }, 300);
+      }, 800);
     }
   };
 
@@ -156,7 +156,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
       setUpdateAnimated(true);
     }, 250);
 
-  }, 1800);
+  }, 2400);
 
   return () => {
     clearTimeout(timeout1);
@@ -180,7 +180,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
       setBrowserSwitching(false);
     }, 250);
 
-  }, 700);
+  }, 2100);
 
   timer3 = setTimeout(() => {
     setBrowserSwitching(true);
@@ -191,7 +191,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
       setBrowserAnimated(true);
     }, 250);
 
-  }, 1500);
+  }, 2100);
 
   return () => {
     clearTimeout(timer1);
