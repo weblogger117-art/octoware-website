@@ -39,18 +39,23 @@ const [isVisible, setIsVisible] = useState(false);
 >
   {/* Blauer Glow */}
   <div
-    className="
+  className={cn(
+    `
       absolute
-      left-1/2
-      top-24
-      h-[650px]
-      w-[650px]
-      -translate-x-1/2
+      right-20
+      top-1/2
+      -translate-y-1/2
       rounded-full
-      bg-[#146ab1]/5
+      bg-[#146ab1]/10
       blur-[140px]
-    "
-  />
+      transition-all
+      duration-1000
+    `,
+    isVisible
+      ? "h-[650px] w-[650px] opacity-100"
+      : "h-[250px] w-[250px] opacity-0"
+  )}
+/>
 
   {/* Grüner Glow */}
   <div
@@ -77,7 +82,7 @@ const [isVisible, setIsVisible] = useState(false);
   className="
     absolute
 
-    left-[1%]
+    left-[10%]
     top-[50%]
 
     w-[2300px]
@@ -231,23 +236,30 @@ const [isVisible, setIsVisible] = useState(false);
             
               <div className="hidden lg:flex items-center justify-center">
 
-  <Image
-              src="/images/mascot/trust.png"
-              alt="easy-soft Maskottchen"
-              width={560}
-              height={560}
-              className="
-    realtive
-    z-10
-                object-contain
-                translate-x-10
-                transition-transform
-                duration-500
-                hover:scale-105
-              "
-            />
+  <div
+    className={cn(
+      "relative z-10 transition-all duration-1000 delay-700",
+      isVisible
+        ? "translate-x-0 opacity-100 scale-100"
+        : "translate-x-16 opacity-0 scale-95"
+    )}
+  >
+    <Image
+      src="/images/mascot/trust.png"
+      alt="easy-soft Maskottchen"
+      width={560}
+      height={560}
+      className="
+        object-contain
+        transition-transform
+        duration-500
+        hover:scale-105
+        hover:-translate-y-2
+      "
+    />
+  </div>
 
-          </div>
+</div>
 
         </div>
 
