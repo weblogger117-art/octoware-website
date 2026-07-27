@@ -89,80 +89,78 @@ const [isVisible, setIsVisible] = useState(false);
 
     {/* Überschrift */}
 <div
+  className={cn(
+    "relative z-10 mx-auto max-w-3xl text-center transition-all duration-700",
+    isVisible
+      ? "translate-y-0 opacity-100"
+      : "translate-y-10 opacity-0"
+  )}
+>
+  <span
+    className="
+      inline-flex
+      items-center
+      rounded-full
+      border
+      border-[#146ab1]/20
+      bg-[#146ab1]/5
+      px-4
+      py-2
+      text-xs
+      font-semibold
+      uppercase
+      tracking-[0.25em]
+      text-[#146ab1]
+    "
+  >
+    Warum OctoWare®Gesundheit?
+  </span>
+
+  <h2
+    className="
+      mt-6
+      text-4xl
+      font-bold
+      tracking-tight
+      text-slate-900
+      lg:text-5xl
+    "
+  >
+    Eine Plattform für den modernen
+    <br />
+    Öffentlichen Gesundheitsdienst.
+  </h2>
+
+  <p
+    className="
+      mx-auto
+      mt-6
+      max-w-2xl
+      text-lg
+      leading-8
+      text-slate-600
+    "
+  >
+    Von der Sachbearbeitung bis zur digitalen Zusammenarbeit –
+    OctoWare®Gesundheit unterstützt Gesundheitsämter mit modernen
+    Fachverfahren, intelligenten Schnittstellen und einer – mit
+    OctoWare®NET – zukunftssicheren Webplattform.
+  </p>
+</div>
+
+      {/* Feature Cards */}
+     <div
   className="
     relative
     z-10
-
     mx-auto
     mt-20
-
     grid
     max-w-6xl
     grid-cols-1
     gap-8
-
     lg:grid-cols-2
 "
->
-          Warum OctoWare®Gesundheit?
-        </span>
-
-        <h2
-          className="
-            mt-6
-            text-4xl
-            font-bold
-            tracking-tight
-            text-slate-900
-            lg:text-5xl
-          "
-        >
-          Eine Plattform für den modernen
-          <br />
-          Öffentlichen Gesundheitsdienst.
-        </h2>
-
-        <p
-          className="
-            mx-auto
-            mt-6
-            max-w-2xl
-            text-lg
-            leading-8
-            text-slate-600
-          "
-        >
-          Von der Sachbearbeitung bis zur digitalen Zusammenarbeit –
-          OctoWare®Gesundheit unterstützt Gesundheitsämter mit modernen
-          Fachverfahren, intelligenten Schnittstellen und einer – mit
-          OctoWare®NET – zukunftssicheren Webplattform.
-        </p>
-      </div>
-
-      {/* Feature Cards */}
-      <div
-  className={cn(
-    `
-      relative
-      z-10
-
-      mx-auto
-      mt-20
-
-      grid
-      max-w-6xl
-      grid-cols-1
-      gap-8
-
-      lg:grid-cols-2
-
-      transition-all
-      duration-700
-    `,
-    isVisible
-      ? "translate-y-0 opacity-100"
-      : "translate-y-12 opacity-0"
-  )}
 >
         <FeatureCard
   className={cn(
