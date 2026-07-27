@@ -34,7 +34,7 @@ const [isVisible, setIsVisible] = useState(false);
     inset-0
     overflow-hidden
     pointer-events-none
-    -z-0
+    z-0
   "
 >
   {/* Blauer Glow */}
@@ -59,6 +59,9 @@ const [isVisible, setIsVisible] = useState(false);
 />
   {/* Grüner Glow */}
   <div
+  style={{
+    transitionDelay: isVisible ? "600ms" : "0ms",
+  }}
   className={cn(
     `
       absolute
@@ -70,7 +73,6 @@ const [isVisible, setIsVisible] = useState(false);
       z-10
       transition-all
       duration-1000
-      delay-500
     `,
     isVisible
       ? "h-[350px] w-[350px] opacity-100"
@@ -164,6 +166,9 @@ const [isVisible, setIsVisible] = useState(false);
       ? "translate-y-0 opacity-100"
       : "translate-y-10 opacity-0"
   )}
+    style={{
+  transitionDelay: "0ms",
+}}
 >
     <div
   className="
@@ -327,19 +332,24 @@ const [isVisible, setIsVisible] = useState(false);
     <p className="mt-2 text-sm leading-6 text-slate-600">
       Gesetzliche Änderungen, neue Funktionen und moderne Schnittstellen werden kontinuierlich umgesetzt.
     </p>
-  </div>
+  </div>    
               </div>
+
+               </div>
             
               <div className="hidden lg:flex items-center justify-center">
 
-  <div
-    className={cn(
-      "relative z-10 transition-all duration-1000 delay-700",
-      isVisible
-        ? "translate-x-0 opacity-100 scale-100"
-        : "translate-x-16 opacity-0 scale-95"
-    )}
-  >
+ <div
+  style={{
+    transitionDelay: isVisible ? "480ms" : "0ms",
+  }}
+  className={cn(
+    "relative z-10 transition-all duration-1000",
+    isVisible
+      ? "translate-x-0 opacity-100 scale-100"
+      : "translate-x-16 opacity-0 scale-95"
+  )}
+>
     <Image
       src="/images/mascot/trust.png"
       alt="easy-soft Maskottchen"
