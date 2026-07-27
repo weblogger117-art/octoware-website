@@ -54,7 +54,7 @@ export default function Trust() {
     left-[1%]
     top-[50%]
 
-    w-[2600px]
+    w-[2300px]
     max-w-none
 
     -translate-x-1/2
