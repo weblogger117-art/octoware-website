@@ -5,6 +5,8 @@ import { cn } from "@/lib/utils";
 export default function Trust() {
   const sectionRef = useRef<HTMLElement>(null);
 const [isVisible, setIsVisible] = useState(false);
+  const [year, setYear] = useState(1990);
+const [showYears, setShowYears] = useState(true);
   useEffect(() => {
   const observer = new IntersectionObserver(
     ([entry]) => {
@@ -20,6 +22,27 @@ const [isVisible, setIsVisible] = useState(false);
   if (sectionRef.current) {
     observer.observe(sectionRef.current);
   }
+    useEffect(() => {
+  if (!isVisible) return;
+
+  let currentYear = 1990;
+
+  const timer = setInterval(() => {
+    currentYear++;
+
+    setYear(currentYear);
+
+    if (currentYear >= 2026) {
+      clearInterval(timer);
+
+      setTimeout(() => {
+        setShowYears(false);
+      }, 500);
+    }
+  }, 60);
+
+  return () => clearInterval(timer);
+}, [isVisible]);
 
   return () => observer.disconnect();
 }, []);
@@ -194,9 +217,16 @@ const [isVisible, setIsVisible] = useState(false);
     hover:shadow-[#146ab1]/15
   "
 >
-    <div className="text-6xl font-bold text-[#146ab1]">
-      35+
-    </div>
+    <div
+  className={cn(
+    "text-6xl font-bold transition-all duration-500",
+    showYears
+      ? "text-[#adce00]"
+      : "text-[#146ab1]"
+  )}
+>
+  {showYears ? year : "35+"}
+</div>
 
     <p className="mt-6 text-base font-semibold text-slate-900">
       Jahre Erfahrung
