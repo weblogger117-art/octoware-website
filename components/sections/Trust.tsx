@@ -41,29 +41,33 @@ export default function Trust() {
   />
 
   {/* Netzwerkgrafik */}
-  <div
-    className="
-      absolute
-      inset-0
-      flex
-      items-center
-      justify-center
-    "
-  >
     <Image
   src="/images/graphics/network-background.svg"
   alt=""
-  aria-hidden
-  width={2500}
-  height={1600}
+  aria-hidden="true"
+  width={3000}
+  height={1800}
+  draggable={false}
   className="
+    absolute
+
+    left-[1%]
+    top-[50%]
+
+    w-[2600px]
     max-w-none
-    opacity-80
-    scale-125
-    translate-x-10
+
+    -translate-x-1/2
+    -translate-y-1/2
+
+    opacity-60
+
+    z-0
+
+    pointer-events-none
+    select-none
   "
 />
-  </div>
 </div>
       <div className="relative z-10 mx-auto max-w-7xl px-6">
 
