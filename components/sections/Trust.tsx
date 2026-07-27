@@ -2,6 +2,69 @@ import Image from "next/image";
 export default function Trust() {
   return (
     <section className="relative overflow-hidden bg-white py-32">
+      <div
+  className="
+    absolute
+    inset-0
+    overflow-hidden
+    pointer-events-none
+    -z-10
+  "
+>
+  {/* Blauer Glow */}
+  <div
+    className="
+      absolute
+      left-1/2
+      top-24
+      h-[650px]
+      w-[650px]
+      -translate-x-1/2
+      rounded-full
+      bg-[#146ab1]/5
+      blur-[140px]
+    "
+  />
+
+  {/* Grüner Glow */}
+  <div
+    className="
+      absolute
+      right-0
+      bottom-0
+      h-[420px]
+      w-[420px]
+      rounded-full
+      bg-[#adce00]/5
+      blur-[120px]
+    "
+  />
+
+  {/* Netzwerkgrafik */}
+  <div
+    className="
+      absolute
+      inset-0
+      flex
+      items-center
+      justify-center
+    "
+  >
+    <Image
+      src="/images/graphics/network-background.svg"
+      alt=""
+      aria-hidden
+      width={2000}
+      height={1300}
+      className="
+        max-w-none
+        opacity-70
+        translate-x-5
+        -translate-y-6
+      "
+    />
+  </div>
+</div>
       <div className="mx-auto max-w-7xl px-6">
 
         {/* Überschrift */}
@@ -43,7 +106,7 @@ export default function Trust() {
 
           <div className="mt-20 grid items-center gap-16 lg:grid-cols-[1fr_480px]">
             
-            <div className="grid gap-8 md:grid-cols-2">
+            <div className="relative z-10 grid gap-8 md:grid-cols-2">
 
   <div className="rounded-3xl border border-slate-200 bg-white p-12 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#146ab1]/30 hover:bg-white hover:shadow-xl hover:shadow-[#146ab1]/15">
     <div className="text-6xl font-bold text-[#146ab1]">
@@ -109,6 +172,8 @@ export default function Trust() {
               width={560}
               height={560}
               className="
+    realtive
+    z-10
                 object-contain
                 translate-x-10
                 transition-transform
