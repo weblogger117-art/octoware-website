@@ -51,18 +51,18 @@ export default function Trust() {
     "
   >
     <Image
-      src="/images/graphics/network-background.svg"
-      alt=""
-      aria-hidden
-      width={2000}
-      height={1300}
-      className="
-        max-w-none
-        opacity-70
-        translate-x-5
-        -translate-y-6
-      "
-    />
+  src="/images/graphics/network-background.svg"
+  alt=""
+  aria-hidden
+  width={2500}
+  height={1600}
+  className="
+    max-w-none
+    opacity-100
+    scale-150
+    border-4 border-red-500
+  "
+/>
   </div>
 </div>
       <div className="mx-auto max-w-7xl px-6">
