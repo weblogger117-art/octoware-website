@@ -605,7 +605,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
   )}
 >
     <Image
-      src="/images/mascot/trust.png"
+      src="/images/mascot/trust.webp"
       alt="easy-soft Maskottchen"
       width={560}
       height={560}
