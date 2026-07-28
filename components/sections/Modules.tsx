@@ -214,7 +214,7 @@ export default function Modules() {
       border-slate-200
       bg-white/80
       backdrop-blur-sm
-      p-8
+      p-6
       transition-all
       duration-300
       hover:-translate-y-2
@@ -225,11 +225,11 @@ export default function Modules() {
     `}
   >
     {module.featured ? (
-      <div className="grid lg:grid-cols-[1fr_180px] gap-6 items-center h-full">
+      <div className="grid lg:grid-cols-[1fr_180px] gap-4 items-center h-full">
         <div>
           <div
             className="
-              mb-6
+              mb-4
               inline-flex
               rounded-2xl
               bg-[#146ab1]/10
@@ -258,7 +258,7 @@ export default function Modules() {
             {module.title}
           </h3>
 
-          <div className="mt-6 space-y-3">
+          <div className="mt-4 space-y-2.5">
             {module.features.map((feature) => (
               <div
                 key={feature}
@@ -272,7 +272,7 @@ export default function Modules() {
 
           <div
             className="
-              mt-8
+              mt-6
               flex
               items-center
               text-sm
@@ -340,7 +340,7 @@ export default function Modules() {
       <>
         <div
           className="
-            mb-6
+            mb-4
             inline-flex
             rounded-2xl
             bg-[#146ab1]/10
