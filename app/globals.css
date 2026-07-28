@@ -47,3 +47,55 @@ body {
   }
 
 }
+
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroFadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes heroFadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(70px) scale(.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.animate-hero-logo {
+  animation: heroFadeLeft .8s ease-out .15s both;
+}
+
+.animate-hero-heading {
+  animation: heroFadeUp .8s ease-out .35s both;
+}
+
+.animate-hero-buttons {
+  animation: heroFadeUp .8s ease-out .65s both;
+}
+
+.animate-hero-laptop {
+  animation: heroFadeRight .9s ease-out .45s both;
+}
