@@ -177,7 +177,7 @@ const [isVisible, setIsVisible] = useState(false);
     <FeatureCard
   icon={Building2}
   iconClassName={
-    isVisible ? "animate-building" : ""
+   iconClassName="animate-building"
   }
   title="Für den ÖGD entwickelt"
   description="Praxisnahe Fachverfahren, die speziell für Gesundheitsämter und den Öffentlichen Gesundheitsdienst entwickelt wurden."
