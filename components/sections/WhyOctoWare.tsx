@@ -266,3 +266,7 @@ const [card4Active, setCard4Active] = useState(false);
   </div>
 
 </div>
+
+      </Section>
+  );
+}
