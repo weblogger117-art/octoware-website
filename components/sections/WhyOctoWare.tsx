@@ -172,6 +172,8 @@ const [isVisible, setIsVisible] = useState(false);
 
       transition-all
       duration-1000
+
+      rounded-3xl
     `,
     isVisible
       ? "translate-y-0 opacity-100 scale-100"
