@@ -1,24 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 import { DeviceFrame } from "@/components/ui";
 
 export function HeroVisual() {
-  const [visible, setVisible] = useState(false);
-  const [imageLoaded, setImageLoaded] = useState(false);
-
-  useEffect(() => {
-  if (!imageLoaded) return;
-
-  const timer = setTimeout(() => {
-    setVisible(true);
-  }, 180);
-
-  return () => clearTimeout(timer);
-}, [imageLoaded]);
   
   return (
    <div
@@ -86,8 +72,7 @@ export function HeroVisual() {
 >
         {/* Laptop */}
        <DeviceFrame
-  className={cn(
-    `
+  className="
       relative
       z-10
       w-full
@@ -95,7 +80,7 @@ export function HeroVisual() {
       transition-all
       duration-[900ms]
       ease-out
-    `,
+    "
     visible
       ? "translate-x-0 opacity-100 scale-100"
       : "translate-x-20 opacity-0 scale-[0.96]"
