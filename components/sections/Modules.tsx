@@ -214,14 +214,16 @@ export default function Modules() {
       border-slate-200
       bg-white/80
       backdrop-blur-sm
-      p-6
+      ${module.featured ? "p-6 lg:col-span-2" : "px-6 py-5 lg:w-[92%] lg:mx-auto"}
       transition-all
       duration-300
       hover:-translate-y-2
       hover:border-[#146ab1]/50
       hover:shadow-2xl
       hover:shadow-[#146ab1]/10
-      ${module.featured ? "lg:col-span-2" : "lg:w-[92%] lg:mx-auto"}
+      ${module.featured
+  ? "p-6 lg:col-span-2"
+  : "px-6 py-5 lg:w-[92%] lg:mx-auto"}
     `}
   >
     {module.featured ? (
@@ -369,7 +371,7 @@ export default function Modules() {
           {module.title}
         </h3>
 
-        <div className="mt-6 space-y-3">
+        <div className="mt-4 space-y-2">
           {module.features.map((feature) => (
             <div
               key={feature}
@@ -383,7 +385,7 @@ export default function Modules() {
 
         <div
           className="
-            mt-8
+            mt-5
             flex
             items-center
             text-sm
