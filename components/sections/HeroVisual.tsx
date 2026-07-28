@@ -73,33 +73,24 @@ export function HeroVisual() {
         {/* Laptop */}
        <DeviceFrame
   className="
-      relative
-      z-10
-      w-full
-
-      transition-all
-      duration-[900ms]
-      ease-out
-    "
-    visible
-      ? "translate-x-0 opacity-100 scale-100"
-      : "translate-x-20 opacity-0 scale-[0.96]"
-  )}
+    relative
+    z-10
+    w-full
+  "
 >
           <Image
-            src="/images/screens/OctowareNET_Dashboard.png"
-            alt="Dashboard von OctoWare®NET"
-            width={1919}
-            height={1199}
-            priority
-            onLoad={() => setImageLoaded(true)}
-            draggable={false}
-            className="
-  h-auto
-  w-[80%]
-  object-cover
-"
-          />
+  src="/images/screens/OctowareNET_Dashboard.png"
+  alt="Dashboard von OctoWare®NET"
+  width={1919}
+  height={1199}
+  priority
+  draggable={false}
+  className="
+    h-auto
+    w-[80%]
+    object-cover
+  "
+/>
         </DeviceFrame>
 
         {/* Tablet */}
