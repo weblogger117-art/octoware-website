@@ -76,18 +76,37 @@ useEffect(() => {
   />
 </div>
 
-      <div className="mt-10 flex flex-wrap gap-4">
-        <LinkButton href="/plattform">
-          Plattform entdecken
-        </LinkButton>
+      <div
+  className={cn(
+    `
+      mt-10
+      flex
+      flex-wrap
+      gap-4
 
-        <LinkButton
-          href="/octoware-net"
-          variant="secondary"
-        >
-          OctoWare®NET kennenlernen
-        </LinkButton>
-      </div>
+      transition-all
+      duration-700
+      ease-out
+    `,
+    visible
+      ? "translate-y-0 opacity-100"
+      : "translate-y-8 opacity-0"
+  )}
+  style={{
+    transitionDelay: "360ms",
+  }}
+>
+  <LinkButton href="/plattform">
+    Plattform entdecken
+  </LinkButton>
+
+  <LinkButton
+    href="/octoware-net"
+    variant="secondary"
+  >
+    OctoWare®NET kennenlernen
+  </LinkButton>
+</div>
     </div>
   );
 }
