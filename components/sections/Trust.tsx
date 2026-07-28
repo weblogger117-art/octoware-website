@@ -404,7 +404,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
       : "translate-y-10 opacity-0"
   )}
   style={{
-    transitionDelay: isVisible ? "120ms" : "0ms",
+    transitionDelay: isVisible ? "180ms" : "0ms",
   }}
 >
    <div
@@ -458,7 +458,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
       : "translate-y-10 opacity-0"
   )}
   style={{
-  transitionDelay: isVisible ? "240ms" : "0ms",
+  transitionDelay: isVisible ? "550ms" : "0ms",
 }}
 >
     <div
@@ -531,7 +531,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
       : "translate-y-10 opacity-0"
   )}
      style={{
-  transitionDelay: isVisible ? "360ms" : "0ms",
+  transitionDelay: isVisible ? "730ms" : "0ms",
 }}
 >
     <div
