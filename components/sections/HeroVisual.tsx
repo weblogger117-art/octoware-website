@@ -86,6 +86,7 @@ export function HeroVisual() {
   width={1919}
   height={1199}
   priority
+  sizes="(min-width: 1280px) 700px, (min-width: 1024px) 600px, 100vw"
   draggable={false}
   className="
     h-auto
