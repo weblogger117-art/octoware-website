@@ -1,5 +1,6 @@
 "use client";
 
+import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { LinkButton } from "@/components/ui";
@@ -20,13 +21,22 @@ useEffect(() => {
 
       {/* Produktlogo */}
       <div
-        className="
-          -ml-12
-          -mt-2
-          mb-8
-          xl:-ml-18
-        "
-      >
+  className={cn(
+    `
+      -ml-12
+      -mt-2
+      mb-8
+      xl:-ml-18
+
+      transition-all
+      duration-700
+      ease-out
+    `,
+    visible
+      ? "translate-x-0 opacity-100"
+      : "-translate-x-12 opacity-0"
+  )}
+>
         <Image
           src="/images/branding/octoware-logo.png"
           alt="OctoWare®"
