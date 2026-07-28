@@ -8,14 +8,18 @@ import { DeviceFrame } from "@/components/ui";
 
 export function HeroVisual() {
   const [visible, setVisible] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
-useEffect(() => {
+  useEffect(() => {
+  if (!imageLoaded) return;
+
   const timer = setTimeout(() => {
     setVisible(true);
-  }, 250);
+  }, 180);
 
   return () => clearTimeout(timer);
-}, []);
+}, [imageLoaded]);
+  
   return (
    <div
   className="
@@ -103,6 +107,7 @@ useEffect(() => {
             width={1919}
             height={1199}
             priority
+            onLoad={() => setImageLoaded(true)}
             draggable={false}
             className="
   h-auto
