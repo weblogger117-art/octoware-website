@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import {
   Baby,
@@ -105,8 +108,33 @@ const modules = [
   },
 ];
 export default function Modules() {
+  const sectionRef = useRef<HTMLElement>(null);
+const [visible, setVisible] = useState(false);
+
+useEffect(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        setVisible(true);
+        observer.disconnect();
+      }
+    },
+    {
+      threshold: 0.2,
+    }
+  );
+
+  if (sectionRef.current) {
+    observer.observe(sectionRef.current);
+  }
+
+  return () => observer.disconnect();
+}, []);
   return (
-    <section className="relative overflow-hidden py-28">
+    <section
+  ref={sectionRef}
+  className="relative overflow-hidden py-28"
+>
       <div
   className="
     absolute
