@@ -179,6 +179,7 @@ const [isVisible, setIsVisible] = useState(false);
   )}
 >
     <FeatureCard
+      overlay={<UnserShimmer />}
   icon={Building2}
   
   title="Für den ÖGD entwickelt"
