@@ -49,29 +49,27 @@ py-10
     >
       <div className="flex items-start gap-5">
   <div
-    className="
+  className={cn(
+    `
       flex
       h-14
       w-14
       shrink-0
       items-center
       justify-center
-
       rounded-xl
-
       bg-[#146ab1]/8
-
       text-[#146ab1]
-
       transition-all
       duration-300
 
-    group-hover:scale-105
+      group-hover:scale-105
       group-hover:bg-[#146ab1]
       group-hover:text-white
-    
-    "
-  >
+    `,
+    iconClassName
+  )}
+>
     <Icon
   className={cn(
     "h-7 w-7",
