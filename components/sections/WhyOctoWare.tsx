@@ -184,13 +184,13 @@ const [isVisible, setIsVisible] = useState(false);
           inset-0
           rounded-xl
           border-2
-          border-[#146ab1]/30
+          border-[#146ab1]/50
 
           transition-all
-          duration-700
+          duration-1000
         `,
         isVisible
-          ? "scale-150 opacity-0"
+          ? "scale-200 opacity-0"
           : "scale-100 opacity-100"
       )}
     />
