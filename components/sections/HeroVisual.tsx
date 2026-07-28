@@ -1,8 +1,21 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 import { DeviceFrame } from "@/components/ui";
 
 export function HeroVisual() {
+  const [visible, setVisible] = useState(false);
+
+useEffect(() => {
+  const timer = setTimeout(() => {
+    setVisible(true);
+  }, 250);
+
+  return () => clearTimeout(timer);
+}, []);
   return (
    <div
   className="
@@ -68,12 +81,21 @@ export function HeroVisual() {
   "
 >
         {/* Laptop */}
-        <DeviceFrame
-  className="
-    relative
-    z-10
-    w-full
-  "
+       <DeviceFrame
+  className={cn(
+    `
+      relative
+      z-10
+      w-full
+
+      transition-all
+      duration-[900ms]
+      ease-out
+    `,
+    visible
+      ? "translate-x-0 opacity-100 scale-100"
+      : "translate-x-20 opacity-0 scale-[0.96]"
+  )}
 >
           <Image
             src="/images/screens/OctowareNET_Dashboard.png"
