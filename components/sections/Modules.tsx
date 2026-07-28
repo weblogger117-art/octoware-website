@@ -228,7 +228,7 @@ useEffect(() => {
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
 
-          {modules.map((module) => {
+          {modules.map((module, index) => {
             const Icon = module.icon;
 
             return (
@@ -242,6 +242,15 @@ useEffect(() => {
       border-slate-200
       bg-white/80
       backdrop-blur-sm
+      ${
+  visible
+    ? index < 2
+      ? "animate-module-1"
+      : index < 6
+      ? "animate-module-2"
+      : "animate-module-3"
+    : "opacity-0"
+}
       ${module.featured ? "p-6 lg:col-span-2" : "px-6 py-5 lg:w-[92%] lg:mx-auto"}
       transition-all
       duration-300
