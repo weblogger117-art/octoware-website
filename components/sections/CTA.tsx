@@ -158,11 +158,88 @@ export function CTA() {
 
             </div>
 
-            {/* Platzhalter für Maskottchen */}
+           <div
+  className="
+    relative
+    hidden
+    lg:flex
+    items-end
+    justify-center
+  "
+>
 
-            <div className="hidden lg:flex justify-center">
+  {/* Sprechblase */}
+  <div
+    className="
+      absolute
+      -top-6
+      left-6
+      z-20
+    "
+  >
+    <div
+      className="
+        relative
+        rounded-2xl
+        bg-white
+        px-5
+        py-3
+        text-sm
+        font-semibold
+        text-slate-700
+        shadow-xl
+        border
+        border-slate-200
+      "
+    >
+      Lernen wir uns kennen!
 
-            </div>
+      {/* Pfeil */}
+      <div
+        className="
+          absolute
+          -bottom-2
+          left-10
+          h-4
+          w-4
+          rotate-45
+          border-b
+          border-r
+          border-slate-200
+          bg-white
+        "
+      />
+    </div>
+  </div>
+
+  {/* Glow */}
+  <div
+    className="
+      absolute
+      bottom-8
+      h-72
+      w-72
+      rounded-full
+      bg-[#146ab1]/20
+      blur-[90px]
+    "
+  />
+
+  <Image
+    src="/images/mascot/cta.webp"
+    alt="OctoWare® Maskottchen"
+    width={340}
+    height={340}
+    priority
+    className="
+      relative
+      z-10
+      object-contain
+      drop-shadow-2xl
+    "
+  />
+
+</div>
 
           </div>
 
