@@ -85,7 +85,7 @@ useEffect(() => {
       gap-4
 
       transition-all
-      duration-700
+      duration-1500
       ease-out
     `,
     visible
@@ -93,7 +93,7 @@ useEffect(() => {
       : "translate-y-8 opacity-0"
   )}
   style={{
-    transitionDelay: "360ms",
+    transitionDelay: "1000ms",
   }}
 >
   <LinkButton href="/plattform">
