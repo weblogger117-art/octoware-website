@@ -7,7 +7,8 @@ type FeatureCardProps = {
   title: string;
   description: string;
   className?: string;
-  iconDecoration?: React.ReactNode;
+
+  overlay?: ReactNode;
 };
 
 export function FeatureCard({
@@ -74,8 +75,6 @@ py-10
     group-hover:text-white
   "
 >
-  {iconDecoration}
-
   <Icon
     className="h-7 w-7"
     strokeWidth={1.8}
