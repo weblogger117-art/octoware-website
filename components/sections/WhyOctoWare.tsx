@@ -203,7 +203,9 @@ const [isVisible, setIsVisible] = useState(false);
     )}
   >
     <FeatureCard
-      icon={Blocks}
+    icon={Building2}
+    animateIcon={animateBuilding}
+    animationDelay={0}
       title="Moderne Webplattform"
       description="Browserbasiert, plattformunabhängig und flexibel im eigenen Rechenzentrum oder als Hosting-Lösung einsetzbar."
     />
