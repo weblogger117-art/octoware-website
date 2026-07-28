@@ -1,4 +1,4 @@
-import { AnimatedIcon } from "./AnimatedIcon";
+import { useEffect, useState } from "react";
 import { LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -12,13 +12,24 @@ type FeatureCardProps = {
 };
 
 export function FeatureCard({
-  icon: Icon,
-  title,
-  description,
-  className,
-  animateIcon,
-  animationDelay,
-}: FeatureCardProps) {
+  const [iconActive, setIconActive] = useState(false);
+
+useEffect(() => {
+  if (!animateIcon) return;
+
+  const timer1 = setTimeout(() => {
+    setIconActive(true);
+  }, animationDelay ?? 0);
+
+  const timer2 = setTimeout(() => {
+    setIconActive(false);
+  }, (animationDelay ?? 0) + 450);
+
+  return () => {
+    clearTimeout(timer1);
+    clearTimeout(timer2);
+  };
+}, [animateIcon, animationDelay]);
   return (
     <div
   className={cn(
@@ -52,24 +63,31 @@ py-10
     >
       <div className="flex items-start gap-5">
  <div
-  className="
-    flex
-    h-14
-    w-14
-    shrink-0
-    items-center
-    justify-center
-    rounded-xl
-    bg-[#146ab1]/8
-    text-[#146ab1]
+  className={cn(
+    `
+      flex
+      h-14
+      w-14
+      shrink-0
+      items-center
+      justify-center
 
-    transition-all
-    duration-300
+      rounded-xl
 
-    group-hover:scale-105
-    group-hover:bg-[#146ab1]
-    group-hover:text-white
-  "
+      bg-[#146ab1]/8
+      text-[#146ab1]
+
+      transition-all
+      duration-700
+
+      group-hover:scale-105
+      group-hover:bg-[#146ab1]
+      group-hover:text-white
+    `,
+    iconActive
+  ? "scale-110 -translate-y-1 shadow-[0_0_26px_rgba(20,106,177,0.28)]"
+  : "scale-100 translate-y-0"
+  )}
 >
   <div
   className={cn(
