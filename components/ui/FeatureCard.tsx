@@ -9,7 +9,7 @@ type FeatureCardProps = {
   iconClassName?: string;
 };
 
-eexport function FeatureCard({
+export function FeatureCard({
   icon: Icon,
   title,
   description,
