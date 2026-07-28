@@ -93,7 +93,7 @@ useEffect(() => {
       : "translate-y-16 opacity-0"
   )}
   style={{
-    transitionDelay: "650ms",
+    transitionDelay: "500ms",
   }}
 >
   <LinkButton href="/plattform">
