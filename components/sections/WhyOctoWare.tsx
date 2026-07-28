@@ -163,40 +163,53 @@ const [isVisible, setIsVisible] = useState(false);
   "
 >
 
-  <div
-    style={{
-    transitionDelay: "350ms",
-  }}
-    className={cn(
-      "transition-all duration-1000",
-      isVisible
-        ? "translate-y-0 opacity-100 scale-100"
-        : "translate-y-16 opacity-0 scale-95"
-    )}
-  >
+ <div
+  style={{ transitionDelay: "350ms" }}
+  className={cn(
+    `
+      relative
+      overflow-hidden
+
+      transition-all
+      duration-1000
+    `,
+    isVisible
+      ? "translate-y-0 opacity-100 scale-100"
+      : "translate-y-16 opacity-0 scale-95"
+  )}
+>
     <FeatureCard
   icon={Building2}
-  iconDecoration={
-    <div
-      className={cn(
-        `
-          absolute
-          inset-0
-          rounded-xl
-          border-2
-          border-[#146ab1]/50
-
-          transition-all
-          duration-1000
-        `,
-        isVisible
-          ? "scale-200 opacity-0"
-          : "scale-100 opacity-100"
-      )}
-    />
-  }
+  
   title="Für den ÖGD entwickelt"
   description="Praxisnahe Fachverfahren, die speziell für Gesundheitsämter und den Öffentlichen Gesundheitsdienst entwickelt wurden."
+/>
+    <div
+  className={cn(
+    `
+      pointer-events-none
+      absolute
+      inset-y-0
+      -left-1/2
+
+      w-1/3
+
+      rotate-12
+
+      bg-gradient-to-r
+      from-transparent
+      via-white/60
+      to-transparent
+
+      blur-xl
+
+      transition-all
+      duration-[1100ms]
+    `,
+    isVisible
+      ? "translate-x-[520%] opacity-0"
+      : "translate-x-0 opacity-100"
+  )}
 />
   </div>
 
