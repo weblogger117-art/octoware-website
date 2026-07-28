@@ -11,11 +11,11 @@ type FeatureCardProps = {
 };
 
 export function FeatureCard({
-    icon: Icon,
-    title,
-    description,
-    className,
-    iconDecoration,
+  icon: Icon,
+  title,
+  description,
+  className,
+  overlay,
 }: FeatureCardProps) {
   return (
     <div
@@ -115,6 +115,8 @@ lg:text-[26px]
       >
         {description}
       </p>
+
+      {overlay}
 
     </div>
   );
