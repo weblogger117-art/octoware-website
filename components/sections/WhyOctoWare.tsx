@@ -175,12 +175,6 @@ const [isVisible, setIsVisible] = useState(false);
     )}
   >
     <FeatureCard
-  className={cn(
-    "transition-all duration-700",
-    isVisible
-      ? "translate-y-0 opacity-100 scale-100"
-      : "translate-y-10 opacity-0 scale-95"
-  )}
   icon={Building2}
   iconClassName={
     isVisible ? "animate-building" : ""
