@@ -134,28 +134,13 @@ body {
 }
 
 .animate-highlight-1 {
-  animation:
-    highlightCardIn
-    .75s
-    cubic-bezier(.22,1,.36,1)
-    .15s
-    both;
+  animation: highlightCardIn .75s cubic-bezier(.22,1,.36,1) .95s both;
 }
 
 .animate-highlight-2 {
-  animation:
-    highlightCardIn
-    .75s
-    cubic-bezier(.22,1,.36,1)
-    .35s
-    both;
+  animation: highlightCardIn .75s cubic-bezier(.22,1,.36,1) 1.15s both;
 }
 
 .animate-highlight-3 {
-  animation:
-    highlightCardIn
-    .75s
-    cubic-bezier(.22,1,.36,1)
-    .55s
-    both;
+  animation: highlightCardIn .75s cubic-bezier(.22,1,.36,1) 1.35s both;
 }
