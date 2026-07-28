@@ -18,7 +18,7 @@ const modules = [
     icon: ShieldPlus,
     title: "Infektionsschutz",
     featured: true,
-    mascot: "/images/mascot/infektionsschutz.png",
+    mascot: "/images/mascot/infektionsschutz.webp",
     features: [
       "DEMIS",
       "Kontaktpersonen",
@@ -30,7 +30,7 @@ const modules = [
     icon: Baby,
     title: "Kinder- & Jugendgesundheit",
     featured: true,
-    mascot: "/images/mascot/kinderjugenddienst.png",
+    mascot: "/images/mascot/kinderjugenddienst.webp",
     features: [
       "Schuluntersuchungen",
       "Vorsorgen",
@@ -86,7 +86,7 @@ const modules = [
     icon: Users,
     title: "Beratung & Betreuung",
     featured: true,
-    mascot: "/images/mascot/beratung.png",
+    mascot: "/images/mascot/beratung.webp",
     features: [
       "Psychiatrie",
       "Sucht",
@@ -98,7 +98,7 @@ const modules = [
     icon: Building2,
     title: "Weitere Fachverfahren",
     featured: true,
-    mascot: "/images/mascot/verwaltung.png",
+    mascot: "/images/mascot/verwaltung.webp",
     features: [
       "Modular",
       "Erweiterbar",
@@ -110,6 +110,9 @@ const modules = [
 export default function Modules() {
   const sectionRef = useRef<HTMLElement>(null);
 const [visible, setVisible] = useState(false);
+  const [row1Visible, setRow1Visible] = useState(false);
+const [row2Visible, setRow2Visible] = useState(false);
+const [row3Visible, setRow3Visible] = useState(false);
 
 useEffect(() => {
   const observer = new IntersectionObserver(
@@ -130,6 +133,21 @@ useEffect(() => {
 
   return () => observer.disconnect();
 }, []);
+
+useEffect(() => {
+  if (!visible) return;
+
+  const t1 = setTimeout(() => setRow1Visible(true), 0);
+  const t2 = setTimeout(() => setRow2Visible(true), 450);
+  const t3 = setTimeout(() => setRow3Visible(true), 900);
+
+  return () => {
+    clearTimeout(t1);
+    clearTimeout(t2);
+    clearTimeout(t3);
+  };
+}, [visible]);
+  
   return (
     <section
   ref={sectionRef}
@@ -243,13 +261,17 @@ useEffect(() => {
       bg-white/80
       backdrop-blur-sm
       ${
-  visible
-    ? index < 2
+  index < 2
+    ? row1Visible
       ? "animate-module-1"
-      : index < 6
-      ? "animate-module-2"
-      : "animate-module-3"
-    : "opacity-0"
+      : "opacity-0"
+    : index < 6
+      ? row2Visible
+        ? "animate-module-2"
+        : "opacity-0"
+      : row3Visible
+        ? "animate-module-3"
+        : "opacity-0"
 }
       ${module.featured ? "p-6 lg:col-span-2" : "px-6 py-5 lg:w-[92%] lg:mx-auto"}
       transition-all
