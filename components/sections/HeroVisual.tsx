@@ -102,7 +102,6 @@ export function HeroVisual() {
           alt="Mobile Nutzung von OctoWare®NET"
           width={1200}
           height={900}
-          priority
           draggable={false}
           className="
             absolute
