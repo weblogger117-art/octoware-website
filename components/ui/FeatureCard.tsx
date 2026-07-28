@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import { LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -7,8 +6,6 @@ type FeatureCardProps = {
   title: string;
   description: string;
   className?: string;
-
-  overlay?: ReactNode;
 };
 
 export function FeatureCard({
@@ -16,7 +13,6 @@ export function FeatureCard({
   title,
   description,
   className,
-  overlay,
 }: FeatureCardProps) {
   return (
     <div
@@ -51,35 +47,34 @@ py-10
     >
       <div className="flex items-start gap-5">
   <div
-  className="
-    relative
+    className="
+      flex
+      h-14
+      w-14
+      shrink-0
+      items-center
+      justify-center
 
-    flex
-    h-14
-    w-14
-    shrink-0
-    items-center
-    justify-center
+      rounded-xl
 
-    rounded-xl
+      bg-[#146ab1]/8
 
-    bg-[#146ab1]/8
+      text-[#146ab1]
 
-    text-[#146ab1]
-
-    transition-all
-    duration-300
+      transition-all
+      duration-300
 
     group-hover:scale-105
-    group-hover:bg-[#146ab1]
-    group-hover:text-white
-  "
->
-  <Icon
-    className="h-7 w-7"
-    strokeWidth={1.8}
-  />
-</div>
+      group-hover:bg-[#146ab1]
+      group-hover:text-white
+    
+    "
+  >
+    <Icon
+      className="h-7 w-7"
+      strokeWidth={1.8}
+    />
+  </div>
 
   <h3
   className="
@@ -114,8 +109,6 @@ lg:text-[26px]
       >
         {description}
       </p>
-
-      {overlay}
 
     </div>
   );
