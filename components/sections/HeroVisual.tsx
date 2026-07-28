@@ -117,6 +117,7 @@ export function HeroVisual() {
 
             drop-shadow-2xl
             select-none
+            animate-hero-tablet
           "
         />
       </div>
