@@ -144,3 +144,36 @@ body {
 .animate-highlight-3 {
   animation: highlightCardIn .75s cubic-bezier(.22,1,.36,1) 1.35s both;
 }
+
+@keyframes moduleCardIn {
+  0% {
+    opacity: 0;
+    transform: translateY(45px) scale(.96);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translateY(-6px) scale(1.015);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-module-1 {
+  animation: moduleCardIn .75s cubic-bezier(.22,1,.36,1) both;
+}
+
+.animate-module-2 {
+  animation: moduleCardIn .75s cubic-bezier(.22,1,.36,1) .18s both;
+}
+
+.animate-module-3 {
+  animation: moduleCardIn .75s cubic-bezier(.22,1,.36,1) .36s both;
+}
+
+.animate-module-4 {
+  animation: moduleCardIn .75s cubic-bezier(.22,1,.36,1) .54s both;
+}
