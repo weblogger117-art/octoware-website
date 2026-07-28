@@ -7,6 +7,7 @@ type FeatureCardProps = {
   description: string;
   className?: string;
   iconClassName?: string;
+  animateIcon?: boolean;
 };
 
 export function FeatureCard({
@@ -15,6 +16,7 @@ export function FeatureCard({
   description,
   className,
   iconClassName,
+  animateIcon,
 }: FeatureCardProps) {
   return (
     <div
@@ -68,7 +70,14 @@ py-10
     group-hover:text-white
   "
 >
-  <div className={iconClassName}>
+  <div
+  className={cn(
+    "transition-all duration-500",
+    animateIcon
+      ? "scale-110 -translate-y-2"
+      : "scale-100 translate-y-0"
+  )}
+>
     <Icon
       className="h-7 w-7"
       strokeWidth={1.8}
