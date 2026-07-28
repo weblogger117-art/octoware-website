@@ -168,7 +168,7 @@ const [isVisible, setIsVisible] = useState(false);
     transitionDelay: "350ms",
   }}
     className={cn(
-      "transition-all duration-700",
+      "transition-all duration-1000",
       isVisible
         ? "translate-y-0 opacity-100 scale-100"
         : "translate-y-10 opacity-0 scale-95"
