@@ -194,14 +194,14 @@ const [card4Active, setCard4Active] = useState(false);
       rounded-3xl
 
       transition-all
-      duration-700
+      duration-1000
     `,
     isVisible
       ? "translate-y-0 opacity-100 scale-100"
       : "translate-y-16 opacity-0 scale-95",
 
     card1Active &&
-      "scale-[1.025] shadow-[0_0_45px_rgba(20,106,177,0.22)]"
+    "scale-[1.04] shadow-[0_0_70px_rgba(20,106,177,0.40)]
   )}
 >
     <FeatureCard
