@@ -1,3 +1,4 @@
+import { AnimatedIcon } from "./AnimatedIcon";
 import { LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -6,8 +7,8 @@ type FeatureCardProps = {
   title: string;
   description: string;
   className?: string;
-  iconClassName?: string;
   animateIcon?: boolean;
+  animationDelay?: number;
 };
 
 export function FeatureCard({
@@ -15,8 +16,8 @@ export function FeatureCard({
   title,
   description,
   className,
-  iconClassName,
   animateIcon,
+  animationDelay,
 }: FeatureCardProps) {
   return (
     <div
@@ -78,10 +79,15 @@ py-10
       : "scale-100 translate-y-0"
   )}
 >
-    <Icon
-      className="h-7 w-7"
-      strokeWidth={1.8}
-    />
+    <AnimatedIcon
+  active={!!animateIcon}
+  delay={animationDelay}
+>
+  <Icon
+    className="h-7 w-7"
+    strokeWidth={1.8}
+  />
+</AnimatedIcon>
   </div>
 </div>
 
