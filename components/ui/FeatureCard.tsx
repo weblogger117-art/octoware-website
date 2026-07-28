@@ -70,11 +70,8 @@ py-10
     iconClassName
   )}
 >
-    <Icon
-  className={cn(
-    "h-7 w-7",
-    iconClassName
-  )}
+   <Icon
+  className="h-7 w-7"
   strokeWidth={1.8}
 />
   </div>
