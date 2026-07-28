@@ -12,24 +12,33 @@ type FeatureCardProps = {
 };
 
 export function FeatureCard({
+  icon: Icon,
+  title,
+  description,
+  className,
+  animateIcon,
+  animationDelay,
+}: FeatureCardProps) {
+
   const [iconActive, setIconActive] = useState(false);
 
-useEffect(() => {
-  if (!animateIcon) return;
+  useEffect(() => {
+    if (!animateIcon) return;
 
-  const timer1 = setTimeout(() => {
-    setIconActive(true);
-  }, animationDelay ?? 0);
+    const timer1 = setTimeout(() => {
+      setIconActive(true);
+    }, animationDelay ?? 0);
 
-  const timer2 = setTimeout(() => {
-    setIconActive(false);
-  }, (animationDelay ?? 0) + 450);
+    const timer2 = setTimeout(() => {
+      setIconActive(false);
+    }, (animationDelay ?? 0) + 450);
 
-  return () => {
-    clearTimeout(timer1);
-    clearTimeout(timer2);
-  };
-}, [animateIcon, animationDelay]);
+    return () => {
+      clearTimeout(timer1);
+      clearTimeout(timer2);
+    };
+  }, [animateIcon, animationDelay]);
+
   return (
     <div
   className={cn(
