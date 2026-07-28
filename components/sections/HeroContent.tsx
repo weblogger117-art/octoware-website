@@ -1,8 +1,20 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { LinkButton } from "@/components/ui";
 import { Heading } from "@/components/typography";
 
 export function HeroContent() {
+  const [visible, setVisible] = useState(false);
+
+useEffect(() => {
+  const timer = setTimeout(() => {
+    setVisible(true);
+  }, 150);
+
+  return () => clearTimeout(timer);
+}, []);
   return (
     <div className="flex max-w-xl flex-col items-start">
 
