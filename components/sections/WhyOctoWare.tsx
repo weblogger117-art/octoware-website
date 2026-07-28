@@ -15,6 +15,7 @@ import { Section } from "@/components/ui";
 export function WhyOctoWare() {
   const sectionRef = useRef<HTMLElement>(null);
 const [isVisible, setIsVisible] = useState(false);
+  const [animateBuilding, setAnimateBuilding] = useState(false);
 
   useEffect(() => {
   const observer = new IntersectionObserver(
@@ -34,6 +35,16 @@ const [isVisible, setIsVisible] = useState(false);
 
   return () => observer.disconnect();
 }, []);
+
+  useEffect(() => {
+  if (!isVisible || animateBuilding) return;
+
+  const timer = setTimeout(() => {
+    setAnimateBuilding(true);
+  }, 350);
+
+  return () => clearTimeout(timer);
+}, [isVisible, animateBuilding]);
   
   return (
     <Section
