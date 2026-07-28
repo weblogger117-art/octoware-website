@@ -42,6 +42,7 @@ export function DeviceFrame({
         width={1800}
         height={1120}
         priority
+        sizes="(min-width: 1280px) 820px, (min-width: 1024px) 700px, 100vw"
         draggable={false}
         className="relative z-10 h-auto w-full select-none"
       />
