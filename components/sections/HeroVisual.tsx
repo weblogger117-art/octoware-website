@@ -76,6 +76,8 @@ export function HeroVisual() {
     relative
     z-10
     w-full
+
+    animate-hero-laptop
   "
 >
           <Image
