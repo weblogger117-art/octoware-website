@@ -14,13 +14,7 @@ import { Section } from "@/components/ui";
 
 export function WhyOctoWare() {
   const sectionRef = useRef<HTMLElement>(null);
-
 const [isVisible, setIsVisible] = useState(false);
-
-const [card1Active, setCard1Active] = useState(false);
-const [card2Active, setCard2Active] = useState(false);
-const [card3Active, setCard3Active] = useState(false);
-const [card4Active, setCard4Active] = useState(false);
 
   useEffect(() => {
   const observer = new IntersectionObserver(
@@ -40,22 +34,6 @@ const [card4Active, setCard4Active] = useState(false);
 
   return () => observer.disconnect();
 }, []);
-
-  useEffect(() => {
-  if (!isVisible) return;
-
-  const t1 = setTimeout(() => setCard1Active(true), 450);
-  const t2 = setTimeout(() => setCard2Active(true), 600);
-  const t3 = setTimeout(() => setCard3Active(true), 750);
-  const t4 = setTimeout(() => setCard4Active(true), 900);
-
-  return () => {
-    clearTimeout(t1);
-    clearTimeout(t2);
-    clearTimeout(t3);
-    clearTimeout(t4);
-  };
-}, [isVisible]);
   
   return (
     <Section
@@ -185,36 +163,24 @@ const [card4Active, setCard4Active] = useState(false);
   "
 >
 
-  {/* Karte 1 */}
   <div
-    style={{ transitionDelay: "350ms" }}
+    style={{
+    transitionDelay: "350ms",
+  }}
     className={cn(
-      `
-        relative
-        overflow-hidden
-        rounded-3xl
-
-        transition-all
-        duration-1000
-      `,
+      "transition-all duration-700",
       isVisible
         ? "translate-y-0 opacity-100 scale-100"
-        : "translate-y-16 opacity-0 scale-95"
+        : "translate-y-10 opacity-0 scale-95"
     )}
   >
     <FeatureCard
-      className={cn(
-        "transition-all duration-700",
-        card1Active &&
-          "scale-[1.04] shadow-[0_0_70px_rgba(20,106,177,0.40)]"
-      )}
       icon={Building2}
       title="Für den ÖGD entwickelt"
       description="Praxisnahe Fachverfahren, die speziell für Gesundheitsämter und den Öffentlichen Gesundheitsdienst entwickelt wurden."
     />
   </div>
 
-  {/* Karte 2 */}
   <div
     style={{ transitionDelay: "500ms" }}
     className={cn(
@@ -231,7 +197,6 @@ const [card4Active, setCard4Active] = useState(false);
     />
   </div>
 
-  {/* Karte 3 */}
   <div
     style={{ transitionDelay: "650ms" }}
     className={cn(
@@ -248,7 +213,6 @@ const [card4Active, setCard4Active] = useState(false);
     />
   </div>
 
-  {/* Karte 4 */}
   <div
     style={{ transitionDelay: "800ms" }}
     className={cn(
@@ -266,7 +230,6 @@ const [card4Active, setCard4Active] = useState(false);
   </div>
 
 </div>
-
-      </Section>
+    </Section>
   );
 }
