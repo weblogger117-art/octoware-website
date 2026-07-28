@@ -15,7 +15,6 @@ import { Section } from "@/components/ui";
 export function WhyOctoWare() {
   const sectionRef = useRef<HTMLElement>(null);
 const [isVisible, setIsVisible] = useState(false);
-  const [animateBuilding, setAnimateBuilding] = useState(false);
 
   useEffect(() => {
   const observer = new IntersectionObserver(
@@ -35,16 +34,6 @@ const [isVisible, setIsVisible] = useState(false);
 
   return () => observer.disconnect();
 }, []);
-
-  useEffect(() => {
-  if (!isVisible || animateBuilding) return;
-
-  const timer = setTimeout(() => {
-    setAnimateBuilding(true);
-  }, 350);
-
-  return () => clearTimeout(timer);
-}, [isVisible, animateBuilding]);
   
   return (
     <Section
@@ -186,13 +175,11 @@ const [isVisible, setIsVisible] = useState(false);
     )}
   >
     <FeatureCard
-  icon={Building2}
-  animateIcon={isVisible}
-  animationDelay={350}
-  title="Für den ÖGD entwickelt"
-  description="Praxisnahe Fachverfahren, die speziell für Gesundheitsämter und den Öffentlichen Gesundheitsdienst entwickelt wurden."
-/>
-    </div>
+      icon={Building2}
+      title="Für den ÖGD entwickelt"
+      description="Praxisnahe Fachverfahren, die speziell für Gesundheitsämter und den Öffentlichen Gesundheitsdienst entwickelt wurden."
+    />
+  </div>
 
   <div
     style={{ transitionDelay: "500ms" }}
@@ -204,9 +191,7 @@ const [isVisible, setIsVisible] = useState(false);
     )}
   >
     <FeatureCard
-    icon={Blocks}
-    animateIcon={animateBuilding}
-    animationDelay={0}
+      icon={Blocks}
       title="Moderne Webplattform"
       description="Browserbasiert, plattformunabhängig und flexibel im eigenen Rechenzentrum oder als Hosting-Lösung einsetzbar."
     />
