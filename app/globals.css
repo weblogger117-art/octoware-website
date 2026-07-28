@@ -101,39 +101,17 @@ body {
 }
 
 .animate-hero-tablet {
-  animation:
-    heroTabletIn
-    .95s
-    cubic-bezier(.22,1,.36,1)
-    .75s
-    both;
+  animation: heroTabletIn .9s ease-out .75s both;
 }
 
 @keyframes heroTabletIn {
-  0% {
+  from {
     opacity: 0;
-    transform:
-      translateX(50px)
-      translateY(35px)
-      rotate(4deg)
-      scale(.92);
+    transform: translate(40px, 30px) rotate(3deg) scale(.94);
   }
 
-  70% {
+  to {
     opacity: 1;
-    transform:
-      translateX(-3px)
-      translateY(-2px)
-      rotate(-0.4deg)
-      scale(1.02);
-  }
-
-  100% {
-    opacity: 1;
-    transform:
-      translateX(0)
-      translateY(0)
-      rotate(0deg)
-      scale(1);
+    transform: translate(0, 0) rotate(0deg) scale(1);
   }
 }
