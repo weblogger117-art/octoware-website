@@ -203,7 +203,7 @@ const [isVisible, setIsVisible] = useState(false);
     )}
   >
     <FeatureCard
-    icon={Building2}
+    icon={Blocks}
     animateIcon={animateBuilding}
     animationDelay={0}
       title="Moderne Webplattform"
