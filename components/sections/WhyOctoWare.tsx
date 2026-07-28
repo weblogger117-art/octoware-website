@@ -175,10 +175,29 @@ const [isVisible, setIsVisible] = useState(false);
     )}
   >
     <FeatureCard
-      icon={Building2}
-      title="Für den ÖGD entwickelt"
-      description="Praxisnahe Fachverfahren, die speziell für Gesundheitsämter und den Öffentlichen Gesundheitsdienst entwickelt wurden."
+  icon={Building2}
+  iconDecoration={
+    <div
+      className={cn(
+        `
+          absolute
+          inset-0
+          rounded-xl
+          border-2
+          border-[#146ab1]/30
+
+          transition-all
+          duration-700
+        `,
+        isVisible
+          ? "scale-150 opacity-0"
+          : "scale-100 opacity-100"
+      )}
     />
+  }
+  title="Für den ÖGD entwickelt"
+  description="Praxisnahe Fachverfahren, die speziell für Gesundheitsämter und den Öffentlichen Gesundheitsdienst entwickelt wurden."
+/>
   </div>
 
   <div
