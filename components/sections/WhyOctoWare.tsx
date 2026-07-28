@@ -185,33 +185,36 @@ const [card4Active, setCard4Active] = useState(false);
   "
 >
 
- <div
-  style={{ transitionDelay: "350ms" }}
-  className={cn(
-    `
-      relative
-      overflow-hidden
-      rounded-3xl
+  {/* Karte 1 */}
+  <div
+    style={{ transitionDelay: "350ms" }}
+    className={cn(
+      `
+        relative
+        overflow-hidden
+        rounded-3xl
 
-      transition-all
-      duration-1000
-    `,
-    isVisible
-      ? "translate-y-0 opacity-100 scale-100"
-      : "translate-y-16 opacity-0 scale-95",
-  )}
->
+        transition-all
+        duration-1000
+      `,
+      isVisible
+        ? "translate-y-0 opacity-100 scale-100"
+        : "translate-y-16 opacity-0 scale-95"
+    )}
+  >
     <FeatureCard
-  className={cn(
-    "transition-all duration-700",
-    card1Active &&
-      "scale-[1.04] shadow-[0_0_70px_rgba(20,106,177,0.40)]"
-  )}
-  icon={Building2}
-  title="Für den ÖGD entwickelt"
-  description="Praxisnahe Fachverfahren, die speziell für Gesundheitsämter und den Öffentlichen Gesundheitsdienst entwickelt wurden."
-/>
+      className={cn(
+        "transition-all duration-700",
+        card1Active &&
+          "scale-[1.04] shadow-[0_0_70px_rgba(20,106,177,0.40)]"
+      )}
+      icon={Building2}
+      title="Für den ÖGD entwickelt"
+      description="Praxisnahe Fachverfahren, die speziell für Gesundheitsämter und den Öffentlichen Gesundheitsdienst entwickelt wurden."
+    />
+  </div>
 
+  {/* Karte 2 */}
   <div
     style={{ transitionDelay: "500ms" }}
     className={cn(
@@ -228,6 +231,7 @@ const [card4Active, setCard4Active] = useState(false);
     />
   </div>
 
+  {/* Karte 3 */}
   <div
     style={{ transitionDelay: "650ms" }}
     className={cn(
@@ -244,6 +248,7 @@ const [card4Active, setCard4Active] = useState(false);
     />
   </div>
 
+  {/* Karte 4 */}
   <div
     style={{ transitionDelay: "800ms" }}
     className={cn(
@@ -261,6 +266,3 @@ const [card4Active, setCard4Active] = useState(false);
   </div>
 
 </div>
-    </Section>
-  );
-}
