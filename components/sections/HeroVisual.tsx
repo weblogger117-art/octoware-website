@@ -81,7 +81,7 @@ export function HeroVisual() {
   "
 >
           <Image
-  src="/images/screens/OctowareNET_Dashboard.png"
+  src="/images/screens/OctowareNET_Dashboard.webp"
   alt="Dashboard von OctoWare®NET"
   width={1919}
   height={1199}
@@ -97,7 +97,7 @@ export function HeroVisual() {
 
         {/* Tablet */}
         <Image
-          src="/images/devices/tablet.png"
+          src="/images/devices/tablet.webp"
           alt="Mobile Nutzung von OctoWare®NET"
           width={1200}
           height={900}
