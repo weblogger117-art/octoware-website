@@ -37,7 +37,7 @@ export function DeviceFrame({
 
       {/* Laptop-Rahmen */}
       <Image
-        src="/images/devices/Laptop_frame.png"
+        src="/images/devices/Laptop_frame.webp"
         alt=""
         width={1800}
         height={1120}
