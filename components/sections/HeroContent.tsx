@@ -53,12 +53,28 @@ useEffect(() => {
         />
       </div>
 
-      <Heading
-        className="mt-0"
-        as="h1"
-        title="Die Softwareplattform für den öffentlichen Gesundheitsdienst."
-        description="OctoWare®NET vereint moderne Fachverfahren, digitale Bürgerdienste und effiziente Prozesse auf einer zentralen Plattform."
-      />
+      <div
+  className={cn(
+    `
+      transition-all
+      duration-700
+      ease-out
+    `,
+    visible
+      ? "translate-y-0 opacity-100"
+      : "translate-y-8 opacity-0"
+  )}
+  style={{
+    transitionDelay: "180ms",
+  }}
+>
+  <Heading
+    className="mt-0"
+    as="h1"
+    title="Die Softwareplattform für den öffentlichen Gesundheitsdienst."
+    description="OctoWare®NET vereint moderne Fachverfahren, digitale Bürgerdienste und effiziente Prozesse auf einer zentralen Plattform."
+  />
+</div>
 
       <div className="mt-10 flex flex-wrap gap-4">
         <LinkButton href="/plattform">
