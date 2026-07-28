@@ -47,26 +47,3 @@ body {
   }
 
 }
-
-@keyframes buildingLift {
-  0% {
-    transform: translateY(0) scale(1);
-  }
-
-  35% {
-    transform: translateY(-8px) scale(1.08);
-  }
-
-  70% {
-    transform: translateY(-4px) scale(1.03);
-  }
-
-  100% {
-    transform: translateY(0) scale(1);
-  }
-}
-.animate-building {
-  animation: buildingLift 650ms
-             cubic-bezier(.22,1,.36,1)
-             forwards;
-}
