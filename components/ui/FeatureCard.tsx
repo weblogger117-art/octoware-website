@@ -6,13 +6,15 @@ type FeatureCardProps = {
   title: string;
   description: string;
   className?: string;
+  iconClassName?: string;
 };
 
-export function FeatureCard({
+eexport function FeatureCard({
   icon: Icon,
   title,
   description,
   className,
+  iconClassName,
 }: FeatureCardProps) {
   return (
     <div
@@ -71,9 +73,12 @@ py-10
     "
   >
     <Icon
-      className="h-7 w-7"
-      strokeWidth={1.8}
-    />
+  className={cn(
+    "h-7 w-7",
+    iconClassName
+  )}
+  strokeWidth={1.8}
+/>
   </div>
 
   <h3
