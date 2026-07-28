@@ -221,7 +221,7 @@ export default function Modules() {
       hover:border-[#146ab1]/50
       hover:shadow-2xl
       hover:shadow-[#146ab1]/10
-      ${module.featured ? "lg:col-span-2" : ""}
+      ${module.featured ? "lg:col-span-2" : "lg:w-[92%] lg:mx-auto"}
     `}
   >
     {module.featured ? (
