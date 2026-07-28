@@ -187,11 +187,10 @@ const [isVisible, setIsVisible] = useState(false);
   >
     <FeatureCard
   icon={Building2}
-  iconClassName="animate-building"
+  animateIcon={animateBuilding}
   title="Für den ÖGD entwickelt"
   description="Praxisnahe Fachverfahren, die speziell für Gesundheitsämter und den Öffentlichen Gesundheitsdienst entwickelt wurden."
 />
-  </div>
 
   <div
     style={{ transitionDelay: "500ms" }}
