@@ -14,7 +14,13 @@ import { Section } from "@/components/ui";
 
 export function WhyOctoWare() {
   const sectionRef = useRef<HTMLElement>(null);
+
 const [isVisible, setIsVisible] = useState(false);
+
+const [card1Active, setCard1Active] = useState(false);
+const [card2Active, setCard2Active] = useState(false);
+const [card3Active, setCard3Active] = useState(false);
+const [card4Active, setCard4Active] = useState(false);
 
   useEffect(() => {
   const observer = new IntersectionObserver(
@@ -34,6 +40,22 @@ const [isVisible, setIsVisible] = useState(false);
 
   return () => observer.disconnect();
 }, []);
+
+  useEffect(() => {
+  if (!isVisible) return;
+
+  const t1 = setTimeout(() => setCard1Active(true), 450);
+  const t2 = setTimeout(() => setCard2Active(true), 600);
+  const t3 = setTimeout(() => setCard3Active(true), 750);
+  const t4 = setTimeout(() => setCard4Active(true), 900);
+
+  return () => {
+    clearTimeout(t1);
+    clearTimeout(t2);
+    clearTimeout(t3);
+    clearTimeout(t4);
+  };
+}, [isVisible]);
   
   return (
     <Section
