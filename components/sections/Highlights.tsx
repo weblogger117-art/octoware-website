@@ -25,27 +25,33 @@ export function Highlights() {
     gap-10
   "
 >
-        <StatCard
-  icon={Building2}
-  iconClassName="bg-[#adce00]/10 text-[#7FA000] border-[#adce00]/20"
-  value="Seit 1990"
-  label="Entwicklung von Fachsoftware für den Öffentlichen Gesundheitsdienst."
-/>
+  <div className="animate-highlight-1">
+    <StatCard
+      icon={Building2}
+      iconClassName="bg-[#adce00]/10 text-[#7FA000] border-[#adce00]/20"
+      value="Seit 1990"
+      label="Entwicklung von Fachsoftware für den Öffentlichen Gesundheitsdienst."
+    />
+  </div>
 
-        <StatCard
-  icon={Globe}
-  iconClassName="bg-[#146ab1]/8 text-[#146ab1] border-[#146ab1]/15"
-  value="Webbasiert"
-  label="Moderner Betrieb im eigenen Rechenzentrum oder als zentrale Hosting-Lösung."
-/>
+  <div className="animate-highlight-2">
+    <StatCard
+      icon={Globe}
+      iconClassName="bg-[#146ab1]/8 text-[#146ab1] border-[#146ab1]/15"
+      value="Webbasiert"
+      label="Moderner Betrieb im eigenen Rechenzentrum oder als zentrale Hosting-Lösung."
+    />
+  </div>
 
-        <StatCard
-  icon={Blocks}
-  iconClassName="bg-[#adce00]/10 text-[#7FA000] border-[#adce00]/20"
-  value="Modular"
-  label="Flexible Fachverfahren für sämtliche Bereiche des Öffentlichen Gesundheitsdienstes."
-/>
-      </div>
+  <div className="animate-highlight-3">
+    <StatCard
+      icon={Blocks}
+      iconClassName="bg-[#adce00]/10 text-[#7FA000] border-[#adce00]/20"
+      value="Modular"
+      label="Flexible Fachverfahren für sämtliche Bereiche des Öffentlichen Gesundheitsdienstes."
+    />
+  </div>
+</div>
     </Section>
   );
 }
