@@ -191,6 +191,7 @@ const [isVisible, setIsVisible] = useState(false);
   title="Für den ÖGD entwickelt"
   description="Praxisnahe Fachverfahren, die speziell für Gesundheitsämter und den Öffentlichen Gesundheitsdienst entwickelt wurden."
 />
+    </div>
 
   <div
     style={{ transitionDelay: "500ms" }}
