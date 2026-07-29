@@ -11,9 +11,10 @@ const [isVisible, setIsVisible] = useState(false);
 useEffect(() => {
   const observer = new IntersectionObserver(
     ([entry]) => {
-      if (entry.isIntersecting) {
-        setIsVisible(true);
-      }
+     if (entry.isIntersecting) {
+  setIsVisible(true);
+  observer.disconnect();
+}
     },
     {
       threshold: 0.25,
@@ -93,13 +94,10 @@ useEffect(() => {
     relative
     hidden
     lg:block
-    transition-all
-    duration-1000
-    ease-out
     ${
       isVisible
-        ? "translate-y-0 opacity-100 scale-100"
-        : "-translate-y-10 opacity-0 scale-95"
+        ? "opacity-0 animate-[fadeUp_.7s_ease-out_forwards]"
+        : "opacity-0"
     }
   `}
 >
