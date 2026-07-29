@@ -41,21 +41,8 @@ useEffect(() => {
   className={cn(
     `
       flex
-      transition-all
-duration-300
-ease-out
-      items-center
-      justify-between
-
-      rounded-2xl
-
-      px-10
-
-      border
-
-      transition-all
-      duration-300
-      ease-out
+items-center
+gap-10
     `,
     scrolled
       ? `
@@ -77,7 +64,14 @@ ease-out
 >
           <Link
             href="/"
-            className="flex items-center transition-opacity duration-200 hover:opacity-90"
+            className="
+flex
+shrink-0
+items-center
+transition-opacity
+duration-200
+hover:opacity-90
+"
           >
             <Image
               src="/images/branding/easy-soft-logo.png"
@@ -89,7 +83,9 @@ ease-out
             />
           </Link>
 
-          <Navigation />
+          <div className="flex flex-1 justify-center">
+  <Navigation />
+</div>
         </div>
       </Container>
     </header>
