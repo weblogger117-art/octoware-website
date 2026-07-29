@@ -26,7 +26,6 @@ export function CTA() {
           "
         />
 
-        {/* Blauer Glow */}
         <div
           className="
             absolute
@@ -42,7 +41,6 @@ export function CTA() {
           "
         />
 
-        {/* Grüner Glow */}
         <div
           className="
             absolute
@@ -56,56 +54,37 @@ export function CTA() {
           "
         />
 
+      </div>
+
       <div className="mx-auto max-w-6xl px-6">
 
-        <div
-          className="
-            flex
-            flex-col
-            items-center
-            text-center
-          "
-        >
+        <div className="flex flex-col items-center text-center">
 
           {/* Maskottchen */}
-          <div
-            className="
-              relative
-              hidden
-              lg:flex
-              justify-center
-              -mb-12
-            "
-          >
+          <div className="relative hidden lg:block">
 
-            {/* Blauer Glow */}
             <div
               className="
                 absolute
-                bottom-8
-                h-80
-                w-80
+                inset-0
                 rounded-full
                 bg-[#146ab1]/20
                 blur-[90px]
               "
             />
 
-            {/* Grüner Glow */}
-<div
-  className="
-    absolute
-    bottom-10
-    right-12
-    h-40
-    w-40
-    rounded-full
-    bg-[#adce00]/20
-    blur-[70px]
-  "
-/>
-
-            </div>
+            <div
+              className="
+                absolute
+                bottom-10
+                right-12
+                h-40
+                w-40
+                rounded-full
+                bg-[#adce00]/20
+                blur-[70px]
+              "
+            />
 
             <Image
               src="/images/mascot/cta.webp"
@@ -115,41 +94,44 @@ export function CTA() {
               priority
               draggable={false}
               className="
-  relative
-  z-10
-  -mb-4
-  object-contain
-  drop-shadow-2xl
-  select-none
-"
+                relative
+                z-10
+                object-contain
+                drop-shadow-2xl
+                select-none
+              "
             />
 
           </div>
 
-<span
-  className="
-    inline-flex
-    items-center
-    rounded-full
-    border
-    border-[#146ab1]/20
-    bg-[#146ab1]/5
-    px-4
-    py-2
-    text-xs
-    font-semibold
-    uppercase
-    tracking-[0.25em]
-    text-[#146ab1]
-  "
->
-  Jetzt starten
-</span>
+          {/* Badge */}
+
+          <span
+            className="
+              -mt-2
+              inline-flex
+              items-center
+              rounded-full
+              border
+              border-[#146ab1]/20
+              bg-[#146ab1]/5
+              px-4
+              py-2
+              text-xs
+              font-semibold
+              uppercase
+              tracking-[0.25em]
+              text-[#146ab1]
+            "
+          >
+            Jetzt starten
+          </span>
 
           {/* Überschrift */}
+
           <h2
             className="
-              mt-4
+              mt-6
               max-w-5xl
               text-5xl
               font-bold
@@ -163,6 +145,7 @@ export function CTA() {
           </h2>
 
           {/* Text */}
+
           <p
             className="
               mx-auto
@@ -179,9 +162,10 @@ export function CTA() {
           </p>
 
           {/* Buttons */}
+
           <div
             className="
-              mt-8
+              mt-10
               flex
               flex-wrap
               justify-center
