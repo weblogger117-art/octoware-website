@@ -13,26 +13,24 @@ export function Header() {
 
 useEffect(() => {
   let lastScroll = 0;
-const threshold = 15;
 
   const handleScroll = () => {
-  const current = window.scrollY;
-  const delta = current - lastScroll;
+    const current = window.scrollY;
 
-  setScrolled(current > 40);
+    setScrolled(current > 40);
 
-  if (current < 80) {
-    setHidden(false);
-  } else if (delta > threshold) {
-    // nach unten scrollen
-    setHidden(true);
-  } else if (delta < -threshold) {
-    // nach oben scrollen
-    setHidden(false);
-  }
+    if (current < 80) {
+      setHidden(false);
+    } else if (current > lastScroll) {
+      // nach unten
+      setHidden(true);
+    } else {
+      // nach oben
+      setHidden(false);
+    }
 
-  lastScroll = current;
-};
+    lastScroll = current;
+  };
 
   handleScroll();
 
@@ -48,12 +46,12 @@ const threshold = 15;
       inset-x-0
       z-50
 
-      transition-[transform,opacity]
-duration-500
-ease-[cubic-bezier(.22,1,.36,1)]
+      transition-all
+      duration-300
+      ease-out
     `,
-   hidden
-  ? "-translate-y-full opacity-0"
+    hidden
+  ? "-translate-y-32 opacity-0"
   : scrolled
     ? "top-4 translate-y-0 opacity-100"
     : "top-6 translate-y-0 opacity-100"
@@ -103,7 +101,7 @@ ease-out
             className="flex items-center transition-opacity duration-200 hover:opacity-90"
           >
             <Image
-              src="/images/branding/easy-soft-logo.webp"
+              src="/images/branding/easy-soft-logo.png"
               alt="easy-soft GmbH"
               width={220}
               height={52}
