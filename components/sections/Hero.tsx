@@ -9,7 +9,7 @@ export function Hero() {
       className="
         relative
         overflow-hidden
-        bg-white
+        bg-transparent
         pt-24
         pb-28
         lg:pt-36
@@ -17,14 +17,7 @@ export function Hero() {
       "
     >
       {/* Hintergrund */}
-      <div
-        aria-hidden
-        className="
-          absolute
-          inset-0
-          bg-[linear-gradient(to_bottom,#ffffff_0%,#ffffff_72%,#f6faff_88%,#ffffff_100%)]
-        "
-      />
+      
 
       <div
         className="
