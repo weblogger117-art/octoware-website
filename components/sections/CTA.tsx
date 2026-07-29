@@ -84,10 +84,8 @@ useEffect(() => {
         <div className="flex flex-col items-center text-center">
 
           {/* Maskottchen */}
-         <section
-  ref={sectionRef}
-  className="relative overflow-hidden py-32"
->
+         {/* Maskottchen */}
+<div className="relative hidden lg:block">
 
             <div
               className="
