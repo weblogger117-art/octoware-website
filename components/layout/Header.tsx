@@ -13,7 +13,7 @@ export function Header() {
 
 useEffect(() => {
   let lastScroll = 0;
-const threshold = 35;
+const threshold = 15;
 
   const handleScroll = () => {
   const current = window.scrollY;
@@ -49,7 +49,7 @@ const threshold = 35;
       z-50
 
       transition-[transform,opacity]
-duration-700
+duration-500
 ease-[cubic-bezier(.22,1,.36,1)]
     `,
    hidden
@@ -103,7 +103,7 @@ ease-out
             className="flex items-center transition-opacity duration-200 hover:opacity-90"
           >
             <Image
-              src="/images/branding/easy-soft-logo.png"
+              src="/images/branding/easy-soft-logo.webp"
               alt="easy-soft GmbH"
               width={220}
               height={52}
