@@ -46,6 +46,7 @@ useEffect(() => {
     mx-auto
     w-fit
       flex
+      gap-10
       transition-all
 duration-300
 ease-out
@@ -85,9 +86,16 @@ ease-out
   )}
 >
           <Link
-            href="/"
-            className="flex items-center transition-opacity duration-200 hover:opacity-90"
-          >
+  href="/"
+  className="
+    flex
+    shrink-0
+    items-center
+    transition-opacity
+    duration-200
+    hover:opacity-90
+  "
+>
             <Image
               src="/images/branding/easy-soft-logo.png"
               alt="easy-soft GmbH"
@@ -98,7 +106,24 @@ ease-out
             />
           </Link>
 
-          <Navigation />
+         <div
+  className={cn(
+    `
+      flex
+      justify-end
+      overflow-hidden
+
+      transition-all
+      duration-700
+      ease-[cubic-bezier(.22,1,.36,1)]
+    `,
+    compact
+  ? "max-w-20 -translate-x-10"
+  : "max-w-[900px] translate-x-0"
+  )}
+>
+  <Navigation />
+</div>
         </div>
       </Container>
     </header>
