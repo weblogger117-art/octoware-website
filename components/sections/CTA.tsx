@@ -148,8 +148,6 @@ export function CTA() {
   Jetzt starten
 </span>
 
-<h2>
-
           {/* Überschrift */}
           <h2
             className="
