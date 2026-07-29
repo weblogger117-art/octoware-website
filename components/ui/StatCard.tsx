@@ -25,7 +25,7 @@ export function StatCard({
         items-center
         gap-5
 
-        w-[360px]
+        w-[380px]
 
         rounded-2xl
         border
