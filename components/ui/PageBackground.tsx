@@ -9,36 +9,12 @@ export function PageBackground({
     <div className="relative overflow-hidden">
 
       {/* Grundverlauf */}
-
       <div
         className="
           pointer-events-none
           absolute
           inset-0
           -z-20
-
-        <div
-  aria-hidden
-  className="
-    pointer-events-none
-    absolute
-    left-1/2
-    top-[220px]
-
-    h-[900px]
-    w-[900px]
-
-    -translate-x-1/2
-
-    rounded-full
-
-    bg-[#c5d7ed]/40
-
-    blur-[180px]
-
-    -z-10
-  "
-/>
 
           bg-[linear-gradient(
             180deg,
@@ -48,6 +24,30 @@ export function PageBackground({
             #fbfef5_74%,
             #ffffff_100%
           )]
+        "
+      />
+
+      {/* Hero Glow */}
+      <div
+        aria-hidden
+        className="
+          pointer-events-none
+          absolute
+          left-1/2
+          top-[220px]
+
+          h-[900px]
+          w-[900px]
+
+          -translate-x-1/2
+
+          rounded-full
+
+          bg-[#c5d7ed]/40
+
+          blur-[180px]
+
+          -z-10
         "
       />
 
