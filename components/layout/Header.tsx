@@ -40,26 +40,35 @@ useEffect(() => {
        <div
   className={cn(
     `
-      flex
+flex
 items-center
 gap-10
-    `,
+
+rounded-2xl
+
+px-10
+
+border
+
+transition-all
+duration-500
+ease-[cubic-bezier(.22,1,.36,1)]
+`,
     scrolled
-      ? `
-      h-[68px] scale-[0.985]
-          border-slate-200/80
-          bg-white/90
-          backdrop-blur-md
-          shadow-[0_16px_50px_rgba(15,23,42,0.10)]
-        `
-      : `
+  ? `
       h-[72px]
-    scale-100
-          border-white/30
-          bg-white/65
-          backdrop-blur-sm
-          shadow-[0_8px_24px_rgba(15,23,42,0.05)]
-        `
+      border-slate-200/80
+      bg-white/90
+      backdrop-blur-md
+      shadow-[0_16px_50px_rgba(15,23,42,0.10)]
+    `
+  : `
+      h-[72px]
+      border-white/30
+      bg-white/65
+      backdrop-blur-sm
+      shadow-[0_8px_24px_rgba(15,23,42,0.05)]
+    `
   )}
 >
           <Link
