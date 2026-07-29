@@ -1,7 +1,23 @@
 import { NavItem } from "@/components/layout/NavItem";
-export function Navigation() {
+type NavigationProps = {
+  compact?: boolean;
+};
+
+export function Navigation({
+  compact = false,
+}: NavigationProps) {
   return (
-    <nav className="hidden items-center gap-10 lg:flex">
+    <nav
+  className={`
+    hidden
+    items-center
+    transition-all
+    duration-500
+    ease-[cubic-bezier(.22,1,.36,1)]
+    lg:flex
+    ${compact ? "gap-5" : "gap-10"}
+  `}
+>
       <NavItem href="/plattform">Plattform</NavItem>
 
       <NavItem href="/fachverfahren">Fachverfahren</NavItem>
