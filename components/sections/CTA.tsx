@@ -27,7 +27,10 @@ useEffect(() => {
   return () => observer.disconnect();
 }, []);
   return (
-    <section className="relative overflow-hidden py-32">
+    <section
+  ref={sectionRef}
+  className="relative overflow-hidden py-32"
+>
 
       {/* Hintergrund */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -85,10 +88,7 @@ useEffect(() => {
         <div className="flex flex-col items-center text-center">
 
           {/* Maskottchen */}
-<section
-  ref={sectionRef}
-  className="relative overflow-hidden py-32"
->
+<div className="relative hidden lg:block">
 
             <div
               className="
