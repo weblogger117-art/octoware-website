@@ -183,7 +183,7 @@ export function CTA() {
               className="
   relative
   z-10
-  -mb-24
+  -mb-10
   object-contain
   drop-shadow-2xl
   select-none
@@ -195,7 +195,7 @@ export function CTA() {
           {/* Überschrift */}
           <h2
             className="
-              mt-8
+              mt-4
               max-w-5xl
               text-5xl
               font-bold
