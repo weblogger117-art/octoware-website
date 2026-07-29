@@ -55,7 +55,6 @@ export function NavItem({
         data-[active=true]:text-[#146ab1]
       `
   }
-`}
   <span>{children}</span>
 {variant === "default" && (
   <span
