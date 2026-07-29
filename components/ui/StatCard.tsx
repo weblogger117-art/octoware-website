@@ -25,6 +25,7 @@ export function StatCard({
         items-center
         gap-5
 
+        w-full
         w-[380px]
 
         rounded-2xl
@@ -39,8 +40,8 @@ export function StatCard({
         transition-all
         duration-300
 
-        hover:-translate-y-1
-        hover:shadow-[0_18px_45px_rgba(20,106,177,0.12)]
+        hover:-translate-y-2
+        hover:shadow-[0_18px_45px_rgba(20,106,177,0.14)]
         `,
         className
       )}
