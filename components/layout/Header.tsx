@@ -9,27 +9,14 @@ import { cn } from "@/lib/utils";
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
-  const [hidden, setHidden] = useState(false);
+  const [compact, setCompact] = useState(false);
 
 useEffect(() => {
-  let lastScroll = 0;
-
   const handleScroll = () => {
     const current = window.scrollY;
 
     setScrolled(current > 40);
-
-    if (current < 80) {
-      setHidden(false);
-    } else if (current > lastScroll) {
-      // nach unten
-      setHidden(true);
-    } else {
-      // nach oben
-      setHidden(false);
-    }
-
-    lastScroll = current;
+    setCompact(current > 120);
   };
 
   handleScroll();
@@ -45,16 +32,11 @@ useEffect(() => {
       fixed
       inset-x-0
       z-50
-
       transition-all
-      duration-300
-      ease-out
+      duration-500
+      ease-[cubic-bezier(.22,1,.36,1)]
     `,
-    hidden
-  ? "-translate-y-32 opacity-0"
-  : scrolled
-    ? "top-4 translate-y-0 opacity-100"
-    : "top-6 translate-y-0 opacity-100"
+    scrolled ? "top-4" : "top-6"
   )}
 >
       <Container>
