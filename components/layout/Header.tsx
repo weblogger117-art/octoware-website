@@ -1,4 +1,5 @@
 "use client";
+import { NavItem } from "@/components/layout/NavItem";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -95,6 +96,13 @@ hover:opacity-90
           <div className="flex flex-1 justify-center">
   <Navigation compact={scrolled} />
 </div>
+
+         <NavItem
+  href="/kontakt"
+  variant="cta"
+>
+  Kontakt
+</NavItem>
         </div>
       </Container>
     </header>
