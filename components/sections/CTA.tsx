@@ -189,7 +189,7 @@ export function CTA() {
           {/* Buttons */}
 
           <Reveal
-  animation="zoom"
+  animation="fadeup"
   delay={600}
 >
           <div
