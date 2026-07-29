@@ -38,7 +38,7 @@ useEffect(() => {
   )}
 >
         <Image
-          src="/images/branding/octoware-logo.png"
+          src="/images/branding/octoware-logo.webp"
           alt="OctoWare®"
           width={620}
           height={148}
