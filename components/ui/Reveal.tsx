@@ -11,6 +11,7 @@ type RevealAnimation =
 type RevealProps = {
   children: React.ReactNode;
   delay?: number;
+  duration?: number;
   className?: string;
   animation?: RevealAnimation;
 };
@@ -18,6 +19,7 @@ type RevealProps = {
 export function Reveal({
   children,
   delay = 0,
+  duration = 700,
   className = "",
   animation = "fadeUp",
 }: RevealProps) {
@@ -45,13 +47,14 @@ export function Reveal({
   }, []);
 
   const animations = {
-  fadeUp: "animate-[fadeUp_.7s_ease-out_forwards]",
-  fadeLeft: "animate-[fadeLeft_.7s_ease-out_forwards]",
-  fadeRight: "animate-[fadeRight_.7s_ease-out_forwards]",
-  zoom: "animate-[zoomIn_.7s_ease-out_forwards]",
+  fadeUp: "fadeUp",
+  fadeLeft: "fadeLeft",
+  fadeRight: "fadeRight",
+  zoom: "zoomIn",
 };
 
-const animationClass = animations[animation];
+const animationClass =
+  `animate-[${animations[animation]}_${duration}ms_ease-out_forwards]`;
   
   return (
     <div
