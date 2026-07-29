@@ -93,7 +93,7 @@ hover:opacity-90
           </Link>
 
           <div className="flex flex-1 justify-center">
-  <Navigation />
+  <Navigation compact={scrolled} />
 </div>
         </div>
       </Container>
