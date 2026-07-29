@@ -1,6 +1,7 @@
+"use client";
+
 import Image from "next/image";
 import { LinkButton } from "@/components/ui";
-import { cn } from "@/lib/utils";
 import { useEffect, useRef, useState } from "react";
 
 export function CTA() {
@@ -84,8 +85,10 @@ useEffect(() => {
         <div className="flex flex-col items-center text-center">
 
           {/* Maskottchen */}
-         {/* Maskottchen */}
-<div className="relative hidden lg:block">
+<section
+  ref={sectionRef}
+  className="relative overflow-hidden py-32"
+>
 
             <div
               className="
