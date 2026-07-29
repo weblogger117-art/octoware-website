@@ -107,11 +107,32 @@ export function CTA() {
   "
 />
 
+             {/* Badge */}
+          <span
+            className="
+              inline-flex
+              items-center
+              rounded-full
+              border
+              border-[#146ab1]/20
+              bg-[#146ab1]/5
+              px-4
+              py-2
+              text-xs
+              font-semibold
+              uppercase
+              tracking-[0.25em]
+              text-[#146ab1]
+            "
+          >
+            Jetzt starten
+          </span>
+
             {/* Sprechblase */}
             <div
               className="
                 absolute
-                -top-10
+                -top-1
                 left-1/2
                 -translate-x-1/2
                 z-20
@@ -170,27 +191,6 @@ export function CTA() {
             />
 
           </div>
-
-          {/* Badge */}
-          <span
-            className="
-              inline-flex
-              items-center
-              rounded-full
-              border
-              border-[#146ab1]/20
-              bg-[#146ab1]/5
-              px-4
-              py-2
-              text-xs
-              font-semibold
-              uppercase
-              tracking-[0.25em]
-              text-[#146ab1]
-            "
-          >
-            Jetzt starten
-          </span>
 
           {/* Überschrift */}
           <h2
