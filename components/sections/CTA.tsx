@@ -108,6 +108,7 @@ export function CTA() {
         object-contain
         drop-shadow-2xl
         select-none
+      animate-mascot-float
       "
     />
 
