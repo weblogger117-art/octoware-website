@@ -1,7 +1,42 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { LinkButton } from "@/components/ui";
 
 export function CTA() {
+  const fadeUp = {
+  hidden: {
+    opacity: 0,
+    y: 40,
+  },
+  visible: (delay = 0) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.7,
+      delay,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  }),
+};
+
+const mascotAnimation = {
+  hidden: {
+    opacity: 0,
+    y: -40,
+    scale: 0.9,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.9,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+};
   return (
     <section className="relative overflow-hidden py-32">
 
@@ -61,7 +96,13 @@ export function CTA() {
         <div className="flex flex-col items-center text-center">
 
           {/* Maskottchen */}
-          <div className="relative hidden lg:block">
+          <motion.div
+  variants={mascotAnimation}
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true, amount: 0.4 }}
+  className="relative hidden lg:block"
+>
 
             <div
               className="
@@ -102,7 +143,7 @@ export function CTA() {
               "
             />
 
-          </div>
+          </motion.div>
 
           {/* Badge */}
 
