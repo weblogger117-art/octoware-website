@@ -113,46 +113,51 @@ export function CTA() {
 
           {/* Badge */}
 
-          <span
-            className="
-              -mt-2
-              inline-flex
-              items-center
-              rounded-full
-              border
-              border-[#146ab1]/20
-              bg-[#146ab1]/5
-              px-4
-              py-2
-              text-xs
-              font-semibold
-              uppercase
-              tracking-[0.25em]
-              text-[#146ab1]
-            "
-          >
-            Jetzt starten
-          </span>
+          <Reveal delay={150}>
+  <span
+    className="
+      -mt-2
+      inline-flex
+      items-center
+      rounded-full
+      border
+      border-[#146ab1]/20
+      bg-[#146ab1]/5
+      px-4
+      py-2
+      text-xs
+      font-semibold
+      uppercase
+      tracking-[0.25em]
+      text-[#146ab1]
+    "
+  >
+    Jetzt starten
+  </span>
+</Reveal>
 
           {/* Überschrift */}
 
-          <h2
-            className="
-              mt-6
-              max-w-5xl
-              text-5xl
-              font-bold
-              tracking-tight
-              text-slate-900
-            "
-          >
-            Bereit für die nächste Generation
-            <br />
-            des Öffentlichen Gesundheitsdienstes?
-          </h2>
+          <Reveal delay={300}>
+  <h2
+    className="
+      mt-6
+      max-w-5xl
+      text-5xl
+      font-bold
+      tracking-tight
+      text-slate-900
+    "
+  >
+    Bereit für die nächste Generation
+    <br />
+    des Öffentlichen Gesundheitsdienstes?
+  </h2>
+</Reveal>
 
           {/* Text */}
 
+          <Reveal delay={450}>
           <p
             className="
               mx-auto
@@ -167,9 +172,11 @@ export function CTA() {
             wie moderne Fachverfahren Gesundheitsämter effizienter,
             digitaler und zukunftssicher machen.
           </p>
+            </Reveal>
 
           {/* Buttons */}
 
+          <Reveal delay={600}>
           <div
             className="
               mt-10
@@ -190,6 +197,7 @@ export function CTA() {
               Persönliche Beratung
             </LinkButton>
           </div>
+            </Reveal>
 
         </div>
 
