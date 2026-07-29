@@ -29,7 +29,7 @@ export function Button({
   return (
     <button
       className={cn(
-        "inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold shadow-md transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-xl active:translate-y-0 active:scale-[0.98]",
+        "group relative overflow-hidden inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold shadow-md transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-xl active:translate-y-0 active:scale-[0.98]",
         variant === "primary" &&
 "bg-gradient-to-r from-[#146ab1] to-[#1b7cc8] text-white hover:from-[#1873bd] hover:to-[#2490df]",
         variant === "secondary" &&
@@ -38,6 +38,23 @@ export function Button({
       )}
       {...props}
     >
+      <span
+  aria-hidden
+  className="
+    pointer-events-none
+    absolute
+    inset-0
+    rounded-full
+    bg-gradient-to-b
+    from-white/18
+    via-white/6
+    to-transparent
+    opacity-70
+    transition-opacity
+    duration-300
+    group-hover:opacity-100
+  "
+/>
       {children}
     </button>
   );
@@ -53,7 +70,7 @@ export function LinkButton({
     <Link
       href={href}
       className={cn(
-        "inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold transition-all duration-200",
+        "group relative overflow-hidden inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold shadow-md transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-xl active:translate-y-0 active:scale-[0.98]",
         variant === "primary" &&
           "bg-[var(--color-primary)] text-white hover:opacity-90",
         variant === "secondary" &&
