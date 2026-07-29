@@ -64,7 +64,10 @@ export function CTA() {
         <div className="flex flex-col items-center text-center">
 
           {/* Maskottchen */}
-<Reveal delay={0}>
+<Reveal
+  animation="zoom"
+  delay={0}
+>
   <div className="relative hidden lg:block">
 
     {/* Blauer Glow */}
@@ -113,7 +116,10 @@ export function CTA() {
 
           {/* Badge */}
 
-          <Reveal delay={150}>
+          <Reveal
+  animation="fadeUp"
+  delay={150}
+>
   <span
     className="
       -mt-2
@@ -138,7 +144,10 @@ export function CTA() {
 
           {/* Überschrift */}
 
-          <Reveal delay={300}>
+          <Reveal
+  animation="fadeUp"
+  delay={300}
+>
   <h2
     className="
       mt-6
@@ -157,7 +166,10 @@ export function CTA() {
 
           {/* Text */}
 
-          <Reveal delay={450}>
+          <Reveal
+  animation="fadeUp"
+  delay={450}
+>
           <p
             className="
               mx-auto
@@ -176,7 +188,10 @@ export function CTA() {
 
           {/* Buttons */}
 
-          <Reveal delay={600}>
+          <Reveal
+  animation="zoom"
+  delay={600}
+>
           <div
             className="
               mt-10
