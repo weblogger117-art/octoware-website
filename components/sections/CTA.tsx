@@ -64,59 +64,52 @@ export function CTA() {
         <div className="flex flex-col items-center text-center">
 
           {/* Maskottchen */}
-<div
-  className={`
-    relative
-    hidden
-    lg:block
-    ${
-      isVisible
-        ? "opacity-0 animate-[fadeUp_.7s_ease-out_forwards]"
-        : "opacity-0"
-    }
-  `}
->
+<Reveal delay={0}>
+  <div className="relative hidden lg:block">
 
-            <div
-              className="
-                absolute
-                inset-0
-                rounded-full
-                bg-[#146ab1]/20
-                blur-[90px]
-              "
-            />
+    {/* Blauer Glow */}
+    <div
+      className="
+        absolute
+        inset-0
+        rounded-full
+        bg-[#146ab1]/20
+        blur-[90px]
+      "
+    />
 
-            <div
-              className="
-                absolute
-                bottom-10
-                right-12
-                h-40
-                w-40
-                rounded-full
-                bg-[#adce00]/20
-                blur-[70px]
-              "
-            />
+    {/* Grüner Glow */}
+    <div
+      className="
+        absolute
+        bottom-10
+        right-12
+        h-40
+        w-40
+        rounded-full
+        bg-[#adce00]/20
+        blur-[70px]
+      "
+    />
 
-            <Image
-              src="/images/mascot/cta.webp"
-              alt="OctoWare® Maskottchen"
-              width={470}
-              height={470}
-              priority
-              draggable={false}
-              className="
-                relative
-                z-10
-                object-contain
-                drop-shadow-2xl
-                select-none
-              "
-            />
+    <Image
+      src="/images/mascot/cta.webp"
+      alt="OctoWare® Maskottchen"
+      width={470}
+      height={470}
+      priority
+      draggable={false}
+      className="
+        relative
+        z-10
+        object-contain
+        drop-shadow-2xl
+        select-none
+      "
+    />
 
-          </div>
+  </div>
+</Reveal>
 
           {/* Badge */}
 
