@@ -21,23 +21,41 @@ export function NavItem({
 const classes =
   variant === "cta"
     ? `
-        inline-flex
-        items-center
-        rounded-full
-        bg-[#adce00]
-        px-5
-        py-2.5
-        text-[15px]
-        font-semibold
-        text-slate-900
-        shadow-[0_10px_25px_rgba(173,206,0,.28)]
-        transition-all
-        duration-300
-        hover:-translate-y-0.5
-        hover:bg-[#9fc200]
-        hover:shadow-[0_14px_32px_rgba(173,206,0,.38)]
-      `
-    : `
+    group
+    relative
+    inline-flex
+    items-center
+    justify-center
+
+    overflow-hidden
+
+    rounded-full
+
+    border
+    border-[#98bc00]
+
+    bg-gradient-to-b
+    from-[#b8db2d]
+    to-[#adce00]
+
+    px-6
+    py-3
+
+    text-[15px]
+    font-semibold
+    text-slate-900
+
+    shadow-[0_8px_22px_rgba(173,206,0,.20)]
+
+    transition-all
+    duration-300
+    ease-out
+
+    hover:-translate-y-0.5
+    hover:brightness-105
+    hover:shadow-[0_16px_36px_rgba(173,206,0,.30)]
+  `
+  : `
         group
         relative
         inline-flex
@@ -68,7 +86,7 @@ const classes =
       -translate-x-full
       bg-gradient-to-r
       from-transparent
-      via-white/35
+      via-white/20
       to-transparent
       transition-transform
       duration-700
