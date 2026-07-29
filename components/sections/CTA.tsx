@@ -2,36 +2,11 @@
 
 import Image from "next/image";
 import { LinkButton } from "@/components/ui";
-import { useEffect, useRef, useState } from "react";
+import { Reveal } from "@/components/ui/Reveal";
 
 export function CTA() {
-  const sectionRef = useRef<HTMLElement>(null);
-const [isVisible, setIsVisible] = useState(false);
-
-useEffect(() => {
-  const observer = new IntersectionObserver(
-    ([entry]) => {
-     if (entry.isIntersecting) {
-  setIsVisible(true);
-  observer.disconnect();
-}
-    },
-    {
-      threshold: 0.25,
-    }
-  );
-
-  if (sectionRef.current) {
-    observer.observe(sectionRef.current);
-  }
-
-  return () => observer.disconnect();
-}, []);
   return (
-    <section
-  ref={sectionRef}
-  className="relative overflow-hidden py-32"
->
+   <section className="relative overflow-hidden py-32">
 
       {/* Hintergrund */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
