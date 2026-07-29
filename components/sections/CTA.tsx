@@ -80,7 +80,7 @@ export function CTA() {
             "
           >
 
-            {/* Glow */}
+            {/* Blauer Glow */}
             <div
               className="
                 absolute
@@ -92,6 +92,20 @@ export function CTA() {
                 blur-[90px]
               "
             />
+
+            {/* Grüner Glow */}
+<div
+  className="
+    absolute
+    bottom-10
+    right-12
+    h-40
+    w-40
+    rounded-full
+    bg-[#adce00]/20
+    blur-[70px]
+  "
+/>
 
             {/* Sprechblase */}
             <div
@@ -106,19 +120,19 @@ export function CTA() {
               <div
                 className="
                   relative
-                  rounded-2xl
+                  rounded-3xl
                   border
                   border-slate-200
                   bg-white
-                  px-6
-                  py-4
+                  px-7
+                  py-5
                   text-base
                   font-semibold
                   text-slate-700
                   shadow-xl
                 "
               >
-                👋 Lernen wir uns kennen!
+                Lernen wir uns kennen!
 
                 <div
                   className="
@@ -141,17 +155,18 @@ export function CTA() {
             <Image
               src="/images/mascot/cta.webp"
               alt="OctoWare® Maskottchen"
-              width={390}
-              height={390}
+              width={470}
+              height={470}
               priority
               draggable={false}
               className="
-                relative
-                z-10
-                object-contain
-                drop-shadow-2xl
-                select-none
-              "
+  relative
+  z-10
+  -mb-24
+  object-contain
+  drop-shadow-2xl
+  select-none
+"
             />
 
           </div>
@@ -212,7 +227,7 @@ export function CTA() {
           {/* Buttons */}
           <div
             className="
-              mt-10
+              mt-8
               flex
               flex-wrap
               justify-center
