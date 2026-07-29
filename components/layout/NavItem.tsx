@@ -18,62 +18,44 @@ export function NavItem({
   const pathname = usePathname();
   const isActive = pathname === href;
 
+const classes =
+  variant === "cta"
+    ? `
+        inline-flex
+        items-center
+        rounded-full
+        bg-[#adce00]
+        px-5
+        py-2.5
+        text-[15px]
+        font-semibold
+        text-slate-900
+        shadow-[0_10px_25px_rgba(173,206,0,.28)]
+        transition-all
+        duration-300
+        hover:-translate-y-0.5
+        hover:bg-[#9fc200]
+        hover:shadow-[0_14px_32px_rgba(173,206,0,.38)]
+      `
+    : `
+        group
+        relative
+        inline-flex
+        items-center
+        text-[15px]
+        font-medium
+        text-slate-700
+        transition-colors
+        duration-300
+        hover:text-[#146ab1]
+        data-[active=true]:text-[#146ab1]
+      `;
+  
   return (
     <Link
       href={href}
       data-active={isActive}
-      className={`
-        ${
-          variant === "cta"
-  ? `
-  group
-      relative
-      inline-flex
-      items-center
-      justify-center
-
-      overflow-hidden
-
-      rounded-full
-
-      border
-      border-[#93b800]
-
-      bg-[#adce00]
-
-      px-7
-      py-3
-
-      text-[15px]
-      font-semibold
-      text-slate-900
-
-      shadow-[0_8px_24px_rgba(173,206,0,0.22)]
-
-      transition-all
-      duration-300
-      ease-out
-
-      hover:-translate-y-0.5
-      hover:bg-[#a5c900]
-      hover:shadow-[0_14px_32px_rgba(173,206,0,0.32)]
-    `
-            `
-            : `
-              group
-              relative
-              inline-flex
-              items-center
-              text-[15px]
-              font-medium
-              text-slate-700
-              transition-colors
-              duration-300
-              hover:text-[#146ab1]
-              data-[active=true]:text-[#146ab1]
-            `
-        }
-      `}
+      className={classes}
     >
       <span>{children}</span>
 
