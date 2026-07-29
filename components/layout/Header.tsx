@@ -13,29 +13,26 @@ export function Header() {
 
 useEffect(() => {
   let lastScroll = 0;
-const threshold = 15;
+const threshold = 35;
 
   const handleScroll = () => {
-    const current = window.scrollY;
+  const current = window.scrollY;
+  const delta = current - lastScroll;
 
-    setScrolled(current > 40);
+  setScrolled(current > 40);
 
-    if (current < 80) {
-      setHidden(false);
-    const delta = current - lastScroll;
+  if (current < 80) {
+    setHidden(false);
+  } else if (delta > threshold) {
+    // nach unten scrollen
+    setHidden(true);
+  } else if (delta < -threshold) {
+    // nach oben scrollen
+    setHidden(false);
+  }
 
-if (current < 80) {
-  setHidden(false);
-} else if (delta > threshold) {
-  // deutlich nach unten
-  setHidden(true);
-} else if (delta < -threshold) {
-  // deutlich nach oben
-  setHidden(false);
-}
-
-    lastScroll = current;
-  };
+  lastScroll = current;
+};
 
   handleScroll();
 
@@ -51,9 +48,9 @@ if (current < 80) {
       inset-x-0
       z-50
 
-      transition-all
-      duration-500
-      ease-[cubic-bezier(.22,1,.36,1)]
+      transition-[transform,opacity]
+duration-700
+ease-[cubic-bezier(.22,1,.36,1)]
     `,
    hidden
   ? "-translate-y-full opacity-0"
