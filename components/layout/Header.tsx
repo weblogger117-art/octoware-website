@@ -92,7 +92,21 @@ ease-out
             />
           </Link>
 
-          <Navigation />
+          <div
+  className={cn(
+    `
+      overflow-hidden
+      transition-all
+      duration-500
+      ease-[cubic-bezier(.22,1,.36,1)]
+    `,
+    compact
+      ? "max-w-0 opacity-0"
+      : "max-w-[700px] opacity-100"
+  )}
+>
+  <Navigation />
+</div>
         </div>
       </Container>
     </header>
