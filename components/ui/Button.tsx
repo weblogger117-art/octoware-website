@@ -29,9 +29,9 @@ export function Button({
   return (
     <button
       className={cn(
-        "inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold transition-all duration-200",
+        "inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold shadow-md transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-xl active:translate-y-0 active:scale-[0.98]",
         variant === "primary" &&
-          "bg-[var(--color-primary)] text-white hover:opacity-90",
+"bg-[var(--color-primary)] text-white hover:brightness-110",
         variant === "secondary" &&
           "border border-[var(--color-primary)] bg-white text-[var(--color-primary)] hover:bg-[var(--color-primary-light)]",
         className
