@@ -34,7 +34,6 @@ export function Navigation({
 
       <NavItem href="/easy-academy">easy-Academy</NavItem>
 
-      <NavItem href="/kontakt"variant="cta">Kontakt</NavItem>
     </nav>
   );
 }
