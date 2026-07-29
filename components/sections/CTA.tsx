@@ -6,15 +6,8 @@ export function CTA() {
     <section className="relative overflow-hidden py-32">
 
       {/* Hintergrund */}
-      <div
-        className="
-          absolute
-          inset-0
-          -z-10
-          overflow-hidden
-        "
-      >
-        {/* Netzwerk */}
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+
         <Image
           src="/images/graphics/network-background.svg"
           alt=""
@@ -29,6 +22,7 @@ export function CTA() {
             -translate-x-1/2
             -translate-y-1/2
             opacity-15
+            select-none
           "
         />
 
@@ -52,7 +46,7 @@ export function CTA() {
         <div
           className="
             absolute
-            right-20
+            right-10
             bottom-0
             h-[350px]
             w-[350px]
@@ -61,185 +55,180 @@ export function CTA() {
             blur-[120px]
           "
         />
+
       </div>
 
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-6xl px-6">
 
-        <div className="relative">
+        <div
+          className="
+            flex
+            flex-col
+            items-center
+            text-center
+          "
+        >
 
+          {/* Maskottchen */}
           <div
-  className="
-    flex
-flex-col
-items-center
-    items-center
-    justify-items-center
-    gap-6
-    py-28
-    text-center
-  "
->
+            className="
+              relative
+              hidden
+              lg:flex
+              justify-center
+              -mb-12
+            "
+          >
 
-             <div
-  className="
-    relative
-    hidden
-    lg:flex
-    items-end
-    justify-center
-  "
->
+            {/* Glow */}
+            <div
+              className="
+                absolute
+                bottom-8
+                h-72
+                w-72
+                rounded-full
+                bg-[#146ab1]/20
+                blur-[90px]
+              "
+            />
 
-  {/* Sprechblase */}
-  <div
-    className="
-  absolute
-  -top-10
-  left-1/2
-  -translate-x-1/2
-  z-20
-"
-    >
-    <div
-      className="
-        relative
-        rounded-2xl
-        bg-white
-        px-5
-        py-3
-        text-sm
-        font-semibold
-        text-slate-700
-        shadow-xl
-        border
-        border-slate-200
-      "
-    >
-      Lernen wir uns kennen!
-
-
-      {/* Pfeil */}
-      <div
-        className="
-          absolute
-          -bottom-2
-          left-1/2
-        -translate-x-1/2
-          h-4
-          w-4
-          rotate-45
-          border-b
-          border-r
-          border-slate-200
-          bg-white
-        "
-      />
-    </div>
-     </div>
-
-               {/* Glow */}
-  <div
-    className="
-      absolute
-      bottom-8
-      h-72
-      w-72
-      rounded-full
-      bg-[#146ab1]/20
-      blur-[90px]
-    "
-  />
-
-  <Image
-    src="/images/mascot/cta.webp"
-    alt="OctoWare® Maskottchen"
-    width={340}
-    height={340}
-    priority
-    className="
-    relative
-    z-10
-    -mb-12
-    object-contain
-    drop-shadow-2xl
-  "
-/>
-
-</div>
-
-            {/* Textbereich */}
-
-            <div className="max-w-4xl">
-
-              <span
+            {/* Sprechblase */}
+            <div
+              className="
+                absolute
+                -top-10
+                left-1/2
+                -translate-x-1/2
+                z-20
+              "
+            >
+              <div
                 className="
-                  inline-flex
-                  items-center
-                  rounded-full
+                  relative
+                  rounded-2xl
                   border
-                  border-[#146ab1]/20
-                  bg-[#146ab1]/5
-                  px-4
-                  py-2
-                  text-xs
+                  border-slate-200
+                  bg-white
+                  px-6
+                  py-4
+                  text-base
                   font-semibold
-                  uppercase
-                  tracking-[0.25em]
-                  text-[#146ab1]
+                  text-slate-700
+                  shadow-xl
                 "
               >
-                Jetzt starten
-              </span>
+                👋 Lernen wir uns kennen!
 
-              <h2
-                className="
-                  mt-8
-                  text-5xl
-                  font-bold
-                  tracking-tight
-                  text-slate-900
-                "
-              >
-                Bereit für die nächste Generation
-                <br />
-                des Öffentlichen Gesundheitsdienstes?
-              </h2>
-
-              <p
-  className="
-    mx-auto
-    mt-8
-    max-w-2xl
-    text-lg
-    leading-8
-    text-slate-600
-  "
->
-                Lernen Sie OctoWare®Gesundheit kennen und entdecken
-                Sie, wie moderne Fachverfahren Gesundheitsämter
-                effizienter, digitaler und zukunftssicher machen.
-              </p>
-
-              <div className="mt-10 flex flex-wrap justify-center gap-4">
-
-                <LinkButton href="/plattform">
-                  Plattform entdecken
-                </LinkButton>
-
-                <LinkButton
-                  href="/kontakt"
-                  variant="secondary"
-                >
-                  Persönliche Beratung
-                </LinkButton>
-
+                <div
+                  className="
+                    absolute
+                    -bottom-2
+                    left-1/2
+                    h-4
+                    w-4
+                    -translate-x-1/2
+                    rotate-45
+                    border-b
+                    border-r
+                    border-slate-200
+                    bg-white
+                  "
+                />
               </div>
-
             </div>
 
-          
-  </div>
+            <Image
+              src="/images/mascot/cta.webp"
+              alt="OctoWare® Maskottchen"
+              width={390}
+              height={390}
+              priority
+              draggable={false}
+              className="
+                relative
+                z-10
+                object-contain
+                drop-shadow-2xl
+                select-none
+              "
+            />
 
+          </div>
+
+          {/* Badge */}
+          <span
+            className="
+              inline-flex
+              items-center
+              rounded-full
+              border
+              border-[#146ab1]/20
+              bg-[#146ab1]/5
+              px-4
+              py-2
+              text-xs
+              font-semibold
+              uppercase
+              tracking-[0.25em]
+              text-[#146ab1]
+            "
+          >
+            Jetzt starten
+          </span>
+
+          {/* Überschrift */}
+          <h2
+            className="
+              mt-8
+              max-w-5xl
+              text-5xl
+              font-bold
+              tracking-tight
+              text-slate-900
+            "
+          >
+            Bereit für die nächste Generation
+            <br />
+            des Öffentlichen Gesundheitsdienstes?
+          </h2>
+
+          {/* Text */}
+          <p
+            className="
+              mx-auto
+              mt-8
+              max-w-2xl
+              text-lg
+              leading-8
+              text-slate-600
+            "
+          >
+            Lernen Sie OctoWare®Gesundheit kennen und entdecken,
+            wie moderne Fachverfahren Gesundheitsämter effizienter,
+            digitaler und zukunftssicher machen.
+          </p>
+
+          {/* Buttons */}
+          <div
+            className="
+              mt-10
+              flex
+              flex-wrap
+              justify-center
+              gap-4
+            "
+          >
+            <LinkButton href="/plattform">
+              Plattform entdecken
+            </LinkButton>
+
+            <LinkButton
+              href="/kontakt"
+              variant="secondary"
+            >
+              Persönliche Beratung
+            </LinkButton>
           </div>
 
         </div>
