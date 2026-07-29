@@ -65,33 +65,110 @@ export function CTA() {
 
       <div className="mx-auto max-w-7xl px-6">
 
-        <div
-          className="
-            relative
-            overflow-hidden
-            rounded-[40px]
-            border
-            border-slate-200
-            bg-white/80
-            backdrop-blur-sm
-            shadow-[0_40px_80px_rgba(15,23,42,0.08)]
-          "
-        >
+        <div className="relative">
 
           <div
-            className="
-              grid
-              items-center
-              gap-14
-              px-16
-              py-20
-              lg:grid-cols-[1fr_320px]
-            "
-          >
+  className="
+    flex
+flex-col
+items-center
+    items-center
+    justify-items-center
+    gap-6
+    py-28
+    text-center
+  "
+>
+
+             <div
+  className="
+    relative
+    hidden
+    lg:flex
+    items-end
+    justify-center
+  "
+>
+
+  {/* Sprechblase */}
+  <div
+    className="
+  absolute
+  -top-10
+  left-1/2
+  -translate-x-1/2
+  z-20
+"
+    <div
+      className="
+        relative
+        rounded-2xl
+        bg-white
+        px-5
+        py-3
+        text-sm
+        font-semibold
+        text-slate-700
+        shadow-xl
+        border
+        border-slate-200
+      "
+    >
+      Lernen wir uns kennen!
+
+
+      {/* Pfeil */}
+      <div
+        className="
+          absolute
+          -bottom-2
+          left-1/2
+        -translate-x-1/2
+          h-4
+          w-4
+          rotate-45
+          border-b
+          border-r
+          border-slate-200
+          bg-white
+        "
+      />
+    </div>
+     </div>
+
+               {/* Glow */}
+  <div
+    className="
+      absolute
+      bottom-8
+      h-72
+      w-72
+      rounded-full
+      bg-[#146ab1]/20
+      blur-[90px]
+    "
+  />
+
+  <Image
+    src="/images/mascot/cta.webp"
+    alt="OctoWare® Maskottchen"
+    width={340}
+    height={340}
+    priority
+    className="
+    relative
+    z-10
+    -mb-12
+    object-contain
+    drop-shadow-2xl
+  "
+/>
+
+</div>
 
             {/* Textbereich */}
 
-            <div>
+            <div className="max-w-4xl">
 
               <span
                 className="
@@ -128,20 +205,21 @@ export function CTA() {
               </h2>
 
               <p
-                className="
-                  mt-8
-                  max-w-2xl
-                  text-lg
-                  leading-8
-                  text-slate-600
-                "
-              >
+  className="
+    mx-auto
+    mt-8
+    max-w-2xl
+    text-lg
+    leading-8
+    text-slate-600
+  "
+>
                 Lernen Sie OctoWare®Gesundheit kennen und entdecken
                 Sie, wie moderne Fachverfahren Gesundheitsämter
                 effizienter, digitaler und zukunftssicher machen.
               </p>
 
-              <div className="mt-10 flex flex-wrap gap-4">
+              <div className="mt-10 flex flex-wrap justify-center gap-4">
 
                 <LinkButton href="/plattform">
                   Plattform entdecken
@@ -158,88 +236,8 @@ export function CTA() {
 
             </div>
 
-           <div
-  className="
-    relative
-    hidden
-    lg:flex
-    items-end
-    justify-center
-  "
->
-
-  {/* Sprechblase */}
-  <div
-    className="
-      absolute
-      -top-6
-      left-6
-      z-20
-    "
-  >
-    <div
-      className="
-        relative
-        rounded-2xl
-        bg-white
-        px-5
-        py-3
-        text-sm
-        font-semibold
-        text-slate-700
-        shadow-xl
-        border
-        border-slate-200
-      "
-    >
-      Lernen wir uns kennen!
-
-      {/* Pfeil */}
-      <div
-        className="
-          absolute
-          -bottom-2
-          left-10
-          h-4
-          w-4
-          rotate-45
-          border-b
-          border-r
-          border-slate-200
-          bg-white
-        "
-      />
-    </div>
+          
   </div>
-
-  {/* Glow */}
-  <div
-    className="
-      absolute
-      bottom-8
-      h-72
-      w-72
-      rounded-full
-      bg-[#146ab1]/20
-      blur-[90px]
-    "
-  />
-
-  <Image
-    src="/images/mascot/cta.webp"
-    alt="OctoWare® Maskottchen"
-    width={340}
-    height={340}
-    priority
-    className="
-      relative
-      z-10
-      object-contain
-      drop-shadow-2xl
-    "
-  />
-
-</div>
 
           </div>
 
