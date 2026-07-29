@@ -48,7 +48,7 @@ export function Highlights() {
       icon={Blocks}
       iconClassName="bg-[#adce00]/10 text-[#7FA000] border-[#adce00]/20"
       value="Modular"
-      label="Flexible Fachverfahren für sämtliche Bereiche des Öffentlichen Gesundheitsdienstes."
+      label="Flexible Fachverfahren für alle Bereiche des Öffentlichen Gesundheitsdienstes."
     />
   </div>
 </div>
