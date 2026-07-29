@@ -85,8 +85,8 @@ export function CTA() {
               className="
                 absolute
                 bottom-8
-                h-72
-                w-72
+                h-80
+                w-80
                 rounded-full
                 bg-[#146ab1]/20
                 blur-[90px]
@@ -107,70 +107,6 @@ export function CTA() {
   "
 />
 
-             {/* Badge */}
-          <span
-            className="
-              inline-flex
-              items-center
-              rounded-full
-              border
-              border-[#146ab1]/20
-              bg-[#146ab1]/5
-              px-4
-              py-2
-              text-xs
-              font-semibold
-              uppercase
-              tracking-[0.25em]
-              text-[#146ab1]
-            "
-          >
-            Jetzt starten
-          </span>
-
-            {/* Sprechblase */}
-            <div
-              className="
-                absolute
-                -top-1
-                left-1/2
-                -translate-x-1/2
-                z-20
-              "
-            >
-              <div
-                className="
-                  relative
-                  rounded-3xl
-                  border
-                  border-slate-200
-                  bg-white
-                  px-7
-                  py-5
-                  text-base
-                  font-semibold
-                  text-slate-700
-                  shadow-xl
-                "
-              >
-                Lernen wir uns kennen!
-
-                <div
-                  className="
-                    absolute
-                    -bottom-2
-                    left-1/2
-                    h-4
-                    w-4
-                    -translate-x-1/2
-                    rotate-45
-                    border-b
-                    border-r
-                    border-slate-200
-                    bg-white
-                  "
-                />
-              </div>
             </div>
 
             <Image
@@ -183,7 +119,7 @@ export function CTA() {
               className="
   relative
   z-10
-  -mb-10
+  -mb-4
   object-contain
   drop-shadow-2xl
   select-none
@@ -191,6 +127,28 @@ export function CTA() {
             />
 
           </div>
+
+<span
+  className="
+    inline-flex
+    items-center
+    rounded-full
+    border
+    border-[#146ab1]/20
+    bg-[#146ab1]/5
+    px-4
+    py-2
+    text-xs
+    font-semibold
+    uppercase
+    tracking-[0.25em]
+    text-[#146ab1]
+  "
+>
+  Jetzt starten
+</span>
+
+<h2>
 
           {/* Überschrift */}
           <h2
