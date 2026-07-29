@@ -15,7 +15,11 @@ export function Navigation({
     duration-500
     ease-[cubic-bezier(.22,1,.36,1)]
     lg:flex
-    ${compact ? "gap-5" : "gap-10"}
+    ${
+  compact
+    ? "gap-5 -translate-x-8"
+    : "gap-10 translate-x-0"
+}
   `}
 >
       <NavItem href="/plattform">Plattform</NavItem>
