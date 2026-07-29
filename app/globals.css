@@ -213,3 +213,23 @@ body {
 .animate-module-4 {
   animation: moduleCardIn .75s cubic-bezier(.22,1,.36,1) .54s both;
 }
+
+@keyframes mascotFloat {
+
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+
+}
+
+.animate-mascot-float {
+  animation: mascotFloat 5s ease-in-out infinite;
+}
