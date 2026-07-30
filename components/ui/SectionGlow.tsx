@@ -65,28 +65,28 @@ const presets = {
 };
 
 export function SectionGlow({
+  variant = "why-primary",
   className,
-  color = "blue",
-  size = "lg",
-}: SectionGlowProps) {
+}: SectionGlowProps)
   
-  const preset = presets[variant!];
+  const preset = presets[variant];
 
   return (
     <div
       aria-hidden
       className={cn(
-        `
-        pointer-events-none
-        absolute
-        rounded-full
-        blur-[190px]
-        z-0
-        `,
-        colors[color],
-        sizes[size],
-        className
-      )}
+  `
+    pointer-events-none
+    absolute
+    rounded-full
+    blur-[190px]
+    z-0
+  `,
+  preset.color,
+  preset.size,
+  preset.position,
+  className
+)}
     />
   );
 }
