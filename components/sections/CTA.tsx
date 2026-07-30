@@ -28,7 +28,6 @@ export function CTA() {
     absolute
 
     left-[-250px]
-    top-[50px]
 
     w-[1500px]
     max-w-none
