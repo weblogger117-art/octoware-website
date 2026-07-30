@@ -56,27 +56,16 @@ const [isVisible, setIsVisible] = useState(false);
 <Image
   src="/images/background/lines-mesh.webp"
   alt=""
-  aria-hidden
-  width={1200}
-  height={900}
+  width={800}
+  height={800}
   draggable={false}
   className="
-    pointer-events-none
     absolute
-
-    left-[-120px]
-    top-[420px]
-
-    w-[820px]
-    max-w-none
-
-    opacity-8
-
-    -z-10
-
-    select-none
-
-    animate-mesh-float
+    top-40
+    left-0
+    w-[800px]
+    opacity-100
+    z-50
   "
 />
          
