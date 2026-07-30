@@ -1,4 +1,6 @@
 "use client";
+
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import {
@@ -111,8 +113,37 @@ const [isVisible, setIsVisible] = useState(false);
   </p>
 </div>
 
+{/* Decorative Mesh */}
+<Image
+  src="/images/background/lines-mesh.webp"
+  alt=""
+  aria-hidden
+  width={1200}
+  height={900}
+  draggable={false}
+  className="
+    pointer-events-none
+    absolute
+
+    left-[-120px]
+    top-[420px]
+
+    w-[820px]
+    max-w-none
+
+    opacity-8
+
+    -z-10
+
+    select-none
+
+    animate-mesh-float
+  "
+/>
+      
       {/* Feature Cards */}
-<div
+
+      <div
   className="
     relative
     z-10
