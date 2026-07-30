@@ -7,26 +7,41 @@ import { SectionGlow } from "@/components/ui";
 export function Footer() {
   return (
     <footer
-      className="
-        relative
-        mt-24
-
-        rounded-t-[56px]
-
-        border-t
-        border-white/40
-
-        bg-white/70
-        backdrop-blur-xl
-
-        overflow-hidden
-      "
-    >
+  className="
+    relative
+    mt-28
+    pb-20
+  "
+>
 
       <SectionGlow variant="cta-primary" />
       <SectionGlow variant="cta-accent" />
 
-      <Image
+      
+
+      <div className="relative z-10 mx-auto max-w-7xl px-8 py-24">
+
+        <div
+  className="
+    relative
+    overflow-hidden
+
+    rounded-full
+
+    border
+    border-white/60
+
+    bg-white/75
+    backdrop-blur-xl
+
+    shadow-[0_20px_70px_rgba(20,106,177,0.12)]
+
+    px-12
+    py-8
+  "
+>
+
+          <Image
   src="/images/background/footer-network.webp"
   alt=""
   aria-hidden
@@ -48,33 +63,9 @@ export function Footer() {
   "
 />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-8 py-24">
+  {/* Inhalt folgt */}
 
-  <div
-    className="
-      rounded-[42px]
-      border
-      border-white/60
-      bg-white/70
-      backdrop-blur-xl
-      shadow-[0_30px_80px_rgba(20,106,177,0.08)]
-      p-14
-    "
-  >
-
-    <div
-      className="
-        grid
-        gap-12
-        lg:grid-cols-[1.5fr_1fr_1fr_1fr]
-      "
-    >
-
-      {/* Inhalte kommen gleich */}
-
-    </div>
-
-  </div>
+</div>
 
 </div>
 
