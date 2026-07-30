@@ -205,89 +205,9 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
   return (
     <section
   ref={sectionRef}
-  className="relative overflow-hidden bg-white py-32"
+  className="relative py-32"
 >
-      <div
-  className="
-    absolute
-    inset-0
-    overflow-hidden
-    pointer-events-none
-    z-0
-  "
->
-  {/* Blauer Glow */}
-  <div
-  className={cn(
-    `
-      absolute
-      right-20
-      top-1/2
-      -translate-y-1/2
-      rounded-full
-      bg-[#146ab1]/12
-      blur-[140px]
-      z-10
-      transition-all
-      duration-1000
-    `,
-    isVisible
-      ? "h-[650px] w-[650px] opacity-100"
-      : "h-[250px] w-[250px] opacity-0"
-  )}
-/>
-  {/* Grüner Glow */}
-  <div
-  style={{
-    transitionDelay: isVisible ? "600ms" : "0ms",
-  }}
-  className={cn(
-    `
-      absolute
-      right-4
-      bottom-0
-      rounded-full
-      bg-[#adce00]/12
-      blur-[110px]
-      z-10
-      transition-all
-      duration-1000
-    `,
-    isVisible
-      ? "h-[350px] w-[350px] opacity-100"
-      : "h-[150px] w-[150px] opacity-0"
-  )}
-/>
-
-  {/* Netzwerkgrafik */}
-    <Image
-  src="/images/graphics/network-background.svg"
-  alt=""
-  aria-hidden="true"
-  width={3000}
-  height={1800}
-  draggable={false}
-  className="
-    absolute
-
-    left-[10%]
-    top-[50%]
-
-    w-[2300px]
-    max-w-none
-
-    -translate-x-1/2
-    -translate-y-1/2
-
-    opacity-60
-
-    z-0
-
-    pointer-events-none
-    select-none
-  "
-/>
-</div>
+     
       <div className="relative z-10 mx-auto max-w-7xl px-6">
 
         {/* Überschrift */}
