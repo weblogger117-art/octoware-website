@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { SectionGlow } from "@/components/ui";
 import {
   Baby,
   ShieldPlus,
@@ -153,6 +154,12 @@ useEffect(() => {
   ref={sectionRef}
   className="relative py-28"
 >
+
+      {/* Section Glows */}
+
+    <SectionGlow variant="modules-primary" />
+    <SectionGlow variant="modules-accent" />
+      
       <div className="mx-auto max-w-7xl px-6">
 
         <div className="mx-auto mb-16 max-w-3xl text-center">
@@ -222,9 +229,6 @@ useEffect(() => {
       hover:border-[#146ab1]/50
       hover:shadow-2xl
       hover:shadow-[#146ab1]/10
-      ${module.featured
-  ? "p-6 lg:col-span-2"
-  : "px-6 py-5 lg:w-[92%] lg:mx-auto"}
     `}
   >
     {module.featured ? (
