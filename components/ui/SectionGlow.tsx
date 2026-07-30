@@ -67,7 +67,7 @@ const presets = {
 export function SectionGlow({
   variant = "why-primary",
   className,
-}: SectionGlowProps)
+}: SectionGlowProps){
   
   const preset = presets[variant];
 
