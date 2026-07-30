@@ -1,17 +1,22 @@
 "use client";
 
 import Image from "next/image";
-import { LinkButton } from "@/components/ui";
+import {
+  LinkButton,
+  SectionGlow,
+} from "@/components/ui";
 import { Reveal } from "@/components/ui/Reveal";
 
 export function CTA() {
   return (
    <section className="relative py-32">
 
-      {/* Hintergrund */}
-      
+  {/* Section Glows */}
 
-      <div className="mx-auto max-w-6xl px-6">
+  <SectionGlow variant="cta-primary" />
+  <SectionGlow variant="cta-accent" />
+
+  <div className="mx-auto max-w-6xl px-6">
 
         <div className="flex flex-col items-center text-center">
 
