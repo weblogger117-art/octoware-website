@@ -51,6 +51,34 @@ const [isVisible, setIsVisible] = useState(false);
 
       <SectionGlow variant="why-primary" />
       <SectionGlow variant="why-accent" />
+
+      {/* Decorative Mesh */}
+<Image
+  src="/images/background/lines-mesh.webp"
+  alt=""
+  aria-hidden
+  width={1200}
+  height={900}
+  draggable={false}
+  className="
+    pointer-events-none
+    absolute
+
+    left-[-120px]
+    top-[420px]
+
+    w-[820px]
+    max-w-none
+
+    opacity-8
+
+    -z-10
+
+    select-none
+
+    animate-mesh-float
+  "
+/>
          
     {/* Überschrift */}
 <div
@@ -112,34 +140,6 @@ const [isVisible, setIsVisible] = useState(false);
     OctoWare®NET – zukunftssicheren Webplattform.
   </p>
 </div>
-
-{/* Decorative Mesh */}
-<Image
-  src="/images/background/lines-mesh.webp"
-  alt=""
-  aria-hidden
-  width={1200}
-  height={900}
-  draggable={false}
-  className="
-    pointer-events-none
-    absolute
-
-    left-[-120px]
-    top-[420px]
-
-    w-[820px]
-    max-w-none
-
-    opacity-8
-
-    -z-10
-
-    select-none
-
-    animate-mesh-float
-  "
-/>
       
       {/* Feature Cards */}
 
