@@ -6,58 +6,10 @@ import { Reveal } from "@/components/ui/Reveal";
 
 export function CTA() {
   return (
-   <section className="relative overflow-hidden py-32">
+   <section className="relative py-32">
 
       {/* Hintergrund */}
-      <div className="absolute inset-0 -z-10 overflow-hidden">
-
-        <Image
-          src="/images/graphics/network-background.svg"
-          alt=""
-          aria-hidden
-          width={2200}
-          height={1400}
-          className="
-            absolute
-            left-1/2
-            top-1/2
-            max-w-none
-            -translate-x-1/2
-            -translate-y-1/2
-            opacity-15
-            select-none
-          "
-        />
-
-        <div
-          className="
-            absolute
-            left-1/2
-            top-1/2
-            h-[700px]
-            w-[700px]
-            -translate-x-1/2
-            -translate-y-1/2
-            rounded-full
-            bg-[#146ab1]/8
-            blur-[170px]
-          "
-        />
-
-        <div
-          className="
-            absolute
-            right-10
-            bottom-0
-            h-[350px]
-            w-[350px]
-            rounded-full
-            bg-[#adce00]/10
-            blur-[120px]
-          "
-        />
-
-      </div>
+      
 
       <div className="mx-auto max-w-6xl px-6">
 
