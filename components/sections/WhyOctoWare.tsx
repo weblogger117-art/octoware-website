@@ -66,9 +66,9 @@ const [isVisible, setIsVisible] = useState(false);
     left-[-260px]
     top-[180px]
 
-    w-[1050px]
+    w-[2000px]
 
-    opacity-60
+    opacity-25
 
     -z-10
 
