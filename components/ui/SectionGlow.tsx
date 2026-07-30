@@ -10,6 +10,8 @@ type SectionGlowProps = {
     | "workflow-accent"
     | "trust-primary"
     | "trust-accent";
+    | "cta-primary"
+    | "cta-accent"
 
   className?: string;
 };
@@ -62,6 +64,17 @@ const presets = {
     size: "h-[420px] w-[420px]",
     position: "left-[18%] top-[340px]",
   },
+  "cta-primary": {
+  color: "bg-[#146ab1]/8",
+  size: "h-[850px] w-[850px]",
+  position: "left-1/2 top-[180px] -translate-x-1/2",
+},
+
+"cta-accent": {
+  color: "bg-[#adce00]/12",
+  size: "h-[500px] w-[500px]",
+  position: "left-1/2 top-[260px] -translate-x-1/2",
+},
 };
 
 export function SectionGlow({
