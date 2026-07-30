@@ -30,13 +30,13 @@ const presets = {
   },
 
   "modules-primary": {
-    color: "bg-[#adce00]/10",
+    color: "bg-[#146ab1]/10",
     size: "h-[900px] w-[900px]",
     position: "left-[42%] top-[320px] -translate-x-1/2",
   },
 
   "modules-accent": {
-    color: "bg-[#deeb99]/20",
+    color: "bg-[#adce00]/20",
     size: "h-[460px] w-[460px]",
     position: "left-[60%] top-[470px]",
   },
