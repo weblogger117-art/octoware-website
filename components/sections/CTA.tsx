@@ -16,8 +16,32 @@ export function CTA() {
   <SectionGlow variant="cta-primary" />
   <SectionGlow variant="cta-accent" />
 
-  <div className="mx-auto max-w-6xl px-6">
+     {/* Decorative Mesh */}
+<Image
+  src="/images/background/lines-mesh-net.webp"
+  alt=""
+  width={1000}
+  height={1000}
+  draggable={false}
+  className="
+    pointer-events-none
+    absolute
 
+    left-[-220px]
+    top-[140px]
+
+    w-[950px]
+    max-w-none
+
+    opacity-40
+
+    z-0
+
+    select-none
+  "
+/>
+
+  <div className="relative z-10 mx-auto max-w-6xl px-6">
         <div className="flex flex-col items-center text-center">
 
           {/* Maskottchen */}
