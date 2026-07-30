@@ -119,9 +119,9 @@ export function PageBackground({
 
     -translate-x-1/2
 
-    opacity-18
+    opacity-100
 
-    -z-10
+    -z-0
 
     select-none
   "
