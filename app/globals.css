@@ -233,3 +233,21 @@ body {
 .animate-mascot-float {
   animation: mascotFloat 5s ease-in-out infinite;
 }
+
+@keyframes meshFloat {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-mesh-float {
+  animation: meshFloat 18s ease-in-out infinite;
+}
