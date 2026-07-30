@@ -7,7 +7,7 @@ export function PageBackground({
   children,
 }: PageBackgroundProps) {
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative isolate overflow-hidden">
 
       {/* Grundverlauf */}
       <div
@@ -15,7 +15,7 @@ export function PageBackground({
           pointer-events-none
           absolute
           inset-0
-          -z-20
+          -z-30
 
           bg-[linear-gradient(
             180deg,
@@ -48,7 +48,7 @@ export function PageBackground({
 
           blur-[180px]
 
-          -z-10
+          -z-20
         "
       />
       
@@ -71,7 +71,7 @@ export function PageBackground({
 
     blur-[180px]
 
-    -z-10
+    -z-20
   "
 />
 
@@ -94,7 +94,7 @@ export function PageBackground({
 
     blur-[170px]
 
-    -z-10
+    -z-20
   "
 />
 
@@ -114,14 +114,14 @@ export function PageBackground({
     left-1/2
     top-[-120px]
 
-    w-[2500px]
+    w-[1900px]
     max-w-none
 
     -translate-x-1/2
 
-    opacity-100
+    opacity-20
 
-    -z-0
+    -z-10
 
     select-none
   "
