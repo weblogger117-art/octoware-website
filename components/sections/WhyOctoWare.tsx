@@ -46,23 +46,8 @@ const [isVisible, setIsVisible] = useState(false);
       "
     >
 
-       <SectionGlow
-      color="blue"
-      size="md"
-      className="
-        left-[-120px]
-        top-[180px]
-      "
-    />
-
-    <SectionGlow
-      color="lightBlue"
-      size="sm"
-      className="
-        right-[8%]
-        top-[260px]
-      "
-    />
+      <SectionGlow variant="why-primary" />
+      <SectionGlow variant="why-accent" />
          
     {/* Überschrift */}
 <div
