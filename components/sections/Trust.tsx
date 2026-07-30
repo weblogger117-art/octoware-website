@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { RefreshCw, Check, Monitor, Globe } from "lucide-react";
+import { SectionGlow } from "@/components/ui";
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 export default function Trust() {
@@ -207,6 +208,10 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
   ref={sectionRef}
   className="relative py-32"
 >
+      {/* Section Glows */}
+
+<SectionGlow variant="trust-primary" />
+<SectionGlow variant="trust-accent" />
      
       <div className="relative z-10 mx-auto max-w-7xl px-6">
 
@@ -524,18 +529,45 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
       : "translate-x-16 opacity-0 scale-95"
   )}
 >
+   {/* Blauer Glow */}
+<div
+  className="
+    absolute
+    inset-0
+    rounded-full
+    bg-[#146ab1]/18
+    blur-[90px]
+  "
+/>
+
+{/* Grüner Glow */}
+<div
+  className="
+    absolute
+    bottom-12
+    right-12
+    h-44
+    w-44
+    rounded-full
+    bg-[#adce00]/20
+    blur-[75px]
+  "
+/>
+   
     <Image
       src="/images/mascot/trust.webp"
       alt="easy-soft Maskottchen"
       width={560}
       height={560}
       className="
-        object-contain
-        transition-transform
-        duration-500
-        hover:scale-105
-        hover:-translate-y-2
-      "
+  relative
+  z-10
+  object-contain
+  transition-transform
+  duration-500
+  hover:scale-105
+  hover:-translate-y-2
+"
     />
   </div>
 
