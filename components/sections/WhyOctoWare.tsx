@@ -40,53 +40,16 @@ const [isVisible, setIsVisible] = useState(false);
   ref={sectionRef}
   className="
         relative
-        overflow-hidden
-        bg-white
         pt-24
         pb-28
       "
     >
       {/* Hintergrund */}
-      <div
-        aria-hidden
-        className="
-          absolute
-          inset-0
-          -z-20
-
-          bg-[radial-gradient(circle_at_20%_25%,rgba(197,215,237,0.45)_0%,transparent_38%),radial-gradient(circle_at_85%_75%,rgba(20,106,177,0.08)_0%,transparent_40%),linear-gradient(to_bottom,#ffffff_0%,#f8fbfe_55%,#ffffff_100%)]
-        "
-      />
+      
 
       {/* Netzwerkgrafik */}
-    <Image
-  src="/images/graphics/network-background.svg"
-  alt=""
-  aria-hidden="true"
-  width={3000}
-  height={1800}
-  draggable={false}
-  className="
-    absolute
 
-    left-[1%]
-    top-[50%]
-
-    w-[2600px]
-    max-w-none
-
-    -translate-x-1/2
-    -translate-y-1/2
-
-    opacity-45
-
-    z-0
-
-    pointer-events-none
-    select-none
-  "
-/>
-
+      
     {/* Überschrift */}
 <div
   className={cn(
