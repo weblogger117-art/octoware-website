@@ -9,7 +9,7 @@ type SectionGlowProps = {
     | "workflow-primary"
     | "workflow-accent"
     | "trust-primary"
-    | "trust-accent";
+    | "trust-accent"
     | "cta-primary"
     | "cta-accent"
 
