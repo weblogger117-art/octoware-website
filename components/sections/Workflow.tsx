@@ -8,6 +8,7 @@ import {
   Waypoints,
   ChartColumn,
 } from "lucide-react";
+import { SectionGlow } from "@/components/ui";
 
 const steps = [
   {
@@ -65,6 +66,11 @@ useEffect(() => {
   ref={sectionRef}
   className="relative py-32"
 >
+      {/* Section Glows */}
+
+    <SectionGlow variant="workflow-primary" />
+    <SectionGlow variant="workflow-accent" />
+      
       <div className="mx-auto max-w-7xl px-6">
 
         {/* Überschrift */}
@@ -160,8 +166,8 @@ useEffect(() => {
               justify-center
               rounded-full
               border
-              border-[#146ab1]/15
-              bg-white/80
+              border-white/60
+              bg-white/90
               shadow-lg
               backdrop-blur
               transition-all
