@@ -161,7 +161,7 @@ export function PageBackground({
 
     rounded-full
 
-    bg-[#deeb99]/20
+    bg-[#deeb99]/22
 
     blur-[130px]
 
@@ -253,7 +253,7 @@ export function PageBackground({
 
     rounded-full
 
-    bg-[#deeb99]/16
+    bg-[#deeb99]/18
 
     blur-[120px]
 
