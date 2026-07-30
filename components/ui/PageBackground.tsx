@@ -362,6 +362,33 @@ export function PageBackground({
     select-none
   "
 />
+
+      <Image
+  src="/images/background/network-mesh-end.webp"
+  alt=""
+  aria-hidden
+  width={4200}
+  height={5600}
+  draggable={false}
+  className="
+    pointer-events-none
+    absolute
+
+    left-1/2
+    top-[4050px]
+
+    w-[1900px]
+    max-w-none
+
+    -translate-x-1/2
+
+    opacity-20
+
+    -z-10
+
+    select-none
+  "
+/>
       
       {children}
 
