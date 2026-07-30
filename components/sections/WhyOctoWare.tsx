@@ -11,6 +11,7 @@ import {
 
 import { FeatureCard } from "@/components/ui";
 import { Section } from "@/components/ui";
+import { SectionGlow } from "@/components/ui";
 
 export function WhyOctoWare() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -44,12 +45,25 @@ const [isVisible, setIsVisible] = useState(false);
         pb-28
       "
     >
-      {/* Hintergrund */}
-      
 
-      {/* Netzwerkgrafik */}
+       <SectionGlow
+      color="blue"
+      size="md"
+      className="
+        left-[-120px]
+        top-[180px]
+      "
+    />
 
-      
+    <SectionGlow
+      color="lightBlue"
+      size="sm"
+      className="
+        right-[8%]
+        top-[260px]
+      "
+    />
+         
     {/* Überschrift */}
 <div
   className={cn(
