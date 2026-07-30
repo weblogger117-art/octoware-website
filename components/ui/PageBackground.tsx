@@ -1,3 +1,4 @@
+import Image from "next/image";
 type PageBackgroundProps = {
   children: React.ReactNode;
 };
@@ -94,6 +95,35 @@ export function PageBackground({
     blur-[170px]
 
     -z-10
+  "
+/>
+
+      {/* Global Network */}
+<Image
+  src="/images/background/network-mesh.webp"
+  alt=""
+  aria-hidden
+  width={4200}
+  height={5600}
+  priority
+  draggable={false}
+  className="
+    pointer-events-none
+    absolute
+
+    left-1/2
+    top-[-120px]
+
+    w-[2500px]
+    max-w-none
+
+    -translate-x-1/2
+
+    opacity-18
+
+    -z-10
+
+    select-none
   "
 />
       
