@@ -78,20 +78,20 @@ useEffect(() => {
 <Image
   src="/images/background/lines-mesh-es.webp"
   alt=""
-  width={1100}
-  height={1100}
+  width={1200}
+  height={1200}
   draggable={false}
   className="
     pointer-events-none
     absolute
 
     right-[-260px]
-    bottom-[-220px]
+    bottom-[-100px]
 
-    w-[1050px]
+    w-[1200px]
     max-w-none
 
-    opacity-20
+    opacity-25
 
     z-0
 
