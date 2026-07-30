@@ -27,13 +27,13 @@ export function CTA() {
     pointer-events-none
     absolute
 
-    left-[-220px]
+    left-[-200px]
     top-[140px]
 
-    w-[950px]
+    w-[1500px]
     max-w-none
 
-    opacity-40
+    opacity-25
 
     z-0
 
