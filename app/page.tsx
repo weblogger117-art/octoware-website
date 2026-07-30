@@ -1,5 +1,5 @@
 import { PageBackground } from "@/components/ui/PageBackground";
-import { Hero, Highlights, WhyOctoWare, Modules, Workflow, Trust, CTA } from "@/components/sections";
+import { Hero, Highlights, WhyOctoWare, Modules, Workflow, Trust, CTA, Footer } from "@/components/sections";
 
 export default function HomePage() {
   return (
@@ -11,6 +11,7 @@ export default function HomePage() {
       <Workflow />
       <Trust />
       <CTA />
+      <Footer />
     </PageBackground>
   );
 }
