@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import {
@@ -9,9 +8,11 @@ import {
   Workflow,
 } from "lucide-react";
 
-import { FeatureCard } from "@/components/ui";
-import { Section } from "@/components/ui";
-import { SectionGlow } from "@/components/ui";
+import {
+  FeatureCard,
+  Section,
+  SectionGlow,
+} from "@/components/ui";
 
 export function WhyOctoWare() {
   const sectionRef = useRef<HTMLElement>(null);
