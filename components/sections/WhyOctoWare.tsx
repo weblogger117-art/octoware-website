@@ -52,20 +52,27 @@ const [isVisible, setIsVisible] = useState(false);
       <SectionGlow variant="why-primary" />
       <SectionGlow variant="why-accent" />
 
-      {/* Decorative Mesh */}
+     {/* Decorative Mesh */}
 <Image
   src="/images/background/lines-mesh.webp"
   alt=""
-  width={800}
-  height={800}
+  width={1200}
+  height={1200}
   draggable={false}
   className="
+    pointer-events-none
     absolute
-    top-40
-    left-0
-    w-[800px]
-    opacity-100
-    z-50
+
+    left-[-260px]
+    top-[180px]
+
+    w-[1050px]
+
+    opacity-60
+
+    -z-10
+
+    select-none
   "
 />
          
