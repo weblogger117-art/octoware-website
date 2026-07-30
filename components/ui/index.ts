@@ -5,3 +5,4 @@ export * from "./DeviceFrame";
 export { FeatureCard } from "./FeatureCard";
 export * from "./Laptop";
 export * from "./Section";
+export * from "./SectionGlow";
