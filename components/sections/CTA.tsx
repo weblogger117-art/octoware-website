@@ -9,7 +9,7 @@ import { Reveal } from "@/components/ui/Reveal";
 
 export function CTA() {
   return (
-   <section className="relative py-32">
+   <section className="relative py-24">
 
   {/* Section Glows */}
 
