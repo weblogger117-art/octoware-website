@@ -153,8 +153,6 @@ useEffect(() => {
   ref={sectionRef}
   className="relative py-28"
 >
-  
-</div>
       <div className="mx-auto max-w-7xl px-6">
 
         <div className="mx-auto mb-16 max-w-3xl text-center">
