@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import {
   Inbox,
   Workflow as WorkflowIcon,
@@ -73,6 +74,31 @@ useEffect(() => {
       
       <div className="mx-auto max-w-7xl px-6">
 
+       {/* Decorative Mesh */}
+<Image
+  src="/images/background/lines-mesh-es.webp"
+  alt=""
+  width={1100}
+  height={1100}
+  draggable={false}
+  className="
+    pointer-events-none
+    absolute
+
+    right-[-260px]
+    bottom-[-220px]
+
+    w-[1050px]
+    max-w-none
+
+    opacity-20
+
+    z-0
+
+    select-none
+  "
+/>
+        
         {/* Überschrift */}
 
         <div className="mx-auto mb-20 max-w-3xl text-center">
@@ -108,7 +134,7 @@ useEffect(() => {
         <div className="relative">
 
   {/* Verbindungslinie */}
-  <div className="absolute left-0 right-0 top-10 hidden lg:block">
+  <div className="absolute left-0 right-0 top-10 hidden lg:block z-10">
 
   <div className="h-1 overflow-hidden rounded-full bg-slate-200">
 
@@ -133,7 +159,7 @@ useEffect(() => {
 
 </div>
 
-  <div className="grid gap-10 lg:grid-cols-5">
+  <div className="relative z-10 grid gap-10 lg:grid-cols-5">
 
     {steps.map((step, index) => {
       const Icon = step.icon;
