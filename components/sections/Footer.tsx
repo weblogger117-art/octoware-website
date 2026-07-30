@@ -1,11 +1,9 @@
 export function Footer() {
   return (
-    <footer className="relative pt-28 pb-10">
-
-      <div className="mx-auto max-w-7xl px-6">
-
-      </div>
-
+    <footer className="bg-red-500 py-40">
+      <h2 className="text-center text-5xl font-bold text-white">
+        FOOTER TEST
+      </h2>
     </footer>
   );
 }
