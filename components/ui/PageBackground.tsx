@@ -51,6 +51,100 @@ export function PageBackground({
           -z-20
         "
       />
+
+      {/* WhyOctoWare Glow */}
+<div
+  aria-hidden
+  className="
+    pointer-events-none
+    absolute
+
+    left-[10%]
+    top-[1050px]
+
+    h-[720px]
+    w-[720px]
+
+    rounded-full
+
+    bg-[#146ab1]/7
+
+    blur-[190px]
+
+    -z-20
+  "
+/>
+
+      {/* Modules Glow */}
+<div
+  aria-hidden
+  className="
+    pointer-events-none
+    absolute
+
+    left-1/2
+    top-[2050px]
+
+    h-[900px]
+    w-[900px]
+
+    -translate-x-1/2
+
+    rounded-full
+
+    bg-[#146ab1]/8
+
+    blur-[220px]
+
+    -z-20
+  "
+/>
+
+      {/* Workflow Glow */}
+<div
+  aria-hidden
+  className="
+    pointer-events-none
+    absolute
+
+    right-[-180px]
+    top-[3250px]
+
+    h-[650px]
+    w-[650px]
+
+    rounded-full
+
+    bg-[#146ab1]/6
+
+    blur-[180px]
+
+    -z-20
+  "
+/>
+
+      {/* Trust Glow */}
+<div
+  aria-hidden
+  className="
+    pointer-events-none
+    absolute
+
+    left-[-150px]
+    top-[4300px]
+
+    h-[700px]
+    w-[700px]
+
+    rounded-full
+
+    bg-[#146ab1]/5
+
+    blur-[190px]
+
+    -z-20
+  "
+/>
       
 {/* Secondary Blue Glow */}
       <div
