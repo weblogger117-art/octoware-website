@@ -52,6 +52,29 @@ export function PageBackground({
         "
       />
 
+      {/* Hero Accent Glow */}
+<div
+  aria-hidden
+  className="
+    pointer-events-none
+    absolute
+
+    left-[58%]
+    top-[420px]
+
+    h-[420px]
+    w-[420px]
+
+    rounded-full
+
+    bg-[#c5d7ed]/35
+
+    blur-[120px]
+
+    -z-20
+  "
+/>
+
       {/* WhyOctoWare Glow */}
 <div
   aria-hidden
@@ -75,6 +98,29 @@ export function PageBackground({
   "
 />
 
+      {/* Why Accent Glow */}
+<div
+  aria-hidden
+  className="
+    pointer-events-none
+    absolute
+
+    left-[32%]
+    top-[1180px]
+
+    h-[420px]
+    w-[420px]
+
+    rounded-full
+
+    bg-[#c5d7ed]/28
+
+    blur-[130px]
+
+    -z-20
+  "
+/>
+
       {/* Modules Glow */}
 <div
   aria-hidden
@@ -82,8 +128,8 @@ export function PageBackground({
     pointer-events-none
     absolute
 
-    left-1/2
-    top-[2050px]
+    left-[42%]
+    top-[2380px]
 
     h-[900px]
     w-[900px]
@@ -92,9 +138,32 @@ export function PageBackground({
 
     rounded-full
 
-    bg-[#146ab1]/8
+    bg-[#adce00]/10
 
     blur-[220px]
+
+    -z-20
+  "
+/>
+
+      {/* Modules Accent Glow */}
+<div
+  aria-hidden
+  className="
+    pointer-events-none
+    absolute
+
+    left-[60%]
+    top-[2550px]
+
+    h-[460px]
+    w-[460px]
+
+    rounded-full
+
+    bg-[#deeb99]/20
+
+    blur-[130px]
 
     -z-20
   "
@@ -107,8 +176,8 @@ export function PageBackground({
     pointer-events-none
     absolute
 
-    right-[-180px]
-    top-[3250px]
+    right-[-160px]
+    top-[3300px]
 
     h-[650px]
     w-[650px]
@@ -123,6 +192,29 @@ export function PageBackground({
   "
 />
 
+      {/* Workflow Accent Glow */}
+<div
+  aria-hidden
+  className="
+    pointer-events-none
+    absolute
+
+    right-[18%]
+    top-[3450px]
+
+    h-[380px]
+    w-[380px]
+
+    rounded-full
+
+    bg-[#c5d7ed]/20
+
+    blur-[120px]
+
+    -z-20
+  "
+/>
+
       {/* Trust Glow */}
 <div
   aria-hidden
@@ -130,7 +222,7 @@ export function PageBackground({
     pointer-events-none
     absolute
 
-    left-[-150px]
+    left-[-120px]
     top-[4300px]
 
     h-[700px]
@@ -141,6 +233,29 @@ export function PageBackground({
     bg-[#146ab1]/5
 
     blur-[190px]
+
+    -z-20
+  "
+/>
+
+      {/* Trust Accent Glow */}
+<div
+  aria-hidden
+  className="
+    pointer-events-none
+    absolute
+
+    left-[18%]
+    top-[4460px]
+
+    h-[420px]
+    w-[420px]
+
+    rounded-full
+
+    bg-[#deeb99]/16
+
+    blur-[120px]
 
     -z-20
   "
