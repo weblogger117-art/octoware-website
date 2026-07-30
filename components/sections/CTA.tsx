@@ -27,7 +27,7 @@ export function CTA() {
     pointer-events-none
     absolute
 
-    left-[-200px]
+    left-[-250px]
     top-[140px]
 
     w-[1500px]
