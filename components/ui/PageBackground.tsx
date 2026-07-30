@@ -7,7 +7,7 @@ export function PageBackground({
   children,
 }: PageBackgroundProps) {
   return (
-    <div className="relative isolate overflow-hidden">
+    <div className="relative isolate">
 
       {/* Grundverlauf */}
       <div
