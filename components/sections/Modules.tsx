@@ -151,65 +151,9 @@ useEffect(() => {
   return (
     <section
   ref={sectionRef}
-  className="relative overflow-hidden py-28"
+  className="relative py-28"
 >
-      <div
-  className="
-    absolute
-    inset-0
-    overflow-hidden
-    pointer-events-none
-    -z-10
-  "
->
-  <div
-    className="
-      absolute
-      left-1/2
-      top-24
-      h-[650px]
-      w-[650px]
-      -translate-x-1/2
-      rounded-full
-      bg-[#146ab1]/5
-      blur-[140px]
-    "
-  />
-
-  <div
-    className="
-      absolute
-      right-0
-      top-52
-      h-[420px]
-      w-[420px]
-      rounded-full
-      bg-[#adce00]/5
-      blur-[120px]
-    "
-  />
-        <div
-  className="
-    absolute
-    inset-0
-    flex
-    items-center
-    justify-center
-  "
->
-  <Image
-    src="/images/graphics/network-background.svg"
-    alt=""
-    aria-hidden
-    width={2200}
-    height={1400}
-    className="
-      opacity-45
-      max-w-none
-      -translate-y-10
-    "
-  />
-</div>
+  
 </div>
       <div className="mx-auto max-w-7xl px-6">
 
