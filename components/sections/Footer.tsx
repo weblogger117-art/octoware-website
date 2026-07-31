@@ -64,6 +64,68 @@ export function Footer() {
     select-none
   "
 />
+
+    <div
+  className="
+    relative
+    z-10
+
+    grid
+    gap-16
+
+    lg:grid-cols-[1.6fr_1fr_1fr]
+  "
+>
+
+  {/* Branding */}
+  <div className="max-w-md">
+
+  <Image
+    src="/images/logo/easy-soft-logo.webp"
+    alt="easy-soft GmbH"
+    width={220}
+    height={60}
+    className="h-auto w-52"
+  />
+
+  <p
+    className="
+      mt-8
+      text-xl
+      font-semibold
+      leading-relaxed
+      text-slate-900
+    "
+  >
+    Digitale Fachverfahren für den
+    Öffentlichen Gesundheitsdienst.
+  </p>
+
+  <p
+    className="
+      mt-5
+      leading-8
+      text-slate-600
+    "
+  >
+    Seit vielen Jahren entwickeln wir moderne Softwarelösungen
+    für Gesundheitsämter in Deutschland – modular,
+    webbasiert und zukunftssicher.
+  </p>
+
+</div>
+
+  {/* Navigation */}
+  <div>
+    {/* folgt gleich */}
+  </div>
+
+  {/* Kontakt */}
+  <div>
+    {/* folgt gleich */}
+  </div>
+
+</div>
     
   </div>
 
