@@ -108,7 +108,6 @@ export function Footer() {
   leading-7
   text-slate-600
 "
-    "
   >
     Seit vielen Jahren entwickeln wir moderne Softwarelösungen
     für Gesundheitsämter in Deutschland – modular,
