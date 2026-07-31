@@ -81,7 +81,7 @@ export function Footer() {
   <div className="max-w-md">
 
   <Image
-    src="/images/logo/easy-soft-logo.webp"
+    src="/images/branding/easy-soft-logo.webp"
     alt="easy-soft GmbH"
     width={220}
     height={60}
