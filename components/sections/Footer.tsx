@@ -78,7 +78,7 @@ export function Footer() {
 >
 
   {/* Branding */}
-  <div className="max-w-md">
+  <div className="max-w-sm">
 
   <Image
     src="/images/branding/easy-soft-logo.webp"
