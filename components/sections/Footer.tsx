@@ -43,7 +43,29 @@ export function Footer() {
 
     {/* Inhalt */}
 
-<div
+<Image
+  src="/images/background/footer-network.webp"
+  alt=""
+  aria-hidden
+  width={900}
+  height={900}
+  draggable={false}
+  className="
+    absolute
+
+    left-[-120px]
+    bottom-[-120px]
+
+    w-[520px]
+
+    opacity-12
+
+    pointer-events-none
+    select-none
+  "
+/>
+
+    <div
   className="
     relative
     z-10
@@ -54,6 +76,8 @@ export function Footer() {
     lg:grid-cols-[1.3fr_.8fr_.8fr_.8fr]
   "
 >
+
+  {/* Branding */}
   <div className="max-w-sm">
 
   <Image
@@ -88,6 +112,18 @@ export function Footer() {
     Softwarelösungen für Gesundheitsämter in
     Deutschland – modular und zukunftssicher.
   </p>
+
+</div>
+
+  {/* Navigation */}
+  <div>
+    {/* folgt gleich */}
+  </div>
+
+  {/* Kontakt */}
+  <div>
+    {/* folgt gleich */}
+  </div>
 
 </div>
     
