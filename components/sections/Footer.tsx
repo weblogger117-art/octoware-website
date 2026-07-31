@@ -43,88 +43,51 @@ export function Footer() {
 
     {/* Inhalt */}
 
-<Image
-  src="/images/background/footer-network.webp"
-  alt=""
-  aria-hidden
-  width={900}
-  height={900}
-  draggable={false}
-  className="
-    absolute
-
-    left-[-120px]
-    bottom-[-120px]
-
-    w-[520px]
-
-    opacity-12
-
-    pointer-events-none
-    select-none
-  "
-/>
-
-    <div
+<div
   className="
     relative
     z-10
 
     grid
-    gap-16
+    gap-14
 
-    lg:grid-cols-[1.6fr_1fr_1fr]
+    lg:grid-cols-[1.3fr_.8fr_.8fr_.8fr]
   "
 >
-
-  {/* Branding */}
   <div className="max-w-sm">
 
   <Image
     src="/images/branding/easy-soft-logo.webp"
     alt="easy-soft GmbH"
-    width={220}
-    height={60}
-    className="h-auto w-52"
+    width={230}
+    height={70}
+    className="mb-8"
   />
 
-  <p
+  <h3
     className="
-  mt-8
-  text-base
-  font-semibold
-  leading-7
-  text-slate-900
-"
+      text-[1.55rem]
+      font-semibold
+      leading-snug
+      text-slate-900
+    "
   >
     Digitale Fachverfahren für den
     Öffentlichen Gesundheitsdienst.
-  </p>
+  </h3>
 
   <p
     className="
-  mt-5
-  text-xs
-  leading-7
-  text-slate-500
-"
+      mt-7
+      text-[0.96rem]
+      leading-8
+      text-slate-500
+    "
   >
-    Seit vielen Jahren entwickeln wir moderne Softwarelösungen
-    für Gesundheitsämter in Deutschland – modular,
-    webbasiert und zukunftssicher.
+    Seit vielen Jahren entwickeln wir moderne
+    Softwarelösungen für Gesundheitsämter in
+    Deutschland – modular und zukunftssicher.
   </p>
-
-</div>
-
-  {/* Navigation */}
-  <div>
-    {/* folgt gleich */}
-  </div>
-
-  {/* Kontakt */}
-  <div>
-    {/* folgt gleich */}
-  </div>
 
 </div>
     
