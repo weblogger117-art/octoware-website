@@ -90,12 +90,12 @@ export function Footer() {
 
   <p
     className="
-      mt-8
-      text-xl
-      font-semibold
-      leading-relaxed
-      text-slate-900
-    "
+  mt-8
+  text-lg
+  font-semibold
+  leading-8
+  text-slate-900
+"
   >
     Digitale Fachverfahren für den
     Öffentlichen Gesundheitsdienst.
@@ -103,9 +103,11 @@ export function Footer() {
 
   <p
     className="
-      mt-5
-      leading-8
-      text-slate-600
+  mt-5
+  text-sm
+  leading-7
+  text-slate-600
+"
     "
   >
     Seit vielen Jahren entwickeln wir moderne Softwarelösungen
