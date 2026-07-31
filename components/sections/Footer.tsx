@@ -19,29 +19,31 @@ export function Footer() {
 
       
 
-      <div className="relative z-10 mx-auto max-w-7xl px-8 py-8">
+      <div className="relative z-10 mx-auto max-w-7xl px-6 py-6">
 
-        <div
-  className="
-    relative
-    overflow-hidden
+  <div
+    className="
+      relative
+      overflow-hidden
 
-    rounded-full
+      rounded-[36px]
 
-    border
-    border-white/60
+      border
+      border-white/60
 
-    bg-white/75
-    backdrop-blur-xl
+      bg-white/80
+      backdrop-blur-xl
 
-    shadow-[0_20px_70px_rgba(20,106,177,0.12)]
+      shadow-[0_18px_60px_rgba(20,106,177,0.10)]
 
-    px-12
-    py-8
-  "
->
+      px-12
+      py-12
+    "
+  >
 
-          <Image
+    {/* Inhalt */}
+
+<Image
   src="/images/background/footer-network.webp"
   alt=""
   aria-hidden
@@ -51,21 +53,19 @@ export function Footer() {
   className="
     absolute
 
-    left-0
-    bottom-0
+    left-[-120px]
+    bottom-[-120px]
 
-    w-[650px]
+    w-[520px]
 
-    opacity-20
+    opacity-12
 
     pointer-events-none
     select-none
   "
 />
-
-  {/* Inhalt folgt */}
-
-</div>
+    
+  </div>
 
 </div>
 
