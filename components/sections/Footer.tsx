@@ -115,18 +115,70 @@ export function Footer() {
 
 </div>
 
-  {/* Navigation */}
-  <div>
-    {/* folgt gleich */}
-  </div>
+      <div>
 
-  {/* Kontakt */}
-  <div>
-    {/* folgt gleich */}
-  </div>
+  <h4
+    className="
+      text-sm
+      font-semibold
+      uppercase
+      tracking-[0.18em]
+      text-[#146ab1]
+    "
+  >
+    Plattform
+  </h4>
 
-</div>
-    
+  <div className="mt-6 flex flex-col gap-4">
+
+    <Link
+      href="/plattform"
+      className="
+        text-slate-600
+        transition-colors
+        duration-200
+        hover:text-[#146ab1]
+      "
+    >
+      Überblick
+    </Link>
+
+    <Link
+      href="/fachverfahren"
+      className="
+        text-slate-600
+        transition-colors
+        duration-200
+        hover:text-[#146ab1]
+      "
+    >
+      Fachverfahren
+    </Link>
+
+    <Link
+      href="/schnittstellen"
+      className="
+        text-slate-600
+        transition-colors
+        duration-200
+        hover:text-[#146ab1]
+      "
+    >
+      Schnittstellen
+    </Link>
+
+    <Link
+      href="/hosting"
+      className="
+        text-slate-600
+        transition-colors
+        duration-200
+        hover:text-[#146ab1]
+      "
+    >
+      Hosting
+    </Link>
+
   </div>
 
 </div>
