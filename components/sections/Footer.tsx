@@ -91,9 +91,9 @@ export function Footer() {
   <p
     className="
   mt-8
-  text-lg
+  text-base
   font-semibold
-  leading-8
+  leading-7
   text-slate-900
 "
   >
@@ -104,9 +104,9 @@ export function Footer() {
   <p
     className="
   mt-5
-  text-sm
+  text-xs
   leading-7
-  text-slate-600
+  text-slate-500
 "
   >
     Seit vielen Jahren entwickeln wir moderne Softwarelösungen
