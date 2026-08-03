@@ -62,7 +62,7 @@ export function Footer() {
 
     w-[520px]
 
-    opacity-12
+    opacity-20
 
     pointer-events-none
     select-none
@@ -84,7 +84,7 @@ export function Footer() {
 
     w-[950px]
 
-    opacity-[5]
+    opacity-25
 
     pointer-events-none
     select-none
