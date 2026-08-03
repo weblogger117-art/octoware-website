@@ -14,7 +14,7 @@ export function Footer() {
   className="
     relative
     mt-10
-    pb-20
+    pb-4
   "
 >
 
@@ -23,7 +23,7 @@ export function Footer() {
 
       
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6 py-6">
+      <div className="relative z-10 mx-auto max-w-7xl px-6 py-4">
 
   <div
     className="
