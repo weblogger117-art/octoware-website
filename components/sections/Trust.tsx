@@ -279,23 +279,21 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
     h-full
       rounded-3xl
     border
-    border-slate-200
-    bg-white
+   bg-white/80
+    backdrop-blur-sm
 
     p-12
 
     text-center
 
-    shadow-sm
-
     transition-all
     duration-300
 
     hover:-translate-y-2
-    hover:border-[#146ab1]/30
+    hover:border-[#146ab1]/50
     hover:bg-white
-    hover:shadow-xl
-    hover:shadow-[#146ab1]/15
+    hover:shadow-2xl
+    hover:shadow-[#146ab1]/10
   "
 >
    <div
@@ -335,7 +333,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
    <div
   className="
     h-full
-     rounded-3xl
+    rounded-3xl
     border
     border-slate-200
     bg-white
@@ -345,10 +343,10 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
     transition-all
     duration-300
     hover:-translate-y-2
-    hover:border-[#146ab1]/30
+    hover:border-[#146ab1]/50
     hover:bg-white
-    hover:shadow-xl
-    hover:shadow-[#146ab1]/15
+    hover:shadow-2xl
+    hover:shadow-[#146ab1]/10
   "
 >
     <div
@@ -399,10 +397,10 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
     transition-all
     duration-300
     hover:-translate-y-2
-    hover:border-[#146ab1]/30
+    hover:border-[#146ab1]/50
     hover:bg-white
-    hover:shadow-xl
-    hover:shadow-[#146ab1]/15
+    hover:shadow-2xl
+    hover:shadow-[#146ab1]/10
   "
 >
 <div
@@ -472,10 +470,10 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
     transition-all
     duration-300
     hover:-translate-y-2
-    hover:border-[#146ab1]/30
+    hover:border-[#146ab1]/50
     hover:bg-white
-    hover:shadow-xl
-    hover:shadow-[#146ab1]/15
+    hover:shadow-2xl
+    hover:shadow-[#146ab1]/10
   "
 >
     <div
