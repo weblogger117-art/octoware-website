@@ -248,6 +248,79 @@ export function Footer() {
   </div>
 
 </div>
+
+<div>
+
+  <h4
+    className="
+      text-sm
+      font-semibold
+      uppercase
+      tracking-[0.18em]
+      text-[#146ab1]
+    "
+  >
+    Unternehmen
+  </h4>
+
+  <div className="mt-6 flex flex-col gap-4">
+
+    <Link
+      href="/unternehmen"
+      className="
+        text-slate-600
+        transition-all
+        duration-200
+        hover:translate-x-1
+        hover:text-[#146ab1]
+      "
+    >
+      Über uns
+    </Link>
+
+    <Link
+      href="/karriere"
+      className="
+        text-slate-600
+        transition-all
+        duration-200
+        hover:translate-x-1
+        hover:text-[#146ab1]
+      "
+    >
+      Karriere
+    </Link>
+
+    <Link
+      href="/news"
+      className="
+        text-slate-600
+        transition-all
+        duration-200
+        hover:translate-x-1
+        hover:text-[#146ab1]
+      "
+    >
+      News
+    </Link>
+
+    <Link
+      href="/academy"
+      className="
+        text-slate-600
+        transition-all
+        duration-200
+        hover:translate-x-1
+        hover:text-[#146ab1]
+      "
+    >
+      easy-Academy
+    </Link>
+
+  </div>
+
+</div>
+      
       </div>
     </div>
         </div>
