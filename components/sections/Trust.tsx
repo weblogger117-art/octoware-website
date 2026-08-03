@@ -56,10 +56,13 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
       startTime = timestamp;
     }
 
-    const progress = Math.min(
-      (timestamp - startTime) / duration,
-      1
-    );
+    const rawProgress = Math.min(
+  (timestamp - startTime) / duration,
+  1
+);
+
+const progress =
+  1 - Math.pow(1 - rawProgress, 3);
 
     const currentYear = Math.round(
       startYear + (endYear - startYear) * progress
@@ -97,7 +100,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
  if (!isVisible || officeAnimated) return;
 
   const target = 130;
-  const duration = 1800;
+  const duration = 2000;
 
   let animationFrame: number;
   let startTime: number | null = null;
@@ -108,10 +111,13 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
       startTime = timestamp;
     }
 
-    const progress = Math.min(
-      (timestamp - startTime) / duration,
-      1
-    );
+    const rawProgress = Math.min(
+  (timestamp - startTime) / duration,
+  1
+);
+
+const progress =
+  1 - Math.pow(1 - rawProgress, 3);
 
     setOffices(
       Math.round(target * progress)
@@ -157,7 +163,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
       setUpdateAnimated(true);
     }, 250);
 
-  }, 2400);
+  }, 3600);
 
   return () => {
     clearTimeout(timeout1);
@@ -181,7 +187,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
       setBrowserSwitching(false);
     }, 250);
 
-  }, 2100);
+  }, 2700);
 
   timer3 = setTimeout(() => {
     setBrowserSwitching(true);
@@ -192,7 +198,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
       setBrowserAnimated(true);
     }, 250);
 
-  }, 2100);
+  }, 2700);
 
   return () => {
     clearTimeout(timer1);
@@ -275,7 +281,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
 }}
 >
  
-    [Text 35 Jahre]
+    {/* Text 35 */}
     
     <div
   className="
@@ -335,7 +341,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
   }}
 >
 
-   [Text 130+]
+  {/* Text 130+ */}
    
    <div
   className="
@@ -392,6 +398,9 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
   transitionDelay: isVisible ? "550ms" : "0ms",
 }}
 >
+
+    {/* Online */}
+    
     <div
   className="
     h-full
@@ -466,6 +475,9 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
   transitionDelay: isVisible ? "730ms" : "0ms",
 }}
 >
+
+{/* Weitentwicklung */}
+    
     <div
   className="
     h-full
