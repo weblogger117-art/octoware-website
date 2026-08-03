@@ -274,6 +274,9 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
   transitionDelay: "0ms",
 }}
 >
+ 
+    [Text 35 Jahre]
+    
     <div
   className="
     h-full
@@ -286,7 +289,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
     p-12
 
     text-center
-
+    shadow-sm
     transition-all
     duration-300
 
@@ -331,6 +334,9 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
     transitionDelay: isVisible ? "180ms" : "0ms",
   }}
 >
+
+   [Text 130+]
+   
    <div
   className="
     h-full
