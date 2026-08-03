@@ -25,18 +25,6 @@ export function Footer() {
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 py-6">
 
-        <div
-  aria-hidden
-  className="
-    pointer-events-none
-    absolute
-    inset-0
-    rounded-[36px]
-    border
-    border-[#146ab1]/20
-  "
-/>
-
   <div
     className="
       relative
