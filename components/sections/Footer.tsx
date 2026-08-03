@@ -2,6 +2,11 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import {
+  Blocks,
+  Building2,
+  Headset,
+} from "lucide-react";
 
 export function Footer() {
   return (
@@ -140,6 +145,13 @@ export function Footer() {
       
       <div>
 
+  <div className="flex items-center gap-2">
+
+  <Blocks
+    size={17}
+    className="text-[#146ab1]"
+  />
+
   <h4
     className="
       text-sm
@@ -151,6 +163,8 @@ export function Footer() {
   >
     Plattform
   </h4>
+
+</div>
 
   <div className="mt-6 flex flex-col gap-4">
 
@@ -251,6 +265,13 @@ export function Footer() {
 
 <div>
 
+  <div className="flex items-center gap-2">
+
+  <Building2
+    size={17}
+    className="text-[#146ab1]"
+  />
+
   <h4
     className="
       text-sm
@@ -262,6 +283,8 @@ export function Footer() {
   >
     Unternehmen
   </h4>
+
+</div>
 
   <div className="mt-6 flex flex-col gap-4">
 
@@ -323,6 +346,13 @@ export function Footer() {
 
       <div>
 
+  <div className="flex items-center gap-2">
+
+  <Headset
+    size={17}
+    className="text-[#146ab1]"
+  />
+
   <h4
     className="
       text-sm
@@ -334,6 +364,8 @@ export function Footer() {
   >
     Kontakt
   </h4>
+
+</div>
 
   <div className="mt-6 flex flex-col gap-4">
 
