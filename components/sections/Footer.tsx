@@ -33,7 +33,10 @@ export function Footer() {
       rounded-[36px]
 
       border
-      border-white/60
+      border-[#146ab1]/15
+      shadow-[0_18px_60px_rgba(20,106,177,0.10)]
+      ring-1
+      ring-[#146ab1]/10
 
       bg-white/80
       backdrop-blur-xl
