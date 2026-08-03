@@ -73,19 +73,18 @@ export function Footer() {
   src="/images/background/lines-mesh.webp"
   alt=""
   aria-hidden
-  width={1400}
-  height={1400}
+  width={1000}
+  height={1000}
   draggable={false}
   className="
     absolute
 
-    right-[-260px]
-    bottom-[-10px]
+    right-[-180px]
+    bottom-[-180px]
 
     w-[950px]
 
-    opacity-[0.09]
-    -z-0
+    opacity-[10]
 
     pointer-events-none
     select-none
