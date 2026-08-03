@@ -277,9 +277,10 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
     <div
   className="
     h-full
-      rounded-3xl
+    rounded-3xl
     border
-   bg-white/80
+    border-slate-200
+    bg-white/80
     backdrop-blur-sm
 
     p-12
@@ -336,7 +337,8 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
     rounded-3xl
     border
     border-slate-200
-    bg-white
+    bg-white/80
+    backdrop-blur-sm
     p-12
     text-center
     shadow-sm
@@ -390,7 +392,8 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
       rounded-3xl
     border
     border-slate-200
-    bg-white
+    bg-white/80
+    backdrop-blur-sm
     p-12
     text-center
     shadow-sm
@@ -463,7 +466,8 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
       rounded-3xl
     border
     border-slate-200
-    bg-white
+    bg-white/80
+    backdrop-blur-sm
     p-12
     text-center
     shadow-sm
