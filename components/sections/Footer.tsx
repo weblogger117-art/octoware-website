@@ -142,12 +142,10 @@ export function Footer() {
 
 </div>
 </div>
-      
-      <div>
 
         <div className="group">
 
-  <div className="flex items-center gap-2">
+  <div className="flex items-center gap-2.5">
 
   <Blocks
       size={17}
@@ -271,11 +269,9 @@ export function Footer() {
 
 </div>
 
-<div>
-
   <div className="group">
 
-  <div className="flex items-center gap-2">
+  <div className="flex items-center gap-2.5">
 
   <Building2
     size={17}
@@ -359,11 +355,9 @@ export function Footer() {
 
 </div>
 
-      <div>
-
         <div className="group">
 
-  <div className="flex items-center gap-2">
+  <div className="flex items-center gap-2.5">
 
   <Headset
     size={17}
@@ -444,6 +438,7 @@ export function Footer() {
     </Link>
 
   </div>
+          </div>
 
 </div>
       
