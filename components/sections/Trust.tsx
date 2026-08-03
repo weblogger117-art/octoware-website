@@ -163,7 +163,7 @@ const progress =
       setUpdateAnimated(true);
     }, 250);
 
-  }, 3600);
+  }, 3900);
 
   return () => {
     clearTimeout(timeout1);
@@ -198,7 +198,7 @@ const progress =
       setBrowserAnimated(true);
     }, 250);
 
-  }, 2700);
+  }, 3350);
 
   return () => {
     clearTimeout(timer1);
@@ -295,7 +295,8 @@ const progress =
     p-12
 
     text-center
-    shadow-sm
+    shadow-lg
+    shadow-[#146ab1]/5
     transition-all
     duration-300
 
@@ -310,8 +311,8 @@ const progress =
   className={cn(
     "text-6xl font-bold transition-all duration-300",
     showYears
-  ? "text-[#146ab1]"
-  : "text-[#adce00]",
+  ? "text-[#adce00]"
+  : "text-[#146ab1]",
     switching
       ? "scale-110 opacity-0"
       : "scale-100 opacity-100"
@@ -328,7 +329,6 @@ const progress =
       Spezialisierte Softwareentwicklung für den Öffentlichen Gesundheitsdienst.
     </p>
       </div>
-  </div>
  <div
   className={cn(
     "h-full transition-all duration-700",
@@ -353,7 +353,8 @@ const progress =
     backdrop-blur-sm
     p-12
     text-center
-    shadow-sm
+    shadow-lg
+    shadow-[#146ab1]/5
     transition-all
     duration-300
     hover:-translate-y-2
@@ -367,8 +368,8 @@ const progress =
   className={cn(
   "text-6xl font-bold transition-all duration-300",
   showOffices
-    ? "text-[#146ab1]"
-    : "text-[#adce00]",
+    ? "text-[#adce00]"
+    : "text-[#146ab1]",
   switchingOffices
     ? "scale-110 opacity-0"
     : "scale-100 opacity-100"
@@ -411,7 +412,8 @@ const progress =
     backdrop-blur-sm
     p-12
     text-center
-    shadow-sm
+    shadow-lg
+    shadow-[#146ab1]/5
     transition-all
     duration-300
     hover:-translate-y-2
@@ -434,7 +436,7 @@ const progress =
     <Monitor
       size={58}
       strokeWidth={2.5}
-      className="text-[#146ab1]"
+      className="text-[#adce00]"
     />
   )}
 
@@ -447,7 +449,7 @@ const progress =
   )}
 
   {browserStep === 2 && (
-    <span className="text-5xl font-bold text-[#adce00]">
+    <span className="text-5xl font-bold text-[#146ab1]">
       ONLINE
     </span>
   )}
@@ -488,7 +490,8 @@ const progress =
     backdrop-blur-sm
     p-12
     text-center
-    shadow-sm
+    shadow-lg
+    shadow-[#146ab1]/5
     transition-all
     duration-300
     hover:-translate-y-2
@@ -511,7 +514,7 @@ const progress =
       size={58}
       strokeWidth={2.5}
       className={cn(
-  "text-[#146ab1] transition-transform duration-300",
+  "text-[#adce00] transition-transform duration-300",
   showRefresh && "animate-spin"
 )}
     />
@@ -519,7 +522,7 @@ const progress =
     <Check
       size={58}
       strokeWidth={3}
-      className="text-[#adce00]"
+      className="text-[#146ab1]"
     />
   )}
 </div>
