@@ -29,13 +29,23 @@ export function Footer() {
 
   <div
     className="
-      pointer-events-none
-      absolute
-      inset-0
-      rounded-[36px]
-      border
-      border-[#146ab1]/20
-    "
+  relative
+  overflow-hidden
+
+  rounded-3x1
+
+  border
+  border-[#146ab1]/50
+
+  bg-white/80
+  backdrop-blur-xl
+
+  shadow-2xl
+  shadow-[#146ab1]/10
+
+  px-12
+  py-12
+"
   />
 
     {/* Inhalt */}
