@@ -69,6 +69,28 @@ export function Footer() {
   "
 />
 
+    <Image
+  src="/images/background/lines-mesh.webp"
+  alt=""
+  aria-hidden
+  width={1000}
+  height={1000}
+  draggable={false}
+  className="
+    absolute
+
+    right-[-180px]
+    bottom-[-180px]
+
+    w-[720px]
+
+    opacity-[20]
+
+    pointer-events-none
+    select-none
+  "
+/>
+
     <div
   className="
     relative
