@@ -42,59 +42,15 @@ export function CTA() {
 />
 
   <div className="relative z-10 mx-auto max-w-6xl px-6">
-        <div className="flex flex-col items-center text-center">
-
-          {/* Maskottchen */}
-<Reveal
-  animation="zoom"
-  delay={0}
+    
+<div
+  className="
+    mx-auto
+    max-w-4xl
+    text-center
+  "
 >
-  <div className="relative hidden lg:block">
-
-    {/* Blauer Glow */}
-    <div
-      className="
-        absolute
-        inset-0
-        rounded-full
-        bg-[#146ab1]/20
-        blur-[90px]
-      "
-    />
-
-    {/* Grüner Glow */}
-    <div
-      className="
-        absolute
-        bottom-10
-        right-12
-        h-40
-        w-40
-        rounded-full
-        bg-[#adce00]/20
-        blur-[70px]
-      "
-    />
-
-    <Image
-      src="/images/mascot/cta.webp"
-      alt="OctoWare® Maskottchen"
-      width={470}
-      height={470}
-      priority
-      draggable={false}
-      className="
-        relative
-        z-10
-        object-contain
-        drop-shadow-2xl
-        select-none
-      animate-mascot-float
-      "
-    />
-
-  </div>
-</Reveal>
+         
 
           {/* Badge */}
 
@@ -146,6 +102,8 @@ export function CTA() {
   </h2>
 </Reveal>
 
+  </div>
+    
           {/* Text */}
 
           <Reveal
@@ -167,6 +125,69 @@ export function CTA() {
             digitaler und zukunftssicher machen.
           </p>
             </Reveal>
+
+    <div
+  className="
+    mt-16
+    grid
+    items-center
+    gap-12
+
+    lg:grid-cols-[0.95fr_1.05fr]
+  "
+>
+
+       {/* Maskottchen */}
+<Reveal
+  animation="zoom"
+  delay={0}
+>
+  <div className="relative hidden lg:block">
+
+    {/* Blauer Glow */}
+    <div
+      className="
+        absolute
+        inset-0
+        rounded-full
+        bg-[#146ab1]/20
+        blur-[90px]
+      "
+    />
+
+    {/* Grüner Glow */}
+    <div
+      className="
+        absolute
+        bottom-10
+        right-12
+        h-40
+        w-40
+        rounded-full
+        bg-[#adce00]/20
+        blur-[70px]
+      "
+    />
+
+    <Image
+      src="/images/mascot/cta.webp"
+      alt="OctoWare® Maskottchen"
+      width={540}
+      height={470}
+      priority
+      draggable={false}
+      className="
+        relative
+        z-10
+        object-contain
+        drop-shadow-2xl
+        select-none
+      animate-mascot-float
+      "
+    />
+
+  </div>
+</Reveal>
 
           {/* Buttons */}
 
