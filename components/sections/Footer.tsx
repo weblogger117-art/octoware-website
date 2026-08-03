@@ -84,6 +84,46 @@ export function Footer() {
   "
 >
 
+      <div
+  aria-hidden
+  className="
+    pointer-events-none
+    absolute
+
+    right-[-140px]
+    bottom-[-140px]
+
+    h-[420px]
+    w-[420px]
+
+    rounded-full
+
+    bg-[#146ab1]/10
+
+    blur-[120px]
+  "
+/>
+
+      <div
+  aria-hidden
+  className="
+    pointer-events-none
+    absolute
+
+    right-[90px]
+    bottom-[40px]
+
+    h-[180px]
+    w-[180px]
+
+    rounded-full
+
+    bg-[#adce00]/12
+
+    blur-[70px]
+  "
+/>
+
   {/* Branding */}
   <div className="max-w-sm">
 
