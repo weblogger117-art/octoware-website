@@ -14,7 +14,7 @@ export function Footer() {
   className="
     relative
     mt-10
-    pb-4
+    pb-20
   "
 >
 
@@ -23,30 +23,27 @@ export function Footer() {
 
       
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6 py-4">
-
-  <div className="relative overflow-hidden rounded-[36px] ...">
+      <div className="relative z-10 mx-auto max-w-7xl px-6 py-6">
 
   <div
     className="
-  relative
-  overflow-hidden
+      relative
+      overflow-hidden
 
-  rounded-3x1
+      rounded-[36px]
 
-  border
-  border-[#146ab1]/50
+      border
+      border-white/60
 
-  bg-white/80
-  backdrop-blur-xl
+      bg-white/80
+      backdrop-blur-xl
 
-  shadow-2xl
-  shadow-[#146ab1]/10
+      shadow-[0_18px_60px_rgba(20,106,177,0.10)]
 
-  px-12
-  py-12
-"
-  />
+      px-12
+      py-12
+    "
+  >
 
     {/* Inhalt */}
 
@@ -83,46 +80,6 @@ export function Footer() {
     lg:grid-cols-[1.3fr_.8fr_.8fr_.8fr]
   "
 >
-
-      <div
-  aria-hidden
-  className="
-    pointer-events-none
-    absolute
-
-    right-[-140px]
-    bottom-[-140px]
-
-    h-[420px]
-    w-[420px]
-
-    rounded-full
-
-    bg-[#146ab1]/10
-
-    blur-[120px]
-  "
-/>
-
-      <div
-  aria-hidden
-  className="
-    pointer-events-none
-    absolute
-
-    right-[90px]
-    bottom-[40px]
-
-    h-[180px]
-    w-[180px]
-
-    rounded-full
-
-    bg-[#adce00]/12
-
-    blur-[70px]
-  "
-/>
 
   {/* Branding */}
   <div className="max-w-sm">
