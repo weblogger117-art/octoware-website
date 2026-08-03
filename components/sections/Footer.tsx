@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { SectionGlow } from "@/components/ui";
 
 export function Footer() {
   return (
@@ -102,7 +101,7 @@ export function Footer() {
 
   <p
     className="
-      mt-7
+      mt-5
       text-sm
       leading-7
       text-slate-500
@@ -137,7 +136,8 @@ export function Footer() {
 </div>
 
 </div>
-
+</div>
+      
       <div>
 
   <h4
