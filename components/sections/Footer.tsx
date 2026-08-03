@@ -13,7 +13,7 @@ export function Footer() {
     <footer
   className="
     relative
-    mt-10
+    mt-0
     pb-4
   "
 >
