@@ -167,40 +167,82 @@ export function Footer() {
     </Link>
 
     <Link
-      href="/fachverfahren"
-      className="
-        text-slate-600
-        transition-colors
-        duration-200
-        hover:text-[#146ab1]
-      "
-    >
-      Fachverfahren
-    </Link>
+  href="/octoware-mobile"
+  className="
+    text-slate-600
+    transition-all
+    duration-200
+    hover:translate-x-1
+    hover:text-[#146ab1]
+  "
+>
+  OctoWare®mobile
+</Link>
 
-    <Link
-      href="/schnittstellen"
-      className="
-        text-slate-600
-        transition-colors
-        duration-200
-        hover:text-[#146ab1]
-      "
-    >
-      Schnittstellen
-    </Link>
+<Link
+  href="/octoware-net"
+  className="
+    text-slate-600
+    transition-all
+    duration-200
+    hover:translate-x-1
+    hover:text-[#146ab1]
+  "
+>
+  OctoWare®NET
+</Link>
 
-    <Link
-      href="/hosting"
-      className="
-        text-slate-600
-        transition-colors
-        duration-200
-        hover:text-[#146ab1]
-      "
-    >
-      Hosting
-    </Link>
+<Link
+  href="/octoware-tn"
+  className="
+    text-slate-600
+    transition-all
+    duration-200
+    hover:translate-x-1
+    hover:text-[#146ab1]
+  "
+>
+  OctoWare®TN
+</Link>
+
+<Link
+  href="/fachverfahren"
+  className="
+    text-slate-600
+    transition-all
+    duration-200
+    hover:translate-x-1
+    hover:text-[#146ab1]
+  "
+>
+  Fachverfahren
+</Link>
+
+<Link
+  href="/schnittstellen"
+  className="
+    text-slate-600
+    transition-all
+    duration-200
+    hover:translate-x-1
+    hover:text-[#146ab1]
+  "
+>
+  Schnittstellen
+</Link>
+
+<Link
+  href="/hosting"
+  className="
+    text-slate-600
+    transition-all
+    duration-200
+    hover:translate-x-1
+    hover:text-[#146ab1]
+  "
+>
+  Hosting
+</Link>
 
   </div>
 
