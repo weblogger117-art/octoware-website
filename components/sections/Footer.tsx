@@ -25,28 +25,18 @@ export function Footer() {
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 py-4">
 
+  <div className="relative overflow-hidden rounded-[36px] ...">
+
   <div
     className="
-      relative
-      overflow-hidden
-
+      pointer-events-none
+      absolute
+      inset-0
       rounded-[36px]
-
       border
-      border-[#146ab1]/15
-      shadow-[0_18px_60px_rgba(20,106,177,0.10)]
-      ring-1
-      ring-[#146ab1]/10
-
-      bg-white/80
-      backdrop-blur-xl
-
-      shadow-[0_18px_60px_rgba(20,106,177,0.10)]
-
-      px-12
-      py-12
+      border-[#146ab1]/20
     "
-  >
+  />
 
     {/* Inhalt */}
 
