@@ -103,37 +103,15 @@ export function CTA() {
 </Reveal>
 
   </div>
-    
-          {/* Text */}
-
-          <Reveal
-  animation="fadeUp"
-  delay={450}
->
-          <p
-            className="
-              mx-auto
-              mt-8
-              max-w-2xl
-              text-lg
-              leading-8
-              text-slate-600
-            "
-          >
-            Lernen Sie OctoWare®Gesundheit kennen und entdecken,
-            wie moderne Fachverfahren Gesundheitsämter effizienter,
-            digitaler und zukunftssicher machen.
-          </p>
-            </Reveal>
-
+        
     <div
   className="
     mt-16
     grid
     items-center
-    gap-12
+    gap-16
 
-    lg:grid-cols-[0.95fr_1.05fr]
+    lg:grid-cols-[0.9fr_1.1fr]
   "
 >
 
@@ -142,7 +120,16 @@ export function CTA() {
   animation="zoom"
   delay={0}
 >
-  <div className="relative hidden lg:block">
+  <div
+  className="
+    relative
+    hidden
+
+    lg:flex
+    lg:items-center
+    lg:justify-center
+  "
+>
 
     {/* Blauer Glow */}
     <div
