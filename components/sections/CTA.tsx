@@ -176,7 +176,10 @@ export function CTA() {
   </div>
 </Reveal>
 
-      <div className="max-w-xl">
+      <div className="
+        max-w-xl
+        lg:-translate-y-10
+        ">
 
          {/* Text */}
 
