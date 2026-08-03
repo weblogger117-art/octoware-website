@@ -158,9 +158,10 @@ export function Footer() {
       href="/plattform"
       className="
         text-slate-600
-        transition-colors
-        duration-200
-        hover:text-[#146ab1]
+    transition-all
+    duration-200
+    hover:translate-x-1
+    hover:text-[#146ab1]
       "
     >
       Überblick
@@ -205,6 +206,19 @@ export function Footer() {
   OctoWare®TN
 </Link>
 
+    <Link
+  href="/octoreport-tn"
+  className="
+    text-slate-600
+    transition-all
+    duration-200
+    hover:translate-x-1
+    hover:text-[#146ab1]
+  "
+>
+  OctoReport®TN 2.0
+</Link>
+
 <Link
   href="/fachverfahren"
   className="
@@ -229,19 +243,6 @@ export function Footer() {
   "
 >
   Schnittstellen
-</Link>
-
-<Link
-  href="/hosting"
-  className="
-    text-slate-600
-    transition-all
-    duration-200
-    hover:translate-x-1
-    hover:text-[#146ab1]
-  "
->
-  Hosting
 </Link>
 
   </div>
