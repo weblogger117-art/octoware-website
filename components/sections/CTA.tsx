@@ -176,6 +176,28 @@ export function CTA() {
   </div>
 </Reveal>
 
+      <div className="max-w-xl">
+
+         {/* Text */}
+
+          <Reveal
+  animation="fadeUp"
+  delay={450}
+>
+          <p
+            className="
+              mt-8
+              text-lg
+              leading-8
+              text-slate-600
+            "
+          >
+            Lernen Sie OctoWare®Gesundheit kennen und entdecken,
+            wie moderne Fachverfahren Gesundheitsämter effizienter,
+            digitaler und zukunftssicher machen.
+          </p>
+            </Reveal>
+
           {/* Buttons */}
 
           <Reveal
@@ -187,7 +209,7 @@ export function CTA() {
               mt-10
               flex
               flex-wrap
-              justify-center
+              justify-start
               gap-4
             "
           >
@@ -203,6 +225,8 @@ export function CTA() {
             </LinkButton>
           </div>
             </Reveal>
+
+        </div>
 
         </div>
 
