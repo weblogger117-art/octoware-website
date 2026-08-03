@@ -83,16 +83,16 @@ export function Footer() {
   <Image
     src="/images/branding/easy-soft-logo.webp"
     alt="easy-soft GmbH"
-    width={230}
-    height={70}
-    className="mb-8"
+    width={205}
+    height={62}
+    className="mb-6"
   />
 
   <h3
     className="
-      text-[1.55rem]
+      text-[1.35rem]
       font-semibold
-      leading-snug
+      leading-tight
       text-slate-900
     "
   >
@@ -103,8 +103,8 @@ export function Footer() {
   <p
     className="
       mt-7
-      text-[0.96rem]
-      leading-8
+      text-sm
+      leading-7
       text-slate-500
     "
   >
@@ -112,6 +112,29 @@ export function Footer() {
     Softwarelösungen für Gesundheitsämter in
     Deutschland – modular und zukunftssicher.
   </p>
+
+    <div className="mt-8 border-t border-slate-200 pt-5">
+      <p className="text-xs text-slate-400">
+  © {new Date().getFullYear()} easy-soft GmbH
+</p>
+
+<div className="mt-3 flex gap-5 text-xs">
+
+  <Link
+      href="/impressum"
+      className="text-slate-400 transition-colors hover:text-[#146ab1]"
+    >
+      Impressum
+    </Link>
+
+    <Link
+      href="/datenschutz"
+      className="text-slate-400 transition-colors hover:text-[#146ab1]"
+    >
+      Datenschutz
+  </Link>
+
+</div>
 
 </div>
 
