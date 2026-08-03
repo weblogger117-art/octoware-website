@@ -80,11 +80,12 @@ export function Footer() {
     absolute
 
     right-[-260px]
-    bottom-[-120px]
+    bottom-[-10px]
 
     w-[950px]
 
     opacity-[0.09]
+    -z-0
 
     pointer-events-none
     select-none
