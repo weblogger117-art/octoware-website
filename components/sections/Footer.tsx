@@ -84,7 +84,7 @@ export function Footer() {
 
     w-[950px]
 
-    opacity-[10]
+    opacity-[5]
 
     pointer-events-none
     select-none
