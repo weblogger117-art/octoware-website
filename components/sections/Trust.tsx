@@ -561,10 +561,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
   relative
   z-10
   object-contain
-  transition-transform
-  duration-500
-  hover:scale-105
-  hover:-translate-y-2
+  animate-mascot-float
 "
     />
   </div>
