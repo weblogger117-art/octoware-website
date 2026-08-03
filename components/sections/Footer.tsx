@@ -145,12 +145,20 @@ export function Footer() {
       
       <div>
 
+        <div className="group">
+
   <div className="flex items-center gap-2">
 
   <Blocks
-    size={17}
-    className="text-[#146ab1]"
-  />
+      size={17}
+      className="
+        text-[#146ab1]
+        transition-all
+        duration-300
+        group-hover:-translate-y-0.5
+        group-hover:scale-110
+      "
+    />
 
   <h4
     className="
@@ -265,11 +273,18 @@ export function Footer() {
 
 <div>
 
+  <div className="group">
+
   <div className="flex items-center gap-2">
 
   <Building2
     size={17}
-    className="text-[#146ab1]"
+    className="text-[#146ab1]
+    transition-all
+        duration-300
+        group-hover:-translate-y-0.5
+        group-hover:scale-110
+    "
   />
 
   <h4
@@ -346,11 +361,18 @@ export function Footer() {
 
       <div>
 
+        <div className="group">
+
   <div className="flex items-center gap-2">
 
   <Headset
     size={17}
-    className="text-[#146ab1]"
+    className="text-[#146ab1]
+        transition-all
+        duration-300
+        group-hover:-translate-y-0.5
+        group-hover:scale-110
+      "
   />
 
   <h4
