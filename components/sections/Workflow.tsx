@@ -155,6 +155,27 @@ useEffect(() => {
 `}
     />
 
+    <div
+  className="
+    absolute
+    top-1/2
+    left-0
+
+    h-5
+    w-5
+
+    -translate-y-1/2
+
+    rounded-full
+
+    bg-[#146ab1]
+
+    shadow-[0_0_18px_rgba(20,106,177,0.7)]
+
+    animate-[workflowDot_8s_linear_infinite]
+  "
+/>
+
   </div>
 
 </div>
@@ -178,7 +199,7 @@ useEffect(() => {
   }
 `}
   style={{
-  animationDelay: `${index * 0.6}s`,
+  animationDelay: `${index * 1.6}s`,
 }}
 >
           <div
@@ -201,7 +222,7 @@ useEffect(() => {
               group-hover:-translate-y-2
               group-hover:bg-[#146ab1]
             animate-[pulseIn_.45s_ease-out_forwards]
-            animate-[workflowPulse_6s_ease-in-out_infinite]
+            animate-[workflowPulse_8s_linear_infinite]
             "
           >
             <Icon
@@ -212,7 +233,7 @@ useEffect(() => {
                 transition-colors
                 duration-300
                 group-hover:text-white
-                animate-[workflowIcon_6s_ease-in-out_infinite]
+                animate-[workflowIcon_8s_linear_infinite]
               "
             />
           </div>
