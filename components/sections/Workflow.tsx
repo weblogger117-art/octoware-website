@@ -1,5 +1,6 @@
 "use client";
 
+import { cn } from "@/lib/utils";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import {
@@ -67,11 +68,21 @@ useEffect(() => {
   useEffect(() => {
   if (!isVisible) return;
 
-  const interval = setInterval(() => {
-    setActiveStep((prev) => (prev + 1) % steps.length);
-  }, 1100);
+  let interval: ReturnType<typeof setInterval>;
 
-  return () => clearInterval(interval);
+  const start = setTimeout(() => {
+    interval = setInterval(() => {
+      setActiveStep((prev) => (prev + 1) % steps.length);
+    }, 1100);
+  }, 1500);
+
+  return () => {
+    clearTimeout(start);
+    clearInterval(interval);
+  };
+}, [isVisible]);
+
+  return () => clearTimeout(start);
 }, [isVisible]);
   
   return (
@@ -189,7 +200,11 @@ useEffect(() => {
       : "opacity-0"
   }
 `}
+          style={{
+  animationDelay: `${index * 0.15}s`,
+}}
 >
+          
           <div
             className={cn(
   `
@@ -241,7 +256,14 @@ useEffect(() => {
 />
           </div>
 
-          <h3 className="mt-8 text-xl font-semibold text-slate-900">
+          <h3
+  className={cn(
+    "mt-8 text-xl font-semibold transition-colors duration-500",
+    activeStep === index
+      ? "text-[#146ab1]"
+      : "text-slate-900"
+  )}
+>
             {step.title}
           </h3>
 
