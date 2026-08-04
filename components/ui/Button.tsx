@@ -68,17 +68,68 @@ export function LinkButton({
 }: LinkButtonProps) {
   return (
     <Link
-      href={href}
-      className={cn(
-        "group relative overflow-hidden inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold shadow-md transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-xl active:translate-y-0 active:scale-[0.98]",
-        variant === "primary" &&
-          "bg-[var(--color-primary)] text-white hover:opacity-90",
-        variant === "secondary" &&
-          "border border-[var(--color-primary)] bg-white text-[var(--color-primary)] hover:bg-[var(--color-primary-light)]",
-        className
-      )}
-    >
-      {children}
-    </Link>
+  href={href}
+  className={cn(
+    "group relative overflow-hidden inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold shadow-md transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-xl active:translate-y-0 active:scale-[0.98]",
+    variant === "primary" &&
+      "bg-[var(--color-primary)] text-white hover:opacity-90",
+    variant === "secondary" &&
+      "border border-[var(--color-primary)] bg-white text-[var(--color-primary)] hover:bg-[var(--color-primary-light)]",
+    className
+  )}
+>
+
+  {/* Lichtschein */}
+  <span
+    aria-hidden
+    className="
+      pointer-events-none
+      absolute
+      inset-0
+      rounded-full
+
+      bg-gradient-to-b
+      from-white/18
+      via-white/6
+      to-transparent
+
+      opacity-70
+      transition-opacity
+      duration-300
+
+      group-hover:opacity-100
+    "
+  />
+
+  <span className="relative z-10">
+    {children}
+  </span>
+
+      <span
+  aria-hidden
+  className="
+    pointer-events-none
+    absolute
+
+    -left-1/2
+    top-0
+
+    h-full
+    w-1/3
+
+    -skew-x-12
+
+    bg-white/30
+
+    blur-md
+
+    transition-transform
+    duration-700
+
+    group-hover:translate-x-[420%]
+  "
+/>
+
+</Link>
   );
 }
