@@ -97,7 +97,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
  if (!isVisible || officeAnimated) return;
 
   const target = 130;
-  const duration = 1800;
+  const duration = 2000;
 
   let animationFrame: number;
   let startTime: number | null = null;
@@ -157,7 +157,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
       setUpdateAnimated(true);
     }, 250);
 
-  }, 2400);
+  }, 4300);
 
   return () => {
     clearTimeout(timeout1);
@@ -181,7 +181,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
       setBrowserSwitching(false);
     }, 250);
 
-  }, 2100);
+  }, 2800);
 
   timer3 = setTimeout(() => {
     setBrowserSwitching(true);
@@ -192,7 +192,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
       setBrowserAnimated(true);
     }, 250);
 
-  }, 2100);
+  }, 3600);
 
   return () => {
     clearTimeout(timer1);
