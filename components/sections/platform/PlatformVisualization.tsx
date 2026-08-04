@@ -6,7 +6,7 @@ const modules = [
   },
   {
     title: "OctoWare®mobile",
-    subtitle: "Mobil",
+    subtitle: "Mobilität",
     angle: 72,
   },
   {
