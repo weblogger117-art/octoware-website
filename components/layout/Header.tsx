@@ -85,8 +85,8 @@ else if (currentScroll > lastScrollY.current + 8) {
         `
   )}
   style={{
-  columnGap: `${40 - scrollProgress * 20}px`,
-  maxWidth: `${1180 - scrollProgress * 650}px`,
+  columnGap: `${40 - scrollProgress * 34}px`,
+  maxWidth: `${1180 - scrollProgress * 760}px`,
   marginInline: "auto",
 }}
 >
@@ -101,7 +101,7 @@ else if (currentScroll > lastScrollY.current + 8) {
     hover:opacity-90
   "
   style={{
-    transform: `scale(${1 - scrollProgress * 0.08})`,
+    transform: `scale(${1 - scrollProgress * 0.12})`,
   }}
 >
             <Image
