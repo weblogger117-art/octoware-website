@@ -20,8 +20,8 @@ export function FeatureCard({
         `
         group
 
-relative
-overflow-hidden
+        relative
+        overflow-hidden
 
         rounded-3xl
         w-full
@@ -39,7 +39,7 @@ py-10
         duration-300
 
         hover:-translate-y-1
-        hover:border-[#146ab1]/30
+        hover:border-[#146ab1]/50
         hover:shadow-[0_30px_70px_rgba(20,106,177,0.14)]
         `,
         className
