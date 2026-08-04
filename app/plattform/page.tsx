@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/Button";
+import Image from "next/image";
 import { SectionGlow } from "@/components/ui";
 
 export default function PlattformPage() {
@@ -7,9 +8,36 @@ export default function PlattformPage() {
 
   <section className="relative overflow-hidden py-32">
 
+    <SectionGlow variant="hero-primary" />
+    <SectionGlow variant="hero-accent" />
+
   <div className="mx-auto max-w-7xl px-6">
 
-    <div className="grid items-center gap-20 lg:grid-cols-2">
+    <Image
+  src="/images/background/network-mesh.webp"
+  alt=""
+  width={1200}
+  height={1200}
+  draggable={false}
+  className="
+    pointer-events-none
+    absolute
+
+    right-[-260px]
+    top-[-140px]
+
+    w-[1200px]
+    max-w-none
+
+    opacity-25
+
+    z-0
+
+    select-none
+  "
+/>
+
+    <div className="relative z-10 grid items-center gap-20 lg:grid-cols-2">
 
       {/* Linke Spalte */}
       
