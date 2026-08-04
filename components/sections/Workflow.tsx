@@ -199,7 +199,7 @@ useEffect(() => {
   }
 `}
   style={{
-  animationDelay: `${index * 1.6}s`,
+  animationDelay: `${-index * 1.6}s`,
 }}
 >
           <div
@@ -222,7 +222,6 @@ useEffect(() => {
               group-hover:-translate-y-2
               group-hover:bg-[#146ab1]
             animate-[pulseIn_.45s_ease-out_forwards]
-            animate-[workflowPulse_8s_linear_infinite]
             "
           >
             <Icon
