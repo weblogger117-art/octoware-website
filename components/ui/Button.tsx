@@ -72,7 +72,7 @@ export function LinkButton({
   className={cn(
     "group relative overflow-hidden inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold shadow-md transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-xl active:translate-y-0 active:scale-[0.98]",
     variant === "primary" &&
-      "bg-[var(--color-primary)] text-white hover:opacity-90",
+"bg-gradient-to-r from-[#146ab1] to-[#1b7cc8] text-white hover:from-[#1873bd] hover:to-[#2490df]"
     variant === "secondary" &&
       "border border-[var(--color-primary)] bg-white text-[var(--color-primary)] hover:bg-[var(--color-primary-light)]",
     className
@@ -101,7 +101,7 @@ export function LinkButton({
     "
   />
 
-  <span className="relative z-10">
+  <span className="relative z-20">
     {children}
   </span>
 
@@ -114,17 +114,20 @@ export function LinkButton({
     -left-1/2
     top-0
 
+    z-10
+
     h-full
-    w-1/3
+    w-1/4
 
     -skew-x-12
 
-    bg-white/30
+    bg-white/60
 
     blur-md
 
     transition-transform
     duration-700
+    ease-out
 
     group-hover:translate-x-[420%]
   "
