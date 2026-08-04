@@ -8,8 +8,6 @@ export default function PlattformPage() {
 
   <section className="relative overflow-hidden py-32">
 
-    <SectionGlow variant="hero-primary" />
-    <SectionGlow variant="hero-accent" />
 
   <div className="mx-auto max-w-7xl px-6">
 
