@@ -212,19 +212,29 @@ useEffect(() => {
       ${
   index < 2
     ? row1Visible
-      ? "animate-module-1"
-      : "opacity-0"
+      ? "translate-x-0 scale-100 opacity-100"
+      : index % 2 === 0
+        ? "-translate-x-20 scale-95 opacity-0"
+        : "translate-x-20 scale-95 opacity-0"
+
     : index < 6
       ? row2Visible
-        ? "animate-module-2"
-        : "opacity-0"
+        ? "translate-x-0 scale-100 opacity-100"
+        : index % 2 === 0
+          ? "-translate-x-20 scale-95 opacity-0"
+          : "translate-x-20 scale-95 opacity-0"
+
       : row3Visible
-        ? "animate-module-3"
-        : "opacity-0"
+        ? "translate-x-0 scale-100 opacity-100"
+        : index % 2 === 0
+          ? "-translate-x-20 scale-95 opacity-0"
+          : "translate-x-20 scale-95 opacity-0"
 }
       ${module.featured ? "p-6 lg:col-span-2" : "px-6 py-5 lg:w-[92%] lg:mx-auto"}
       transition-all
-      duration-300
+      duration-700
+      ease-out
+      will-change-transform
       hover:-translate-y-2
       hover:border-[#146ab1]/50
       hover:shadow-2xl
