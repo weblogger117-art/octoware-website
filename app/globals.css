@@ -253,32 +253,48 @@ body {
 }
 
 @keyframes workflowPulse {
-  0%, 100% {
-    transform: translateY(0) scale(1);
-    background: rgba(255,255,255,.9);
+
+  0%,100%{
+    transform:translateY(0) scale(1);
+    background:rgba(255,255,255,.9);
   }
 
-  10% {
-    transform: translateY(-8px) scale(1.08);
-    background: rgba(20,106,177,.08);
+  5%{
+    transform:translateY(-8px) scale(1.08);
+    background:#146ab1;
   }
 
-  20% {
-    transform: translateY(0) scale(1);
-    background: rgba(255,255,255,.9);
+  10%{
+    transform:translateY(0) scale(1);
+    background:rgba(255,255,255,.9);
   }
+
 }
 
-@keyframes workflowIcon {
+@keyframes workflowIcon{
+
   0%,100%{
     color:#146ab1;
   }
 
-  10%{
+  5%{
     color:white;
   }
 
-  20%{
+  10%{
     color:#146ab1;
   }
+
+}
+
+@keyframes workflowDot{
+
+  0%{
+    transform:translate(-10px,-50%);
+  }
+
+  100%{
+    transform:translate(calc(100vw - 420px),-50%);
+  }
+
 }
