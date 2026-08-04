@@ -2,36 +2,36 @@ const modules = [
   {
     title: "OctoWare®NET",
     subtitle: "Browserbasiert",
-    x: "22%",
-    y: "20%",
+    angle: 0,
   },
   {
     title: "OctoWare®mobile",
     subtitle: "Mobile Apps",
-    x: "12%",
-    y: "50%",
-  },
-  {
-    title: "OctoWare®TN",
-    subtitle: "Desktop",
-    x: "22%",
-    y: "80%",
-  },
-  {
-    title: "OctoReport®TN 2.0",
-    subtitle: "Reporting",
-    x: "72%",
-    y: "80%",
+    angle: 72,
   },
   {
     title: "Schnittstellen",
     subtitle: "Vernetzung",
-    x: "82%",
-    y: "35%",
+    angle: 144,
+  },
+  {
+    title: "OctoReport®TN 2.0",
+    subtitle: "Reporting",
+    angle: 216,
+  },
+  {
+    title: "OctoWare®TN",
+    subtitle: "Desktop",
+    angle: 288,
   },
 ];
 
 export default function PlatformVisualization() {
+
+const radius = 180;
+const centerX = 56;
+const centerY = 50;
+  
   return (
     <div className="relative h-[560px] w-full">
 
