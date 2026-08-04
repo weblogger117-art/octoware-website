@@ -106,7 +106,7 @@ useEffect(() => {
           </Link>
 
          <div
-    className="justify-self-center overflow-hidden"
+    className="justify-self-center overflow-visible"
     style={{
     maxWidth: `${760 - scrollProgress * 760}px`,
     opacity: 1 - scrollProgress,
