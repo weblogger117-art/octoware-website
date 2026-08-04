@@ -7,7 +7,7 @@ export default function PlatformHero() {
       <div className="mx-auto max-w-7xl px-6">
 
         <Image
-  src="/images/background/lines-mesh-es.webp"
+  src="/images/background/network-mesh.webp"
   alt=""
   width={1200}
   height={1200}
@@ -140,9 +140,74 @@ export default function PlatformHero() {
 
           {/* Rechte Spalte */}
 
-          <div>
+<div className="relative flex items-center justify-center">
 
-          </div>
+  <div
+    className="
+      relative
+
+      h-[560px]
+      w-full
+
+      rounded-[36px]
+
+      border
+      border-slate-200/80
+
+      bg-white/80
+
+      shadow-[0_30px_80px_rgba(15,23,42,0.08)]
+
+      backdrop-blur-xl
+    "
+  >
+
+<div
+  className="
+    absolute
+
+    left-1/2
+    top-1/2
+
+    -translate-x-1/2
+    -translate-y-1/2
+  "
+>
+
+  <div
+    className="
+      rounded-2xl
+
+      bg-gradient-to-r
+      from-[#146ab1]
+      to-[#1d80cb]
+
+      px-8
+      py-5
+
+      text-center
+
+      text-white
+
+      shadow-[0_20px_60px_rgba(20,106,177,.35)]
+    "
+  >
+
+    <p className="text-xs uppercase tracking-[0.3em] text-white/70">
+      Plattform
+    </p>
+
+    <h3 className="mt-2 text-2xl font-bold">
+      OctoWare®Gesundheit
+    </h3>
+
+  </div>
+
+</div>
+    
+  </div>
+
+</div>
 
         </div>
 
