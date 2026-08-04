@@ -210,6 +210,8 @@ useEffect(() => {
   animationDelay: `${index * 0.15}s`,
 }}
 >
+
+          {/* Kreis */}
           
           <div
             className={cn(
@@ -245,6 +247,35 @@ useEffect(() => {
 "-translate-y-2 scale-105 shadow-2xl shadow-[#146ab1]/15"
 )}
           >
+
+            {/* Grüner Glow */}
+            
+            <div
+  className={cn(
+    `
+      absolute
+      inset-0
+      rounded-full
+
+      bg-gradient-to-br
+      from-[#adce00]/35
+      to-[#146ab1]/15
+
+      blur-2xl
+
+      transition-all
+      duration-700
+
+      opacity-0
+      scale-75
+    `,
+    activeStep === index &&
+      "opacity-100 scale-125"
+  )}
+/>
+
+            {/* Icons */}
+            
             <Icon
   className={cn(
     `
