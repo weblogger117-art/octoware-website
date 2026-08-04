@@ -93,13 +93,22 @@ export default function PlattformPage() {
 >
 
 </div>
+  <div>
 
         {/* Rechte Spalte */}
 
-        <div>
+<div
+  className="
+    h-[520px]
+    rounded-3xl
+    border
+    border-slate-200
+    bg-white/70
+    backdrop-blur
+    shadow-xl
+  "
+>
 
-
-          </div>
 </div>
 
   </div>
