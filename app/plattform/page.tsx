@@ -10,7 +10,7 @@ export default function PlattformPage() {
 
       <div>
 
-        {" Badge "}
+        {/* Badge */}
 <span
   className="
     inline-flex
@@ -37,7 +37,7 @@ export default function PlattformPage() {
   Plattform
 </span>
 
-{" Headline "}
+{/* Headline */}
         
      <h1
   className="
@@ -58,7 +58,7 @@ export default function PlattformPage() {
   Eine gemeinsame Zukunft.
 </h1>
 
-{" Beschreibung "}
+{/* Beschreibung */}
         
         <p
   className="
@@ -78,7 +78,7 @@ export default function PlattformPage() {
   für den Öffentlichen Gesundheitsdienst.
 </p>
 
-{" Buttons "}
+{/* Buttons */}
         
         <div
   className="
