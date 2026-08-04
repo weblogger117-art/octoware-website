@@ -42,6 +42,7 @@ const steps = [
 export default function Workflow() {
   const sectionRef = useRef<HTMLElement>(null);
 const [isVisible, setIsVisible] = useState(false);
+const [activeStep, setActiveStep] = useState(0);
 
 useEffect(() => {
   const observer = new IntersectionObserver(
@@ -62,6 +63,17 @@ useEffect(() => {
 
   return () => observer.disconnect();
 }, []);
+
+  useEffect(() => {
+  if (!isVisible) return;
+
+  const interval = setInterval(() => {
+    setActiveStep((prev) => (prev + 1) % steps.length);
+  }, 1100);
+
+  return () => clearInterval(interval);
+}, [isVisible]);
+  
   return (
     <section
   ref={sectionRef}
@@ -155,27 +167,6 @@ useEffect(() => {
 `}
     />
 
-    <div
-  className="
-    absolute
-    top-1/2
-    left-0
-
-    h-5
-    w-5
-
-    -translate-y-1/2
-
-    rounded-full
-
-    bg-[#146ab1]
-
-    shadow-[0_0_18px_rgba(20,106,177,0.7)]
-
-    animate-[workflowDot_8s_linear_infinite]
-  "
-/>
-
   </div>
 
 </div>
@@ -198,43 +189,56 @@ useEffect(() => {
       : "opacity-0"
   }
 `}
-  style={{
-  animationDelay: `${-index * 1.6}s`,
-}}
 >
           <div
-            className="
-              relative
-              mx-auto
-              flex
-              h-20
-              w-20
-              items-center
-              justify-center
-              rounded-full
-              border
-              border-white/60
-              bg-white/90
-              shadow-lg
-              backdrop-blur
-              transition-all
-              duration-300
-              group-hover:-translate-y-2
-              group-hover:bg-[#146ab1]
-            animate-[pulseIn_.45s_ease-out_forwards]
-            "
+            className={cn(
+  `
+    relative
+    mx-auto
+    flex
+    h-20
+    w-20
+    items-center
+    justify-center
+    rounded-full
+
+    border
+    border-white/60
+
+    bg-white/90
+
+    shadow-lg
+    backdrop-blur
+
+    transition-all
+    duration-500
+
+    group-hover:-translate-y-2
+    group-hover:bg-[#146ab1]
+    group-hover:border-[#146ab1]
+    group-hover:shadow-xl
+    group-hover:shadow-[#146ab1]/20
+  `,
+  activeStep === index &&
+    "-translate-y-2 bg-[#146ab1] border-[#146ab1] shadow-xl shadow-[#146ab1]/20"
+)}
           >
             <Icon
-              className="
-                h-9
-                w-9
-                text-[#146ab1]
-                transition-colors
-                duration-300
-                group-hover:text-white
-                animate-[workflowIcon_8s_linear_infinite]
-              "
-            />
+  className={cn(
+    `
+      h-9
+      w-9
+
+      text-[#146ab1]
+
+      transition-all
+      duration-500
+
+      group-hover:text-white
+    `,
+    activeStep === index && "text-white scale-110"
+  )}
+/>
           </div>
 
           <h3 className="mt-8 text-xl font-semibold text-slate-900">
