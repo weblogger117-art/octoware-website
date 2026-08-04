@@ -93,7 +93,7 @@ export default function PlattformPage() {
 >
 
 </div>
-  <div>
+  </div>
 
         {/* Rechte Spalte */}
 
