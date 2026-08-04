@@ -40,8 +40,9 @@ export function StatCard({
         transition-all
         duration-300
 
-        hover:-translate-y-2
-        hover:shadow-[0_18px_45px_rgba(20,106,177,0.14)]
+        hover:-translate-y-1
+        hover:border-[#146ab1]/50
+        hover:shadow-[0_30px_70px_rgba(20,106,177,0.14)]
         `,
         className
       )}
