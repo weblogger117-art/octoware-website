@@ -68,21 +68,27 @@ useEffect(() => {
   useEffect(() => {
   if (!isVisible) return;
 
-  let interval: ReturnType<typeof setInterval>;
+  let timeout: ReturnType<typeof setTimeout>;
 
-  const start = setTimeout(() => {
-    interval = setInterval(() => {
-      setActiveStep((prev) => (prev + 1) % steps.length);
-    }, 1100);
-  }, 1500);
-
-  return () => {
-    clearTimeout(start);
-
-    if (interval) {
-      clearInterval(interval);
+  const runWave = () => {
+    for (let i = 0; i < steps.length; i++) {
+      setTimeout(() => {
+        setActiveStep(i);
+      }, i * 500);
     }
+
+    // Welle beenden
+    setTimeout(() => {
+      setActiveStep(-1);
+    }, steps.length * 500);
+
+    // Nach 3 Sekunden Pause erneut starten
+    timeout = setTimeout(runWave, steps.length * 500 + 3000);
   };
+
+  runWave();
+
+  return () => clearTimeout(timeout);
 }, [isVisible]);
   
   return (
@@ -226,7 +232,8 @@ useEffect(() => {
     backdrop-blur
 
     transition-all
-    duration-500
+    duration-700
+    ease-[cubic-bezier(.22,1,.36,1)]
 
     group-hover:-translate-y-2
     group-hover:bg-[#146ab1]
@@ -235,7 +242,7 @@ useEffect(() => {
     group-hover:shadow-[#146ab1]/20
   `,
   activeStep === index &&
-    "-translate-y-2 bg-[#146ab1] border-[#146ab1] shadow-xl shadow-[#146ab1]/20"
+"-translate-y-2 scale-105 shadow-2xl shadow-[#146ab1]/15"
 )}
           >
             <Icon
@@ -247,11 +254,12 @@ useEffect(() => {
       text-[#146ab1]
 
       transition-all
-      duration-500
+      duration-700
+      ease-[cubic-bezier(.22,1,.36,1)]
 
       group-hover:text-white
     `,
-    activeStep === index && "text-white scale-110"
+    activeStep === index && "scale-105"
   )}
 />
           </div>
