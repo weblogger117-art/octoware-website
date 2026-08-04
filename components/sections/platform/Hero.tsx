@@ -30,7 +30,7 @@ export default function PlatformHero() {
   "
 />
 
-        <div className="relative z-10 grid items-center gap-20 lg:grid-cols-2">
+        <div className="relative z-10 grid items-center gap-28 lg:grid-cols-2">
 
           {/* Linke Spalte */}
 
@@ -143,24 +143,13 @@ export default function PlatformHero() {
 <div className="relative flex items-center justify-center">
 
   <div
-    className="
-      relative
+  className="
+    relative
 
-      h-[560px]
-      w-full
-
-      rounded-[36px]
-
-      border
-      border-slate-200/80
-
-      bg-white/80
-
-      shadow-[0_30px_80px_rgba(15,23,42,0.08)]
-
-      backdrop-blur-xl
-    "
-  >
+    h-[560px]
+    w-full
+  "
+>
     
 <div
   className="
@@ -182,8 +171,8 @@ export default function PlatformHero() {
       from-[#146ab1]
       to-[#1d80cb]
 
-      px-8
-      py-5
+      px-7
+      py-4
 
       text-center
 
@@ -197,7 +186,7 @@ export default function PlatformHero() {
       Plattform
     </p>
 
-    <h3 className="mt-2 text-2xl font-bold">
+    <h3 className="mt-2 text-xl font-bold">
       OctoWare®Gesundheit
     </h3>
 
@@ -207,8 +196,8 @@ export default function PlatformHero() {
   className="
     absolute
 
-    left-10
-    top-10
+    left-0
+    top-12
 
     rounded-2xl
 
@@ -217,8 +206,8 @@ export default function PlatformHero() {
 
     bg-white
 
-    px-6
-    py-4
+    px-5
+    py-3
 
     shadow-lg
 
@@ -234,7 +223,7 @@ export default function PlatformHero() {
     Modul
   </p>
 
-  <h4 className="mt-2 text-lg font-semibold text-slate-900">
+  <h4 className="mt-2 text-base font-semibold text-slate-900">
     OctoWare®NET
   </h4>
 
