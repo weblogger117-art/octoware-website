@@ -161,7 +161,7 @@ export default function PlatformHero() {
       backdrop-blur-xl
     "
   >
-
+    
 <div
   className="
     absolute
@@ -201,6 +201,45 @@ export default function PlatformHero() {
       OctoWare®Gesundheit
     </h3>
 
+{/* OctoWare®NET */}
+
+<div
+  className="
+    absolute
+
+    left-10
+    top-10
+
+    rounded-2xl
+
+    border
+    border-slate-200
+
+    bg-white
+
+    px-6
+    py-4
+
+    shadow-lg
+
+    transition-all
+    duration-300
+
+    hover:-translate-y-1
+    hover:shadow-xl
+  "
+>
+
+  <p className="text-xs uppercase tracking-[0.25em] text-[#146ab1]">
+    Modul
+  </p>
+
+  <h4 className="mt-2 text-lg font-semibold text-slate-900">
+    OctoWare®NET
+  </h4>
+
+</div>
+    
   </div>
 
 </div>
