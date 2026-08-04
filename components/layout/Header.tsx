@@ -46,11 +46,12 @@ items-center
 gap-10
 
 rounded-2xl
+ring-1
+ring-[#146ab1]/35
 
 px-10
 
 border
-border-[#146ab1]/35
 
 transition-all
 duration-500
@@ -62,7 +63,7 @@ ease-[cubic-bezier(.22,1,.36,1)]
       border-slate-200/80
       bg-white/90
       backdrop-blur-md
-      shadow-[0_16px_50px_rgba(15,23,42,0.10)]
+      shadow-[0_0_0_1px_rgba(20,106,177,0.15)]
     `
   : `
       h-[72px]
