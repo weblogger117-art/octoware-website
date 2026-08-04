@@ -78,11 +78,11 @@ useEffect(() => {
 
   return () => {
     clearTimeout(start);
-    clearInterval(interval);
-  };
-}, [isVisible]);
 
-  return () => clearTimeout(start);
+    if (interval) {
+      clearInterval(interval);
+    }
+  };
 }, [isVisible]);
   
   return (
