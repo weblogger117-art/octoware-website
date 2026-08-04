@@ -251,3 +251,34 @@ body {
 .animate-mesh-float {
   animation: meshFloat 18s ease-in-out infinite;
 }
+
+@keyframes workflowPulse {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    background: rgba(255,255,255,.9);
+  }
+
+  10% {
+    transform: translateY(-8px) scale(1.08);
+    background: rgba(20,106,177,.08);
+  }
+
+  20% {
+    transform: translateY(0) scale(1);
+    background: rgba(255,255,255,.9);
+  }
+}
+
+@keyframes workflowIcon {
+  0%,100%{
+    color:#146ab1;
+  }
+
+  10%{
+    color:white;
+  }
+
+  20%{
+    color:#146ab1;
+  }
+}
