@@ -286,15 +286,3 @@ body {
   }
 
 }
-
-@keyframes workflowDot{
-
-  0%{
-    transform:translate(-10px,-50%);
-  }
-
-  100%{
-    transform:translate(calc(100vw - 420px),-50%);
-  }
-
-}
