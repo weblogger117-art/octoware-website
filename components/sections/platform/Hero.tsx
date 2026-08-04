@@ -1,3 +1,4 @@
+import PlatformVisualization from "./PlatformVisualization";
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 export default function PlatformHero() {
@@ -140,102 +141,8 @@ export default function PlatformHero() {
 
           {/* Rechte Spalte */}
 
-<div className="relative flex items-center justify-center">
-
-  <div
-  className="
-    relative
-
-    h-[560px]
-    w-full
-  "
->
+<PlatformVisualization />
     
-<div
-  className="
-    absolute
-
-    left-1/2
-    top-1/2
-
-    -translate-x-1/2
-    -translate-y-1/2
-  "
->
-
-  <div
-    className="
-      rounded-2xl
-
-      bg-gradient-to-r
-      from-[#146ab1]
-      to-[#1d80cb]
-
-      px-7
-      py-4
-
-      text-center
-
-      text-white
-
-      shadow-[0_20px_60px_rgba(20,106,177,.35)]
-    "
-  >
-
-    <p className="text-xs uppercase tracking-[0.3em] text-white/70">
-      Plattform
-    </p>
-
-    <h3 className="mt-2 text-xl font-bold">
-      OctoWare®Gesundheit
-    </h3>
-
-{/* OctoWare®NET */}
-
-<div
-  className="
-    absolute
-
-    left-0
-    top-12
-
-    rounded-2xl
-
-    border
-    border-slate-200
-
-    bg-white
-
-    px-5
-    py-3
-
-    shadow-lg
-
-    transition-all
-    duration-300
-
-    hover:-translate-y-1
-    hover:shadow-xl
-  "
->
-
-  <p className="text-xs uppercase tracking-[0.25em] text-[#146ab1]">
-    Modul
-  </p>
-
-  <h4 className="mt-2 text-base font-semibold text-slate-900">
-    OctoWare®NET
-  </h4>
-
-</div>
-    
-  </div>
-
-</div>
-    
-  </div>
-
-</div>
 
         </div>
 
