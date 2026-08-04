@@ -32,7 +32,7 @@ const classes =
     rounded-full
 
     border
-    border-[#98bc00]
+    border-[#146ab1]/35
 
     bg-gradient-to-b
     from-[#b8db2d]
