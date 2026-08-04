@@ -39,7 +39,8 @@ useEffect(() => {
        <div
   className={cn(
     `
-      flex
+      grid
+      grid-cols-[auto_1fr_auto]
       items-center
 
       rounded-2xl
@@ -70,10 +71,10 @@ useEffect(() => {
         `
   )}
   style={{
-    gap: `${40 - scrollProgress * 20}px`,
-    maxWidth: `${1180 - scrollProgress * 420}px`,
-    marginInline: "auto",
-  }}
+  columnGap: `${40 - scrollProgress * 20}px`,
+  maxWidth: `${1180 - scrollProgress * 650}px`,
+  marginInline: "auto",
+}}
 >
           <Link
   href="/"
@@ -117,6 +118,7 @@ useEffect(() => {
 </div>
 
          <div
+  className="justify-self-end"         
   style={{
     transform: `scale(${1 - scrollProgress * 0.04})`,
   }}
