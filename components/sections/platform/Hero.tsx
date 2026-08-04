@@ -34,9 +34,109 @@ export default function PlatformHero() {
 
           {/* Linke Spalte */}
 
-          <div>
+<div>
 
-          </div>
+  {/* Status */}
+  <div
+    className="
+      inline-flex
+      items-center
+      gap-3
+
+      rounded-full
+
+      border
+      border-[#146ab1]/20
+
+      bg-[#146ab1]/5
+
+      px-5
+      py-2
+    "
+  >
+    <span className="h-2 w-2 rounded-full bg-[#adce00]" />
+
+    <span className="text-xs font-semibold uppercase tracking-[0.22em] text-[#146ab1]">
+      Plattform
+    </span>
+
+    <span className="text-slate-300">•</span>
+
+    <span className="text-sm text-slate-600">
+      Browserbasiert
+    </span>
+
+    <span className="text-slate-300">•</span>
+
+    <span className="text-sm text-slate-600">
+      Modular
+    </span>
+
+  </div>
+
+  {/* Headline */}
+
+  <h1
+    className="
+      mt-8
+
+      text-5xl
+      font-bold
+      tracking-tight
+      text-slate-900
+
+      md:text-6xl
+    "
+  >
+    Eine Plattform.
+    <br />
+    Alle Fachverfahren.
+    <br />
+    Eine gemeinsame Zukunft.
+  </h1>
+
+  {/* Beschreibung */}
+
+  <p
+    className="
+      mt-8
+
+      max-w-xl
+
+      text-lg
+      leading-8
+
+      text-slate-600
+    "
+  >
+    OctoWare®Gesundheit vereint moderne Fachverfahren,
+    mobile Anwendungen und leistungsstarke Schnittstellen
+    auf einer gemeinsamen Plattform – speziell entwickelt
+    für den Öffentlichen Gesundheitsdienst.
+  </p>
+
+  {/* Buttons */}
+
+  <div
+    className="
+      mt-10
+      flex
+      flex-wrap
+      gap-4
+    "
+  >
+
+    <Button variant="primary">
+      Plattform entdecken
+    </Button>
+
+    <Button variant="secondary">
+      Unsere Lösungen
+    </Button>
+
+  </div>
+
+</div>
 
           {/* Rechte Spalte */}
 
