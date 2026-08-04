@@ -96,7 +96,7 @@ export function Button({
 <span className="relative z-20">
   {children}
 </span>
-      {children}
+      
     </button>
   );
 }
@@ -119,42 +119,10 @@ export function LinkButton({
 >
 
   <ButtonEffects />
-
-<span className="relative z-20">
-  {children}
-</span>
-
   <span className="relative z-20">
     {children}
   </span>
 
-      <span
-  aria-hidden
-  className="
-    pointer-events-none
-    absolute
-
-    -left-1/2
-    top-0
-
-    z-10
-
-    h-full
-    w-1/4
-
-    -skew-x-12
-
-    bg-white/60
-
-    blur-md
-
-    transition-transform
-    duration-700
-    ease-out
-
-    group-hover:translate-x-[420%]
-  "
-/>
 
 </Link>
   );
