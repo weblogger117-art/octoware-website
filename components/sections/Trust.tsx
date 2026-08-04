@@ -263,6 +263,8 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
             
             <div className="relative z-10 grid gap-8 md:grid-cols-2 min-w-0">
 
+{/* Karte 1 35+ */}
+              
   <div
   className={cn(
     "h-full transition-all duration-700",
@@ -277,7 +279,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
     <div
   className="
     h-full
-      rounded-3xl
+    rounded-3xl
     border
     border-slate-200
     bg-white
@@ -292,7 +294,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
     duration-300
 
     hover:-translate-y-2
-    hover:border-[#146ab1]/30
+    hover:border-[#146ab1]
     hover:bg-white
     hover:shadow-xl
     hover:shadow-[#146ab1]/15
@@ -302,8 +304,8 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
   className={cn(
     "text-6xl font-bold transition-all duration-300",
     showYears
-  ? "text-[#146ab1]"
-  : "text-[#adce00]",
+  ? "text-[#adce00]"
+  : "text-[#146ab1]",
     switching
       ? "scale-110 opacity-0"
       : "scale-100 opacity-100"
@@ -321,7 +323,10 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
     </p>
       </div>
   </div>
- <div
+
+              {/* Karte 2 130 */}
+              
+              <div
   className={cn(
     "h-full transition-all duration-700",
     isVisible
@@ -335,7 +340,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
    <div
   className="
     h-full
-     rounded-3xl
+    rounded-3xl
     border
     border-slate-200
     bg-white
@@ -345,7 +350,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
     transition-all
     duration-300
     hover:-translate-y-2
-    hover:border-[#146ab1]/30
+    hover:border-[#146ab1]
     hover:bg-white
     hover:shadow-xl
     hover:shadow-[#146ab1]/15
@@ -355,8 +360,8 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
   className={cn(
   "text-6xl font-bold transition-all duration-300",
   showOffices
-    ? "text-[#146ab1]"
-    : "text-[#adce00]",
+    ? "text-[#adce00]"
+    : "text-[#146ab1]",
   switchingOffices
     ? "scale-110 opacity-0"
     : "scale-100 opacity-100"
@@ -375,6 +380,8 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
   </div>
      </div>
 
+{/* Karte 3 130 */}
+              
   <div
   className={cn(
     "h-full transition-all duration-700",
@@ -389,7 +396,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
     <div
   className="
     h-full
-      rounded-3xl
+    rounded-3xl
     border
     border-slate-200
     bg-white
@@ -399,7 +406,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
     transition-all
     duration-300
     hover:-translate-y-2
-    hover:border-[#146ab1]/30
+    hover:border-[#146ab1]
     hover:bg-white
     hover:shadow-xl
     hover:shadow-[#146ab1]/15
@@ -418,7 +425,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
     <Monitor
       size={58}
       strokeWidth={2.5}
-      className="text-[#146ab1]"
+      className="text-[#adce00]"
     />
   )}
 
@@ -426,12 +433,12 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
     <Globe
       size={58}
       strokeWidth={2.5}
-      className="text-[#146ab1] animate-pulse"
+      className="text-[#adce00] animate-pulse"
     />
   )}
 
   {browserStep === 2 && (
-    <span className="text-5xl font-bold text-[#adce00]">
+    <span className="text-5xl font-bold text-[#146ab1]">
       ONLINE
     </span>
   )}
@@ -447,6 +454,8 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
 </p>
   </div>
  </div>
+
+{/* Karte 4 Check */}
               
   <div
   className={cn(
@@ -462,7 +471,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
     <div
   className="
     h-full
-      rounded-3xl
+    rounded-3xl
     border
     border-slate-200
     bg-white
@@ -472,7 +481,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
     transition-all
     duration-300
     hover:-translate-y-2
-    hover:border-[#146ab1]/30
+    hover:border-[#146ab1]
     hover:bg-white
     hover:shadow-xl
     hover:shadow-[#146ab1]/15
@@ -491,7 +500,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
       size={58}
       strokeWidth={2.5}
       className={cn(
-  "text-[#146ab1] transition-transform duration-300",
+  "text-[#adce00] transition-transform duration-300",
   showRefresh && "animate-spin"
 )}
     />
@@ -499,7 +508,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
     <Check
       size={58}
       strokeWidth={3}
-      className="text-[#adce00]"
+      className="text-[#146ab1]"
     />
   )}
 </div>
@@ -515,6 +524,8 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
               </div>
 
                </div>
+
+
             
               <div className="hidden lg:flex items-center justify-center">
 
