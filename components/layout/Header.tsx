@@ -106,11 +106,11 @@ useEffect(() => {
           </Link>
 
          <div
-  className="overflow-hidden transition-all duration-300"
-  style={{
-    width: `${520 * (1 - scrollProgress)}px`,
+    className="justify-self-center overflow-hidden"
+    style={{
+    maxWidth: `${760 - scrollProgress * 760}px`,
     opacity: 1 - scrollProgress,
-    transform: `translateY(${-10 * scrollProgress}px)`,
+    transform: `translateY(${-10 * scrollProgress}px) scale(${1 - scrollProgress * 0.05})`,
     pointerEvents: scrollProgress > 0.95 ? "none" : "auto",
   }}
 >
