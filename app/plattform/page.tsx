@@ -8,6 +8,8 @@ export default function PlattformPage() {
 
     <div className="grid items-center gap-20 lg:grid-cols-2">
 
+      {/* Linke Spalte */}
+      
       <div>
 
         {/* Badge */}
@@ -91,7 +93,13 @@ export default function PlattformPage() {
 >
 
 </div>
-        
+
+        {/* Rechte Spalte */}
+
+        <div>
+
+
+          </div>
 </div>
 
   </div>
