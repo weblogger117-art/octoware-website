@@ -28,9 +28,13 @@ const modules = [
 
 export default function PlatformVisualization() {
 
-const radius = 180;
+const radiusX = 220;
+const radiusY = 165;
+
 const centerX = 56;
 const centerY = 50;
+
+const rotation = 0;
   
   return (
     <div className="relative h-[560px] w-full">
@@ -46,6 +50,63 @@ const centerY = 50;
     -translate-y-1/2
   "
 >
+
+  {modules.map((module) => {
+
+  const angle = ((module.angle + rotation) * Math.PI) / 180;
+
+  const x = Math.cos(angle) * radiusX;
+  const y = Math.sin(angle) * radiusY;
+
+  return (
+
+    <div
+      key={module.title}
+      className="
+        absolute
+
+        w-44
+
+        -translate-x-1/2
+        -translate-y-1/2
+
+        rounded-2xl
+
+        border
+        border-slate-200/80
+
+        bg-white/90
+
+        p-5
+
+        shadow-lg
+        backdrop-blur
+
+        transition-all
+        duration-300
+
+        hover:-translate-y-[55%]
+        hover:shadow-2xl
+      "
+      style={{
+        left: `calc(${centerX}% + ${x}px)`,
+        top: `calc(${centerY}% + ${y}px)`,
+      }}
+    >
+
+      <p className="text-xs uppercase tracking-[0.25em] text-[#146ab1]">
+        {module.subtitle}
+      </p>
+
+      <h4 className="mt-2 text-base font-semibold text-slate-900">
+        {module.title}
+      </h4>
+
+    </div>
+
+  );
+
+})}
 
   <div
     className="
