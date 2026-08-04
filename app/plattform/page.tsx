@@ -1,3 +1,6 @@
+import { Button } from "@/components/ui/Button";
+import { SectionGlow } from "@/components/ui";
+
 export default function PlattformPage() {
   return (
     <main>
@@ -112,6 +115,7 @@ export default function PlattformPage() {
 </div>
 
   </div>
+    </div>
 
 </section>
 
