@@ -50,6 +50,7 @@ rounded-2xl
 px-10
 
 border
+border-[#146ab1]/35
 
 transition-all
 duration-500
