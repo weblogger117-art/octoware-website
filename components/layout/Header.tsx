@@ -1,6 +1,6 @@
 "use client";
 import { NavItem } from "@/components/layout/NavItem";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,16 +10,30 @@ import { cn } from "@/lib/utils";
 
 export function Header() {
   const [scrollProgress, setScrollProgress] = useState(0);
+  const lastScrollY = useRef(0);
   
 useEffect(() => {
   const handleScroll = () => {
-    const progress = Math.min(window.scrollY / 120, 1);
-    setScrollProgress(progress);
+    const currentScroll = window.scrollY;
+
+    // Scrollt nach oben (mindestens 5 px)
+if (currentScroll < lastScrollY.current - 8) {
+  setScrollProgress(0);
+}
+
+// Scrollt nach unten (mindestens 5 px)
+else if (currentScroll > lastScrollY.current + 8) {
+  setScrollProgress(Math.min(currentScroll / 120, 1));
+}
+
+    lastScrollY.current = currentScroll;
   };
 
   handleScroll();
 
-  window.addEventListener("scroll", handleScroll);
+  window.addEventListener("scroll", handleScroll, {
+    passive: true,
+  });
 
   return () => window.removeEventListener("scroll", handleScroll);
 }, []);
