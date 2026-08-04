@@ -514,7 +514,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
 </div>
 
     <p className="mt-6 text-base font-semibold text-slate-900">
-      Kontinuierliche Weiterentwicklung
+      Fortschritt
     </p>
 
     <p className="mt-2 text-sm leading-6 text-slate-600">
