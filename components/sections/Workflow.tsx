@@ -212,6 +212,7 @@ useEffect(() => {
                 transition-colors
                 duration-300
                 group-hover:text-white
+                animate-[workflowIcon_6s_ease-in-out_infinite]
               "
             />
           </div>
