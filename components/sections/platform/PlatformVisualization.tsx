@@ -1,12 +1,12 @@
 const modules = [
   {
     title: "OctoWare®NET",
-    subtitle: "Browserbasiert",
+    subtitle: "Web",
     angle: 0,
   },
   {
     title: "OctoWare®mobile",
-    subtitle: "Mobile Apps",
+    subtitle: "Mobil",
     angle: 72,
   },
   {
