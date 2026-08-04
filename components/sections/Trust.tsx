@@ -56,13 +56,10 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
       startTime = timestamp;
     }
 
-    const rawProgress = Math.min(
-  (timestamp - startTime) / duration,
-  1
-);
-
-const progress =
-  1 - Math.pow(1 - rawProgress, 3);
+    const progress = Math.min(
+      (timestamp - startTime) / duration,
+      1
+    );
 
     const currentYear = Math.round(
       startYear + (endYear - startYear) * progress
@@ -100,7 +97,7 @@ const progress =
  if (!isVisible || officeAnimated) return;
 
   const target = 130;
-  const duration = 2000;
+  const duration = 1800;
 
   let animationFrame: number;
   let startTime: number | null = null;
@@ -111,13 +108,10 @@ const progress =
       startTime = timestamp;
     }
 
-    const rawProgress = Math.min(
-  (timestamp - startTime) / duration,
-  1
-);
-
-const progress =
-  1 - Math.pow(1 - rawProgress, 3);
+    const progress = Math.min(
+      (timestamp - startTime) / duration,
+      1
+    );
 
     setOffices(
       Math.round(target * progress)
@@ -163,7 +157,7 @@ const progress =
       setUpdateAnimated(true);
     }, 250);
 
-  }, 3900);
+  }, 2400);
 
   return () => {
     clearTimeout(timeout1);
@@ -187,7 +181,7 @@ const progress =
       setBrowserSwitching(false);
     }, 250);
 
-  }, 2700);
+  }, 2100);
 
   timer3 = setTimeout(() => {
     setBrowserSwitching(true);
@@ -198,7 +192,7 @@ const progress =
       setBrowserAnimated(true);
     }, 250);
 
-  }, 3350);
+  }, 2100);
 
   return () => {
     clearTimeout(timer1);
@@ -280,39 +274,36 @@ const progress =
   transitionDelay: "0ms",
 }}
 >
- 
-    {/* Text 35 */}
-    
     <div
   className="
     h-full
-    rounded-3xl
+      rounded-3xl
     border
     border-slate-200
-    bg-white/80
-    backdrop-blur-sm
+    bg-white
 
     p-12
 
     text-center
-    shadow-lg
-    shadow-[#146ab1]/5
+
+    shadow-sm
+
     transition-all
     duration-300
 
     hover:-translate-y-2
-    hover:border-[#146ab1]/50
+    hover:border-[#146ab1]/30
     hover:bg-white
-    hover:shadow-2xl
-    hover:shadow-[#146ab1]/10
+    hover:shadow-xl
+    hover:shadow-[#146ab1]/15
   "
 >
    <div
   className={cn(
     "text-6xl font-bold transition-all duration-300",
     showYears
-  ? "text-[#adce00]"
-  : "text-[#146ab1]",
+  ? "text-[#146ab1]"
+  : "text-[#adce00]",
     switching
       ? "scale-110 opacity-0"
       : "scale-100 opacity-100"
@@ -329,6 +320,7 @@ const progress =
       Spezialisierte Softwareentwicklung für den Öffentlichen Gesundheitsdienst.
     </p>
       </div>
+  </div>
  <div
   className={cn(
     "h-full transition-all duration-700",
@@ -340,36 +332,31 @@ const progress =
     transitionDelay: isVisible ? "180ms" : "0ms",
   }}
 >
-
-  {/* Text 130+ */}
-   
    <div
   className="
     h-full
-    rounded-3xl
+     rounded-3xl
     border
     border-slate-200
-    bg-white/80
-    backdrop-blur-sm
+    bg-white
     p-12
     text-center
-    shadow-lg
-    shadow-[#146ab1]/5
+    shadow-sm
     transition-all
     duration-300
     hover:-translate-y-2
-    hover:border-[#146ab1]/50
+    hover:border-[#146ab1]/30
     hover:bg-white
-    hover:shadow-2xl
-    hover:shadow-[#146ab1]/10
+    hover:shadow-xl
+    hover:shadow-[#146ab1]/15
   "
 >
     <div
   className={cn(
   "text-6xl font-bold transition-all duration-300",
   showOffices
-    ? "text-[#adce00]"
-    : "text-[#146ab1]",
+    ? "text-[#146ab1]"
+    : "text-[#adce00]",
   switchingOffices
     ? "scale-110 opacity-0"
     : "scale-100 opacity-100"
@@ -399,28 +386,23 @@ const progress =
   transitionDelay: isVisible ? "550ms" : "0ms",
 }}
 >
-
-    {/* Online */}
-    
     <div
   className="
     h-full
       rounded-3xl
     border
     border-slate-200
-    bg-white/80
-    backdrop-blur-sm
+    bg-white
     p-12
     text-center
-    shadow-lg
-    shadow-[#146ab1]/5
+    shadow-sm
     transition-all
     duration-300
     hover:-translate-y-2
-    hover:border-[#146ab1]/50
+    hover:border-[#146ab1]/30
     hover:bg-white
-    hover:shadow-2xl
-    hover:shadow-[#146ab1]/10
+    hover:shadow-xl
+    hover:shadow-[#146ab1]/15
   "
 >
 <div
@@ -436,7 +418,7 @@ const progress =
     <Monitor
       size={58}
       strokeWidth={2.5}
-      className="text-[#adce00]"
+      className="text-[#146ab1]"
     />
   )}
 
@@ -449,7 +431,7 @@ const progress =
   )}
 
   {browserStep === 2 && (
-    <span className="text-5xl font-bold text-[#146ab1]">
+    <span className="text-5xl font-bold text-[#adce00]">
       ONLINE
     </span>
   )}
@@ -477,28 +459,23 @@ const progress =
   transitionDelay: isVisible ? "730ms" : "0ms",
 }}
 >
-
-{/* Weitentwicklung */}
-    
     <div
   className="
     h-full
       rounded-3xl
     border
     border-slate-200
-    bg-white/80
-    backdrop-blur-sm
+    bg-white
     p-12
     text-center
-    shadow-lg
-    shadow-[#146ab1]/5
+    shadow-sm
     transition-all
     duration-300
     hover:-translate-y-2
-    hover:border-[#146ab1]/50
+    hover:border-[#146ab1]/30
     hover:bg-white
-    hover:shadow-2xl
-    hover:shadow-[#146ab1]/10
+    hover:shadow-xl
+    hover:shadow-[#146ab1]/15
   "
 >
     <div
@@ -514,7 +491,7 @@ const progress =
       size={58}
       strokeWidth={2.5}
       className={cn(
-  "text-[#adce00] transition-transform duration-300",
+  "text-[#146ab1] transition-transform duration-300",
   showRefresh && "animate-spin"
 )}
     />
@@ -522,7 +499,7 @@ const progress =
     <Check
       size={58}
       strokeWidth={3}
-      className="text-[#146ab1]"
+      className="text-[#adce00]"
     />
   )}
 </div>
@@ -586,7 +563,10 @@ const progress =
   relative
   z-10
   object-contain
-  animate-mascot-float
+  transition-transform
+  duration-500
+  hover:scale-105
+  hover:-translate-y-2
 "
     />
   </div>
