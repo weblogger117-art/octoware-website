@@ -294,7 +294,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
     duration-300
 
     hover:-translate-y-2
-    hover:border-[#146ab1]
+    hover:border-[#146ab1]/50
     hover:bg-white
     hover:shadow-xl
     hover:shadow-[#146ab1]/15
@@ -350,7 +350,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
     transition-all
     duration-300
     hover:-translate-y-2
-    hover:border-[#146ab1]
+    hover:border-[#146ab1]/50
     hover:bg-white
     hover:shadow-xl
     hover:shadow-[#146ab1]/15
@@ -406,7 +406,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
     transition-all
     duration-300
     hover:-translate-y-2
-    hover:border-[#146ab1]
+    hover:border-[#146ab1]/50
     hover:bg-white
     hover:shadow-xl
     hover:shadow-[#146ab1]/15
@@ -481,7 +481,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
     transition-all
     duration-300
     hover:-translate-y-2
-    hover:border-[#146ab1]
+    hover:border-[#146ab1]/50
     hover:bg-white
     hover:shadow-xl
     hover:shadow-[#146ab1]/15
@@ -518,7 +518,7 @@ const [officeAnimated, setOfficeAnimated] = useState(false);
     </p>
 
     <p className="mt-2 text-sm leading-6 text-slate-600">
-      Gesetzliche Änderungen, neue Funktionen und moderne Schnittstellen werden kontinuierlich umgesetzt.
+      Gesetzliche Änderungen, neue Funktionen und moderne Schnittstellen - kontinuierlich umgesetzt.
     </p>
   </div>    
               </div>
