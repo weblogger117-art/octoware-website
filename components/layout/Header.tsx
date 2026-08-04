@@ -104,11 +104,12 @@ useEffect(() => {
 />
           </Link>
 
-          <div
-    className="flex flex-1 justify-center"
-    style={{
+         <div
+  className="overflow-hidden transition-all duration-300"
+  style={{
+    width: `${520 * (1 - scrollProgress)}px`,
     opacity: 1 - scrollProgress,
-    transform: `translateY(${-10 * scrollProgress}px) scale(${1 - scrollProgress * 0.08})`,
+    transform: `translateY(${-10 * scrollProgress}px)`,
     pointerEvents: scrollProgress > 0.95 ? "none" : "auto",
   }}
 >
