@@ -217,16 +217,18 @@ export default function PlatformVisualization() {
   module
 );
 
-return (
-  <path
-      key={module.title}
-      d={`
+  const pathData = `
   M ${platformPort.x} ${platformPort.y}
   C
     ${controls.cp1.x} ${controls.cp1.y},
     ${controls.cp2.x} ${controls.cp2.y},
     ${modulePort.x} ${modulePort.y}
-`}
+`;
+
+return (
+  <path
+      key={module.title}
+      d={pathData}
       fill="none"
       stroke="#146ab1"
       strokeWidth="0.35"
