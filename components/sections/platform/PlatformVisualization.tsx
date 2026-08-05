@@ -105,6 +105,11 @@ export default function PlatformVisualization() {
     y: platform.y - 8,
   },
 
+    left: {
+  x: platform.x - 14,
+  y: platform.y,
+},
+
   right: {
     x: platform.x + 14,
     y: platform.y,
