@@ -11,55 +11,61 @@ const modules = [
     title: "OctoWare®NET",
     subtitle: "Web",
     icon: Globe,
-    x: "18%",
-    y: "14%",
+    x: 18,
+    y: 14,
   },
   {
     title: "OctoWare®mobile",
     subtitle: "Mobil",
     icon: TabletSmartphone,
-    x: "82%",
-    y: "14%",
+    x: 82,
+    y: 14,
   },
   {
     title: "Schnittstellen",
     subtitle: "Vernetzung",
     icon: Waypoints,
-    x: "90%",
-    y: "46%",
+    x: 90,
+    y: 46,
   },
   {
     title: "OctoReport®TN 2.0",
     subtitle: "Reporting",
     icon: ChartColumn,
-    x: "82%",
-    y: "78%",
+    x: 82,
+    y: 78,
   },
   {
     title: "OctoWare®TN",
     subtitle: "Desktop",
     icon: Building2,
-     x: "18%",
-    y: "78%",
+     x: 18,
+    y: 78,
   },
 ];
 
 export default function PlatformVisualization() {
+
+  const platform = {
+  x: 30,
+  y: 46,
+};
 
   return (
     <div className="relative h-[560px] w-full">
       {/* Plattform */}
 
       <div
-        className="
-          absolute
-          left-[30%]
-          top-[46%]
-
-          -translate-x-1/2
-          -translate-y-1/2
-        "
-      >
+  className="
+    absolute
+    -translate-x-1/2
+    -translate-y-1/2
+  "
+  style={{
+    left: `${platform.x}%`,
+    top: `${platform.y}%`,
+  }}
+>
         <div
           className="
             rounded-2xl
@@ -102,10 +108,9 @@ export default function PlatformVisualization() {
     -translate-y-1/2
   "
   style={{
-    left: module.x,
-    top: module.y,
-  }}
->
+  left: `${module.x}%`,
+  top: `${module.y}%`,
+}}
 
             <div
   className="
