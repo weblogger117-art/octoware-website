@@ -111,7 +111,7 @@ export default function PlatformVisualization() {
   left: `${module.x}%`,
   top: `${module.y}%`,
 }}
-
+>
             <div
   className="
     group
