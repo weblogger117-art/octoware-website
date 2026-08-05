@@ -374,7 +374,8 @@ return (
         return (
           <div
   key={module.title}
-
+            
+            data-module={module.title}
             onMouseEnter={() => setActiveModule(module.title)}
             onMouseLeave={() => setActiveModule(null)}
             
