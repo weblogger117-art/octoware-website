@@ -315,7 +315,7 @@ return (
     flex-col
     items-center
 
-    w-[420px]
+    w-[360px]
 
     rounded-2xl
 
