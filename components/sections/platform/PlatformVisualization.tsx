@@ -96,7 +96,7 @@ function getModulePort(module: Module) {
 export default function PlatformVisualization() {
 
   const platform = {
-  x: 30,
+  x: 25,
   y: 46,
 };
   const platformPorts = {
@@ -253,23 +253,28 @@ return (
   }}
 >
         <div
-          className="
-            w-80
-            rounded-2xl
+  className="
+    flex
+    flex-col
+    items-center
 
-            bg-gradient-to-r
-            from-[#146ab1]
-            to-[#1d80cb]
+    w-[420px]
 
-            px-10
-            py-6
+    rounded-2xl
 
-            text-center
-            text-white
+    bg-gradient-to-r
+    from-[#146ab1]
+    to-[#1d80cb]
 
-            shadow-[0_20px_60px_rgba(20,106,177,.35)]
-          "
-        >
+    px-10
+    py-6
+
+    text-center
+    text-white
+
+    shadow-[0_20px_60px_rgba(20,106,177,.35)]
+  "
+>
           <p className="text-xs uppercase tracking-[0.3em] text-white/70">
             Plattform
           </p>
