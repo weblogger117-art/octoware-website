@@ -123,11 +123,10 @@ export default function PlatformVisualization() {
 
               transition-all
               duration-300
-
+        
               hover:-translate-y-1
-              hover:scale-[1.03]
               hover:border-[#146ab1]/50
-              hover:shadow-2xl
+              hover:shadow-[0_30px_70px_rgba(20,106,177,0.14)]
             "
             style={{
               left: module.x,
