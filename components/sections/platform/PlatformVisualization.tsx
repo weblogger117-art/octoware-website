@@ -24,12 +24,17 @@ const modules = [
     subtitle: "Vernetzung",
     icon: Waypoints,
     angle: 144,
+    offsetX: 0,
+    offsetY: 70,
   },
   {
     title: "OctoReport®TN 2.0",
     subtitle: "Reporting",
     icon: ChartColumn,
     angle: 216,
+
+    offsetX: -20,
+    offsetY: -60,
   },
   {
     title: "OctoWare®TN",
@@ -76,6 +81,8 @@ const center = {
   const y = Math.sin(angle) * radiusY;
   const left = `calc(${center.x}% + ${x}px)`;
   const top = `calc(${center.y}% + ${y}px)`;
+  const offsetX = module.offsetX ?? 0;
+  const offsetY = module.offsetY ?? 0;
   
   const Icon = module.icon;
   
@@ -112,8 +119,8 @@ const center = {
         border-[#146ab1]/50
       "
       style={{
-  left,
-  top,
+      left: `calc(${centerX}% + ${x + offsetX}px)`,
+      top: `calc(${centerY}% + ${y + offsetY}px)`,
 }}
     >
 
