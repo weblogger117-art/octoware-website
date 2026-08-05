@@ -95,42 +95,47 @@ export default function PlatformVisualization() {
 
         return (
           <div
-            key={module.title}
-            className="
-              group
-              absolute
+  key={module.title}
+  className="
+    absolute
+    -translate-x-1/2
+    -translate-y-1/2
+  "
+  style={{
+    left: module.x,
+    top: module.y,
+  }}
+>
 
-              w-72
+            <div
+  className="
+    group
 
-              -translate-x-1/2
-              -translate-y-1/2
+    w-72
 
-              rounded-3xl
+    rounded-3xl
 
-              border
-              border-[#146ab1]/20
+    border
+    border-[#146ab1]/20
 
-              bg-white/95
+    bg-white/95
 
-              px-5
-              py-4
+    px-5
+    py-4
 
-              backdrop-blur
+    backdrop-blur
 
-              shadow-[0_18px_45px_rgba(15,23,42,0.10)]
+    shadow-[0_18px_45px_rgba(15,23,42,0.10)]
 
-              transition-all
-              duration-300
-        
-              hover:-translate-y-[2px]
-              hover:border-[#146ab1]/35
-              hover:shadow-[0_24px_55px_rgba(20,106,177,0.12)]
-            "
-            style={{
-              left: module.x,
-              top: module.y,
-}}
-          >
+    transition-all
+    duration-300
+
+    hover:-translate-y-[2px]
+    hover:border-[#146ab1]/35
+    hover:shadow-[0_24px_55px_rgba(20,106,177,0.12)]
+  "
+>
+            
             <div className="flex items-center gap-4">
               <div
   className="
