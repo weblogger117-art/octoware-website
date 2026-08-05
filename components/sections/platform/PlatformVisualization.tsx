@@ -329,6 +329,19 @@ return (
     />
   </circle>
 
+    <circle
+  r="0.65"
+  fill="#adce00"
+  opacity="0.45"
+>
+  <animateMotion
+    dur={module.speed}
+    begin={`${parseFloat(module.delay) + 0.12}s`}
+    repeatCount="indefinite"
+    path={pathData}
+  />
+</circle>
+
   <circle
     r="0.35"
     fill="white"
