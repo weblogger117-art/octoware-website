@@ -344,6 +344,45 @@ return (
 
     <circle
   r="0.48"
+  fill="#c9e74a"
+  opacity="0.28"
+>
+  <animateMotion
+    dur={module.speed}
+    begin={`${parseFloat(module.delay) + 0.24}s`}
+    repeatCount="indefinite"
+    path={pathData}
+  />
+</circle>
+
+    <circle
+  r="0.34"
+  fill="#dff48b"
+  opacity="0.16"
+>
+  <animateMotion
+    dur={module.speed}
+    begin={`${parseFloat(module.delay) + 0.36}s`}
+    repeatCount="indefinite"
+    path={pathData}
+  />
+</circle>
+
+    <circle
+  r="0.22"
+  fill="#eefbb4"
+  opacity="0.08"
+>
+  <animateMotion
+    dur={module.speed}
+    begin={`${parseFloat(module.delay) + 0.48}s`}
+    repeatCount="indefinite"
+    path={pathData}
+  />
+</circle>
+
+    <circle
+  r="0.48"
   fill="#adce00"
   opacity="0.25"
 >
