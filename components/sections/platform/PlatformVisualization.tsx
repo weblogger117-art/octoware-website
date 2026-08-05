@@ -13,6 +13,7 @@ const modules = [
     icon: Globe,
     x: 18,
     y: 14,
+    port: "bottom",
   },
   {
     title: "OctoWare®mobile",
