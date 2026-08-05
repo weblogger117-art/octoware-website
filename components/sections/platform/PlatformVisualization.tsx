@@ -155,6 +155,39 @@ export default function PlatformVisualization() {
       {modules.map((module) => {
 
         const Icon = module.icon;
+        const modulePort = (() => {
+  switch (module.port) {
+    case "top":
+      return {
+        x: module.x,
+        y: module.y - 6,
+      };
+
+    case "bottom":
+      return {
+        x: module.x,
+        y: module.y + 6,
+      };
+
+    case "left":
+      return {
+        x: module.x - 14,
+        y: module.y,
+      };
+
+    case "right":
+      return {
+        x: module.x + 14,
+        y: module.y,
+      };
+
+    default:
+      return {
+        x: module.x,
+        y: module.y,
+      };
+  }
+})();
 
         return (
           <div
