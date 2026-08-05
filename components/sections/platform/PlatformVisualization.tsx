@@ -144,7 +144,7 @@ export default function PlatformVisualization() {
     <div className="relative h-[560px] w-full">
 
 <svg
-  className="absolute inset-0 h-full w-full pointer-events-none"
+  className="absolute inset-0 z-0 h-full w-full pointer-events-none"
   viewBox="0 0 100 100"
   preserveAspectRatio="none"
 >
@@ -155,14 +155,16 @@ export default function PlatformVisualization() {
 
   const platformPort = getPlatformPort(module);
 
+  const controlOffset = 12;
+
 return (
   <path
       key={module.title}
       d={`
   M ${platformPort.x} ${platformPort.y}
   C
-    ${platformPort.x + 10} ${platformPort.y},
-    ${modulePort.x - 10} ${modulePort.y},
+    ${platformPort.x + controlOffset} ${platformPort.y},
+    ${modulePort.x - controlOffset} ${modulePort.y},
     ${modulePort.x} ${modulePort.y}
 `}
       fill="none"
@@ -181,6 +183,7 @@ return (
       <div
   className="
     absolute
+    relative z-10
     -translate-x-1/2
     -translate-y-1/2
   "
@@ -221,7 +224,6 @@ return (
       {modules.map((module) => {
 
         const Icon = module.icon;
-        const modulePort = getModulePort(module);
 
         return (
           <div
