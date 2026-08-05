@@ -226,15 +226,18 @@ export default function PlatformVisualization() {
 `;
 
 return (
-  <path
-      key={module.title}
+  <g key={module.title}>
+
+    <path
       d={pathData}
       fill="none"
       stroke="#146ab1"
       strokeWidth="0.35"
       opacity="0.22"
     />
-  );
+
+  </g>
+);
 
 })}
 
