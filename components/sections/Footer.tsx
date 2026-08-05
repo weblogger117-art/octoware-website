@@ -99,7 +99,7 @@ export function Footer() {
     grid
     gap-14
 
-    lg:grid-cols-[1.3fr_.8fr_.8fr_.8fr_.9fr]
+    lg:grid-cols-[1.3fr_.8fr_.8fr_.8fr]
   "
 >
 
@@ -140,25 +140,65 @@ export function Footer() {
   </p>
 
     <div className="mt-8 border-t border-slate-200 pt-5">
-      <p className="text-xs text-slate-400">
-  © {new Date().getFullYear()} easy-soft GmbH
-</p>
+      <div
+  className="
+    flex
+    items-end
+    justify-between
+    gap-8
+  "
+>
 
-<div className="mt-3 flex gap-5 text-xs">
+  {/* Linke Seite */}
 
-  <Link
-      href="/impressum"
-      className="text-slate-400 transition-colors hover:text-[#146ab1]"
+  <div>
+
+    <p className="text-xs text-slate-400">
+      © {new Date().getFullYear()} easy-soft GmbH
+    </p>
+
+    <div className="mt-3 flex gap-5 text-xs">
+
+      <Link
+        href="/impressum"
+        className="text-slate-400 transition-colors hover:text-[#146ab1]"
+      >
+        Impressum
+      </Link>
+
+      <Link
+        href="/datenschutz"
+        className="text-slate-400 transition-colors hover:text-[#146ab1]"
+      >
+        Datenschutz
+      </Link>
+
+    </div>
+
+  </div>
+
+  {/* Rechte Seite */}
+
+  <div className="text-right">
+
+    <p
+      className="
+        text-[11px]
+        uppercase
+        tracking-[0.18em]
+        text-slate-400
+      "
     >
-      Impressum
-    </Link>
+      Zertifiziert nach
+    </p>
 
-    <Link
-      href="/datenschutz"
-      className="text-slate-400 transition-colors hover:text-[#146ab1]"
-    >
-      Datenschutz
-  </Link>
+    <div className="mt-3 flex justify-end gap-4">
+
+      {/* Hier kommen gleich die Zertifikate hinein */}
+
+    </div>
+
+  </div>
 
 </div>
 
@@ -402,62 +442,6 @@ export function Footer() {
   >
     Kontakt
   </h4>
-
-    <div className="group flex flex-col items-end">
-
-  <h4
-    className="
-      text-sm
-      font-semibold
-      uppercase
-      tracking-[0.18em]
-      text-[#146ab1]
-    "
-  >
-    Zertifizierung
-  </h4>
-
-  <div
-    className="
-      mt-6
-
-      rounded-3xl
-
-      border
-      border-[#146ab1]/15
-
-      bg-white/70
-
-      p-5
-
-      backdrop-blur
-
-      shadow-[0_12px_40px_rgba(20,106,177,0.08)]
-
-      transition-all
-      duration-300
-
-      hover:-translate-y-1
-      hover:border-[#146ab1]/30
-      hover:shadow-[0_18px_50px_rgba(20,106,177,0.12)]
-    "
-  >
-
-    <Image
-      src="/images/certificates/kds-3.webp"
-      alt="KDS 3.0 Zertifizierung"
-      width={170}
-      height={170}
-      className="
-        transition-transform
-        duration-500
-        group-hover:scale-105
-      "
-    />
-
-  </div>
-
-</div>
 
 </div>
 
