@@ -303,7 +303,7 @@ return (
 />
 
   <circle
-  r="2.6"
+  r={2.6 * module.intensity}
   fill="url(#dataGlow)"
 >
   <animateMotion
@@ -329,7 +329,7 @@ return (
 </circle>
   
   <circle
-    r="0.9"
+    r={0.9 * module.intensity}
     fill="#adce00"
   >
     <animateMotion
@@ -341,7 +341,7 @@ return (
   </circle>
 
     <circle
-  r="0.65"
+  r={0.65 * module.intensity}
   fill="#adce00"
   opacity="0.45"
 >
@@ -354,7 +354,7 @@ return (
 </circle>
 
     <circle
-  r="0.48"
+  r={0.48 * module.intensity}
   fill="#c9e74a"
   opacity="0.28"
 >
@@ -367,7 +367,7 @@ return (
 </circle>
 
     <circle
-  r="0.34"
+  r={0.34 * module.intensity}
   fill="#dff48b"
   opacity="0.16"
 >
@@ -380,7 +380,7 @@ return (
 </circle>
 
     <circle
-  r="0.22"
+  r={0.22 * module.intensity}
   fill="#eefbb4"
   opacity="0.08"
 >
