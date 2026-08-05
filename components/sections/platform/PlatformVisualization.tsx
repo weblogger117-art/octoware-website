@@ -80,19 +80,60 @@ export default function PlatformVisualization() {
   preserveAspectRatio="none"
 >
 
-  <path
-  d={`
-    M ${platformPorts.top.x} ${platformPorts.top.y}
-    C
-      ${platformPorts.top.x} ${platformPorts.top.y - 8},
-      ${modules[0].x} ${modules[0].y + 8},
-      ${modules[0].x} ${modules[0].y}
-  `}
-  fill="none"
-  stroke="#146ab1"
-  strokeWidth="0.35"
-  opacity="0.22"
-/>
+  {modules.map((module) => {
+
+  const modulePort = (() => {
+    switch (module.port) {
+      case "top":
+        return {
+          x: module.x,
+          y: module.y - 6,
+        };
+
+      case "bottom":
+        return {
+          x: module.x,
+          y: module.y + 6,
+        };
+
+      case "left":
+        return {
+          x: module.x - 14,
+          y: module.y,
+        };
+
+      case "right":
+        return {
+          x: module.x + 14,
+          y: module.y,
+        };
+
+      default:
+        return {
+          x: module.x,
+          y: module.y,
+        };
+    }
+  })();
+
+  return (
+    <path
+      key={module.title}
+      d={`
+        M ${platformPorts.right.x} ${platformPorts.right.y}
+        C
+          ${platformPorts.right.x + 10} ${platformPorts.right.y},
+          ${modulePort.x - 10} ${modulePort.y},
+          ${modulePort.x} ${modulePort.y}
+      `}
+      fill="none"
+      stroke="#146ab1"
+      strokeWidth="0.35"
+      opacity="0.22"
+    />
+  );
+
+})}
 
   <circle
   cx={platform.x + 6}
