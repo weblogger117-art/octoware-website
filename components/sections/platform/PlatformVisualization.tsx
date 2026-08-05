@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Globe,
   TabletSmartphone,
@@ -112,6 +113,7 @@ function getModulePort(module: Module) {
 }
 
 export default function PlatformVisualization() {
+  const [activeModule, setActiveModule] = useState<string | null>(null);
 
   const platform = {
   x: 25,
@@ -247,14 +249,16 @@ return (
   <g key={module.title}>
 
     <path
-      d={pathData}
-      fill="none"
-      stroke="#146ab1"
-      strokeWidth="0.35"
-      opacity="0.22"
-    />
-
-<g>
+  className="
+    transition-all
+    duration-500
+  "
+  d={pathData}
+  fill="none"
+  stroke="#146ab1"
+  strokeWidth="0.35"
+  opacity="0.22"
+/>
 
   <circle
   r="1.8"
@@ -306,8 +310,6 @@ return (
       path={pathData}
     />
   </circle>
-
-</g>
     
   </g>
 );
@@ -372,6 +374,10 @@ return (
         return (
           <div
   key={module.title}
+
+            onMouseEnter={() => setActiveModule(module.title)}
+            onMouseLeave={() => setActiveModule(null)}
+            
   className="
     absolute
     -translate-x-1/2
