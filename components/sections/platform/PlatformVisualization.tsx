@@ -1,6 +1,6 @@
 import {
   Monitor,
-  Tablet,
+  Smartphone,
   Building2,
   ChartColumn,
   Waypoints,
