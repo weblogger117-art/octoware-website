@@ -140,6 +140,62 @@ export default function PlatformVisualization() {
   }
 }
 
+  function getControlPoints(
+  platformPort: { x: number; y: number },
+  modulePort: { x: number; y: number },
+  module: Module
+) {
+  switch (module.port) {
+    case "bottom":
+      return {
+        cp1: {
+          x: platformPort.x,
+          y: platformPort.y - 14,
+        },
+        cp2: {
+          x: modulePort.x,
+          y: modulePort.y + 14,
+        },
+      };
+
+    case "top":
+      return {
+        cp1: {
+          x: platformPort.x,
+          y: platformPort.y + 14,
+        },
+        cp2: {
+          x: modulePort.x,
+          y: modulePort.y - 14,
+        },
+      };
+
+    case "left":
+      return {
+        cp1: {
+          x: platformPort.x + 16,
+          y: platformPort.y,
+        },
+        cp2: {
+          x: modulePort.x - 12,
+          y: modulePort.y,
+        },
+      };
+
+    case "right":
+      return {
+        cp1: {
+          x: platformPort.x - 16,
+          y: platformPort.y,
+        },
+        cp2: {
+          x: modulePort.x + 12,
+          y: modulePort.y,
+        },
+      };
+  }
+}
+
   return (
     <div className="relative h-[560px] w-full">
 
@@ -155,7 +211,11 @@ export default function PlatformVisualization() {
 
   const platformPort = getPlatformPort(module);
 
-  const controlOffset = 12;
+  const controls = getControlPoints(
+  platformPort,
+  modulePort,
+  module
+);
 
 return (
   <path
@@ -163,8 +223,8 @@ return (
       d={`
   M ${platformPort.x} ${platformPort.y}
   C
-    ${platformPort.x + controlOffset} ${platformPort.y},
-    ${modulePort.x - controlOffset} ${modulePort.y},
+    ${controls.cp1.x} ${controls.cp1.y},
+    ${controls.cp2.x} ${controls.cp2.y},
     ${modulePort.x} ${modulePort.y}
 `}
       fill="none"
