@@ -188,7 +188,7 @@ export default function PlatformVisualization() {
 
     group-hover:text-[#146ab1]
   "
->
+</h4>
 
                 <p className="mt-1 text-sm text-slate-500">
                   {module.subtitle}
