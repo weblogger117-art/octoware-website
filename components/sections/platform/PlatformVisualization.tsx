@@ -130,7 +130,7 @@ export default function PlatformVisualization() {
     transition-all
     duration-300
 
-    hover:-translate-y-[2px]
+   
     hover:border-[#146ab1]/35
     hover:shadow-[0_24px_55px_rgba(20,106,177,0.12)]
   "
@@ -199,6 +199,7 @@ export default function PlatformVisualization() {
 </div>
             </div>
           </div>
+            </div>
         );
       })}
     </div>
