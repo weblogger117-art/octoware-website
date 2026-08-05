@@ -80,15 +80,19 @@ export default function PlatformVisualization() {
   preserveAspectRatio="none"
 >
 
-  <line
-    x1={platform.x + 6}
-    y1={platform.y}
-    x2={modules[0].x + 10}
-    y2={modules[0].y}
-    stroke="#146ab1"
-    strokeWidth="0.35"
-    opacity="0.25"
-  />
+  <path
+  d={`
+    M ${platformPorts.top.x} ${platformPorts.top.y}
+    C
+      ${platformPorts.top.x} ${platformPorts.top.y - 8},
+      ${modules[0].x} ${modules[0].y + 8},
+      ${modules[0].x} ${modules[0].y}
+  `}
+  fill="none"
+  stroke="#146ab1"
+  strokeWidth="0.35"
+  opacity="0.22"
+/>
 
   <circle
   cx={platform.x + 6}
