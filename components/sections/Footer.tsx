@@ -179,38 +179,6 @@ export function Footer() {
 
   {/* Rechte Seite */}
 
-  <div className="text-right">
-
-    <p
-      className="
-        text-[11px]
-        uppercase
-        tracking-[0.18em]
-        text-slate-400
-      "
-    >
-      Zertifizierungen
-    </p>
-
-    <div className="mt-3 flex justify-end gap-4">
-
-     <Image
-  src="/images/certificates/kds-3.webp"
-  alt="KDS 3.0 zertifiziert"
-  width={78}
-  height={78}
-  draggable={false}
-  className="
-    h-auto
-    w-[78px]
-    select-none
-  "
-/>
-
-    </div>
-
-  </div>
-
 </div>
 
 </div>
@@ -515,9 +483,53 @@ export function Footer() {
 </div>
       
       </div>
-    </div>
-        </div>
 
+    <div
+  className="
+    absolute
+    right-14
+    bottom-8
+
+    flex
+    flex-col
+    items-end
+  "
+>
+  <div
+    className="
+      border-t
+      border-slate-200
+      pt-4
+    "
+  >
+    <p
+      className="
+        mb-3
+        text-right
+        text-[11px]
+        uppercase
+        tracking-[0.18em]
+        text-slate-400
+      "
+    >
+      Zertifizierungen
+    </p>
+
+    <div className="flex items-center gap-4">
+
+      <Image
+        src="/images/certificates/kds-3.webp"
+        alt="KDS 3.0 zertifiziert"
+        width={74}
+        height={74}
+        draggable={false}
+        className="w-[74px] h-auto select-none"
+      />
+
+    </div>
+  </div>
+</div>
+</div>
     </footer>
   );
 }
