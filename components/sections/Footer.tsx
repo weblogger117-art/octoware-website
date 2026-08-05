@@ -99,7 +99,7 @@ export function Footer() {
     grid
     gap-14
 
-    lg:grid-cols-[1.3fr_.8fr_.8fr_.8fr]
+    lg:grid-cols-[1.3fr_.8fr_.8fr_.8fr_.9fr]
   "
 >
 
@@ -402,6 +402,62 @@ export function Footer() {
   >
     Kontakt
   </h4>
+
+    <div className="group flex flex-col items-end">
+
+  <h4
+    className="
+      text-sm
+      font-semibold
+      uppercase
+      tracking-[0.18em]
+      text-[#146ab1]
+    "
+  >
+    Zertifizierung
+  </h4>
+
+  <div
+    className="
+      mt-6
+
+      rounded-3xl
+
+      border
+      border-[#146ab1]/15
+
+      bg-white/70
+
+      p-5
+
+      backdrop-blur
+
+      shadow-[0_12px_40px_rgba(20,106,177,0.08)]
+
+      transition-all
+      duration-300
+
+      hover:-translate-y-1
+      hover:border-[#146ab1]/30
+      hover:shadow-[0_18px_50px_rgba(20,106,177,0.12)]
+    "
+  >
+
+    <Image
+      src="/images/certificates/kds-3.webp"
+      alt="KDS 3.0 Zertifizierung"
+      width={170}
+      height={170}
+      className="
+        transition-transform
+        duration-500
+        group-hover:scale-105
+      "
+    />
+
+  </div>
+
+</div>
 
 </div>
 
