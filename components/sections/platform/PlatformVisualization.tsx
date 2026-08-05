@@ -26,7 +26,7 @@ const modules = [
     subtitle: "Vernetzung",
     icon: Waypoints,
     x: "90%",
-    y: "50%",
+    y: "46%",
   },
   {
     title: "OctoReport®TN 2.0",
@@ -56,7 +56,7 @@ export default function PlatformVisualization() {
       <div
         className="
           absolute
-          left-[50%]
+          left-[30%]
           top-[46%]
 
           -translate-x-1/2
