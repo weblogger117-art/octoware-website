@@ -227,6 +227,35 @@ export default function PlatformVisualization() {
   preserveAspectRatio="none"
 >
 
+  <defs>
+
+  <radialGradient
+    id="dataGlow"
+    cx="50%"
+    cy="50%"
+    r="50%"
+  >
+    <stop
+      offset="0%"
+      stopColor="#adce00"
+      stopOpacity="0.55"
+    />
+
+    <stop
+      offset="55%"
+      stopColor="#adce00"
+      stopOpacity="0.18"
+    />
+
+    <stop
+      offset="100%"
+      stopColor="#adce00"
+      stopOpacity="0"
+    />
+  </radialGradient>
+
+</defs>
+
   {modules.map((module) => {
 
   const modulePort = getModulePort(module);
@@ -263,9 +292,8 @@ return (
 />
 
   <circle
-  r="1.8"
-  fill="#adce00"
-  opacity="0.18"
+  r="2.6"
+  fill="url(#dataGlow)"
 >
   <animateMotion
     dur={module.speed}
