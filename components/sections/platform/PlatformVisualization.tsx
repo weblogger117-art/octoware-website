@@ -298,8 +298,20 @@ return (
   d={pathData}
   fill="none"
   stroke="#146ab1"
-  strokeWidth="0.35"
-  opacity="0.22"
+
+  strokeWidth={
+    activeModule === module.title
+      ? 0.7
+      : 0.35
+  }
+
+  opacity={
+    activeModule === null
+      ? 0.22
+      : activeModule === module.title
+      ? 0.75
+      : 0.08
+  }
 />
 
   <circle
