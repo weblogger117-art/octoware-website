@@ -20,6 +20,7 @@ const modules = [
     icon: TabletSmartphone,
     x: 82,
     y: 14,
+    port: "bottom",
   },
   {
     title: "Schnittstellen",
@@ -27,6 +28,7 @@ const modules = [
     icon: Waypoints,
     x: 90,
     y: 46,
+    port: "left",
   },
   {
     title: "OctoReport®TN 2.0",
@@ -34,6 +36,7 @@ const modules = [
     icon: ChartColumn,
     x: 82,
     y: 78,
+    port: "top",
   },
   {
     title: "OctoWare®TN",
@@ -41,6 +44,7 @@ const modules = [
     icon: Building2,
      x: 18,
     y: 78,
+    port: "top",
   },
 ];
 
@@ -49,6 +53,22 @@ export default function PlatformVisualization() {
   const platform = {
   x: 30,
   y: 46,
+};
+  const platformPorts = {
+  top: {
+    x: platform.x,
+    y: platform.y - 8,
+  },
+
+  right: {
+    x: platform.x + 14,
+    y: platform.y,
+  },
+
+  bottom: {
+    x: platform.x,
+    y: platform.y + 8,
+  },
 };
 
   return (
