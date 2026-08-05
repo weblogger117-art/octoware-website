@@ -236,6 +236,17 @@ return (
       opacity="0.22"
     />
 
+<circle
+  r="0.65"
+  fill="#adce00"
+>
+  <animateMotion
+    dur="6s"
+    repeatCount="indefinite"
+    path={pathData}
+  />
+</circle>
+    
   </g>
 );
 
