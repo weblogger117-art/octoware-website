@@ -189,12 +189,23 @@ export function Footer() {
         text-slate-400
       "
     >
-      Zertifiziert nach
+      Zertifizierungen
     </p>
 
     <div className="mt-3 flex justify-end gap-4">
 
-      {/* Hier kommen gleich die Zertifikate hinein */}
+     <Image
+  src="/images/certificates/kds-3.webp"
+  alt="KDS 3.0 zertifiziert"
+  width={78}
+  height={78}
+  draggable={false}
+  className="
+    h-auto
+    w-[78px]
+    select-none
+  "
+/>
 
     </div>
 
