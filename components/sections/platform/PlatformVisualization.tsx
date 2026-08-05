@@ -61,14 +61,28 @@ export default function PlatformVisualization() {
 >
 
   <line
-    x1={platform.x}
+    x1={platform.x + 6}
     y1={platform.y}
-    x2={modules[0].x}
+    x2={modules[0].x + 10}
     y2={modules[0].y}
     stroke="#146ab1"
     strokeWidth="0.35"
     opacity="0.25"
   />
+
+  <circle
+  cx={platform.x + 6}
+  cy={platform.y}
+  r="0.7"
+  fill="#146ab1"
+/>
+
+<circle
+  cx={modules[0].x + 10}
+  cy={modules[0].y}
+  r="0.7"
+  fill="#146ab1"
+/>
 
 </svg>
       
