@@ -45,9 +45,6 @@ const modules = [
 ];
 
 export default function PlatformVisualization() {
-  
-  const centerX = 56;
-  const centerY = 46;
 
   return (
     <div className="relative h-[560px] w-full">
@@ -103,7 +100,7 @@ export default function PlatformVisualization() {
               group
               absolute
 
-              w-70
+              w-72
 
               -translate-x-1/2
               -translate-y-1/2
@@ -171,29 +168,30 @@ export default function PlatformVisualization() {
     duration-300
 
     group-hover:scale-110
-    group-hover:text-[#146ab1]
   "
 />
               </div>
 
               <div>
-                <h4
-  className="
-    text-base
-    font-semibold
-    text-slate-900
+  <h4
+    className="
+      text-base
+      font-semibold
+      text-slate-900
 
-    transition-colors
-    duration-300
+      transition-colors
+      duration-300
 
-    group-hover:text-[#146ab1]
-  "
-</h4>
+      group-hover:text-[#146ab1]
+    "
+  >
+    {module.title}
+  </h4>
 
-                <p className="mt-1 text-sm text-slate-500">
-                  {module.subtitle}
-                </p>
-              </div>
+  <p className="mt-1 text-sm text-slate-500">
+    {module.subtitle}
+  </p>
+</div>
             </div>
           </div>
         );
