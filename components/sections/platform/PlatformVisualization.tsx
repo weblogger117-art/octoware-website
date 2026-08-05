@@ -105,7 +105,18 @@ export default function PlatformVisualization() {
     y: platform.y - 8,
   },
 
-    function getPlatformPort(module: Module) {
+  right: {
+    x: platform.x + 14,
+    y: platform.y,
+  },
+
+  bottom: {
+    x: platform.x,
+    y: platform.y + 8,
+  },
+};
+
+  function getPlatformPort(module: Module) {
   switch (module.port) {
     case "bottom":
       return platformPorts.top;
@@ -123,17 +134,6 @@ export default function PlatformVisualization() {
       return platformPorts.right;
   }
 }
-
-  right: {
-    x: platform.x + 14,
-    y: platform.y,
-  },
-
-  bottom: {
-    x: platform.x,
-    y: platform.y + 8,
-  },
-};
 
   return (
     <div className="relative h-[560px] w-full">
@@ -154,12 +154,12 @@ return (
   <path
       key={module.title}
       d={`
-        const platformPort = getPlatformPort(module);
-        C
-          ${platformPort.x + 10} ${platformPort.y},
-          ${modulePort.x - 10} ${modulePort.y},
-          ${modulePort.x} ${modulePort.y}
-      `}
+  M ${platformPort.x} ${platformPort.y}
+  C
+    ${platformPort.x + 10} ${platformPort.y},
+    ${modulePort.x - 10} ${modulePort.y},
+    ${modulePort.x} ${modulePort.y}
+`}
       fill="none"
       stroke="#146ab1"
       strokeWidth="0.35"
@@ -168,20 +168,6 @@ return (
   );
 
 })}
-
-  <circle
-  cx={platform.x + 6}
-  cy={platform.y}
-  r="0.7"
-  fill="#146ab1"
-/>
-
-<circle
-  cx={modules[0].x + 10}
-  cy={modules[0].y}
-  r="0.7"
-  fill="#146ab1"
-/>
 
 </svg>
       
