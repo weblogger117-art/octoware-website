@@ -262,7 +262,8 @@ return (
   opacity="0.18"
 >
   <animateMotion
-    dur="6s"
+    dur={module.speed}
+    begin={module.delay}
     repeatCount="indefinite"
     path={pathData}
   />
@@ -287,7 +288,8 @@ return (
     fill="#adce00"
   >
     <animateMotion
-      dur="6s"
+      dur={module.speed}
+      begin={module.delay}
       repeatCount="indefinite"
       path={pathData}
     />
@@ -298,7 +300,8 @@ return (
     fill="white"
   >
     <animateMotion
-      dur="6s"
+      dur={module.speed}
+      begin={module.delay}
       repeatCount="indefinite"
       path={pathData}
     />
