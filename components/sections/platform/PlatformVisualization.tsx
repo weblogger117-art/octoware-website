@@ -130,7 +130,9 @@ const center = {
 
     rounded-xl
 
-    bg-[#146ab1]/8
+    bg-gradient-to-br
+    from-[#146ab1]/12
+    to-[#adce00]/10
 
     text-[#146ab1]
   "
