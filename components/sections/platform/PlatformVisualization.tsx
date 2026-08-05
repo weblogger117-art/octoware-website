@@ -183,7 +183,7 @@ return (
       <div
   className="
     absolute
-    relative z-10
+    z-10
     -translate-x-1/2
     -translate-y-1/2
   "
@@ -194,6 +194,7 @@ return (
 >
         <div
           className="
+            w-80
             rounded-2xl
 
             bg-gradient-to-r
