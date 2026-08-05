@@ -11,203 +11,164 @@ const modules = [
     title: "OctoWare®NET",
     subtitle: "Web",
     icon: Globe,
-    angle: 0,
+    x: "82%",
+    y: "14%",
   },
   {
     title: "OctoWare®mobile",
     subtitle: "Mobil",
     icon: TabletSmartphone,
-    angle: 72,
+    x: "82%",
+    y: "78%",
   },
   {
     title: "Schnittstellen",
     subtitle: "Vernetzung",
     icon: Waypoints,
-    angle: 144,
-    offsetX: 0,
-    offsetY: 70,
+    x: "18%",
+    y: "70%",
   },
   {
     title: "OctoReport®TN 2.0",
     subtitle: "Reporting",
     icon: ChartColumn,
-    angle: 216,
-
-    offsetX: -20,
-    offsetY: -60,
+    x: "18%",
+    y: "14%",
   },
   {
     title: "OctoWare®TN",
     subtitle: "Desktop",
     icon: Building2,
-    angle: 288,
+    x: "18%",
+    y: "34%",
   },
 ];
 
 export default function PlatformVisualization() {
-
-const radiusX = 270;
-const radiusY = 215;
-
-const centerX = 56;
-const centerY = 46;
-
-const rotation = 0;
-const center = {
-  x: centerX,
-  y: centerY,
-};
   
+  const centerX = 56;
+  const centerY = 46;
+
   return (
     <div className="relative h-[560px] w-full">
+      {/* Plattform */}
 
       <div
-  className="
-    absolute
+        className="
+          absolute
+          left-[50%]
+          top-[46%]
 
-    left-[56%]
-    top-1/2
+          -translate-x-1/2
+          -translate-y-1/2
+        "
+      >
+        <div
+          className="
+            rounded-2xl
 
-    -translate-x-1/2
-    -translate-y-1/2
-  "
-    >
+            bg-gradient-to-r
+            from-[#146ab1]
+            to-[#1d80cb]
 
-<div className="flex items-center gap-4">
+            px-10
+            py-6
 
-  <div
-    className="
-      flex
-      h-16
-      w-16
-      shrink-0
-      items-center
-      justify-center
+            text-center
+            text-white
 
-      rounded-2xl
+            shadow-[0_20px_60px_rgba(20,106,177,.35)]
+          "
+        >
+          <p className="text-xs uppercase tracking-[0.3em] text-white/70">
+            Plattform
+          </p>
 
-      bg-gradient-to-br
-      from-[#146ab1]/12
-      to-[#adce00]/10
+          <h3 className="mt-2 text-2xl font-bold">
+            OctoWare®Gesundheit
+          </h3>
+        </div>
+      </div>
 
-      text-[#146ab1]
-    "
-  >
-    <Icon className="h-8 w-8" />
-  </div>
+      {/* Module */}
 
-  {modules.map((module) => {
+      {modules.map((module) => {
 
-  const angle = ((module.angle + rotation) * Math.PI) / 180;
+        const Icon = module.icon;
 
-  const x = Math.cos(angle) * radiusX;
-  const y = Math.sin(angle) * radiusY;
-  const offsetX = module.offsetX ?? 0;
-  const offsetY = module.offsetY ?? 0;
-  
-  const Icon = module.icon;
-  
-  return (
+        return (
+          <div
+            key={module.title}
+            className="
+              absolute
 
-    <div
-      key={module.title}
-      className="
-        absolute
+              w-64
 
-        w-64
+              -translate-x-1/2
+              -translate-y-1/2
 
-        -translate-x-1/2
-        -translate-y-1/2
+              rounded-3xl
 
-        rounded-3xl
+              border
+              border-[#146ab1]/20
 
-        border
-        border-[#146ab1]/20
+              bg-white/95
 
-        bg-white/95
+              px-5
+              py-4
 
-        px-5
-        py-4
+              backdrop-blur
 
-        shadow-[0_18px_45px_rgba(15,23,42,0.10)]
-        backdrop-blur
+              shadow-[0_18px_45px_rgba(15,23,42,0.10)]
 
-        transition-all
-        duration-300
+              transition-all
+              duration-300
 
-        hover:-translate-y-[55%]
-        hover:shadow-2xl
-        hover:scale-[1.03]
-        hover:border-[#146ab1]/50
-      "
-      style={{
-      left: `calc(${centerX}% + ${x + offsetX}px)`,
-      top: `calc(${centerY}% + ${y + offsetY}px)`,
+              hover:-translate-y-1
+              hover:scale-[1.03]
+              hover:border-[#146ab1]/50
+              hover:shadow-2xl
+            "
+            style={{
+              left: module.x,
+              top: module.y,
 }}
+          >
+            <div className="flex items-center gap-4">
+              <div
+                className="
+                  flex
+                  h-16
+                  w-16
+                  shrink-0
+                  items-center
+                  justify-center
 
-  <div>
+                  rounded-2xl
 
-    <h4
-      className="
-        text-base
-        font-semibold
-        text-slate-900
-      "
-    >
-      {module.title}
-    </h4>
+                  bg-gradient-to-br
+                  from-[#146ab1]/12
+                  to-[#adce00]/10
 
-    <p
-      className="
-        mt-1
-        text-sm
-        text-slate-500
-      "
-    >
-      {module.subtitle}
-    </p>
+                  text-[#146ab1]
+                "
+              >
+                <Icon className="h-8 w-8" />
+              </div>
 
-  </div>
+              <div>
+                <h4 className="text-base font-semibold text-slate-900">
+                  {module.title}
+                </h4>
 
-</div>
-
-    </div>
-
-  );
-
-})}
-
-  <div
-    className="
-      rounded-2xl
-
-      bg-gradient-to-r
-      from-[#146ab1]
-      to-[#1d80cb]
-
-      px-10
-      py-6
-
-      text-center
-
-      text-white
-
-      shadow-[0_20px_60px_rgba(20,106,177,.35)]
-    "
-  >
-
-    <p className="text-xs uppercase tracking-[0.3em] text-white/70">
-      Plattform
-    </p>
-
-    <h3 className="mt-2 text-2xl font-bold">
-      OctoWare®Gesundheit
-    </h3>
-
-  </div>
-
-</div>
-
+                <p className="mt-1 text-sm text-slate-500">
+                  {module.subtitle}
+                </p>
+              </div>
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 }
