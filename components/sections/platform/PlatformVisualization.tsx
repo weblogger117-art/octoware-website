@@ -41,11 +41,11 @@ const modules = [
 
 export default function PlatformVisualization() {
 
-const radiusX = 220;
-const radiusY = 165;
+const radiusX = 270;
+const radiusY = 215;
 
 const centerX = 56;
-const centerY = 50;
+const centerY = 46;
 
 const rotation = 0;
 const center = {
@@ -86,19 +86,19 @@ const center = {
       className="
         absolute
 
-        w-44
+        w-48
 
         -translate-x-1/2
         -translate-y-1/2
 
-        rounded-2xl
+        rounded-3xl
 
         border
         border-slate-200/80
 
         bg-white/95
 
-        p-5
+        p-6
 
         shadow-[0_18px_45px_rgba(15,23,42,0.10)]
         backdrop-blur
@@ -122,8 +122,8 @@ const center = {
     mb-4
 
     flex
-    h-12
-    w-12
+    h-14
+    w-14
 
     items-center
     justify-center
@@ -137,7 +137,7 @@ const center = {
     text-[#146ab1]
   "
 >
-  <Icon className="h-6 w-6" />
+  <Icon className="h-7 w-7" />
 </div>
       
       <p className="text-xs uppercase tracking-[0.25em] text-[#146ab1]">
@@ -162,8 +162,8 @@ const center = {
       from-[#146ab1]
       to-[#1d80cb]
 
-      px-7
-      py-4
+      px-10
+      py-6
 
       text-center
 
@@ -177,7 +177,7 @@ const center = {
       Plattform
     </p>
 
-    <h3 className="mt-2 text-xl font-bold">
+    <h3 className="mt-2 text-2xl font-bold">
       OctoWare®Gesundheit
     </h3>
 
