@@ -317,6 +317,14 @@ return (
   <circle
   r={2.6 * module.intensity}
   fill="url(#dataGlow)"
+
+  opacity={
+    activeModule === null
+      ? 1
+      : activeModule === module.title
+      ? 1
+      : 0.35
+    }
 >
   <animateMotion
     dur={module.speed}
@@ -343,6 +351,14 @@ return (
   <circle
     r={0.9 * module.intensity}
     fill="#adce00"
+
+    opacity={
+    activeModule === null
+      ? 1
+      : activeModule === module.title
+      ? 1
+      : 0.35
+  }
   >
     <animateMotion
       dur={module.speed}
@@ -355,7 +371,13 @@ return (
     <circle
   r={0.65 * module.intensity}
   fill="#adce00"
-  opacity="0.45"
+  opacity={
+  activeModule === null
+    ? 0.45
+    : activeModule === module.title
+    ? 0.45
+    : 0.12
+}
 >
   <animateMotion
     dur={module.speed}
@@ -368,7 +390,13 @@ return (
     <circle
   r={0.48 * module.intensity}
   fill="#c9e74a"
-  opacity="0.28"
+  opacity={
+  activeModule === null
+    ? 0.28
+    : activeModule === module.title
+    ? 0.28
+    : 0.08
+}
 >
   <animateMotion
     dur={module.speed}
@@ -381,7 +409,13 @@ return (
     <circle
   r={0.34 * module.intensity}
   fill="#dff48b"
-  opacity="0.16"
+  opacity={
+  activeModule === null
+    ? 0.16
+    : activeModule === module.title
+    ? 0.16
+    : 0.05
+}
 >
   <animateMotion
     dur={module.speed}
@@ -394,7 +428,13 @@ return (
     <circle
   r={0.22 * module.intensity}
   fill="#eefbb4"
-  opacity="0.08"
+  opacity={
+  activeModule === null
+    ? 0.08
+    : activeModule === module.title
+    ? 0.08
+    : 0.03
+}
 >
   <animateMotion
     dur={module.speed}
