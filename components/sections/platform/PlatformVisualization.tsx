@@ -25,6 +25,9 @@ const modules: Module[] = [
     x: 18,
     y: 14,
     port: "bottom",
+
+    speed: "5.6s",
+    delay: "0s",
   },
   {
     title: "OctoWare®mobile",
@@ -33,6 +36,9 @@ const modules: Module[] = [
     x: 82,
     y: 14,
     port: "bottom",
+
+    speed: "6.2s",
+    delay: "1.1s",
   },
   {
     title: "Schnittstellen",
@@ -41,6 +47,9 @@ const modules: Module[] = [
     x: 90,
     y: 46,
     port: "left",
+
+    speed: "4.8s",
+    delay: "2.0s",
   },
   {
     title: "OctoReport®TN 2.0",
@@ -49,6 +58,9 @@ const modules: Module[] = [
     x: 82,
     y: 78,
     port: "top",
+
+    speed: "6.8s",
+    delay: "3.2s",
   },
   {
     title: "OctoWare®TN",
@@ -57,6 +69,9 @@ const modules: Module[] = [
      x: 18,
     y: 78,
     port: "top",
+
+    speed: "5.3s",
+    delay: "4.0s",
   },
 ];
 
