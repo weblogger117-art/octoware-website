@@ -1,27 +1,40 @@
+import {
+  Monitor,
+  Tablet,
+  Building2,
+  ChartColumn,
+  Waypoints,
+} from "lucide-react";
+
 const modules = [
   {
-    title: "OctoWare®NET",
-    subtitle: "Web",
+    title: "Web",
+    subtitle: "OctoWare®NET",
+    icon: Monitor,
     angle: 0,
   },
   {
-    title: "OctoWare®mobile",
-    subtitle: "Mobilität",
+    title: "Mobil",
+    subtitle: "OctoWare®mobile",
+    icon: Smartphone,
     angle: 72,
   },
   {
-    title: "Schnittstellen",
-    subtitle: "Vernetzung",
+    title: "Vernetzung",
+    subtitle: "Schnittstellen",
+    icon: Waypoints,
     angle: 144,
   },
   {
-    title: "OctoReport®TN 2.0",
-    subtitle: "Reporting",
+    title: "Reporting",
+    subtitle: "OctoReport®TN 2.0",
+    icon: ChartColumn,
     angle: 216,
   },
   {
-    title: "OctoWare®TN",
-    subtitle: "Desktop",
+    title: "Desktop",
+    subtitle: "OctoWare®TN",
+    icon: Building2,
     angle: 288,
   },
 ];
@@ -57,7 +70,8 @@ const rotation = 0;
 
   const x = Math.cos(angle) * radiusX;
   const y = Math.sin(angle) * radiusY;
-
+  const Icon = module.icon;
+  
   return (
 
     <div
@@ -94,6 +108,27 @@ const rotation = 0;
       }}
     >
 
+<div
+  className="
+    mb-4
+
+    flex
+    h-12
+    w-12
+
+    items-center
+    justify-center
+
+    rounded-xl
+
+    bg-[#146ab1]/8
+
+    text-[#146ab1]
+  "
+>
+  <Icon className="h-6 w-6" />
+</div>
+      
       <p className="text-xs uppercase tracking-[0.25em] text-[#146ab1]">
         {module.subtitle}
       </p>
