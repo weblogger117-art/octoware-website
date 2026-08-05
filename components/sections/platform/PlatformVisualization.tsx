@@ -100,6 +100,7 @@ export default function PlatformVisualization() {
           <div
             key={module.title}
             className="
+              group
               absolute
 
               w-70
@@ -124,9 +125,9 @@ export default function PlatformVisualization() {
               transition-all
               duration-300
         
-              hover:-translate-y-1
-              hover:border-[#146ab1]/50
-              hover:shadow-[0_30px_70px_rgba(20,106,177,0.14)]
+              hover:-translate-y-[2px]
+              hover:border-[#146ab1]/35
+              hover:shadow-[0_24px_55px_rgba(20,106,177,0.12)]
             "
             style={{
               left: module.x,
@@ -135,30 +136,59 @@ export default function PlatformVisualization() {
           >
             <div className="flex items-center gap-4">
               <div
-                className="
-                  flex
-                  h-16
-                  w-16
-                  shrink-0
-                  items-center
-                  justify-center
+  className="
+    flex
+    h-16
+    w-16
 
-                  rounded-2xl
+    shrink-0
+    items-center
+    justify-center
 
-                  bg-gradient-to-br
-                  from-[#146ab1]/12
-                  to-[#adce00]/10
+    rounded-2xl
 
-                  text-[#146ab1]
-                "
-              >
-                <Icon className="h-8 w-8" />
+    bg-gradient-to-br
+    from-[#146ab1]/12
+    to-[#adce00]/10
+
+    text-[#146ab1]
+
+    transition-all
+    duration-300
+
+    group-hover:scale-105
+    group-hover:from-[#146ab1]/18
+    group-hover:to-[#adce00]/18
+    group-hover:shadow-[0_0_22px_rgba(173,206,0,.18)]
+  "
+>
+                <Icon
+  className="
+    h-8
+    w-8
+
+    transition-all
+    duration-300
+
+    group-hover:scale-110
+    group-hover:text-[#146ab1]
+  "
+/>
               </div>
 
               <div>
-                <h4 className="text-base font-semibold text-slate-900">
-                  {module.title}
-                </h4>
+                <h4
+  className="
+    text-base
+    font-semibold
+    text-slate-900
+
+    transition-colors
+    duration-300
+
+    group-hover:text-[#146ab1]
+  "
+>
 
                 <p className="mt-1 text-sm text-slate-500">
                   {module.subtitle}
