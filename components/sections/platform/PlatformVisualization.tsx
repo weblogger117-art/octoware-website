@@ -48,6 +48,43 @@ const modules = [
   },
 ];
 
+function getModulePort(module: {
+  x: number;
+  y: number;
+  port: "top" | "bottom" | "left" | "right";
+}) {
+  switch (module.port) {
+    case "top":
+      return {
+        x: module.x,
+        y: module.y - 6,
+      };
+
+    case "bottom":
+      return {
+        x: module.x,
+        y: module.y + 6,
+      };
+
+    case "left":
+      return {
+        x: module.x - 14,
+        y: module.y,
+      };
+
+    case "right":
+      return {
+        x: module.x + 14,
+        y: module.y,
+      };
+    default:
+      return {
+        x: module.x,
+        y: module.y,
+      };
+  }
+}
+
 export default function PlatformVisualization() {
 
   const platform = {
@@ -82,39 +119,7 @@ export default function PlatformVisualization() {
 
   {modules.map((module) => {
 
-  const modulePort = (() => {
-    switch (module.port) {
-      case "top":
-        return {
-          x: module.x,
-          y: module.y - 6,
-        };
-
-      case "bottom":
-        return {
-          x: module.x,
-          y: module.y + 6,
-        };
-
-      case "left":
-        return {
-          x: module.x - 14,
-          y: module.y,
-        };
-
-      case "right":
-        return {
-          x: module.x + 14,
-          y: module.y,
-        };
-
-      default:
-        return {
-          x: module.x,
-          y: module.y,
-        };
-    }
-  })();
+  const modulePort = getModulePort(module);
 
   return (
     <path
@@ -196,39 +201,7 @@ export default function PlatformVisualization() {
       {modules.map((module) => {
 
         const Icon = module.icon;
-        const modulePort = (() => {
-  switch (module.port) {
-    case "top":
-      return {
-        x: module.x,
-        y: module.y - 6,
-      };
-
-    case "bottom":
-      return {
-        x: module.x,
-        y: module.y + 6,
-      };
-
-    case "left":
-      return {
-        x: module.x - 14,
-        y: module.y,
-      };
-
-    case "right":
-      return {
-        x: module.x + 14,
-        y: module.y,
-      };
-
-    default:
-      return {
-        x: module.x,
-        y: module.y,
-      };
-  }
-})();
+        const modulePort = getModulePort(module);
 
         return (
           <div
