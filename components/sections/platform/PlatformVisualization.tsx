@@ -105,6 +105,25 @@ export default function PlatformVisualization() {
     y: platform.y - 8,
   },
 
+    function getPlatformPort(module: Module) {
+  switch (module.port) {
+    case "bottom":
+      return platformPorts.top;
+
+    case "top":
+      return platformPorts.bottom;
+
+    case "left":
+      return platformPorts.right;
+
+    case "right":
+      return platformPorts.left;
+
+    default:
+      return platformPorts.right;
+  }
+}
+
   right: {
     x: platform.x + 14,
     y: platform.y,
@@ -129,13 +148,15 @@ export default function PlatformVisualization() {
 
   const modulePort = getModulePort(module);
 
-  return (
-    <path
+  const platformPort = getPlatformPort(module);
+
+return (
+  <path
       key={module.title}
       d={`
-        M ${platformPorts.right.x} ${platformPorts.right.y}
+        const platformPort = getPlatformPort(module);
         C
-          ${platformPorts.right.x + 10} ${platformPorts.right.y},
+          ${platformPort.x + 10} ${platformPort.y},
           ${modulePort.x - 10} ${modulePort.y},
           ${modulePort.x} ${modulePort.y}
       `}
