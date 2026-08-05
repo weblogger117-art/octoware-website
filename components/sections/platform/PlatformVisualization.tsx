@@ -71,7 +71,30 @@ const center = {
     -translate-x-1/2
     -translate-y-1/2
   "
->
+    >
+
+<div className="flex items-center gap-4">
+
+  <div
+    className="
+      flex
+      h-16
+      w-16
+      shrink-0
+      items-center
+      justify-center
+
+      rounded-2xl
+
+      bg-gradient-to-br
+      from-[#146ab1]/12
+      to-[#adce00]/10
+
+      text-[#146ab1]
+    "
+  >
+    <Icon className="h-8 w-8" />
+  </div>
 
   {modules.map((module) => {
 
@@ -79,8 +102,6 @@ const center = {
 
   const x = Math.cos(angle) * radiusX;
   const y = Math.sin(angle) * radiusY;
-  const left = `calc(${center.x}% + ${x}px)`;
-  const top = `calc(${center.y}% + ${y}px)`;
   const offsetX = module.offsetX ?? 0;
   const offsetY = module.offsetY ?? 0;
   
@@ -93,7 +114,7 @@ const center = {
       className="
         absolute
 
-        w-48
+        w-64
 
         -translate-x-1/2
         -translate-y-1/2
@@ -101,11 +122,12 @@ const center = {
         rounded-3xl
 
         border
-        border-slate-200/80
+        border-[#146ab1]/20
 
         bg-white/95
 
-        p-6
+        px-5
+        py-4
 
         shadow-[0_18px_45px_rgba(15,23,42,0.10)]
         backdrop-blur
@@ -116,44 +138,38 @@ const center = {
         hover:-translate-y-[55%]
         hover:shadow-2xl
         hover:scale-[1.03]
-        border-[#146ab1]/50
+        hover:border-[#146ab1]/50
       "
       style={{
       left: `calc(${centerX}% + ${x + offsetX}px)`,
       top: `calc(${centerY}% + ${y + offsetY}px)`,
 }}
+
+  <div>
+
+    <h4
+      className="
+        text-base
+        font-semibold
+        text-slate-900
+      "
     >
+      {module.title}
+    </h4>
 
-<div
-  className="
-    mb-4
+    <p
+      className="
+        mt-1
+        text-sm
+        text-slate-500
+      "
+    >
+      {module.subtitle}
+    </p>
 
-    flex
-    h-14
-    w-14
+  </div>
 
-    items-center
-    justify-center
-
-    rounded-xl
-
-    bg-gradient-to-br
-    from-[#146ab1]/12
-    to-[#adce00]/10
-
-    text-[#146ab1]
-  "
->
-  <Icon className="h-7 w-7" />
 </div>
-      
-      <p className="text-xs uppercase tracking-[0.25em] text-[#146ab1]">
-        {module.subtitle}
-      </p>
-
-      <h4 className="mt-2 text-base font-semibold text-slate-900">
-        {module.title}
-      </h4>
 
     </div>
 
