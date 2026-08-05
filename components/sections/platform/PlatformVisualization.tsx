@@ -21,6 +21,7 @@ type Module = {
 
   speed: string;
   delay: string;
+  intensity: number;
 };
 
 const modules: Module[] = [
@@ -34,6 +35,8 @@ const modules: Module[] = [
 
     speed: "5.6s",
     delay: "0s",
+
+    intensity: 1.10,
   },
   {
     title: "OctoWare®mobile",
@@ -45,6 +48,8 @@ const modules: Module[] = [
 
     speed: "6.2s",
     delay: "1.1s",
+
+    intensity: 0.95,
   },
   {
     title: "Schnittstellen",
@@ -56,6 +61,8 @@ const modules: Module[] = [
 
     speed: "4.8s",
     delay: "2.0s",
+
+    intensity: 1.25,
   },
   {
     title: "OctoReport®TN 2.0",
@@ -67,6 +74,8 @@ const modules: Module[] = [
 
     speed: "6.8s",
     delay: "3.2s",
+
+    intensity: 0.85,
   },
   {
     title: "OctoWare®TN",
@@ -78,6 +87,8 @@ const modules: Module[] = [
 
     speed: "5.3s",
     delay: "4.0s",
+
+    intensity: 1.05,
   },
 ];
 
