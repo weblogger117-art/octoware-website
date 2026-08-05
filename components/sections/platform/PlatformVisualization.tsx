@@ -1,6 +1,6 @@
 import {
-  Monitor,
-  Smartphone,
+  Globe,
+  TabletSmartphone,
   Building2,
   ChartColumn,
   Waypoints,
@@ -8,32 +8,32 @@ import {
 
 const modules = [
   {
-    title: "Web",
-    subtitle: "OctoWare®NET",
-    icon: Monitor,
+    title: "OctoWare®NET",
+    subtitle: "Web",
+    icon: Globe,
     angle: 0,
   },
   {
-    title: "Mobil",
-    subtitle: "OctoWare®mobile",
-    icon: Smartphone,
+    title: "OctoWare®mobile",
+    subtitle: "Mobil",
+    icon: TabletSmartphone,
     angle: 72,
   },
   {
-    title: "Vernetzung",
-    subtitle: "Schnittstellen",
+    title: "Schnittstellen",
+    subtitle: "Vernetzung",
     icon: Waypoints,
     angle: 144,
   },
   {
-    title: "Reporting",
-    subtitle: "OctoReport®TN 2.0",
+    title: "OctoReport®TN 2.0",
+    subtitle: "Reporting",
     icon: ChartColumn,
     angle: 216,
   },
   {
-    title: "Desktop",
-    subtitle: "OctoWare®TN",
+    title: "OctoWare®TN",
+    subtitle: "Desktop",
     icon: Building2,
     angle: 288,
   },
