@@ -102,7 +102,7 @@ export default function PlatformVisualization() {
             className="
               absolute
 
-              w-64
+              w-70
 
               -translate-x-1/2
               -translate-y-1/2
