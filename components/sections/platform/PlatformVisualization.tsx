@@ -15,6 +15,9 @@ type Module = {
   x: number;
   y: number;
   port: "top" | "bottom" | "left" | "right";
+
+  speed: string;
+  delay: string;
 };
 
 const modules: Module[] = [
