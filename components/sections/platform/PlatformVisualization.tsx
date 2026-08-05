@@ -53,6 +53,25 @@ export default function PlatformVisualization() {
 
   return (
     <div className="relative h-[560px] w-full">
+
+<svg
+  className="absolute inset-0 h-full w-full pointer-events-none"
+  viewBox="0 0 100 100"
+  preserveAspectRatio="none"
+>
+
+  <line
+    x1={platform.x}
+    y1={platform.y}
+    x2={modules[0].x}
+    y2={modules[0].y}
+    stroke="#146ab1"
+    strokeWidth="0.35"
+    opacity="0.25"
+  />
+
+</svg>
+      
       {/* Plattform */}
 
       <div
