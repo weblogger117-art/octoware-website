@@ -48,6 +48,10 @@ const centerX = 56;
 const centerY = 50;
 
 const rotation = 0;
+const center = {
+  x: centerX,
+  y: centerY,
+};
   
   return (
     <div className="relative h-[560px] w-full">
@@ -70,6 +74,9 @@ const rotation = 0;
 
   const x = Math.cos(angle) * radiusX;
   const y = Math.sin(angle) * radiusY;
+  const left = `calc(${center.x}% + ${x}px)`;
+  const top = `calc(${center.y}% + ${y}px)`;
+  
   const Icon = module.icon;
   
   return (
@@ -89,11 +96,11 @@ const rotation = 0;
         border
         border-slate-200/80
 
-        bg-white/90
+        bg-white/95
 
         p-5
 
-        shadow-lg
+        shadow-[0_18px_45px_rgba(15,23,42,0.10)]
         backdrop-blur
 
         transition-all
@@ -101,11 +108,13 @@ const rotation = 0;
 
         hover:-translate-y-[55%]
         hover:shadow-2xl
+        hover:scale-[1.03]
+        border-[#146ab1]/50
       "
       style={{
-        left: `calc(${centerX}% + ${x}px)`,
-        top: `calc(${centerY}% + ${y}px)`,
-      }}
+  left,
+  top,
+}}
     >
 
 <div
