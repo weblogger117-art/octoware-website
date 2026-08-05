@@ -6,7 +6,18 @@ import {
   Waypoints,
 } from "lucide-react";
 
-const modules = [
+type Module = {
+  title: string;
+  subtitle: string;
+  icon: React.ComponentType<{
+    className?: string;
+  }>;
+  x: number;
+  y: number;
+  port: "top" | "bottom" | "left" | "right";
+};
+
+const modules: Module[] = [
   {
     title: "OctoWare®NET",
     subtitle: "Web",
@@ -49,11 +60,7 @@ const modules = [
   },
 ];
 
-function getModulePort(module: {
-  x: number;
-  y: number;
-  port: "top" | "bottom" | "left" | "right";
-}) {
+function getModulePort(module: Module) {
   switch (module.port) {
     case "top":
       return {
