@@ -140,44 +140,25 @@ export function Footer() {
   </p>
 
     <div className="mt-8 border-t border-slate-200 pt-5">
-      <div
-  className="
-    flex
-    items-end
-    justify-between
-    gap-8
-  "
->
+      <p className="text-xs text-slate-400">
+  © {new Date().getFullYear()} easy-soft GmbH
+</p>
 
-  {/* Linke Seite */}
+<div className="mt-3 flex gap-5 text-xs">
 
-  <div>
+  <Link
+      href="/impressum"
+      className="text-slate-400 transition-colors hover:text-[#146ab1]"
+    >
+      Impressum
+    </Link>
 
-    <p className="text-xs text-slate-400">
-      © {new Date().getFullYear()} easy-soft GmbH
-    </p>
-
-    <div className="mt-3 flex gap-5 text-xs">
-
-      <Link
-        href="/impressum"
-        className="text-slate-400 transition-colors hover:text-[#146ab1]"
-      >
-        Impressum
-      </Link>
-
-      <Link
-        href="/datenschutz"
-        className="text-slate-400 transition-colors hover:text-[#146ab1]"
-      >
-        Datenschutz
-      </Link>
-
-    </div>
-
-  </div>
-
-  {/* Rechte Seite */}
+    <Link
+      href="/datenschutz"
+      className="text-slate-400 transition-colors hover:text-[#146ab1]"
+    >
+      Datenschutz
+  </Link>
 
 </div>
 
@@ -483,53 +464,9 @@ export function Footer() {
 </div>
       
       </div>
-
-    <div
-  className="
-    absolute
-    right-14
-    bottom-8
-
-    flex
-    flex-col
-    items-end
-  "
->
-  <div
-    className="
-      border-t
-      border-slate-200
-      pt-4
-    "
-  >
-    <p
-      className="
-        mb-3
-        text-right
-        text-[11px]
-        uppercase
-        tracking-[0.18em]
-        text-slate-400
-      "
-    >
-      Zertifizierungen
-    </p>
-
-    <div className="flex items-center gap-4">
-
-      <Image
-        src="/images/certificates/kds-3.webp"
-        alt="KDS 3.0 zertifiziert"
-        width={74}
-        height={74}
-        draggable={false}
-        className="w-[74px] h-auto select-none"
-      />
-
     </div>
-  </div>
-</div>
-</div>
+        </div>
+
     </footer>
   );
 }
