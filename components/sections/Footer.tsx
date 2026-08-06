@@ -462,6 +462,53 @@ export function Footer() {
   </div>
 
 </div>
+
+<div
+  className="
+    relative
+    z-10
+
+    mt-10
+    border-t
+    border-slate-200
+
+    pt-5
+
+    flex
+    justify-end
+  "
+>
+
+  <div className="flex flex-col items-end">
+
+    <p
+      className="
+        mb-3
+        text-[11px]
+        uppercase
+        tracking-[0.18em]
+        text-slate-400
+      "
+    >
+      Zertifizierungen
+    </p>
+
+    <div className="flex items-center gap-4">
+
+      <Image
+        src="/images/certificates/kds-3.webp"
+        alt="KDS 3.0 zertifiziert"
+        width={72}
+        height={72}
+        draggable={false}
+        className="w-[72px] h-auto select-none"
+      />
+
+    </div>
+
+  </div>
+
+</div>
       
       </div>
     </div>
