@@ -226,11 +226,29 @@ export default function BrowserBased() {
 
 <div
   className="
+    relative
     aspect-[16/10]
     overflow-hidden
-    bg-slate-100
+    bg-slate-950
   "
 >
+
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="
+      h-full
+      w-full
+      object-cover
+    "
+  >
+    <source
+      src="/videos/octoware-net-demo.mp4"
+      type="video/mp4"
+    />
+  </video>
 
 </div>
 
