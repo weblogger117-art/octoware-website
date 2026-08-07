@@ -5,7 +5,15 @@ export default function BrowserBased() {
     <section className="py-32 bg-white">
       <div className="mx-auto max-w-7xl px-6">
 
-        <div className="grid items-center gap-20 lg:grid-cols-2">
+        <div
+  className="
+    grid
+    items-center
+    gap-20
+
+    lg:grid-cols-[0.9fr_1.1fr]
+  "
+>
 
           {/* Linke Seite */}
 
@@ -92,7 +100,7 @@ export default function BrowserBased() {
     flex
     justify-center
 
-    lg:-translate-x-12
+    lg:-translate-x-10
   "
 >
 
@@ -194,7 +202,17 @@ export default function BrowserBased() {
 
     {/* Browser-Inhalt */}
 
-    <div className="relative aspect-[16/9] overflow-hidden">
+    <div
+  className="
+    relative
+
+    aspect-[16/9]
+
+    overflow-hidden
+
+    p-2
+  "
+>
 
       <video
         autoPlay
@@ -204,6 +222,7 @@ export default function BrowserBased() {
         className="
           h-full
           w-full
+          rounded-b-[24px]
           object-cover
         "
       >
