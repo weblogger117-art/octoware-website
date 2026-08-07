@@ -180,6 +180,7 @@ export default function BrowserBased() {
     </span>
 
   </div>
+      </div>
 
      <div
   className="
@@ -256,8 +257,6 @@ export default function BrowserBased() {
   </div>
 
 </div> 
-
-</div>
 
   </div>
 
