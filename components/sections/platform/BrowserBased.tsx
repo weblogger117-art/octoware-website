@@ -178,6 +178,7 @@ export default function BrowserBased() {
     >
       Online
     </span>
+    </div>
 
   </div>
 
@@ -252,8 +253,6 @@ export default function BrowserBased() {
       >
         Automatisch
       </p>
-
-    </div>
 
   </div>
 
