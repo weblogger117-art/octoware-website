@@ -92,6 +92,8 @@ export default function BrowserBased() {
     hover:-translate-y-2
   "
 >
+
+  {/* Glow */}
   
 <div
   className="
@@ -111,6 +113,62 @@ export default function BrowserBased() {
     blur-3xl
   "
 />
+
+{/* Floating Card Online */}
+  
+<div
+    className="
+      absolute
+
+      -right-8
+      top-10
+
+      z-20
+
+      rounded-2xl
+
+      border
+      border-white/60
+
+      bg-white/90
+
+      px-5
+      py-3
+
+      shadow-[0_20px_45px_rgba(15,23,42,0.12)]
+
+      backdrop-blur
+
+      animate-pulse
+    "
+  >
+
+    <div className="flex items-center gap-3">
+
+      <div
+        className="
+          h-3
+          w-3
+          rounded-full
+          bg-[#adce00]
+        "
+      />
+
+      <span
+        className="
+          text-sm
+          font-semibold
+          text-slate-700
+        "
+      >
+        Online
+      </span>
+
+    </div>
+
+  </div>
+
+{/* Browser */}
   
   <div
     className="
