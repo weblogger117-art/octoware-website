@@ -59,9 +59,9 @@ export default function BrowserBased() {
     text-slate-900
   "
 >
-  KLICKEN,
+  KLICKEN.
   <br />
-  ANMELDEN, LOSLEGEN.
+  ANMELDEN. LOSLEGEN.
 </h2>
 
 {/* Beschreibung */}
@@ -90,6 +90,7 @@ export default function BrowserBased() {
     transition-transform
     duration-700
     hover:-translate-y-2
+    -lg:-translate-x-8
   "
 >
 
@@ -120,8 +121,8 @@ export default function BrowserBased() {
     className="
       absolute
 
-      -right-16
-      top-5
+      -right-10
+      -top-6
 
       z-20
 
@@ -132,8 +133,8 @@ export default function BrowserBased() {
 
       bg-white/90
 
-      px-5
-      py-3
+      px-6
+      py-5
 
       shadow-[0_30px_60px_rgba(15,23,42,0.18)]
 
@@ -187,6 +188,7 @@ export default function BrowserBased() {
   <div
     className="
       relative
+      w-[720px]
       z-10
       overflow-hidden
       rounded-3xl
