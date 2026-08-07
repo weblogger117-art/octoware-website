@@ -84,195 +84,61 @@ export default function BrowserBased() {
 </p>
 
 </div>
-          {/* Rechte Seite */}
+{/* Rechte Seite */}
 
 <div
   className="
     relative
-    transition-transform
-    duration-700
-    hover:-translate-y-2
-    -lg:-translate-x-12
+    flex
+    justify-center
+
+    lg:-translate-x-12
   "
 >
 
   {/* Glow */}
-  
-<div
-  className="
-    absolute
-    -left-12
-    top-1/2
 
-    h-72
-    w-72
-
-    -translate-y-1/2
-
-    rounded-full
-
-    bg-[#146ab1]/10
-
-    blur-3xl
-  "
-/>
-
-{/* Floating Card Systemstatus */}
-  
-<div
+  <div
     className="
       absolute
 
-      -right-14
-      -top-8
+      left-1/2
+      top-1/2
 
-      z-20
+      h-72
+      w-72
 
-      rounded-2xl
+      -translate-x-1/2
+      -translate-y-1/2
 
-      border
-      border-white/60
+      rounded-full
 
-      bg-white/90
+      bg-[#146ab1]/10
 
-      px-7
-      py-5
-
-      shadow-[0_35px_70px_rgba(15,23,42,.18)]
-
-      backdrop-blur
+      blur-3xl
     "
-  >
+  />
 
-    <div className="flex flex-col gap-2">
+  {/* Browser */}
 
-  <span
-    className="
-      text-[11px]
-      font-semibold
-      uppercase
-      tracking-[0.18em]
-      text-slate-500
-    "
-  >
-    Systemstatus
-  </span>
-
-  <div className="flex items-center gap-3">
-
-    <div
-      className="
-        h-4
-        w-4
-        rounded-full
-        bg-[#adce00]
-      "
-    />
-
-    <span
-      className="
-        text-sm
-        font-semibold
-        text-slate-800
-      "
-    >
-      Online
-    </span>
-
-  </div>
-      </div>
-
-     <div
-  className="
-    absolute
-
-    -left-12
-    bottom-10
-
-    z-20
-
-    rounded-2xl
-
-    border
-    border-white/60
-
-    bg-white/90
-
-    px-6
-    py-5
-
-    backdrop-blur
-
-    shadow-[0_35px_70px_rgba(15,23,42,.18)]
-  "
->
-
-  <div className="flex items-center gap-3">
-
-    <div
-      className="
-        flex
-        h-10
-        w-10
-        items-center
-        justify-center
-
-        rounded-xl
-
-        bg-[#146ab1]/10
-
-        text-[#146ab1]
-      "
-    >
-      <RefreshCw className="h-5 w-5" />
-    </div>
-
-    <div>
-
-      <p
-        className="
-          text-[11px]
-          font-semibold
-          uppercase
-          tracking-[0.18em]
-          text-slate-500
-        "
-      >
-        Updates
-      </p>
-
-      <p
-        className="
-          mt-1
-          text-sm
-          font-semibold
-          text-slate-800
-        "
-      >
-        Automatisch
-      </p>
-
-    </div>
-
-  </div>
-
-</div> 
-
-  </div>
-
-{/* Browser */}
-  
   <div
     className="
       relative
-      w-[760px]
+
       z-10
+
+      w-[780px]
+
       overflow-hidden
-      rounded-3xl
+
+      rounded-[30px]
+
       border
       border-slate-200
+
       bg-white
-      shadow-[0_35px_90px_rgba(15,23,42,0.18)]
+
+      shadow-[0_40px_90px_rgba(15,23,42,.15)]
 
       ring-1
       ring-white/40
@@ -286,30 +152,36 @@ export default function BrowserBased() {
         flex
         items-center
         gap-2
+
         border-b
         border-slate-200
+
         bg-slate-50
+
         px-5
         py-4
       "
     >
 
       <div className="h-3 w-3 rounded-full bg-red-400" />
-
       <div className="h-3 w-3 rounded-full bg-yellow-400" />
-
       <div className="h-3 w-3 rounded-full bg-green-400" />
 
       <div
         className="
           ml-6
           flex-1
+
           rounded-full
+
           bg-white
+
           px-4
           py-2
+
           text-sm
           text-slate-400
+
           shadow-inner
         "
       >
@@ -318,160 +190,168 @@ export default function BrowserBased() {
 
     </div>
 
-   {/* Browser-Inhalt */}
+    {/* Browser-Inhalt */}
 
-<div
-  className="
-    relative
-    aspect-[16/10]
-    overflow-hidden
-    bg-slate-950
-  "
->
+    <div className="relative aspect-[16/10] overflow-hidden">
 
-  <video
-    autoPlay
-    muted
-    loop
-    playsInline
-    className="
-      h-full
-      w-full
-      object-cover
-    "
-  >
-    <source
-      src="/videos/octoware-net-demo.mp4"
-      type="video/mp4"
-    />
-  </video>
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="
+          h-full
+          w-full
+          object-cover
+        "
+      >
 
-<div
-  className="
-    pointer-events-none
-    absolute
-    inset-0
+        <source
+          src="/videos/octoware-net-demo.mp4"
+          type="video/mp4"
+        />
 
-    bg-gradient-to-b
-    from-white/8
-    via-transparent
-    to-transparent
-  "
-/>
+      </video>
 
-  <div
-  className="
-    pointer-events-none
-    absolute
-    inset-0
+      {/* Lichtverlauf */}
 
-    shadow-[inset_0_0_80px_rgba(15,23,42,.18)]
-  "
-/>
-  
-  <div
-  className="
-    absolute
-    right-5
-    top-5
+      <div
+        className="
+          absolute
+          inset-0
 
-    flex
-    items-center
-    gap-2
+          bg-gradient-to-b
+          from-white/8
+          via-transparent
+          to-transparent
+        "
+      />
 
-    rounded-full
+      {/* Vignette */}
 
-    border
-    border-white/15
+      <div
+        className="
+          absolute
+          inset-0
 
-    bg-black/40
+          shadow-[inset_0_0_80px_rgba(15,23,42,.18)]
+        "
+      />
 
-    px-4
-    py-2
+      {/* Live Demo */}
 
-    backdrop-blur-md
-  "
->
+      <div
+        className="
+          absolute
 
-  <span
-    className="
-      relative
-      flex
-      h-3
-      w-3
-    "
-  >
+          bottom-6
+          left-6
 
-    <span
-      className="
-        absolute
-        inline-flex
-        h-full
-        w-full
-        animate-ping
-        rounded-full
-        bg-[#adce00]
-        opacity-60
-      "
-    />
+          flex
+          items-center
+          gap-2
 
-    <span
-      className="
-        relative
-        inline-flex
-        h-3
-        w-3
-        rounded-full
-        bg-[#adce00]
-      "
-    />
+          rounded-full
 
-  </span>
+          border
+          border-white/15
 
-  <span
-    className="
-      text-xs
-      font-semibold
-      uppercase
-      tracking-[0.18em]
-      text-white
-    "
-  >
-    Live Demo
-  </span>
+          bg-black/40
 
-</div>
+          px-4
+          py-2
 
-<div
-  className="
-    pointer-events-none
+          backdrop-blur-md
+        "
+      >
 
-    absolute
-    inset-y-0
-    -left-1/2
+        <span
+          className="
+            relative
 
-    w-1/3
+            flex
+            h-3
+            w-3
+          "
+        >
 
-    -skew-x-12
+          <span
+            className="
+              absolute
+              inline-flex
 
-    bg-gradient-to-r
-    from-transparent
-    via-white/10
-    to-transparent
+              h-full
+              w-full
 
-    animate-browser-light
-  "
-/>
-  
-</div>
+              animate-ping
+
+              rounded-full
+
+              bg-[#adce00]
+
+              opacity-60
+            "
+          />
+
+          <span
+            className="
+              relative
+              inline-flex
+
+              h-3
+              w-3
+
+              rounded-full
+
+              bg-[#adce00]
+            "
+          />
+
+        </span>
+
+        <span
+          className="
+            text-xs
+            font-semibold
+
+            uppercase
+
+            tracking-[0.18em]
+
+            text-white
+          "
+        >
+          Live Demo
+        </span>
+
+      </div>
+
+      {/* Lichtanimation */}
+
+      <div
+        className="
+          absolute
+          inset-y-0
+          -left-1/2
+
+          w-1/3
+
+          -skew-x-12
+
+          bg-gradient-to-r
+          from-transparent
+          via-white/10
+          to-transparent
+
+          animate-browser-light
+        "
+      />
+
+    </div>
 
   </div>
 
 </div>
-
-        </div>
-
-      </div>
     </section>
   );
 }
