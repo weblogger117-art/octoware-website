@@ -129,6 +129,8 @@ export default function BrowserBased() {
 
   {/* Browser */}
 
+<div className="animate-browser-float">
+  
   <div
     className="
       relative
@@ -150,8 +152,6 @@ export default function BrowserBased() {
 
       ring-1
       ring-white/60
-
-      animate-browser-float
     "
   >
 
@@ -374,6 +374,7 @@ export default function BrowserBased() {
 
     </div>
 
+  </div>
   </div>
 
 </div>
