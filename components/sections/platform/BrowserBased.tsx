@@ -129,8 +129,6 @@ export default function BrowserBased() {
 
   {/* Browser */}
 
-<div className="animate-browser-float">
-  
   <div
     className="
       relative
@@ -164,12 +162,11 @@ export default function BrowserBased() {
         gap-2
 
         border-b
-        border-white/70
+        border-slate-200
 
         bg-gradient-to-b
         from-white
-        via-white
-        to-slate-100
+        to-slate-50
 
         px-5
         py-4
@@ -187,8 +184,7 @@ export default function BrowserBased() {
 
           rounded-full
 
-          bg-white/90
-          backdrop-blur
+          bg-white
 
           px-4
           py-2
@@ -374,7 +370,6 @@ export default function BrowserBased() {
 
     </div>
 
-  </div>
   </div>
 
 </div>
