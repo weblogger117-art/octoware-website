@@ -150,6 +150,8 @@ export default function BrowserBased() {
 
       ring-1
       ring-white/60
+
+      animate-browser-float
     "
   >
 
