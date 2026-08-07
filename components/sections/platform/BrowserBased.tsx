@@ -59,9 +59,9 @@ export default function BrowserBased() {
     text-slate-900
   "
 >
-  Arbeiten.
+  KLICKEN,
   <br />
-  Nicht installieren.
+  ANMELDEN, LOSLEGEN.
 </h2>
 
 {/* Beschreibung */}
