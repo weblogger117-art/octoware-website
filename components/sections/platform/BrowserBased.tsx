@@ -205,9 +205,10 @@ export default function BrowserBased() {
 
   backdrop-blur-sm
 "
-        ></div>
-        https://octoware-net.de
-      </div>
+        >
+  <span className="font-medium">
+    https://octoware-net.de
+  </span>
 
     </div>
 
