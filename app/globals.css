@@ -281,9 +281,9 @@ body {
   animation: browser-light 14s ease-in-out infinite;
 }
 
-@keyframes browser-float {
+@keyframes float-slow {
 
-  0% {
+  0%,100% {
     transform: translateY(0px);
   }
 
@@ -291,12 +291,40 @@ body {
     transform: translateY(-6px);
   }
 
-  100% {
+}
+
+@keyframes float-medium {
+
+  0%,100% {
     transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
   }
 
 }
 
-.animate-browser-float {
-  animation: browser-float 8s ease-in-out infinite;
+@keyframes float-fast {
+
+  0%,100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+}
+
+.animate-float-slow {
+  animation: float-slow 8.2s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: float-medium 7.1s ease-in-out infinite;
+}
+
+.animate-float-fast {
+  animation: float-fast 9.3s ease-in-out infinite;
 }
