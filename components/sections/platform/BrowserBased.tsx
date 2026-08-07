@@ -84,9 +84,81 @@ export default function BrowserBased() {
 </div>
           {/* Rechte Seite */}
 
-          <div>
+<div className="relative">
 
-          </div>
+  <div
+    className="
+      overflow-hidden
+      rounded-3xl
+      border
+      border-slate-200
+      bg-white
+      shadow-[0_35px_80px_rgba(15,23,42,0.12)]
+    "
+  >
+
+    {/* Browser-Leiste */}
+
+    <div
+      className="
+        flex
+        items-center
+        gap-2
+        border-b
+        border-slate-200
+        bg-slate-50
+        px-5
+        py-4
+      "
+    >
+
+      <div className="h-3 w-3 rounded-full bg-red-400" />
+
+      <div className="h-3 w-3 rounded-full bg-yellow-400" />
+
+      <div className="h-3 w-3 rounded-full bg-green-400" />
+
+      <div
+        className="
+          ml-6
+          flex-1
+          rounded-full
+          bg-white
+          px-4
+          py-2
+          text-sm
+          text-slate-400
+          shadow-inner
+        "
+      >
+        https://portal.octoware.de
+      </div>
+
+    </div>
+
+    {/* Inhalt */}
+
+    <div
+      className="
+        flex
+        aspect-[16/10]
+        items-center
+        justify-center
+        bg-gradient-to-br
+        from-slate-50
+        to-slate-100
+      "
+    >
+
+      <span className="text-slate-400">
+        Screenshot folgt
+      </span>
+
+    </div>
+
+  </div>
+
+</div>
 
         </div>
 
