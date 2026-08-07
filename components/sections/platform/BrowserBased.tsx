@@ -123,7 +123,7 @@ export default function BrowserBased() {
 
       bg-[#146ab1]/12
 
-      blur-3xl
+      blur-[120px]
     "
   />
 
@@ -135,7 +135,7 @@ export default function BrowserBased() {
 
       z-10
 
-      w-[840px]
+      w-[900px]
 
       overflow-hidden
 
@@ -162,7 +162,7 @@ export default function BrowserBased() {
         gap-2
 
         border-b
-        border-slate-200
+        border-white/70
 
         bg-gradient-to-b
         from-white
@@ -184,7 +184,8 @@ export default function BrowserBased() {
 
           rounded-full
 
-          bg-white
+          bg-white/90
+          backdrop-blur
 
           px-4
           py-2
@@ -220,12 +221,17 @@ export default function BrowserBased() {
         loop
         playsInline
         className="
-          h-full
-          w-full
-          rounded-b-[24px]
-          object-cover
-        "
-      >
+    absolute
+    inset-0
+
+    h-full
+    w-full
+
+    object-cover
+
+    rounded-b-[24px]
+  "
+>
 
         <source
           src="/videos/octoware-net-demo.mp4"
