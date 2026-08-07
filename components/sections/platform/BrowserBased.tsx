@@ -352,6 +352,9 @@ export default function BrowserBased() {
   </div>
 
 </div>
+
+          </div>
+        </div>
     </section>
   );
 }
