@@ -280,3 +280,23 @@ body {
 .animate-browser-light {
   animation: browser-light 14s ease-in-out infinite;
 }
+
+@keyframes browser-float {
+
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+
+}
+
+.animate-browser-float {
+  animation: browser-float 8s ease-in-out infinite;
+}
