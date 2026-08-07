@@ -47,6 +47,8 @@ export default function BrowserBased() {
 
   </div>
 
+  {/* Überschrift */}
+  
   <h2
   className="
     mt-8
@@ -61,6 +63,23 @@ export default function BrowserBased() {
   <br />
   Nicht installieren.
 </h2>
+
+{/* Beschreibung */}
+  
+  <p
+  className="
+    mt-8
+    max-w-xl
+    text-lg
+    leading-8
+    text-slate-600
+  "
+>
+  Mit OctoWare®NET arbeiten Gesundheitsämter vollständig
+  browserbasiert – ohne lokale Installation. Updates,
+  Wartung und neue Funktionen stehen zentral bereit und
+  sind sofort für alle Benutzer verfügbar.
+</p>
 
 </div>
           {/* Rechte Seite */}
