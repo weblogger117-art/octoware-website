@@ -7,10 +7,27 @@ export default function BrowserBased() {
 
           {/* Linke Seite */}
 
-          <div>
+<div>
 
-          </div>
+  <div
+    className="
+      inline-flex
+      items-center
+      rounded-full
+      border
+      border-[#146ab1]/15
+      bg-[#146ab1]/5
+      px-4
+      py-2
+      text-sm
+      font-medium
+      text-[#146ab1]
+    "
+  >
+    Browserbasiert
+  </div>
 
+</div>
           {/* Rechte Seite */}
 
           <div>
