@@ -29,13 +29,13 @@ export default function BrowserBased() {
   >
     <span className="text-slate-300">•</span>
 
-    <span className="text-xs font-semibold uppercase tracking-[0.22em] text-[#146ab1]">
+    <span className="text-sm text-slate-600">
       Plattform
     </span>
 
     <span className="h-2 w-2 rounded-full bg-[#adce00]" />
     
-    <span className="text-sm text-slate-600">
+    <span className="text-xs font-semibold uppercase tracking-[0.22em] text-[#146ab1]">
       Browserbasiert
     </span>
 
@@ -46,6 +46,21 @@ export default function BrowserBased() {
     </span>
 
   </div>
+
+  <h2
+  className="
+    mt-8
+    max-w-xl
+    text-5xl
+    font-bold
+    leading-tight
+    text-slate-900
+  "
+>
+  Arbeiten.
+  <br />
+  Nicht installieren.
+</h2>
 
 </div>
           {/* Rechte Seite */}
