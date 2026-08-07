@@ -164,11 +164,12 @@ export default function BrowserBased() {
         gap-2
 
         border-b
-        border-slate-200
+        border-white/70
 
         bg-gradient-to-b
         from-white
-        to-slate-50
+        via-white
+        to-slate-100
 
         px-5
         py-4
@@ -186,7 +187,8 @@ export default function BrowserBased() {
 
           rounded-full
 
-          bg-white
+          bg-white/90
+          backdrop-blur
 
           px-4
           py-2
