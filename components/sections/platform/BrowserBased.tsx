@@ -105,15 +105,15 @@ export default function BrowserBased() {
       left-1/2
       top-1/2
 
-      h-72
-      w-72
+      h-[420px]
+      w-[420px]
 
       -translate-x-1/2
       -translate-y-1/2
 
       rounded-full
 
-      bg-[#146ab1]/10
+      bg-[#146ab1]/12
 
       blur-3xl
     "
@@ -127,7 +127,7 @@ export default function BrowserBased() {
 
       z-10
 
-      w-[780px]
+      w-[840px]
 
       overflow-hidden
 
@@ -138,10 +138,10 @@ export default function BrowserBased() {
 
       bg-white
 
-      shadow-[0_40px_90px_rgba(15,23,42,.15)]
+      shadow-[0_55px_120px_rgba(15,23,42,.22)]
 
       ring-1
-      ring-white/40
+      ring-white/60
     "
   >
 
@@ -156,7 +156,9 @@ export default function BrowserBased() {
         border-b
         border-slate-200
 
-        bg-slate-50
+        bg-gradient-to-b
+        from-white
+        to-slate-50
 
         px-5
         py-4
@@ -192,7 +194,7 @@ export default function BrowserBased() {
 
     {/* Browser-Inhalt */}
 
-    <div className="relative aspect-[16/10] overflow-hidden">
+    <div className="relative aspect-[16/9] overflow-hidden">
 
       <video
         autoPlay
