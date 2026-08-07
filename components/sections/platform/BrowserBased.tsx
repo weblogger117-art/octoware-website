@@ -349,6 +349,27 @@ export default function BrowserBased() {
 
 </div>
 
+<div
+  className="
+    pointer-events-none
+
+    absolute
+    inset-y-0
+    -left-1/2
+
+    w-1/3
+
+    -skew-x-12
+
+    bg-gradient-to-r
+    from-transparent
+    via-white/10
+    to-transparent
+
+    animate-browser-light
+  "
+/>
+  
 </div>
 
   </div>
