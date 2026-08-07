@@ -166,10 +166,11 @@ export default function BrowserBased() {
 
         bg-gradient-to-b
         from-white
-        to-slate-50
+        via-white
+        to-slate-100
 
         px-5
-        py-4
+        py-5
       "
     >
 
@@ -179,23 +180,30 @@ export default function BrowserBased() {
 
       <div
         className="
-          ml-6
-          flex-1
+  ml-6
+  flex-1
 
-          rounded-full
+  flex
+  items-center
+  gap-3
 
-          bg-white/90
-          backdrop-blur
+  rounded-full
 
-          px-4
-          py-2
+  border
+  border-slate-200/70
 
-          text-sm
-          text-slate-400
+  bg-white/90
 
-          shadow-inner
-        "
-      >
+  px-4
+  py-2
+
+  text-sm
+  text-slate-500
+
+  shadow-[inset_0_1px_2px_rgba(255,255,255,.9)]
+
+  backdrop-blur-sm
+"
         https://octoware-net.de
       </div>
 
