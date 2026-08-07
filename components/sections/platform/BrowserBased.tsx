@@ -178,18 +178,15 @@ export default function BrowserBased() {
     >
       Online
     </span>
-    </div>
 
   </div>
 
-{/* Floating Card Update */}
-      
      <div
   className="
     absolute
 
-    -left-10
-    -bottom-10
+    -left-12
+    bottom-10
 
     z-20
 
@@ -253,6 +250,8 @@ export default function BrowserBased() {
       >
         Automatisch
       </p>
+
+    </div>
 
   </div>
 
