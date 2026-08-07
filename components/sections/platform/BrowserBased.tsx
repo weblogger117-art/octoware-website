@@ -127,6 +127,91 @@ export default function BrowserBased() {
     "
   />
 
+{/* Floating Card Systemstatus */}
+
+<div
+  className="
+    absolute
+
+    -right-10
+    -top-6
+
+    z-20
+
+    rounded-2xl
+
+    border
+    border-white/70
+
+    bg-white/85
+
+    px-6
+    py-5
+
+    backdrop-blur-xl
+
+    shadow-[0_35px_70px_rgba(15,23,42,.18)]
+
+    animate-float-slow
+  "
+>
+
+  <p
+    className="
+      text-[11px]
+      font-semibold
+      uppercase
+      tracking-[0.18em]
+      text-slate-500
+    "
+  >
+    Systemstatus
+  </p>
+
+  <div className="mt-3 flex items-center gap-3">
+
+    <span className="relative flex h-3 w-3">
+
+      <span
+        className="
+          absolute
+          inline-flex
+          h-full
+          w-full
+          animate-ping
+          rounded-full
+          bg-[#adce00]
+          opacity-60
+        "
+      />
+
+      <span
+        className="
+          relative
+          inline-flex
+          h-3
+          w-3
+          rounded-full
+          bg-[#adce00]
+        "
+      />
+
+    </span>
+
+    <span
+      className="
+        text-sm
+        font-semibold
+        text-slate-800
+      "
+    >
+      Online
+    </span>
+
+  </div>
+
+</div>
+  
   {/* Browser */}
 
   <div
