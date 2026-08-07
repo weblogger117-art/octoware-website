@@ -251,3 +251,32 @@ body {
 .animate-mesh-float {
   animation: meshFloat 18s ease-in-out infinite;
 }
+
+@keyframes browser-light {
+  0% {
+    transform: translateX(0) skewX(-12deg);
+    opacity: 0;
+  }
+
+  8% {
+    opacity: .9;
+  }
+
+  18% {
+    opacity: .9;
+  }
+
+  28% {
+    transform: translateX(520%) skewX(-12deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(520%) skewX(-12deg);
+    opacity: 0;
+  }
+}
+
+.animate-browser-light {
+  animation: browser-light 14s ease-in-out infinite;
+}
