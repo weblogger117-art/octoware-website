@@ -250,6 +250,79 @@ export default function BrowserBased() {
     />
   </video>
 
+  <div
+  className="
+    absolute
+    right-5
+    top-5
+
+    flex
+    items-center
+    gap-2
+
+    rounded-full
+
+    border
+    border-white/15
+
+    bg-black/40
+
+    px-4
+    py-2
+
+    backdrop-blur-md
+  "
+>
+
+  <span
+    className="
+      relative
+      flex
+      h-3
+      w-3
+    "
+  >
+
+    <span
+      className="
+        absolute
+        inline-flex
+        h-full
+        w-full
+        animate-ping
+        rounded-full
+        bg-[#adce00]
+        opacity-60
+      "
+    />
+
+    <span
+      className="
+        relative
+        inline-flex
+        h-3
+        w-3
+        rounded-full
+        bg-[#adce00]
+      "
+    />
+
+  </span>
+
+  <span
+    className="
+      text-xs
+      font-semibold
+      uppercase
+      tracking-[0.18em]
+      text-white
+    "
+  >
+    Live Demo
+  </span>
+
+</div>
+
 </div>
 
   </div>
