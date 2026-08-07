@@ -181,12 +181,14 @@ export default function BrowserBased() {
 
   </div>
 
+{/* Floating Card Update */}
+      
      <div
   className="
     absolute
 
-    -left-12
-    bottom-10
+    -left-10
+    -bottom-10
 
     z-20
 
