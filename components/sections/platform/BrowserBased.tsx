@@ -84,10 +84,38 @@ export default function BrowserBased() {
 </div>
           {/* Rechte Seite */}
 
-<div className="relative">
+<div
+  className="
+    relative
+    transition-transform
+    duration-700
+    hover:-translate-y-2
+  "
+>
+  
+<div
+  className="
+    absolute
+    -left-12
+    top-1/2
 
+    h-72
+    w-72
+
+    -translate-y-1/2
+
+    rounded-full
+
+    bg-[#146ab1]/10
+
+    blur-3xl
+  "
+/>
+  
   <div
     className="
+      relative
+      z-10
       overflow-hidden
       rounded-3xl
       border
@@ -131,7 +159,7 @@ export default function BrowserBased() {
           shadow-inner
         "
       >
-        https://portal.octoware.de
+        https://octoware-net.de
       </div>
 
     </div>
