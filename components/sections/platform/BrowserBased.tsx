@@ -101,6 +101,7 @@ export default function BrowserBased() {
     justify-center
 
     lg:-translate-x-10
+    lg:-translate-y-8
   "
 >
 
