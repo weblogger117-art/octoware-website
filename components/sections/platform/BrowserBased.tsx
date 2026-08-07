@@ -90,7 +90,7 @@ export default function BrowserBased() {
     transition-transform
     duration-700
     hover:-translate-y-2
-    -lg:-translate-x-8
+    -lg:-translate-x-12
   "
 >
 
@@ -121,8 +121,8 @@ export default function BrowserBased() {
     className="
       absolute
 
-      -right-10
-      -top-6
+      -right-14
+      -top-8
 
       z-20
 
@@ -133,10 +133,10 @@ export default function BrowserBased() {
 
       bg-white/90
 
-      px-6
+      px-7
       py-5
 
-      shadow-[0_30px_60px_rgba(15,23,42,0.18)]
+      shadow-[0_35px_70px_rgba(15,23,42,.18)]
 
       backdrop-blur
     "
@@ -188,7 +188,7 @@ export default function BrowserBased() {
   <div
     className="
       relative
-      w-[720px]
+      w-[760px]
       z-10
       overflow-hidden
       rounded-3xl
