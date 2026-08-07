@@ -179,7 +179,10 @@ export default function BrowserBased() {
       border
       border-slate-200
       bg-white
-      shadow-[0_35px_80px_rgba(15,23,42,0.12)]
+      shadow-[0_35px_90px_rgba(15,23,42,0.18)]
+
+      ring-1
+      ring-white/40
     "
   >
 
@@ -250,6 +253,29 @@ export default function BrowserBased() {
     />
   </video>
 
+<div
+  className="
+    pointer-events-none
+    absolute
+    inset-0
+
+    bg-gradient-to-b
+    from-white/8
+    via-transparent
+    to-transparent
+  "
+/>
+
+  <div
+  className="
+    pointer-events-none
+    absolute
+    inset-0
+
+    shadow-[inset_0_0_80px_rgba(15,23,42,.18)]
+  "
+/>
+  
   <div
   className="
     absolute
