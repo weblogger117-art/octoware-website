@@ -224,23 +224,42 @@ export default function BrowserBased() {
 
     {/* Inhalt */}
 
+<div
+  className="
+    aspect-[16/10]
+    bg-gradient-to-br
+    from-slate-50
+    to-slate-100
+    p-6
+  "
+>
+
+  <div className="flex h-full gap-5">
+
+    {/* Sidebar */}
+
     <div
       className="
-        flex
-        aspect-[16/10]
-        items-center
-        justify-center
-        bg-gradient-to-br
-        from-slate-50
-        to-slate-100
+        w-20
+        rounded-2xl
+        bg-white
+        border
+        border-slate-200
+        p-3
       "
     >
 
-      <span className="text-slate-400">
-        Screenshot folgt
-      </span>
+    </div>
+
+    {/* Hauptbereich */}
+
+    <div className="flex flex-1 flex-col gap-4">
 
     </div>
+
+  </div>
+
+</div>
 
   </div>
 
