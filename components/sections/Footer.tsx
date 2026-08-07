@@ -144,11 +144,9 @@ export function Footer() {
   © {new Date().getFullYear()} easy-soft GmbH
 </p>
 
-<div className="mt-3 flex items-center justify-between">
+<div className="mt-3 flex gap-5 text-xs">
 
-  <div className="flex gap-5 text-xs">
-
-    <Link
+  <Link
       href="/impressum"
       className="text-slate-400 transition-colors hover:text-[#146ab1]"
     >
@@ -160,20 +158,7 @@ export function Footer() {
       className="text-slate-400 transition-colors hover:text-[#146ab1]"
     >
       Datenschutz
-    </Link>
-
-  </div>
-
-  <Image
-    src="/images/certificates/kds-3.webp"
-    alt="KDS 3.0 zertifiziert"
-    width={54}
-    height={54}
-    draggable={false}
-    className="h-11 w-auto select-none"
-  />
-
-</div>
+  </Link>
 
 </div>
 
@@ -480,6 +465,7 @@ export function Footer() {
       
       </div>
     </div>
+        </div>
 
     </footer>
   );
