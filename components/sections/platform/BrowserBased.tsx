@@ -101,7 +101,6 @@ export default function BrowserBased() {
     justify-center
 
     lg:-translate-x-10
-    lg:-translate-y-8
   "
 >
 
@@ -124,7 +123,7 @@ export default function BrowserBased() {
 
       bg-[#146ab1]/12
 
-      blur-[120px]
+      blur-3xl
     "
   />
 
@@ -136,7 +135,7 @@ export default function BrowserBased() {
 
       z-10
 
-      w-[900px]
+      w-[840px]
 
       overflow-hidden
 
@@ -163,15 +162,14 @@ export default function BrowserBased() {
         gap-2
 
         border-b
-        border-white/70
+        border-slate-200
 
         bg-gradient-to-b
         from-white
-        via-white
-        to-slate-100
+        to-slate-50
 
         px-5
-        py-5
+        py-4
       "
     >
 
@@ -181,34 +179,24 @@ export default function BrowserBased() {
 
       <div
         className="
-  ml-6
-  flex-1
+          ml-6
+          flex-1
 
-  flex
-  items-center
-  gap-3
+          rounded-full
 
-  rounded-full
+          bg-white
 
-  border
-  border-slate-200/70
+          px-4
+          py-2
 
-  bg-white/90
+          text-sm
+          text-slate-400
 
-  px-4
-  py-2
-
-  text-sm
-  text-slate-500
-
-  shadow-[inset_0_1px_2px_rgba(255,255,255,.9)]
-
-  backdrop-blur-sm
-"
-        >
-  <span className="font-medium">
-    https://octoware-net.de
-  </span>
+          shadow-inner
+        "
+      >
+        https://octoware-net.de
+      </div>
 
     </div>
 
@@ -232,17 +220,12 @@ export default function BrowserBased() {
         loop
         playsInline
         className="
-    absolute
-    inset-0
-
-    h-full
-    w-full
-
-    object-cover
-
-    rounded-b-[24px]
-  "
->
+          h-full
+          w-full
+          rounded-b-[24px]
+          object-cover
+        "
+      >
 
         <source
           src="/videos/octoware-net-demo.mp4"
