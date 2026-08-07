@@ -1,7 +1,5 @@
 import { RefreshCw } from "lucide-react";
 
-import { RefreshCw } from "lucide-react";
-
 export default function BrowserBased() {
   return (
     <section className="py-32 bg-white">
