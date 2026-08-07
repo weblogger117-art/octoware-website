@@ -1,3 +1,5 @@
+import { RefreshCw } from "lucide-react";
+
 export default function BrowserBased() {
   return (
     <section className="py-32 bg-white">
@@ -115,7 +117,7 @@ export default function BrowserBased() {
   "
 />
 
-{/* Floating Card Online */}
+{/* Floating Card Systemstatus */}
   
 <div
     className="
@@ -178,6 +180,82 @@ export default function BrowserBased() {
     </span>
 
   </div>
+
+     <div
+  className="
+    absolute
+
+    -left-12
+    bottom-10
+
+    z-20
+
+    rounded-2xl
+
+    border
+    border-white/60
+
+    bg-white/90
+
+    px-6
+    py-5
+
+    backdrop-blur
+
+    shadow-[0_35px_70px_rgba(15,23,42,.18)]
+  "
+>
+
+  <div className="flex items-center gap-3">
+
+    <div
+      className="
+        flex
+        h-10
+        w-10
+        items-center
+        justify-center
+
+        rounded-xl
+
+        bg-[#146ab1]/10
+
+        text-[#146ab1]
+      "
+    >
+      <RefreshCw className="h-5 w-5" />
+    </div>
+
+    <div>
+
+      <p
+        className="
+          text-[11px]
+          font-semibold
+          uppercase
+          tracking-[0.18em]
+          text-slate-500
+        "
+      >
+        Updates
+      </p>
+
+      <p
+        className="
+          mt-1
+          text-sm
+          font-semibold
+          text-slate-800
+        "
+      >
+        Automatisch
+      </p>
+
+    </div>
+
+  </div>
+
+</div> 
 
 </div>
 
