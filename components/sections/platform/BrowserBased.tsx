@@ -120,8 +120,8 @@ export default function BrowserBased() {
     className="
       absolute
 
-      -right-8
-      top-10
+      -right-16
+      top-5
 
       z-20
 
@@ -135,36 +135,50 @@ export default function BrowserBased() {
       px-5
       py-3
 
-      shadow-[0_20px_45px_rgba(15,23,42,0.12)]
+      shadow-[0_30px_60px_rgba(15,23,42,0.18)]
 
       backdrop-blur
-
-      animate-pulse
     "
   >
 
-    <div className="flex items-center gap-3">
+    <div className="flex flex-col gap-2">
 
-      <div
-        className="
-          h-3
-          w-3
-          rounded-full
-          bg-[#adce00]
-        "
-      />
+  <span
+    className="
+      text-[11px]
+      font-semibold
+      uppercase
+      tracking-[0.18em]
+      text-slate-500
+    "
+  >
+    Systemstatus
+  </span>
 
-      <span
-        className="
-          text-sm
-          font-semibold
-          text-slate-700
-        "
-      >
-        Online
-      </span>
+  <div className="flex items-center gap-3">
 
-    </div>
+    <div
+      className="
+        h-4
+        w-4
+        rounded-full
+        bg-[#adce00]
+      "
+    />
+
+    <span
+      className="
+        text-sm
+        font-semibold
+        text-slate-800
+      "
+    >
+      Online
+    </span>
+
+  </div>
+
+</div>
 
   </div>
 
