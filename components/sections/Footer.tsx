@@ -139,28 +139,7 @@ export function Footer() {
     Deutschland – modular und zukunftssicher.
   </p>
 
-    <div className="mt-8 border-t border-slate-200 pt-5">
-      <p className="text-xs text-slate-400">
-  © {new Date().getFullYear()} easy-soft GmbH
-</p>
-
-<div className="mt-3 flex gap-5 text-xs">
-
-  <Link
-      href="/impressum"
-      className="text-slate-400 transition-colors hover:text-[#146ab1]"
-    >
-      Impressum
-    </Link>
-
-    <Link
-      href="/datenschutz"
-      className="text-slate-400 transition-colors hover:text-[#146ab1]"
-    >
-      Datenschutz
-  </Link>
-
-</div>
+    
 
 </div>
 </div>
