@@ -9,22 +9,42 @@ export default function BrowserBased() {
 
 <div>
 
+   {/* Status */}
   <div
     className="
       inline-flex
       items-center
+      gap-3
+
       rounded-full
+
       border
-      border-[#146ab1]/15
+      border-[#146ab1]/20
+
       bg-[#146ab1]/5
-      px-4
+
+      px-5
       py-2
-      text-sm
-      font-medium
-      text-[#146ab1]
     "
   >
-    Browserbasiert
+    <span className="text-slate-300">•</span>
+
+    <span className="text-xs font-semibold uppercase tracking-[0.22em] text-[#146ab1]">
+      Plattform
+    </span>
+
+    <span className="h-2 w-2 rounded-full bg-[#adce00]" />
+    
+    <span className="text-sm text-slate-600">
+      Browserbasiert
+    </span>
+
+    <span className="text-slate-300">•</span>
+
+    <span className="text-sm text-slate-600">
+      Modular
+    </span>
+
   </div>
 
 </div>
