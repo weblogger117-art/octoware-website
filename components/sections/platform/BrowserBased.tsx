@@ -222,42 +222,15 @@ export default function BrowserBased() {
 
     </div>
 
-    {/* Inhalt */}
+   {/* Browser-Inhalt */}
 
 <div
   className="
     aspect-[16/10]
-    bg-gradient-to-br
-    from-slate-50
-    to-slate-100
-    p-6
+    overflow-hidden
+    bg-slate-100
   "
 >
-
-  <div className="flex h-full gap-5">
-
-    {/* Sidebar */}
-
-    <div
-      className="
-        w-20
-        rounded-2xl
-        bg-white
-        border
-        border-slate-200
-        p-3
-      "
-    >
-
-    </div>
-
-    {/* Hauptbereich */}
-
-    <div className="flex flex-1 flex-col gap-4">
-
-    </div>
-
-  </div>
 
 </div>
 
