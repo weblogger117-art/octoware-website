@@ -1,5 +1,7 @@
 import { RefreshCw } from "lucide-react";
 
+import { RefreshCw } from "lucide-react";
+
 export default function BrowserBased() {
   return (
     <section className="py-32 bg-white">
@@ -166,11 +168,10 @@ export default function BrowserBased() {
 
         bg-gradient-to-b
         from-white
-        via-white
-        to-slate-100
+        to-slate-50
 
         px-5
-        py-5
+        py-4
       "
     >
 
@@ -180,45 +181,24 @@ export default function BrowserBased() {
 
       <div
         className="
-  ml-6
-  flex-1
+          ml-6
+          flex-1
 
-  flex
-  items-center
-  gap-3
+          rounded-full
 
-  rounded-full
+          bg-white/90
+          backdrop-blur
 
-  border
-  border-slate-200/70
+          px-4
+          py-2
 
-  bg-white/90
+          text-sm
+          text-slate-400
 
-  px-4
-  py-2
-
-  text-sm
-  text-slate-500
-
-  shadow-[inset_0_1px_2px_rgba(255,255,255,.9)]
-
-  backdrop-blur-sm
-"
+          shadow-inner
+        "
       >
-        <>
-  <div
-    className="
-      h-2.5
-      w-2.5
-      rounded-full
-      bg-[#adce00]
-    "
-  />
-
-  <span className="font-medium">
-    https://octoware-net.de
-  </span>
-</>
+        https://octoware-net.de
       </div>
 
     </div>
