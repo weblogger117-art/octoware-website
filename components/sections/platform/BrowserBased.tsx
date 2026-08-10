@@ -149,17 +149,28 @@ export default function BrowserBased() {
     "
   />
 
-  {/* Floating Card – Systemstatus */}
+  {/* Feature Cards */}
 
 <div
   className="
     absolute
-    left-1/2
+    left-[calc(50%-20px)]
     -top-10
-    -translate-x-1/2
 
     z-20
 
+    flex
+    -translate-x-1/2
+
+    items-center
+    gap-3
+  "
+>
+
+  {/* Floating Card – Systemstatus */}
+
+<div
+  className="
     rounded-2xl
 
     border
@@ -229,12 +240,6 @@ export default function BrowserBased() {
 
 <div
   className="
-    absolute
-    -left-10
-    bottom-24
-
-    z-20
-
     flex
     items-center
     gap-4
@@ -246,8 +251,8 @@ export default function BrowserBased() {
 
     bg-white/60
 
-    px-5
-    py-4
+    px-6
+    py-5
 
     backdrop-blur-2xl
 
@@ -301,21 +306,15 @@ export default function BrowserBased() {
 
 <div
   className="
-    absolute
-    -right-8
-    -top-4
-
-    z-20
-
-    rounded-2xl
+  rounded-2xl
 
     border
     border-white/80
 
     bg-white/60
 
-    px-5
-    py-4
+    px-6
+    py-5
 
     backdrop-blur-2xl
 
@@ -367,6 +366,8 @@ export default function BrowserBased() {
 
   </div>
 </div>
+
+  </div>
 
   {/* Browser */}
 
