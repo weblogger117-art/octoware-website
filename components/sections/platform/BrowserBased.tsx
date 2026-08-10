@@ -25,8 +25,8 @@ export default function BrowserBased() {
       pointer-events-none
       absolute
 
-      -left-24
-      -top-24
+      -left-40
+      -top-40
 
       h-[420px]
       w-[420px]
@@ -35,7 +35,7 @@ export default function BrowserBased() {
 
       bg-[#146ab1]/15
 
-      blur-[110px]
+      blur-[90px]
 
       opacity-90
     "
