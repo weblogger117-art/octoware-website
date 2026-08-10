@@ -205,9 +205,8 @@ export default function BrowserBased() {
 <div
   className="
     absolute
-    left-1/2
-    -top-4
-    -translate-x-[10%]
+    -right-6
+    bottom-8
 
     z-20
 
