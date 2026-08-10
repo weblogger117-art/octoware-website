@@ -207,7 +207,7 @@ export default function BrowserBased() {
     absolute
     left-1/2
     -top-4
-    -translate-x-[25%]
+    -translate-x-[10%]
 
     z-20
 
