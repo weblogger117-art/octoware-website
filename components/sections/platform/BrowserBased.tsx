@@ -17,29 +17,8 @@ export default function BrowserBased() {
 
           {/* Linke Seite */}
 
-{/* Subtiler Glow hinter dem Textbereich */}
-
-<div
-  className="
-    pointer-events-none
-    absolute
-
-    -left-24
-    -top-24
-
-    h-[420px]
-    w-[420px]
-
-    rounded-full
-
-    bg-[#146ab1]/10
-
-    blur-[110px]
-
-    opacity-80
-  "
-/>
-
+<div>
+  
    {/* Status */}
   <div
     className="
