@@ -154,7 +154,7 @@ export default function BrowserBased() {
 <div
   className="
     absolute
-    left-[calc(50%+60px)]
+    left-[calc(50%+140px)]
     -top-10
 
     z-20
