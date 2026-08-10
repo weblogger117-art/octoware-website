@@ -206,7 +206,7 @@ export default function BrowserBased() {
   className="
     absolute
     -left-10
-    bottom-16
+    bottom-24
 
     z-20
 
