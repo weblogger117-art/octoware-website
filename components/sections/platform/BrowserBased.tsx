@@ -151,6 +151,10 @@ export default function BrowserBased() {
     backdrop-blur-2xl
 
     shadow-[0_25px_60px_rgba(15,23,42,.14)]
+
+    ring-1
+    ring-white/60
+  
     animate-float-slow
   "
 >
@@ -226,6 +230,10 @@ export default function BrowserBased() {
     backdrop-blur-2xl
 
     shadow-[0_25px_60px_rgba(15,23,42,.14)]
+
+    ring-1
+    ring-white/60
+  
     animate-float-medium
   "
 >
@@ -290,6 +298,9 @@ export default function BrowserBased() {
     backdrop-blur-2xl
 
     shadow-[0_25px_60px_rgba(15,23,42,.14)]
+
+    ring-1
+    ring-white/60
 
     animate-float-slow
   "
