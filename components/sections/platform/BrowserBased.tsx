@@ -33,11 +33,11 @@ export default function BrowserBased() {
 
       rounded-full
 
-      bg-[#146ab1]/10
+      bg-[#146ab1]/15
 
       blur-[110px]
 
-      opacity-80
+      opacity-90
     "
   />
   
