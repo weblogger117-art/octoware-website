@@ -42,12 +42,11 @@ export default function BrowserBased() {
   "
 />
 
-    <div className="relative z-10">
+  <div className="relative z-10">
 
    {/* Status */}
   <div
     className="
-      relative
       inline-flex
       items-center
       gap-3
@@ -63,9 +62,6 @@ export default function BrowserBased() {
       py-2
     "
   >
-
-
-    
     <span className="text-slate-300">•</span>
 
     <span className="text-sm text-slate-600">
