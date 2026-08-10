@@ -205,8 +205,8 @@ export default function BrowserBased() {
 <div
   className="
     absolute
-    -right-6
-    bottom-8
+    -left-10
+    bottom-2
 
     z-20
 
@@ -293,7 +293,7 @@ export default function BrowserBased() {
 
     shadow-[0_25px_60px_rgba(15,23,42,.16)]
 
-    animate-float-fast
+    animate-float-slow
   "
 >
   <div className="flex items-center gap-3">
