@@ -19,27 +19,7 @@ export default function BrowserBased() {
 
 <div>
 
-   {/* Status */}
-  <div
-    className="
-      relative
-      inline-flex
-      items-center
-      gap-3
-
-      rounded-full
-
-      border
-      border-[#146ab1]/20
-
-      bg-[#146ab1]/5
-
-      px-5
-      py-2
-    "
-  >
-
-{/* Subtiler Glow hinter dem Textbereich */}
+  {/* Subtiler Glow hinter dem Textbereich */}
 
 <div
   className="
@@ -63,6 +43,28 @@ export default function BrowserBased() {
 />
 
     <div className="relative z-10">
+
+   {/* Status */}
+  <div
+    className="
+      relative
+      inline-flex
+      items-center
+      gap-3
+
+      rounded-full
+
+      border
+      border-[#146ab1]/20
+
+      bg-[#146ab1]/5
+
+      px-5
+      py-2
+    "
+  >
+
+
     
     <span className="text-slate-300">•</span>
 
