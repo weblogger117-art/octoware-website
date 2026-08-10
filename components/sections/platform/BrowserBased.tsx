@@ -127,6 +127,215 @@ export default function BrowserBased() {
     "
   />
 
+  {/* Floating Card – Systemstatus */}
+
+<div
+  className="
+    absolute
+    -right-8
+    -top-8
+
+    z-20
+
+    rounded-2xl
+
+    border
+    border-white/70
+
+    bg-white/85
+
+    px-6
+    py-5
+
+    backdrop-blur-xl
+
+    shadow-[0_25px_60px_rgba(15,23,42,.16)]
+
+    animate-float-slow
+  "
+>
+  <p
+    className="
+      text-[11px]
+      font-semibold
+      uppercase
+      tracking-[0.18em]
+      text-slate-500
+    "
+  >
+    Systemstatus
+  </p>
+
+  <div className="mt-3 flex items-center gap-3">
+    <span className="relative flex h-3 w-3">
+      <span
+        className="
+          absolute
+          inline-flex
+          h-full
+          w-full
+          animate-ping
+          rounded-full
+          bg-[#adce00]
+          opacity-60
+        "
+      />
+
+      <span
+        className="
+          relative
+          inline-flex
+          h-3
+          w-3
+          rounded-full
+          bg-[#adce00]
+        "
+      />
+    </span>
+
+    <span className="text-sm font-semibold text-slate-800">
+      Online
+    </span>
+  </div>
+</div>
+
+  {/* Floating Card – Updates */}
+
+<div
+  className="
+    absolute
+    -left-10
+    bottom-4
+
+    z-20
+
+    flex
+    items-center
+    gap-4
+
+    rounded-2xl
+
+    border
+    border-white/70
+
+    bg-white/85
+
+    px-5
+    py-4
+
+    backdrop-blur-xl
+
+    shadow-[0_25px_60px_rgba(15,23,42,.16)]
+
+    animate-float-medium
+  "
+>
+  <div
+    className="
+      flex
+      h-10
+      w-10
+      shrink-0
+      items-center
+      justify-center
+
+      rounded-xl
+
+      bg-[#146ab1]/10
+
+      text-[#146ab1]
+    "
+  >
+    <RefreshCw className="h-5 w-5" />
+  </div>
+
+  <div>
+    <p
+      className="
+        text-[11px]
+        font-semibold
+        uppercase
+        tracking-[0.18em]
+        text-slate-500
+      "
+    >
+      Updates
+    </p>
+
+    <p className="mt-1 text-sm font-semibold text-slate-800">
+      Automatisch
+    </p>
+  </div>
+</div>
+
+  {/* Floating Card – Browserbasiert */}
+
+<div
+  className="
+    absolute
+    -right-6
+    bottom-12
+
+    z-20
+
+    rounded-2xl
+
+    border
+    border-white/70
+
+    bg-white/85
+
+    px-5
+    py-4
+
+    backdrop-blur-xl
+
+    shadow-[0_25px_60px_rgba(15,23,42,.16)]
+
+    animate-float-fast
+  "
+>
+  <div className="flex items-center gap-3">
+
+    <div
+      className="
+        flex
+        h-9
+        w-9
+        items-center
+        justify-center
+
+        rounded-xl
+
+        bg-[#adce00]/15
+
+        text-[#146ab1]
+      "
+    >
+      <span className="h-2.5 w-2.5 rounded-full bg-[#adce00]" />
+    </div>
+
+    <div>
+      <p
+        className="
+          text-[10px]
+          font-semibold
+          uppercase
+          tracking-[0.18em]
+          text-slate-500
+        "
+      >
+        Zugriff
+      </p>
+
+      <p className="mt-1 text-sm font-semibold text-slate-800">
+        Browserbasiert
+      </p>
+    </div>
+
+  </div>
+</div>
+
   {/* Browser */}
 
   <div
