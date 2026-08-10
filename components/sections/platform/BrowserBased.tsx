@@ -149,7 +149,7 @@ export default function BrowserBased() {
 
       bg-white
 
-      shadow-[0_55px_120px_rgba(15,23,42,.22)]
+      shadow-[0_60px_140px_rgba(15,23,42,.18)]
 
       ring-1
       ring-white/60
@@ -165,7 +165,7 @@ export default function BrowserBased() {
         gap-2
 
         border-b
-        border-slate-200
+        border-white/70
 
         bg-gradient-to-b
         from-white
@@ -187,7 +187,8 @@ export default function BrowserBased() {
 
           rounded-full
 
-          bg-white
+          bg-white/90
+          backdrop-blur
 
           px-4
           py-2
