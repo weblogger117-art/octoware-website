@@ -154,7 +154,7 @@ export default function BrowserBased() {
 <div
   className="
     absolute
-    left-[calc(50%-20px)]
+    left-[calc(50%+60px)]
     -top-10
 
     z-20
@@ -171,6 +171,12 @@ export default function BrowserBased() {
 
 <div
   className="
+    flex
+    flex-col
+    justify-center
+  
+    h-[76px]
+  
     rounded-2xl
 
     border
@@ -240,6 +246,8 @@ export default function BrowserBased() {
 
 <div
   className="
+    h-[76px]
+  
     flex
     items-center
     gap-4
@@ -306,7 +314,9 @@ export default function BrowserBased() {
 
 <div
   className="
-  rounded-2xl
+    h-[76px]
+    
+    rounded-2xl
 
     border
     border-white/80
