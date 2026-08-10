@@ -135,7 +135,10 @@ export default function BrowserBased() {
 
       z-10
 
-      w-[840px]
+    lg:translate-x-8
+    lg:-translate-y-8
+
+      w-[920px]
 
       overflow-hidden
 
