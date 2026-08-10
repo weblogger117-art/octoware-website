@@ -17,9 +17,7 @@ export default function BrowserBased() {
 
           {/* Linke Seite */}
 
-<div>
-
-  {/* Subtiler Glow hinter dem Textbereich */}
+{/* Subtiler Glow hinter dem Textbereich */}
 
 <div
   className="
@@ -41,8 +39,6 @@ export default function BrowserBased() {
     opacity-80
   "
 />
-
-  <div className="relative z-10">
 
    {/* Status */}
   <div
